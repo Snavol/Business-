@@ -468,5 +468,34 @@
     "demo_path": "sites/patricks-bakery-rotorua/",
     "status": "draft",
     "demo_url": "https://business-red-ten.vercel.app/patricks-bakery-rotorua/"
+  },
+  {
+    "slug": "lucy-lous-boutique",
+    "business": "Lucy Lou's Boutique",
+    "trade": "Ladies' fashion boutique (sizes 6–24) with online shop",
+    "town": "Churchtown, Southport (+ Penwortham store)",
+    "region": "Merseyside / Lancashire",
+    "country": "United Kingdom",
+    "address": "7C Botanic Rd, Southport PR9 7NG (Churchtown). Penwortham store address not captured.",
+    "phone": "+44 1704 792258",
+    "rating": null,
+    "review_count": null,
+    "hours": "Not captured (shown in an Instagram highlight and a page on their site)",
+    "maps_link": "https://www.google.com/maps/search/?api=1&query=Lucy+Lou%27s+Boutique+7C+Botanic+Rd+Southport+PR9+7NG",
+    "instagram": "@lucy_lous_boutique (14.8K followers, 20,485 posts)",
+    "email": "info@lucylousboutique.com",
+    "website_status": "has_website",
+    "website_status_note": "lucylousboutique.com is a working Wix e-commerce shop. Issues seen: mislabelled/duplicate nav links (e.g. 'Christmas Tops' -> /copy-of-dresses), overlapping dress categories, filename alt text, typos ('Suedet', 'Scarfs'), sold-out items still listed. Pitch is a REDESIGN / migration, not a first website.",
+    "services": [
+      "Dresses (magic, maxi, midi), tops, coats/jackets, co-ords, loungewear, jeans/leggings, blazers, curve",
+      "Footwear and accessories (bags, scarves, belts, jewellery)",
+      "Gift vouchers (in-store and e-gift)",
+      "Online shop 24/7, click & collect"
+    ],
+    "reviews": [],
+    "notes": "No Google reviews captured; source was Instagram + their website. Owners: mum and daughter Gill and Lucy Harper; Churchtown boutique opened 2019. Demo is a design concept that links its Shop buttons to their real shop. Photos are their own Instagram product shots (staff modelling); a customer photo and a meme graphic with designer-brand bags were left out. Product names/sizes on the demo come from the Instagram overlays; no prices shown.",
+    "demo_path": "sites/lucy-lous-boutique/",
+    "demo_url": "https://business-red-ten.vercel.app/lucy-lous-boutique/",
+    "status": "draft"
   }
 ]
