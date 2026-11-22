@@ -414,5 +414,50 @@
     "notes": "Likely a church/charity shop, not a private business: reviews say clothes are donated from Bethlehem Baptist church and proceeds go to the community. Pitch accordingly (cheap/free tier, or to the church) and confirm who runs it. Site also quotes Jackie Marevich and uses '$6 shirts' from Augustus Waters' review (4 years old). Photos: people at the counter cropped out; a framed painting cropped out.",
     "demo_path": "sites/tallulah-tauranga/",
     "status": "draft"
+  },
+  {
+    "slug": "patricks-bakery-rotorua",
+    "business": "Patrick's Boutique Bakery",
+    "trade": "Bakery and cake shop",
+    "town": "Ohinemutu, Rotorua",
+    "region": "Bay of Plenty",
+    "country": "New Zealand",
+    "address": "49 Lake Road, Ohinemutu, Rotorua 3010, New Zealand",
+    "phone": "+64 7 348 8928",
+    "rating": 4.5,
+    "review_count": 250,
+    "hours": "Full hours not captured; listing showed 'Closed · Opens 7 AM' when checked",
+    "maps_link": "https://www.google.com/maps/search/?api=1&query=Patrick%27s+Boutique+Bakery+49+Lake+Road+Rotorua",
+    "plus_code": "V6CW+C6 Rotorua, New Zealand",
+    "price_range": "$10–20 per person",
+    "website_status": "facebook_only",
+    "website_status_note": "Google listing's website field is just facebook.com (their Facebook page). No site of their own.",
+    "services": [
+      "Croissants (plain, almond, chocolate, breakfast)",
+      "Pies (steak & cheese, mince & cheese, chicken & mushroom, bacon & egg, sausage rolls)",
+      "Artisan bread and buns",
+      "Cakes and pastries (eclairs, mille feuille, Black Forest, cheesecake, tarts)",
+      "Celebration/birthday cakes",
+      "Sandwiches",
+      "Coffee",
+      "Takeaway and dine-in (no delivery)"
+    ],
+    "reviews": [
+      {
+        "name": "Ann-Christin Chappell",
+        "text": "Stopped in at 7.30am after a long drive and was lucky to buy a great Flat White and probably the best croissant (fresh out of the oven) I had in New Zealand! Warm and buttery and just delicious, thank you for that!"
+      },
+      {
+        "name": "Michael Brodbeck",
+        "text": "Stopped in after a morning run, I tried both the almond and chocolate croissants fresh out of the oven. Staff was very friendly and the baked good were delicious thank you. I'll definitely be back 💪"
+      },
+      {
+        "name": "Dixie S",
+        "text": "We went there because of the good reviews and were absolutely not disappointed!!!!\nSoooo delicious!\nWe had a breakfast croissant and because the friendly baker/pastry chef gave us a slice to try, we went straight back for more!\nMille Feuille and Vanilla Bean Cheesecake- both indescribably good!!!\nIf you are in Rotorua, you should definitely make a stop there!"
+      }
+    ],
+    "notes": "Busiest lead so far (250 reviews) and the owner replies to reviews. Natural upsell: online cake orders (they sell birthday cakes), since delivery is ✗. Site also quotes Michelle Case (free parking, pastry chef at work). Photos are from the Maps listing (some from 2019); prices in photos not shown on the site since they may be out of date. Emoji in Michael Brodbeck's review read from a screenshot.",
+    "demo_path": "sites/patricks-bakery-rotorua/",
+    "status": "draft"
   }
 ]

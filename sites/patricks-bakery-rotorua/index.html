@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Patrick's Boutique Bakery — Croissants, Pies &amp; Cakes, Lake Road, Rotorua</title>
+<meta name="description" content="Patrick's Boutique Bakery, 49 Lake Road, Ohinemutu, Rotorua. Croissants fresh from the oven, flaky pies, artisan bread, cakes and pastries made on site. Open from 7am. Rated 4.5 from 250 Google reviews.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --black:#161412; --crust:#b86a26; --crust-d:#94521a; --butter:#f7e7c4; --flour:#fbf7ef; --cream:#f3ebdc;
+  --ink:#1f1a15; --muted:#6f655a; --line:#e6dccb;
+  --serif:'Young Serif',Georgia,serif; --sans:'Figtree',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:var(--flour);line-height:1.6;-webkit-font-smoothing:antialiased;font-size:17px}
+a{color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.05;letter-spacing:-.01em}
+.stripes{height:14px;background:repeating-linear-gradient(90deg,var(--black) 0 14px,var(--flour) 14px 28px)}
+
+header{position:sticky;top:0;z-index:20;background:var(--black);color:var(--flour)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{text-decoration:none;font-family:var(--serif);font-size:24px;line-height:1}
+.logo small{display:block;font-family:var(--sans);font-size:10px;letter-spacing:.26em;text-transform:uppercase;opacity:.65;margin-top:5px}
+.nav ul{display:flex;gap:28px;list-style:none;font-size:15px;font-weight:500}
+.nav ul a{text-decoration:none;opacity:.75}
+.nav ul a:hover{opacity:1;color:var(--butter)}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:15px 26px;border-radius:999px;font-weight:600;font-size:15.5px;text-decoration:none;transition:transform .2s,background .2s,color .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-crust{background:var(--crust);color:#fff}
+.btn-crust:hover{background:var(--crust-d)}
+.btn-ink{background:var(--black);color:var(--flour)}
+.btn-line{border:1.5px solid var(--black)}
+.btn-line:hover{background:var(--black);color:var(--flour)}
+.nav .btn{padding:10px 18px}
+
+/* hero */
+.hero{padding:64px 0 90px}
+.hero .wrap{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.open{display:inline-flex;align-items:center;gap:10px;background:var(--butter);border-radius:999px;padding:7px 16px;font-size:14px;font-weight:600;margin-bottom:26px}
+.open i{width:9px;height:9px;border-radius:50%;background:var(--crust);display:block;animation:pulse 1.8s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.3}}
+.hero h1{font-size:clamp(48px,6.6vw,92px)}
+.hero h1 em{font-style:normal;color:var(--crust)}
+.hero p.lead{margin-top:22px;max-width:480px;font-size:19px;color:var(--muted)}
+.ctas{margin-top:32px;display:flex;gap:12px;flex-wrap:wrap}
+.meta{margin-top:38px;display:flex;gap:26px;flex-wrap:wrap;font-size:15px;color:var(--muted)}
+.meta b{display:block;font-family:var(--serif);font-weight:400;font-size:28px;color:var(--ink);line-height:1.1}
+.stack{position:relative;height:560px}
+.stack img{position:absolute;object-fit:cover;border:8px solid #fff;box-shadow:0 30px 60px -30px rgba(31,26,21,.5)}
+.stack .a{width:68%;height:72%;left:0;top:0;transform:rotate(-3deg)}
+.stack .b{width:56%;height:56%;right:0;bottom:0;transform:rotate(4deg)}
+.reveal{opacity:0;transform:translateY(16px);animation:up .8s cubic-bezier(.2,.7,.2,1) forwards}
+.d1{animation-delay:.05s}.d2{animation-delay:.2s}.d3{animation-delay:.35s}.d4{animation-delay:.5s}
+@keyframes up{to{opacity:1;transform:none}}
+.stack.reveal .a{animation:tiltA 1s .3s cubic-bezier(.2,.7,.2,1) both}
+.stack.reveal .b{animation:tiltB 1s .5s cubic-bezier(.2,.7,.2,1) both}
+@keyframes tiltA{from{opacity:0;transform:rotate(-9deg) translateY(30px)}to{opacity:1;transform:rotate(-3deg)}}
+@keyframes tiltB{from{opacity:0;transform:rotate(10deg) translateY(30px)}to{opacity:1;transform:rotate(4deg)}}
+
+section{padding:100px 0}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--crust);margin-bottom:14px}
+h2{font-size:clamp(38px,5vw,64px)}
+.sub{color:var(--muted);max-width:560px;margin-top:16px;font-size:18px}
+
+/* menu */
+.menu{background:var(--black);color:var(--flour)}
+.menu .sub{color:rgba(251,247,239,.65)}
+.mgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:52px}
+.mc{background:#211e1b;border-radius:22px;overflow:hidden;transition:transform .3s}
+.mc:hover{transform:translateY(-5px)}
+.mc img{width:100%;height:220px;object-fit:cover;transition:transform .6s}
+.mc:hover img{transform:scale(1.05)}
+.mc .in{padding:22px 22px 26px}
+.mc h3{font-size:24px;color:var(--butter);margin-bottom:6px}
+.mc p{font-size:15px;color:rgba(251,247,239,.7)}
+.mc ul{list-style:none;margin-top:12px;font-size:14px;color:rgba(251,247,239,.85);display:grid;gap:4px}
+.mc li::before{content:"— ";color:var(--crust)}
+
+/* chef */
+.chef .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:72px;align-items:center}
+.chef blockquote{font-family:var(--serif);font-size:clamp(28px,3.4vw,44px);line-height:1.2}
+.chef blockquote em{font-style:normal;color:var(--crust)}
+.chef cite{display:block;margin-top:18px;font-style:normal;color:var(--muted);font-size:15px}
+.facts3{display:grid;gap:14px}
+.facts3 div{background:var(--cream);border-radius:20px;padding:22px 24px}
+.facts3 b{font-family:var(--serif);font-weight:400;font-size:24px;display:block}
+.facts3 span{color:var(--muted);font-size:15.5px}
+
+/* favourites */
+.fav{background:var(--butter)}
+.fgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:44px}
+.fgrid div{background:var(--flour);border-radius:18px;padding:22px;font-family:var(--serif);font-size:21px;line-height:1.2;transition:transform .2s}
+.fgrid div:hover{transform:rotate(-1.5deg) scale(1.02)}
+.fgrid span{display:block;font-family:var(--sans);font-size:13px;color:var(--muted);margin-top:8px}
+
+/* reviews */
+.rgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:52px}
+.rc{background:#fff;border:1px solid var(--line);border-radius:22px;padding:30px;display:flex;flex-direction:column;gap:14px}
+.rc .stars{color:var(--crust);letter-spacing:2px}
+.rc blockquote{font-size:16.5px}
+.rc cite{margin-top:auto;font-style:normal;font-weight:700}
+.more{margin-top:28px;color:var(--muted);font-size:15px}
+.more a{color:var(--crust-d);font-weight:600}
+
+/* visit */
+.visit{background:var(--cream)}
+.visit .grid{display:grid;grid-template-columns:1fr 1.15fr;gap:52px;margin-top:44px}
+.vcard{background:var(--flour);border-radius:26px;padding:30px}
+.facts div{display:grid;grid-template-columns:100px 1fr;gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}
+.facts div:last-child{border-bottom:0}
+.facts dt{font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding-top:3px}
+.map{width:100%;height:100%;min-height:460px;border:0;border-radius:26px}
+
+footer{background:var(--black);color:rgba(251,247,239,.6);padding:36px 0;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:center}
+
+.callbar{display:none}
+@media (max-width:960px){
+  .nav ul{display:none}
+  .hero{padding:40px 0 64px}
+  .hero .wrap,.chef .grid,.visit .grid{grid-template-columns:1fr;gap:44px}
+  .stack{height:400px}
+  section{padding:76px 0}
+  .mgrid,.fgrid{grid-template-columns:1fr 1fr}
+  .rgrid{grid-template-columns:1fr}
+  .callbar{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:30;gap:8px}
+  .callbar a{flex:1;text-align:center;padding:15px;border-radius:999px;text-decoration:none;font-weight:600;background:var(--black);color:var(--flour);box-shadow:0 10px 30px -12px rgba(0,0,0,.5)}
+  .callbar a+a{background:var(--crust);color:#fff}
+  footer{padding-bottom:100px}
+}
+@media (max-width:520px){.mgrid,.fgrid{grid-template-columns:1fr}.stack{height:330px}}
+@media (prefers-reduced-motion:reduce){.reveal,.stack.reveal .a,.stack.reveal .b,.open i{animation:none;opacity:1}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#" class="logo">Patrick's<small>Boutique Bakery</small></a>
+    <ul>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#favourites">Favourites</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#visit">Visit</a></li>
+    </ul>
+    <a class="btn btn-crust" href="tel:+6473488928">Call to order</a>
+  </div>
+</header>
+<div class="stripes" aria-hidden="true"></div>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="open reveal d1"><i aria-hidden="true"></i>Baking from 7am · Lake Road, Rotorua</p>
+      <h1 class="reveal d2">Fresh out of the oven, <em>every morning.</em></h1>
+      <p class="lead reveal d3">Buttery croissants, flaky pies, artisan bread and beautiful cakes, all baked right here. Watch the pastry chef at work while you order your flat white.</p>
+      <div class="ctas reveal d4">
+        <a class="btn btn-ink" href="#menu">See what's baking</a>
+        <a class="btn btn-line" href="tel:+6473488928">07 348 8928</a>
+      </div>
+      <div class="meta reveal d4">
+        <div><b>4.5 ★</b>250 Google reviews</div>
+        <div><b>$10–20</b>per person</div>
+        <div><b>Free</b>parking</div>
+      </div>
+    </div>
+    <div class="stack reveal">
+      <img class="a" src="images/cakes.jpg" alt="Cabinet of cakes and pastries: chocolate eclairs, Black Forest cake, mille feuille and carrot walnut cake" width="925" height="590">
+      <img class="b" src="images/breads.jpg" alt="Fresh artisan loaves and seeded buns cooling on a rack" width="542" height="660">
+    </div>
+  </div>
+</section>
+
+<section class="menu" id="menu">
+  <div class="wrap">
+    <p class="eyebrow">The menu</p>
+    <h2>Sweet, savoury and everything in between</h2>
+    <p class="sub">Sandwiches, pastries, breads, pies and cakes, made on site each day.</p>
+    <div class="mgrid">
+      <article class="mc"><img src="images/pies.jpg" alt="Warmer full of golden pies: mince, mince and cheese, steak and cheese, chicken and mushroom, bacon and egg" loading="lazy"><div class="in"><h3>Pies</h3><p>Flaky puff pastry, generous fillings.</p><ul><li>Steak &amp; cheese</li><li>Mince &amp; cheese</li><li>Chicken &amp; mushroom</li><li>Bacon &amp; egg</li></ul></div></article>
+      <article class="mc"><img src="images/tarts-cabinet.jpg" alt="Cabinet of fruit tarts, citrus tarts and pies" loading="lazy" style="object-position:center 30%"><div class="in"><h3>Tarts &amp; pies</h3><p>Sweet tarts and pies for morning tea.</p><ul><li>Fruit tarts</li><li>Caramel pecan pie</li><li>Apple &amp; boysenberry</li></ul></div></article>
+      <article class="mc"><img src="images/cakes.jpg" alt="Cakes and eclairs in the cabinet" loading="lazy" style="object-position:center 60%"><div class="in"><h3>Cakes &amp; pastries</h3><p>Classics done properly.</p><ul><li>Chocolate eclairs</li><li>Mille feuille</li><li>Black Forest cake</li><li>Vanilla bean cheesecake</li></ul></div></article>
+      <article class="mc"><img src="images/breads.jpg" alt="Artisan breads and buns" loading="lazy"><div class="in"><h3>Bread &amp; croissants</h3><p>Baked fresh each morning.</p><ul><li>Artisan loaves</li><li>Seeded buns</li><li>Plain, almond &amp; chocolate croissants</li></ul></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="chef">
+  <div class="wrap grid">
+    <div>
+      <p class="eyebrow">Made in front of you</p>
+      <blockquote>“It's also a treat to walk in and see the pastry chef at work, creating <em>fresh pastries right before your eyes.</em>”</blockquote>
+      <cite>Michelle Case · Google review</cite>
+    </div>
+    <div class="facts3">
+      <div><b>Fresh from 7am</b><span>Get your croissant warm, straight out of the oven.</span></div>
+      <div><b>Great value</b><span>Reasonable prices for this quality of pastry.</span></div>
+      <div><b>Coffee too</b><span>A good flat white to go with your pastry.</span></div>
+      <div><b>Free parking</b><span>Easy stop on Lake Road, near Kuirau Park.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="fav" id="favourites">
+  <div class="wrap">
+    <p class="eyebrow">Customer favourites</p>
+    <h2>What people come back for</h2>
+    <div class="fgrid">
+      <div>Almond croissant<span>“Fresh out of the oven”</span></div>
+      <div>Steak &amp; cheese pie<span>A recommended dish</span></div>
+      <div>Mille feuille<span>“Indescribably good”</span></div>
+      <div>Vanilla bean cheesecake<span>“Indescribably good”</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <p class="eyebrow">Reviews</p>
+    <h2>4.5 stars from 250 reviews</h2>
+    <p class="sub">Locals and visitors on what keeps them coming back.</p>
+    <div class="rgrid">
+      <figure class="rc"><span class="stars">★★★★★</span><blockquote>“Stopped in at 7.30am after a long drive and was lucky to buy a great Flat White and probably the best croissant (fresh out of the oven) I had in New Zealand! Warm and buttery and just delicious, thank you for that!”</blockquote><cite>Ann-Christin Chappell</cite></figure>
+      <figure class="rc"><span class="stars">★★★★★</span><blockquote>“Stopped in after a morning run, I tried both the almond and chocolate croissants fresh out of the oven. Staff was very friendly and the baked good were delicious thank you. I'll definitely be back”</blockquote><cite>Michael Brodbeck</cite></figure>
+      <figure class="rc"><span class="stars">★★★★★</span><blockquote>“We had a breakfast croissant and because the friendly baker/pastry chef gave us a slice to try, we went straight back for more! Mille Feuille and Vanilla Bean Cheesecake- both indescribably good!!! If you are in Rotorua, you should definitely make a stop there!”</blockquote><cite>Dixie S</cite></figure>
+    </div>
+    <p class="more">From Patrick's Google reviews. <a href="https://www.google.com/maps/search/?api=1&amp;query=Patrick%27s+Boutique+Bakery+49+Lake+Road+Rotorua" target="_blank" rel="noopener">Read all 250 →</a></p>
+  </div>
+</section>
+
+<section class="visit" id="visit">
+  <div class="wrap">
+    <p class="eyebrow">Visit</p>
+    <h2>49 Lake Road, Rotorua</h2>
+    <div class="grid">
+      <div class="vcard">
+        <dl class="facts">
+          <div><dt>Address</dt><dd>49 Lake Road, Ohinemutu, Rotorua 3010</dd></div>
+          <div><dt>Phone</dt><dd><a href="tel:+6473488928">07 348 8928</a></dd></div>
+          <div><dt>Hours</dt><dd>Opens 7am. Call ahead or check Google Maps for closing times</dd></div>
+          <div><dt>Options</dt><dd>Takeaway and dine in · Free parking · Wheelchair accessible</dd></div>
+        </dl>
+        <p style="margin-top:22px"><a class="btn btn-crust" href="https://www.google.com/maps/dir/?api=1&amp;destination=Patrick%27s+Boutique+Bakery+49+Lake+Road+Rotorua" target="_blank" rel="noopener">Get directions</a></p>
+      </div>
+      <iframe class="map" title="Map showing Patrick's Boutique Bakery, 49 Lake Road, Rotorua" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://maps.google.com/maps?q=Patrick's%20Boutique%20Bakery%2C%2049%20Lake%20Road%2C%20Rotorua&amp;z=17&amp;output=embed"></iframe>
+    </div>
+  </div>
+</section>
+</main>
+
+<div class="stripes" aria-hidden="true"></div>
+<footer>
+  <div class="wrap">
+    <span style="font-family:var(--serif);color:var(--flour);font-size:20px">Patrick's Boutique Bakery</span>
+    <span>49 Lake Road, Rotorua 3010 · 07 348 8928</span>
+    <span>Demo website prepared by Codzo</span>
+  </div>
+</footer>
+
+<nav class="callbar" aria-label="Quick contact">
+  <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Patrick%27s+Boutique+Bakery+49+Lake+Road+Rotorua">Directions</a>
+  <a href="tel:+6473488928">Call now</a>
+</nav>
+</body>
+</html>
