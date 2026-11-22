@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NZ Shop — New Zealand Gift Shop, The Octagon, Dunedin</title>
+<meta name="description" content="New Zealand Gift Shop (NZ Shop), 1 George Street in the Dunedin Town Hall, at the Octagon. Kiwiana, NZ clothing, lambswool, jewellery and cosmetics. Easy to post overseas. Rated 4.7 on Google.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Franklin:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#16306b; --navy-d:#0e1f47; --sky:#3b7dd8; --stone:#efe9df; --paper:#faf8f4;
+  --ink:#141a2b; --muted:#5f6577; --line:#ddd6c9; --red:#c8362f; --green:#1d6b47;
+  --serif:'Libre Caslon Display',Georgia,serif; --sans:'Libre Franklin',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased;font-size:17px}
+a{color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.02;letter-spacing:-.01em}
+
+.topbar{background:var(--navy-d);color:#c9d4f0;font-size:13.5px}
+.topbar .wrap{display:flex;justify-content:space-between;gap:12px;padding-top:8px;padding-bottom:8px;flex-wrap:wrap}
+.topbar b{color:#fff;font-weight:600}
+header{position:sticky;top:0;z-index:20;background:rgba(250,248,244,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:70px}
+.logo{display:flex;align-items:baseline;gap:10px;text-decoration:none;color:var(--navy)}
+.logo b{font-family:var(--serif);font-weight:400;font-size:30px;line-height:1}
+.logo span{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.nav ul{display:flex;gap:28px;list-style:none;font-size:15px;font-weight:500}
+.nav ul a{text-decoration:none;color:var(--muted)}
+.nav ul a:hover{color:var(--navy)}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:15px 26px;font-weight:600;font-size:15px;text-decoration:none;border-radius:4px;transition:transform .2s,background .2s,color .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-navy:hover{background:var(--navy-d)}
+.btn-line{border:1.5px solid var(--navy);color:var(--navy)}
+.btn-line:hover{background:var(--navy);color:#fff}
+.nav .btn{padding:10px 18px}
+
+/* hero */
+.hero{position:relative;color:#fff;min-height:620px;display:flex;align-items:flex-end;overflow:hidden}
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%;transform:scale(1.06);animation:settle 2.4s cubic-bezier(.2,.7,.2,1) forwards}
+@keyframes settle{to{transform:scale(1)}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(14,31,71,.92) 0%,rgba(14,31,71,.72) 45%,rgba(14,31,71,.15) 100%)}
+.hero .wrap{position:relative;z-index:1;padding-top:96px;padding-bottom:84px;width:100%}
+.kick{font-size:13px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#a9c4f5;margin-bottom:22px}
+.hero h1{font-size:clamp(50px,7.2vw,100px);max-width:760px}
+.hero h1 em{font-style:italic;color:#a9c4f5}
+.hero p.lead{margin-top:24px;max-width:520px;font-size:19px;opacity:.9}
+.ctas{margin-top:34px;display:flex;gap:12px;flex-wrap:wrap}
+.hero .btn-line{border-color:rgba(255,255,255,.6);color:#fff}
+.hero .btn-line:hover{background:#fff;color:var(--navy)}
+.hero .rate{margin-top:40px;display:flex;align-items:center;gap:12px;font-size:15px}
+.hero .rate .stars{color:#f5c34b;letter-spacing:2px}
+.reveal{opacity:0;transform:translateY(16px);animation:up .8s cubic-bezier(.2,.7,.2,1) forwards}
+.d1{animation-delay:.2s}.d2{animation-delay:.35s}.d3{animation-delay:.5s}.d4{animation-delay:.65s}
+@keyframes up{to{opacity:1;transform:none}}
+
+section{padding:100px 0}
+.eyebrow{font-size:13px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--red);margin-bottom:14px}
+h2{font-size:clamp(38px,5vw,64px);color:var(--navy-d)}
+.sub{color:var(--muted);max-width:580px;margin-top:16px;font-size:18px}
+
+/* range */
+.range{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:56px;border-top:2px solid var(--navy)}
+.range article{padding:34px 30px 36px 0;border-bottom:1px solid var(--line)}
+.range article:nth-child(3n+2),.range article:nth-child(3n){padding-left:30px;border-left:1px solid var(--line)}
+.range .n{font-family:var(--serif);font-size:22px;color:var(--red)}
+.range h3{font-size:30px;margin:12px 0 8px;color:var(--navy-d)}
+.range p{color:var(--muted);font-size:15.5px}
+
+/* inside */
+.inside{background:var(--stone)}
+.inside .grid{display:grid;grid-template-columns:1fr 1fr 1.05fr;gap:20px;align-items:stretch;margin-top:48px}
+.inside figure{border-radius:6px;overflow:hidden;position:relative}
+.inside img{width:100%;height:100%;object-fit:cover;min-height:420px;transition:transform .7s}
+.inside figure:hover img{transform:scale(1.04)}
+.inside figcaption{position:absolute;left:14px;bottom:14px;background:var(--paper);color:var(--navy-d);font-size:13px;font-weight:600;padding:6px 12px;border-radius:3px}
+.why{background:var(--navy);color:#fff;border-radius:6px;padding:36px 32px;display:flex;flex-direction:column;gap:22px}
+.why h3{font-size:34px}
+.why div b{display:block;font-size:17px;margin-bottom:2px}
+.why div span{font-size:15px;color:#c9d4f0}
+
+/* cruise band */
+.cruise{background:var(--navy-d);color:#fff;padding:70px 0}
+.cruise .wrap{display:grid;grid-template-columns:auto 1fr;gap:40px;align-items:center}
+.cruise .big{font-family:var(--serif);font-size:clamp(60px,9vw,120px);line-height:.9;color:#a9c4f5}
+.cruise p{font-size:clamp(20px,2.2vw,26px);font-family:var(--serif);line-height:1.3;max-width:720px}
+.cruise cite{display:block;margin-top:12px;font-family:var(--sans);font-style:normal;font-size:14px;color:#c9d4f0}
+
+/* reviews */
+.rgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:52px}
+.rc{background:#fff;border:1px solid var(--line);border-top:4px solid var(--navy);border-radius:4px;padding:30px;display:flex;flex-direction:column;gap:14px;transition:transform .3s,box-shadow .3s}
+.rc:hover{transform:translateY(-4px);box-shadow:0 24px 44px -28px rgba(14,31,71,.45)}
+.rc .stars{color:#e0a823;letter-spacing:2px}
+.rc blockquote{font-size:17px}
+.rc cite{margin-top:auto;font-style:normal;font-weight:600;color:var(--navy)}
+.more{margin-top:30px;color:var(--muted);font-size:15px}
+.more a{color:var(--navy);font-weight:600}
+
+/* visit */
+.visit{background:var(--stone)}
+.visit .grid{display:grid;grid-template-columns:1fr 1.15fr;gap:52px;margin-top:44px}
+.vcard{background:#fff;border:1px solid var(--line);border-radius:6px;padding:30px}
+.facts div{display:grid;grid-template-columns:100px 1fr;gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}
+.facts div:last-child{border-bottom:0}
+.facts dt{font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding-top:3px}
+.hours{width:100%;border-collapse:collapse;font-size:15.5px}
+.hours td{padding:3px 0}
+.hours td:last-child{text-align:right}
+.map{width:100%;height:100%;min-height:480px;border:0;border-radius:6px}
+
+footer{background:var(--navy-d);color:#c9d4f0;padding:36px 0;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:center}
+footer .logo b{color:#fff;font-size:22px}
+
+.callbar{display:none}
+@media (max-width:940px){
+  .hide-m{display:none}
+  .logo span{display:none}
+  .logo b{white-space:nowrap}
+  .nav ul{display:none}
+  .hero{min-height:560px}
+  .hero::after{background:linear-gradient(180deg,rgba(14,31,71,.35) 0%,rgba(14,31,71,.92) 60%)}
+  .hero .wrap{padding-top:180px;padding-bottom:56px}
+  section{padding:76px 0}
+  .range{grid-template-columns:1fr}
+  .range article,.range article:nth-child(3n+2),.range article:nth-child(3n){padding:26px 0;border-left:0}
+  .inside .grid{grid-template-columns:1fr 1fr}
+  .inside img{min-height:280px}
+  .why{grid-column:span 2}
+  .cruise .wrap{grid-template-columns:1fr;gap:16px}
+  .rgrid,.visit .grid{grid-template-columns:1fr}
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:30}
+  .callbar a{flex:1;text-align:center;padding:17px;text-decoration:none;font-weight:600;background:var(--navy-d);color:#fff}
+  .callbar a+a{background:var(--red)}
+  footer{padding-bottom:90px}
+}
+@media (max-width:520px){.inside .grid{grid-template-columns:1fr}.why{grid-column:auto}}
+@media (prefers-reduced-motion:reduce){.reveal,.hero img.bg{animation:none;opacity:1;transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<div class="topbar"><div class="wrap"><span><b>Open 7 days</b> at the Octagon, Dunedin</span><span class="hide-m">Small gifts that are easy to post overseas</span></div></div>
+<header>
+  <div class="wrap nav">
+    <a href="#" class="logo"><b>NZ Shop</b><span>New Zealand Gifts</span></a>
+    <ul>
+      <li><a href="#range">The range</a></li>
+      <li><a href="#inside">Inside</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#visit">Visit</a></li>
+    </ul>
+    <a class="btn btn-navy" href="tel:+6434773379">Call<span class="hide-m"> 03 477 3379</span></a>
+  </div>
+</header>
+
+<main>
+<section class="hero" style="padding:0">
+  <img class="bg" src="images/storefront.jpg" alt="The NZ Shop New Zealand Gifts shopfront in the Dunedin Town Hall building" width="890" height="540">
+  <div class="wrap">
+    <p class="kick reveal d1">1 George Street · Dunedin Town Hall</p>
+    <h1 class="reveal d2">New Zealand gifts, <em>right on the Octagon.</em></h1>
+    <p class="lead reveal d3">Kiwiana, NZ clothing, lambswool, jewellery and skincare in the heart of Dunedin. Plenty of small, light gifts that are easy to post overseas.</p>
+    <div class="ctas reveal d4">
+      <a class="btn btn-navy" href="#visit" style="background:#fff;color:var(--navy)">Plan your visit</a>
+      <a class="btn btn-line" href="tel:+6434773379">Call the shop</a>
+    </div>
+    <p class="rate reveal d4"><span class="stars" aria-hidden="true">★★★★★</span><span><b>4.7</b> from 34 Google reviews</span></p>
+  </div>
+</section>
+
+<section id="range">
+  <div class="wrap">
+    <p class="eyebrow">The range</p>
+    <h2>Something for everyone back home</h2>
+    <p class="sub">Everything you'd want from a New Zealand gift shop, in one place at the centre of the city.</p>
+    <div class="range">
+      <article><span class="n">i.</span><h3>Kiwiana</h3><p>Classic New Zealand souvenirs, magnets, keyrings and gifts that say "I've been to Aotearoa".</p></article>
+      <article><span class="n">ii.</span><h3>Clothing &amp; apparel</h3><p>Dunedin and New Zealand tees, hoodies, caps and beanies in every size and colour.</p></article>
+      <article><span class="n">iii.</span><h3>Lambswool</h3><p>Warm, soft New Zealand wool to take home, or to wear around a chilly Dunedin.</p></article>
+      <article><span class="n">iv.</span><h3>Jewellery</h3><p>Keepsakes and pieces to wear, small enough to pack and easy to give.</p></article>
+      <article><span class="n">v.</span><h3>Cosmetics</h3><p>New Zealand skincare and beauty products to take home.</p></article>
+      <article><span class="n">vi.</span><h3>Books &amp; more</h3><p>Books, cards, tea towels and small gifts for everyone on your list.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="inside" id="inside">
+  <div class="wrap">
+    <p class="eyebrow">Inside the shop</p>
+    <h2>Bright, roomy and easy to browse</h2>
+    <div class="grid">
+      <figure><img src="images/interior.jpg" alt="Gift displays with caps, socks, magnets and Dunedin souvenirs" loading="lazy"><figcaption>Gifts &amp; souvenirs</figcaption></figure>
+      <figure><img src="images/hoodies.jpg" alt="Racks of Dunedin and New Zealand hoodies and tees" loading="lazy"><figcaption>Hoodies &amp; tees</figcaption></figure>
+      <div class="why">
+        <h3>Why shop with us</h3>
+        <div><b>In the heart of Dunedin</b><span>Inside the Town Hall, right on the Octagon.</span></div>
+        <div><b>Easy to post overseas</b><span>Plenty of small gifts that travel well or post home easily.</span></div>
+        <div><b>We'll find your size</b><span>If it's not on the shelf, we can order it in and call you when it arrives.</span></div>
+        <div><b>Open 7 days</b><span>Including Sundays, for weekend and cruise-day visitors.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cruise">
+  <div class="wrap">
+    <div class="big">Oct–Mar</div>
+    <div>
+      <p>“It is the first shop that the cruise ship tourist pass by when they are dropped at the Octagon.”</p>
+      <cite>Marilou Scott · Google review</cite>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <p class="eyebrow">Reviews</p>
+    <h2>4.7 stars on Google</h2>
+    <p class="sub">What visitors and locals say about the shop.</p>
+    <div class="rgrid">
+      <figure class="rc"><span class="stars">★★★★★</span><blockquote>“Brilliant service and stunning selection. So much to choose from. Definitely the heart of Dunedin. We will be back soon.”</blockquote><cite>Ahern Family</cite></figure>
+      <figure class="rc"><span class="stars">★★★★★</span><blockquote>“Fantastic service, helpful as didn't have the size I wanted. They ordered it and called me 2 days later. Great service”</blockquote><cite>Chris Gamble</cite></figure>
+      <figure class="rc"><span class="stars">★★★★★</span><blockquote>“A great shop with a wide arrange of New Zealand tourist items to choose from. With Friendly staff. Great location.”</blockquote><cite>Christine Brandt</cite></figure>
+    </div>
+    <p class="more">From New Zealand Gift Shop's Google reviews. <a href="https://www.google.com/maps/search/?api=1&amp;query=New+Zealand+Gift+Shop+1+George+Street+Dunedin+9016" target="_blank" rel="noopener">Read them all →</a></p>
+  </div>
+</section>
+
+<section class="visit" id="visit">
+  <div class="wrap">
+    <p class="eyebrow">Visit</p>
+    <h2>Find us at the Octagon</h2>
+    <div class="grid">
+      <div class="vcard">
+        <dl class="facts">
+          <div><dt>Address</dt><dd>1 George Street, Dunedin 9016<br><span style="color:var(--muted);font-size:15px">In the Dunedin Town Hall, on the Octagon</span></dd></div>
+          <div><dt>Phone</dt><dd><a href="tel:+6434773379">03 477 3379</a></dd></div>
+          <div><dt>Hours</dt><dd><table class="hours"><tr><td>Mon – Fri</td><td>9:00am – 5:30pm</td></tr><tr><td>Saturday</td><td>9:30am – 4:30pm</td></tr><tr><td>Sunday</td><td>10:00am – 4:00pm</td></tr></table></dd></div>
+          <div><dt>Access</dt><dd>Wheelchair accessible</dd></div>
+        </dl>
+        <p style="margin-top:22px"><a class="btn btn-navy" href="https://www.google.com/maps/dir/?api=1&amp;destination=New+Zealand+Gift+Shop+1+George+Street+Dunedin+9016" target="_blank" rel="noopener">Get directions</a></p>
+      </div>
+      <iframe class="map" title="Map showing New Zealand Gift Shop, 1 George Street, Dunedin" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://maps.google.com/maps?q=New%20Zealand%20Gift%20Shop%2C%201%20George%20Street%2C%20Dunedin%209016&amp;z=17&amp;output=embed"></iframe>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="logo"><b>NZ Shop</b></span>
+    <span>1 George Street, Dunedin 9016 · 03 477 3379</span>
+    <span>Demo website prepared by Codzo</span>
+  </div>
+</footer>
+
+<nav class="callbar" aria-label="Quick contact">
+  <a href="https://www.google.com/maps/dir/?api=1&amp;destination=New+Zealand+Gift+Shop+1+George+Street+Dunedin+9016">Directions</a>
+  <a href="tel:+6434773379">Call now</a>
+</nav>
+</body>
+</html>

@@ -330,5 +330,48 @@
     "notes": "Owner named in a review: Mr. Patil. Owner replies to reviews (warm, professional tone), so they're engaged online. Darrchana's review was cut off by 'More'; only 2 full reviews were in the screenshots. Photos are from the Maps listing (Mar 2026); the shopfront is only a small thumbnail.",
     "demo_path": "sites/rotorua-souvenirs/",
     "status": "draft"
+  },
+  {
+    "slug": "nz-gift-shop-dunedin",
+    "business": "New Zealand Gift Shop (signage: \"NZ Shop – New Zealand Gifts\")",
+    "trade": "Gift shop (NZ souvenirs / Kiwiana)",
+    "town": "Dunedin",
+    "region": "Otago",
+    "country": "New Zealand",
+    "address": "1 George Street, city centre, Dunedin 9016, New Zealand (located in Dunedin Town Hall)",
+    "phone": "+64 3 477 3379",
+    "rating": 4.7,
+    "review_count": 34,
+    "hours": "Yellow.co.nz listing: Mon–Fri 9:00am–5:30pm, Sat 9:30am–4:30pm, Sun 10:00am–4:00pm (third-party; Google showed 'Opens 9 AM' for Monday, which matches). Confirm before sending.",
+    "maps_link": "https://www.google.com/maps/search/?api=1&query=New+Zealand+Gift+Shop+1+George+Street+Dunedin+9016",
+    "plus_code": "4GG3+JF Dunedin, New Zealand",
+    "website_status": "none",
+    "website_status_note": "No website on the Google listing, and the Google profile is unclaimed ('Claim this business'). Web search found only a Yellow.co.nz directory listing, no site of their own. Facebook/Instagram not checked.",
+    "services": [
+      "Kiwiana souvenirs",
+      "Clothing and apparel (Dunedin / NZ tees, hoodies, caps)",
+      "Lambswool",
+      "Jewellery",
+      "Cosmetics / NZ skincare",
+      "Books and multimedia",
+      "Orders in sizes not in stock"
+    ],
+    "reviews": [
+      {
+        "name": "Ahern Family",
+        "text": "Brilliant service and stunning selection.  So much to choose from. Definitely the heart of Dunedin. We will be back soon."
+      },
+      {
+        "name": "Chris Gamble",
+        "text": "Fantastic service, helpful as didn't have the size I wanted. They ordered it and called me 2 days later. Great service"
+      },
+      {
+        "name": "Christine Brandt",
+        "text": "A great shop with a wide arrange of New Zealand tourist items to choose from. With Friendly staff. Great location."
+      }
+    ],
+    "notes": "Strong pitch angle: unclaimed Google Business Profile plus no website. Could offer to claim/optimise the profile too. Cruise-ship angle: a review says it is the first shop cruise tourists pass when dropped at the Octagon (season Oct–Mar); the site uses this. Product categories are from the Yellow.co.nz listing. The storefront photo is Street View (Oct 2019); the left window may be the same shop or a neighbour, so check it.",
+    "demo_path": "sites/nz-gift-shop-dunedin/",
+    "status": "draft"
   }
 ]
