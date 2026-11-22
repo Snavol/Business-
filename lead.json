@@ -247,5 +247,45 @@
     "notes": "Australian lead. Staff named in reviews: Frank and Craig (the site names both; confirm they still work there). Listing: LGBTQ+ friendly, wheelchair accessible, in-store pick-up. Site also uses reviews from Sara Sippel, Luke Bell and Barry Danskin. Hero photo cropped from a customer's review photo to exclude the staff member standing in it; get the store's own photos before going live.",
     "demo_path": "sites/petani-menswear-albury/",
     "status": "draft"
+  },
+  {
+    "slug": "rb-sellars-wagga-wagga",
+    "business": "RB Sellars",
+    "trade": "Clothing store (country / rural outfitters; national chain branch)",
+    "town": "Wagga Wagga",
+    "region": "New South Wales",
+    "country": "Australia",
+    "address": "136 Baylis St, Wagga Wagga NSW 2650, Australia",
+    "phone": "+61 2 6921 8022",
+    "rating": 4.4,
+    "review_count": 28,
+    "hours": "Full hours not captured; listing showed 'Closed · Opens 9 AM' when checked",
+    "maps_link": "https://www.google.com/maps/search/?api=1&query=RB+Sellars+136+Baylis+St+Wagga+Wagga+NSW+2650",
+    "plus_code": "V9P9+JV Wagga Wagga, New South Wales, Australia",
+    "website_status": "has_website",
+    "website_status_note": "Branch of the national RB Sellars chain (Propel Group, also owns Driza-Bone and Rossi Boots), which has its own e-commerce site at rbsellars.com.au with a store finder. Local store pages are run centrally.",
+    "services": [
+      "Country / rural clothing",
+      "Polos, rugby tops, shirts, knitwear",
+      "Blazers and chinos",
+      "Driza-Bone"
+    ],
+    "reviews": [
+      {
+        "name": "Jennifer Clark",
+        "text": "Visited this store yesterday and purchased a shirt. Great store, and I would like to compliment Harriet on her friendly service and happy smiling face."
+      },
+      {
+        "name": "Jane Lord",
+        "text": "Great service, friendly staff. Came in with my 21 year old son (reluctant shopper) and they were great!!"
+      },
+      {
+        "name": "Gayle Ayton",
+        "text": "Had an awesome customer service experience with Rosie. She couldn't be more lovely or helpful. Highly recommend!!"
+      }
+    ],
+    "notes": "Not a lead: national chain branch with a working e-commerce site and central marketing. No demo built.",
+    "demo_path": null,
+    "status": "skipped"
   }
 ]
