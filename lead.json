@@ -205,5 +205,47 @@
     "notes": "History from a 2013 article on thelinc.co.uk: founded 1995 by brothers Paul and Dave Hencke, at the start of Steep Hill. The site uses 'Since 1995' and the 'two brothers' story; confirm the history and current ownership before sending. Site also shows Shiina's review. Photos are from the Maps listing and Street View (Sep 2024); no usable shopfront photo, so get one.",
     "demo_path": "sites/yak-clothing-lincoln/",
     "status": "draft"
+  },
+  {
+    "slug": "petani-menswear-albury",
+    "business": "Petani Menswear",
+    "trade": "Men's clothing store (suits, wedding and formal wear)",
+    "town": "Albury",
+    "region": "New South Wales",
+    "country": "Australia",
+    "address": "shop 2/557 Dean St, Albury NSW 2640, Australia",
+    "phone": "+61 2 6023 3213",
+    "rating": 4.8,
+    "review_count": 73,
+    "hours": "Full hours not captured; listing showed 'Closed · Opens 9 AM' when checked",
+    "maps_link": "https://www.google.com/maps/search/?api=1&query=Petani+Menswear+557+Dean+St+Albury+NSW+2640",
+    "plus_code": "WW98+JG Albury, New South Wales, Australia",
+    "website_status": "none",
+    "website_status_note": "No website visible on the Google listing (the website row was below the screenshot; 'Add missing information' shows). A web search found no site of their own. Facebook/Instagram not checked.",
+    "services": [
+      "Suits and tuxedos",
+      "Wedding suits for grooms, groomsmen and couples",
+      "Blazers and jackets",
+      "Shirts, ties, bow ties, socks and hats",
+      "Measuring and fitting advice",
+      "In-store pick-up"
+    ],
+    "reviews": [
+      {
+        "name": "Mason Whitwell",
+        "text": "Recently came into the store looking for a purple blazer. Frank was very knowledgeable, helpful and just genuinely a good guy. The service I received here was above excellent."
+      },
+      {
+        "name": "Troy Eade",
+        "text": "The staff here were extremely helpful to both myself and my fiance in picking out the perfect suit for our up and coming wedding with well priced suits available."
+      },
+      {
+        "name": "Mimmy S",
+        "text": "My fiance and I came in on Sunday to have a browse and left with a beautiful suit jacket and shirt. Craig was so helpful, offered suggestions without being pushy, and worked with items we already had. This is the second time we've shopped at Petani's and both times the service was perfect. Thanks Craig"
+      }
+    ],
+    "notes": "Australian lead. Staff named in reviews: Frank and Craig (the site names both; confirm they still work there). Listing: LGBTQ+ friendly, wheelchair accessible, in-store pick-up. Site also uses reviews from Sara Sippel, Luke Bell and Barry Danskin. Hero photo cropped from a customer's review photo to exclude the staff member standing in it; get the store's own photos before going live.",
+    "demo_path": "sites/petani-menswear-albury/",
+    "status": "draft"
   }
 ]
