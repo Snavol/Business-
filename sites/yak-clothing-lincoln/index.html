@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yak Clothing — Vintage, Retro &amp; Alternative Clothing, The Strait, Lincoln</title>
+<meta name="description" content="Yak Clothing, 34 The Strait, Lincoln. Vintage and retro clothing, sports brands, polos, alternative and rock wear, jewellery and accessories at the foot of Steep Hill.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --orange:#ff6a13; --orange-d:#e2550a; --black:#111111; --char:#1c1c1c;
+  --bone:#f2ede4; --muted:#6c675f; --line:#d9d1c3;
+  --display:'Archivo Black',Impact,sans-serif; --sans:'Space Grotesk',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--black);background:var(--bone);line-height:1.6;-webkit-font-smoothing:antialiased;font-size:17px}
+a{color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--display);font-weight:400;text-transform:uppercase;line-height:.95;letter-spacing:-.01em}
+
+header{position:sticky;top:0;z-index:20;background:var(--black);color:var(--bone)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-family:var(--display);font-size:30px;text-decoration:none;color:var(--orange);letter-spacing:-.02em}
+.nav ul{display:flex;gap:28px;list-style:none;font-size:14px;font-weight:500;text-transform:uppercase;letter-spacing:.06em}
+.nav ul a{text-decoration:none;opacity:.75}
+.nav ul a:hover{opacity:1;color:var(--orange)}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 24px;font-size:15px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;text-decoration:none;border:2px solid var(--black);transition:transform .15s,box-shadow .15s,background .2s}
+.btn-o{background:var(--orange);color:var(--black);box-shadow:5px 5px 0 var(--black)}
+.btn-o:hover{transform:translate(-2px,-2px);box-shadow:7px 7px 0 var(--black)}
+.btn-b{background:var(--bone);color:var(--black);box-shadow:5px 5px 0 var(--black)}
+.btn-b:hover{transform:translate(-2px,-2px);box-shadow:7px 7px 0 var(--black)}
+.nav .btn{padding:9px 16px;box-shadow:none;border-color:var(--orange)}
+
+/* hero */
+.hero{background:var(--orange);border-bottom:3px solid var(--black);overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.4fr .6fr;gap:48px;align-items:end;padding-top:72px}
+.hero .wrap>div{min-width:0}
+.hero h1{font-size:clamp(40px,8.5vw,94px);color:var(--black)}
+.hero h1 span{display:block;color:var(--bone);-webkit-text-stroke:2px var(--black)}
+.hero p.lead{margin-top:26px;max-width:480px;font-size:19px;font-weight:500}
+.ctas{margin-top:32px;display:flex;gap:16px;flex-wrap:wrap;padding-bottom:72px}
+.hero-photo{position:relative;align-self:stretch;display:flex;align-items:flex-end}
+.hero-photo img{width:100%;border:3px solid var(--black);border-bottom:0;transform:rotate(2deg);transform-origin:bottom left}
+.sticker{position:absolute;z-index:2;top:24px;left:-36px;background:var(--black);color:var(--bone);border-radius:50%;width:132px;height:132px;display:grid;place-items:center;text-align:center;font-weight:600;font-size:13px;text-transform:uppercase;letter-spacing:.04em;line-height:1.2;transform:rotate(-12deg);animation:spin 18s linear infinite}
+.sticker b{display:block;font-family:var(--display);font-size:30px;color:var(--orange);font-weight:400;line-height:1}
+@keyframes spin{0%,100%{transform:rotate(-12deg)}50%{transform:rotate(6deg)}}
+.reveal{opacity:0;transform:translateY(20px);animation:up .7s cubic-bezier(.2,.7,.2,1) forwards}
+.d1{animation-delay:.05s}.d2{animation-delay:.18s}.d3{animation-delay:.3s}
+@keyframes up{to{opacity:1;transform:none}}
+
+/* ticker */
+.ticker{background:var(--black);color:var(--bone);overflow:hidden;white-space:nowrap;border-bottom:3px solid var(--black)}
+.ticker div{display:inline-block;padding:16px 0;font-family:var(--display);font-size:22px;text-transform:uppercase;animation:tick 28s linear infinite}
+.ticker span{margin:0 22px}
+.ticker i{color:var(--orange);font-style:normal}
+@keyframes tick{to{transform:translateX(-50%)}}
+
+section{padding:100px 0}
+.kick{font-weight:600;text-transform:uppercase;letter-spacing:.14em;font-size:13px;color:var(--orange-d);margin-bottom:14px}
+h2{font-size:clamp(42px,6vw,80px)}
+.sub{color:var(--muted);max-width:560px;margin-top:18px;font-size:18px}
+
+/* racks */
+.racks{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:52px}
+.rack{background:#fff;border:3px solid var(--black);padding:28px 24px;box-shadow:6px 6px 0 var(--black);transition:transform .2s,box-shadow .2s,background .2s}
+.rack:hover{transform:translate(-3px,-3px);box-shadow:9px 9px 0 var(--black);background:var(--orange)}
+.rack .tagno{font-family:var(--display);font-size:14px;border:2px solid var(--black);display:inline-block;padding:2px 8px;margin-bottom:20px;background:var(--bone)}
+.rack h3{font-size:26px;margin-bottom:10px}
+.rack p{font-size:15px}
+
+/* gallery */
+.inside{background:var(--char);color:var(--bone)}
+.inside .sub{color:rgba(242,237,228,.65)}
+.gal{display:grid;grid-template-columns:2fr 1fr;grid-template-rows:280px 280px;gap:16px;margin-top:48px}
+.gal figure{overflow:hidden;border:3px solid var(--bone);position:relative}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.gal figure:hover img{transform:scale(1.04)}
+.gal .big{grid-row:span 2}
+.gal figcaption{position:absolute;left:12px;bottom:12px;background:var(--orange);color:var(--black);font-weight:600;font-size:13px;text-transform:uppercase;letter-spacing:.06em;padding:4px 10px}
+.gal2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+.gal2 figure{height:320px}
+
+/* story */
+.story .grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.since{font-family:var(--display);font-size:clamp(90px,14vw,190px);line-height:.8;color:var(--orange);-webkit-text-stroke:3px var(--black)}
+.story p{margin-top:18px;font-size:18px}
+.story p.muted{color:var(--muted);font-size:15px}
+
+/* reviews */
+.reviews{background:var(--orange);border-top:3px solid var(--black);border-bottom:3px solid var(--black)}
+.reviews .sub{color:var(--black);opacity:.75}
+.rgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:48px}
+.rc{background:var(--bone);border:3px solid var(--black);box-shadow:6px 6px 0 var(--black);padding:30px;display:flex;flex-direction:column;gap:16px}
+.rc:nth-child(even){transform:rotate(.6deg)}
+.rc:nth-child(odd){transform:rotate(-.6deg)}
+.rc .stars{letter-spacing:2px;color:var(--orange-d)}
+.rc blockquote{font-size:18px;font-weight:500}
+.rc cite{margin-top:auto;font-style:normal;font-weight:600;text-transform:uppercase;letter-spacing:.08em;font-size:13px}
+.more{margin-top:36px;font-weight:500}
+
+/* visit */
+.visit .grid{display:grid;grid-template-columns:1fr 1.15fr;gap:56px;margin-top:44px}
+.facts{border:3px solid var(--black);background:#fff}
+.facts div{display:grid;grid-template-columns:110px 1fr;gap:12px;padding:18px 22px;border-bottom:2px solid var(--black)}
+.facts div:last-child{border-bottom:0}
+.facts dt{font-weight:600;text-transform:uppercase;letter-spacing:.1em;font-size:13px;padding-top:3px}
+.map{width:100%;height:100%;min-height:420px;border:3px solid var(--black)}
+
+footer{background:var(--black);color:rgba(242,237,228,.65);padding:36px 0;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:center}
+
+.callbar{display:none}
+@media (max-width:920px){
+  .nav ul{display:none}
+  .hero .wrap{grid-template-columns:1fr;gap:12px;padding-top:44px}
+  .ctas{padding-bottom:20px}
+  .hero-photo img{transform:none}
+  .sticker{left:auto;right:12px;top:-20px;width:110px;height:110px}
+  section{padding:76px 0}
+  .racks{grid-template-columns:1fr 1fr}
+  .gal{grid-template-columns:1fr;grid-template-rows:auto}
+  .gal .big{grid-row:auto;height:300px}
+  .gal figure{height:260px}
+  .gal2{grid-template-columns:1fr}
+  .story .grid,.visit .grid,.rgrid{grid-template-columns:1fr;gap:40px}
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:30;border-top:3px solid var(--black)}
+  .callbar a{flex:1;text-align:center;padding:16px;text-decoration:none;font-weight:600;text-transform:uppercase;letter-spacing:.06em;font-size:14px;background:var(--black);color:var(--bone)}
+  .callbar a+a{background:var(--orange);color:var(--black)}
+  footer{padding-bottom:90px}
+}
+@media (max-width:520px){.racks{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){.reveal,.ticker div,.sticker{animation:none;opacity:1;transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#" class="logo">YAK</a>
+    <ul>
+      <li><a href="#racks">On the rails</a></li>
+      <li><a href="#inside">Inside</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#visit">Visit</a></li>
+    </ul>
+    <a class="btn btn-o" href="tel:+441522540053">Call</a>
+  </div>
+</header>
+
+<main>
+<section class="hero" style="padding:0">
+  <div class="wrap">
+    <div>
+      <h1 class="reveal d1">Vintage.<span>Retro.</span>Alternative.</h1>
+      <p class="lead reveal d2">Rails of retro clothing, sports brands, rock wear and jewellery on The Strait, at the bottom of Steep Hill in Lincoln.</p>
+      <div class="ctas reveal d3">
+        <a class="btn btn-b" href="#visit">Find the shop</a>
+        <a class="btn btn-o" href="tel:+441522540053" style="background:var(--black);color:var(--orange)">Call 01522 540053</a>
+      </div>
+    </div>
+    <div class="hero-photo reveal d2">
+      <div class="sticker"><span><b>4.4★</b>35 Google reviews</span></div>
+      <img src="images/orange-wall.jpg" alt="Orange wall of vintage dungarees, tees and knitwear inside Yak Clothing" width="536" height="520">
+    </div>
+  </div>
+</section>
+
+<div class="ticker" aria-hidden="true"><div>
+  <span>Retro sportswear</span><i>✦</i><span>Classic polos</span><i>✦</i><span>Glasses</span><i>✦</i><span>Rock clothing</span><i>✦</i><span>Studded belts</span><i>✦</i><span>Gothic jewellery</span><i>✦</i><span>Vintage finds</span><i>✦</i>
+  <span>Retro sportswear</span><i>✦</i><span>Classic polos</span><i>✦</i><span>Glasses</span><i>✦</i><span>Rock clothing</span><i>✦</i><span>Studded belts</span><i>✦</i><span>Gothic jewellery</span><i>✦</i><span>Vintage finds</span><i>✦</i>
+</div></div>
+
+<section id="racks">
+  <div class="wrap">
+    <p class="kick">On the rails</p>
+    <h2>Something different every visit</h2>
+    <p class="sub">Customers come back again and again, because there's always something new to find, at prices that won't hurt.</p>
+    <div class="racks">
+      <article class="rack"><span class="tagno">01</span><h3>Retro &amp; sports</h3><p>Sports brands, classic polo shirts and retro pieces, including polos made into crop tops.</p></article>
+      <article class="rack"><span class="tagno">02</span><h3>Vintage</h3><p>Shirts, knitwear, dungarees and one-off finds from years gone by.</p></article>
+      <article class="rack"><span class="tagno">03</span><h3>Alternative &amp; rock</h3><p>Rock clothing, studded belts and cuffs, at prices well below online.</p></article>
+      <article class="rack"><span class="tagno">04</span><h3>Jewellery &amp; extras</h3><p>Gothic jewellery, glasses and accessories to finish the look.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="inside" id="inside">
+  <div class="wrap">
+    <p class="kick">Inside Yak</p>
+    <h2>Come in and dig</h2>
+    <p class="sub">Wooden floors, beamed ceilings and rail after rail to browse through.</p>
+    <div class="gal">
+      <figure class="big"><img src="images/interior.jpg" alt="Inside Yak Clothing: rails of polos, shirts and jackets under a beamed ceiling" loading="lazy"><figcaption>The shop floor</figcaption></figure>
+      <figure><img src="images/shirts.jpg" alt="A rail of patterned paisley shirts under string lights" loading="lazy"><figcaption>Shirts</figcaption></figure>
+      <figure><img src="images/jewellery.jpg" alt="Wooden shelves of gothic rings and pendants" loading="lazy"><figcaption>Jewellery</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="story">
+  <div class="wrap grid">
+    <div class="since">Since<br>1995</div>
+    <div>
+      <p class="kick">The story</p>
+      <h2 style="font-size:clamp(36px,4.6vw,58px)">A Lincoln favourite at the bottom of Steep Hill</h2>
+      <p>Yak was started by two brothers who began by selling Levi's at university. Decades later, customers still talk about the owner going out of his way to help them find exactly what they wanted.</p>
+      <p class="muted">“The chap who owns the shop is super friendly.” Edward Haywood, Google review</p>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <p class="kick" style="color:var(--black)">Reviews</p>
+    <h2>What people say</h2>
+    <p class="sub">4.4 stars from 35 Google reviews.</p>
+    <div class="rgrid">
+      <figure class="rc"><span class="stars">★★★★★</span><blockquote>“Great selection of retro clothing, glasses and accessories. On our latest visit there was a good selection of sports brands and classic polo shirts made into crop tops.”</blockquote><cite>Ben Tuxworth · Google review</cite></figure>
+      <figure class="rc"><span class="stars">★★★★★</span><blockquote>“Great shop. Great selection, great prices, very friendly and helpful, gave some good tips for washing/care/prolonging. Wish I'd stopped in sooner.”</blockquote><cite>Andrew Butlin · Google review</cite></figure>
+      <figure class="rc"><span class="stars">★★★★★</span><blockquote>“Great selection and reasonably priced too ! Always got some great finds from here . The chap who owns the shop is super friendly. Highly recommend this place”</blockquote><cite>Edward Haywood · Google review</cite></figure>
+      <figure class="rc"><span class="stars">★★★★★</span><blockquote>“Affordable, good quality and nice clothes. I shop there from time to time and always end up buying bunch of stuff. The owner is a very nice, friendly and chill guy. Highly recommend”</blockquote><cite>Shiina · Google review</cite></figure>
+    </div>
+    <p class="more">From Yak's Google reviews. <a href="https://www.google.com/maps/search/?api=1&amp;query=Yak+Clothing+34+The+Strait+Lincoln+LN2+1JD" target="_blank" rel="noopener">Read them all →</a></p>
+  </div>
+</section>
+
+<section class="visit" id="visit">
+  <div class="wrap">
+    <p class="kick">Visit</p>
+    <h2>34 The Strait, Lincoln</h2>
+    <div class="grid">
+      <div>
+        <dl class="facts">
+          <div><dt>Address</dt><dd>34 The Strait, Lincoln LN2 1JD</dd></div>
+          <div><dt>Phone</dt><dd><a href="tel:+441522540053">01522 540053</a></dd></div>
+          <div><dt>Hours</dt><dd>Call ahead or check Google Maps for today's opening times</dd></div>
+          <div><dt>Find us</dt><dd>At the bottom of Steep Hill</dd></div>
+        </dl>
+        <p style="margin-top:30px"><a class="btn btn-o" href="https://www.google.com/maps/dir/?api=1&amp;destination=Yak+Clothing+34+The+Strait+Lincoln+LN2+1JD" target="_blank" rel="noopener">Get directions</a></p>
+      </div>
+      <iframe class="map" title="Map showing Yak Clothing, 34 The Strait, Lincoln" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://maps.google.com/maps?q=Yak%20Clothing%2C%2034%20The%20Strait%2C%20Lincoln%20LN2%201JD&amp;z=17&amp;output=embed"></iframe>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="logo">YAK</span>
+    <span>34 The Strait, Lincoln LN2 1JD · 01522 540053</span>
+    <span>Demo website prepared by Codzo</span>
+  </div>
+</footer>
+
+<nav class="callbar" aria-label="Quick contact">
+  <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Yak+Clothing+34+The+Strait+Lincoln+LN2+1JD">Directions</a>
+  <a href="tel:+441522540053">Call now</a>
+</nav>
+</body>
+</html>

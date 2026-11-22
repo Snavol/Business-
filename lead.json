@@ -163,5 +163,47 @@
     "notes": "Not a no-website lead, so no demo built. Owner named in reviews: Luke (new ownership and refit in 2025). Also has a Cheltenham store. Possible angle instead: e-commerce or a booking/made-to-measure enquiry flow, since the current site has no checkout.",
     "demo_path": null,
     "status": "skipped"
+  },
+  {
+    "slug": "yak-clothing-lincoln",
+    "business": "Yak Clothing",
+    "trade": "Clothing store (vintage, retro and alternative clothing)",
+    "town": "Lincoln",
+    "region": "Lincolnshire",
+    "country": "United Kingdom",
+    "address": "34 The Strait, Lincoln LN2 1JD, United Kingdom",
+    "phone": "+44 1522 540053",
+    "rating": 4.4,
+    "review_count": 35,
+    "hours": "Full hours not captured; listing showed 'Open · Closes 5:30 PM' on the day checked (a Sunday)",
+    "maps_link": "https://www.google.com/maps/search/?api=1&query=Yak+Clothing+34+The+Strait+Lincoln+LN2+1JD",
+    "plus_code": "6FJ6+J6 Lincoln, UK",
+    "website_status": "none",
+    "website_status_note": "Google listing shows 'Add website'; a web search found no site of their own. Facebook/Instagram not checked.",
+    "services": [
+      "Retro and vintage clothing",
+      "Sports brands and classic polo shirts (incl. polos remade into crop tops)",
+      "Rock / alternative clothing",
+      "Studded belts and cuffs",
+      "Gothic jewellery",
+      "Glasses and accessories"
+    ],
+    "reviews": [
+      {
+        "name": "Ben Tuxworth",
+        "text": "Great selection of retro clothing, glasses and accessories. On our latest visit there was a good selection of sports brands and classic polo shirts made into crop tops."
+      },
+      {
+        "name": "Andrew Butlin",
+        "text": "Great shop. Great selection, great prices, very friendly and helpful, gave some good tips for washing/care/prolonging. Wish I'd stopped in sooner."
+      },
+      {
+        "name": "Edward Haywood",
+        "text": "Great selection and reasonably priced too ! Always got some great finds from here . The chap who owns the shop is super friendly. Highly recommend this place"
+      }
+    ],
+    "notes": "History from a 2013 article on thelinc.co.uk: founded 1995 by brothers Paul and Dave Hencke, at the start of Steep Hill. The site uses 'Since 1995' and the 'two brothers' story; confirm the history and current ownership before sending. Site also shows Shiina's review. Photos are from the Maps listing and Street View (Sep 2024); no usable shopfront photo, so get one.",
+    "demo_path": "sites/yak-clothing-lincoln/",
+    "status": "draft"
   }
 ]
