@@ -40,5 +40,46 @@
     "notes": "Wheelchair accessible. Staff named in reviews: Scott, Leo, Connor, Ben, Henry. Two reviews call the shop 'Coneys', which is possibly a former name; check before pitching.",
     "demo_path": "sites/corvo-lincoln/",
     "status": "draft"
+  },
+  {
+    "slug": "m-black-and-sons-hereford",
+    "business": "M Black & Sons",
+    "trade": "Clothing store (jeans and menswear; sign reads \"Hereford's Original Jeans Store\", Est. 1949)",
+    "town": "Hereford",
+    "region": "Herefordshire",
+    "country": "United Kingdom",
+    "address": "29 Widemarsh St, Hereford HR4 9EA, United Kingdom",
+    "phone": "+44 1432 273642",
+    "rating": 4.9,
+    "review_count": 29,
+    "hours": "Full hours not captured; listing showed 'Closed · Opens 9:30 AM Mon' when checked on a Sunday",
+    "maps_link": "https://www.google.com/maps/search/?api=1&query=M+Black+%26+Sons+29+Widemarsh+St+Hereford+HR4+9EA",
+    "plus_code": "374M+WC Hereford, UK",
+    "website_status": "none",
+    "website_status_note": "No website on the Google listing (it shows 'Add website'). Facebook/Instagram not checked.",
+    "services": [
+      "Jeans (Levi's, Wrangler, Mish Mash, Trojan)",
+      "Shirts, polos and tees (incl. Farah, Levi's)",
+      "Belts",
+      "Fit and style advice",
+      "Sale items"
+    ],
+    "reviews": [
+      {
+        "name": "Carl",
+        "text": "Fantastic selection of Levis and Wrangler jeans at best prices I have ever seen.....also other brands are stocked. Best of all is the helpful and patient attitude of the owner and staff."
+      },
+      {
+        "name": "Evergreen State",
+        "text": "Fantastic shop and owner. He found the exact fit for a shorty with a large stomach! Highly recommended for choice, service and price."
+      },
+      {
+        "name": "Jack H",
+        "text": "Fantastic shop. Staff very helpful, loads of advice about different fits and styles."
+      }
+    ],
+    "notes": "Wheelchair accessible. Site also quotes the first sentence of Glyn Williams's review: \"I've been buying jeans from blacks for 40 YEARS and more.\" (rest of review was cut off by 'More'). Brands taken from reviews and shop signage; confirm stock. Interior photos are Google Street View captures from Aug 2019; replace with current shop photos before sending.",
+    "demo_path": "sites/m-black-and-sons-hereford/",
+    "status": "draft"
   }
 ]
