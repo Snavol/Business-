@@ -1,1 +1,44 @@
-[]
+[
+  {
+    "slug": "corvo-lincoln",
+    "business": "Corvo",
+    "trade": "Clothing store (menswear, suits, wedding suits)",
+    "town": "Lincoln",
+    "region": "Lincolnshire",
+    "country": "United Kingdom",
+    "address": "255 High St, Lincoln LN2 1HW, United Kingdom",
+    "phone": "+44 1522 511187",
+    "rating": 4.9,
+    "review_count": 140,
+    "hours": "Full hours not captured; listing showed 'Open · Closes 4:30 PM' on the day of the screenshot",
+    "maps_link": "https://www.google.com/maps/search/?api=1&query=Corvo+255+High+St+Lincoln+LN2+1HW",
+    "plus_code": "6FJ6+92 Lincoln, UK",
+    "website_status": "none",
+    "website_status_note": "No website on the Google listing (it shows 'Add website'). Facebook/Instagram not checked.",
+    "services": [
+      "Suits",
+      "Wedding suits (groom and groomsmen)",
+      "Menswear",
+      "Shoes and trainers",
+      "Alterations (e.g. trouser shortening)",
+      "Styling advice"
+    ],
+    "reviews": [
+      {
+        "name": "jimwid7",
+        "text": "Great range and always brilliant service from Scott. Would highly recommend these guys. Well established and always happy to assist, even when my trousers need shortening."
+      },
+      {
+        "name": "Richard Crummey",
+        "text": "The shop is excellent, the staff are informative and the suits are all reasonably priced, we bought all of the wedding suits and will be back for work suits in the future"
+      },
+      {
+        "name": "Dave Robins",
+        "text": "Fabulous, friendly and professional service with a great range of high quality, fairly priced clothing. I'll be back! Thank you"
+      }
+    ],
+    "notes": "Wheelchair accessible. Staff named in reviews: Scott, Leo, Connor, Ben, Henry. Two reviews call the shop 'Coneys', which is possibly a former name; check before pitching.",
+    "demo_path": "sites/corvo-lincoln/",
+    "status": "draft"
+  }
+]
