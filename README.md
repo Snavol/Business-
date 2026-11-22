@@ -23,7 +23,7 @@ Lead database and private demo websites for local businesses.
   "review_count": null,
   "hours": "",
   "maps_link": "",
-  "website_status": "none | facebook_only | broken",
+  "website_status": "none | facebook_only | broken | has_website",
   "website_status_note": "what happens when the existing site is opened",
   "services": [],
   "reviews": [
@@ -32,7 +32,7 @@ Lead database and private demo websites for local businesses.
     { "name": "", "text": "" }
   ],
   "demo_path": "sites/<slug>/",
-  "status": "draft | confirmed | sent"
+  "status": "draft | confirmed | sent | skipped"
 }
 ```
 

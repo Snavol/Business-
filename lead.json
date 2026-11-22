@@ -123,5 +123,45 @@
     "notes": "Owner/tailor named in reviews: Mira (replies to reviews herself). Listing: identifies as women-owned, wheelchair accessible, in-store shopping and in-store pick-up. Site also shows Nikki Cook's review. A bride photo from the listing was left out (shows a private person). Emoji in Mina Ahmed's review were read from a screenshot; check them against the original.",
     "demo_path": "sites/sew-unique-hereford/",
     "status": "draft"
+  },
+  {
+    "slug": "pritchards-hereford",
+    "business": "Pritchards",
+    "trade": "Men's clothing store (designer menswear)",
+    "town": "Hereford",
+    "region": "Herefordshire",
+    "country": "United Kingdom",
+    "address": "9 King St, Hereford HR4 9BW, United Kingdom",
+    "phone": "+44 1432 272346",
+    "rating": 4.7,
+    "review_count": 37,
+    "hours": "Full hours not captured; listing showed 'Open · Closes 2 PM' on a Sunday",
+    "maps_link": "https://www.google.com/maps/search/?api=1&query=Pritchards+9+King+St+Hereford+HR4+9BW",
+    "plus_code": "373J+PQ Hereford, UK",
+    "website_status": "has_website",
+    "website_status_note": "www.pritchards.co.uk (shown on their branded car) loads and works: brochure-style site covering Hereford and Cheltenham stores, brand directory, Instagram feed, barbershop section, newsletter. No online checkout, no hours or phone on the homepage.",
+    "services": [
+      "Designer menswear (Gant, Hackett, Boss, Paul Smith, Kühl, Les Deux, Fred Perry and more)",
+      "Formal wear and suits (upstairs)",
+      "Made-to-measure",
+      "In-store shopping and pick-up"
+    ],
+    "reviews": [
+      {
+        "name": "Simon Madge",
+        "text": "Excellent trusted local brand, with a fabulous new refit for 2025 and new ownership. Wide range of higher end clothing, including Kühl, Paul Smith, Hackett, Les Deux among others, all well-presented and service with a smile. More formal clothing upstairs, with made-to-measure option. A big asset for Hereford."
+      },
+      {
+        "name": "Eamonn Ayass",
+        "text": "Bought a baseball cap over the weekend. Paid a very reasonable price in the sale , arrived swiftly and was well packaged and in excellent condition. Very impressed and will return. 10/10 all round."
+      },
+      {
+        "name": "Andy Taylor-Jones",
+        "text": "Visiting Hereford for two weeks for work and found this shop\nInformative staff.\nGood selection and made several purchases"
+      }
+    ],
+    "notes": "Not a no-website lead, so no demo built. Owner named in reviews: Luke (new ownership and refit in 2025). Also has a Cheltenham store. Possible angle instead: e-commerce or a booking/made-to-measure enquiry flow, since the current site has no checkout.",
+    "demo_path": null,
+    "status": "skipped"
   }
 ]
