@@ -287,5 +287,48 @@
     "notes": "Not a lead: national chain branch with a working e-commerce site and central marketing. No demo built.",
     "demo_path": null,
     "status": "skipped"
+  },
+  {
+    "slug": "rotorua-souvenirs",
+    "business": "Rotorua Souvenirs",
+    "trade": "Souvenir store",
+    "town": "Rotorua",
+    "region": "Bay of Plenty",
+    "country": "New Zealand",
+    "address": "1231 Fenton Street, Rotorua 3010, New Zealand",
+    "phone": "+64 22 378 0559",
+    "rating": 5.0,
+    "review_count": 107,
+    "hours": "Full hours not captured; listing showed 'Closed · Opens 9 AM' when checked",
+    "maps_link": "https://www.google.com/maps/search/?api=1&query=Rotorua+Souvenirs+1231+Fenton+Street+Rotorua+3010",
+    "plus_code": "V773+3C Rotorua, New Zealand",
+    "website_status": "none",
+    "website_status_note": "Google listing shows 'Add website'; a web search found no site of their own. Facebook/Instagram not checked.",
+    "services": [
+      "NZ souvenirs and gifts",
+      "Paua shell jewellery (pendants, earrings, boxed sets)",
+      "NZ-made paua and wooden keyrings, coasters, magnets",
+      "New Zealand / Aotearoa tees and hoodies, caps",
+      "Tea towels, oven gloves and homeware (e.g. Parrs on Portage)",
+      "Kiwi soft toys, snow globes"
+    ],
+    "reviews": [
+      {
+        "name": "Christapher Naidu",
+        "text": "Lovely shop, very lovely people , great product and fabulous prices. Considerable cheaper than two shops previously for same products. Store is big, bright and an all round pleasant shopping experience. would 100 percent recommend them"
+      },
+      {
+        "name": "BN _TBN",
+        "text": "great quality items and friendly nice owners"
+      },
+      {
+        "name": "Darrchana",
+        "text": "Two weeks ago, my family and I embarked on a journey to Rotorua and stopped by the souvenir shop there. We were welcomed with open arms by Mr. Patil from the moment we stepped into the shop. …",
+        "truncated": true
+      }
+    ],
+    "notes": "Owner named in a review: Mr. Patil. Owner replies to reviews (warm, professional tone), so they're engaged online. Darrchana's review was cut off by 'More'; only 2 full reviews were in the screenshots. Photos are from the Maps listing (Mar 2026); the shopfront is only a small thumbnail.",
+    "demo_path": "sites/rotorua-souvenirs/",
+    "status": "draft"
   }
 ]
