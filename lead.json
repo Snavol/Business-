@@ -39,7 +39,8 @@
     ],
     "notes": "Wheelchair accessible. Staff named in reviews: Scott, Leo, Connor, Ben, Henry. Two reviews call the shop 'Coneys', which is possibly a former name; check before pitching.",
     "demo_path": "sites/corvo-lincoln/",
-    "status": "draft"
+    "status": "draft",
+    "demo_url": "https://business-red-ten.vercel.app/corvo-lincoln/"
   },
   {
     "slug": "m-black-and-sons-hereford",
@@ -80,7 +81,8 @@
     ],
     "notes": "Wheelchair accessible. Site also quotes the first sentence of Glyn Williams's review: \"I've been buying jeans from blacks for 40 YEARS and more.\" (rest of review was cut off by 'More'). Brands taken from reviews and shop signage; confirm stock. Interior photos are Google Street View captures from Aug 2019; replace with current shop photos before sending.",
     "demo_path": "sites/m-black-and-sons-hereford/",
-    "status": "draft"
+    "status": "draft",
+    "demo_url": "https://business-red-ten.vercel.app/m-black-and-sons-hereford/"
   },
   {
     "slug": "sew-unique-hereford",
@@ -122,7 +124,8 @@
     ],
     "notes": "Owner/tailor named in reviews: Mira (replies to reviews herself). Listing: identifies as women-owned, wheelchair accessible, in-store shopping and in-store pick-up. Site also shows Nikki Cook's review. A bride photo from the listing was left out (shows a private person). Emoji in Mina Ahmed's review were read from a screenshot; check them against the original.",
     "demo_path": "sites/sew-unique-hereford/",
-    "status": "draft"
+    "status": "draft",
+    "demo_url": "https://business-red-ten.vercel.app/sew-unique-hereford/"
   },
   {
     "slug": "pritchards-hereford",
@@ -204,7 +207,8 @@
     ],
     "notes": "History from a 2013 article on thelinc.co.uk: founded 1995 by brothers Paul and Dave Hencke, at the start of Steep Hill. The site uses 'Since 1995' and the 'two brothers' story; confirm the history and current ownership before sending. Site also shows Shiina's review. Photos are from the Maps listing and Street View (Sep 2024); no usable shopfront photo, so get one.",
     "demo_path": "sites/yak-clothing-lincoln/",
-    "status": "draft"
+    "status": "draft",
+    "demo_url": "https://business-red-ten.vercel.app/yak-clothing-lincoln/"
   },
   {
     "slug": "petani-menswear-albury",
@@ -246,7 +250,8 @@
     ],
     "notes": "Australian lead. Staff named in reviews: Frank and Craig (the site names both; confirm they still work there). Listing: LGBTQ+ friendly, wheelchair accessible, in-store pick-up. Site also uses reviews from Sara Sippel, Luke Bell and Barry Danskin. Hero photo cropped from a customer's review photo to exclude the staff member standing in it; get the store's own photos before going live.",
     "demo_path": "sites/petani-menswear-albury/",
-    "status": "draft"
+    "status": "draft",
+    "demo_url": "https://business-red-ten.vercel.app/petani-menswear-albury/"
   },
   {
     "slug": "rb-sellars-wagga-wagga",
@@ -329,7 +334,8 @@
     ],
     "notes": "Owner named in a review: Mr. Patil. Owner replies to reviews (warm, professional tone), so they're engaged online. Darrchana's review was cut off by 'More'; only 2 full reviews were in the screenshots. Photos are from the Maps listing (Mar 2026); the shopfront is only a small thumbnail.",
     "demo_path": "sites/rotorua-souvenirs/",
-    "status": "draft"
+    "status": "draft",
+    "demo_url": "https://business-red-ten.vercel.app/rotorua-souvenirs/"
   },
   {
     "slug": "nz-gift-shop-dunedin",
@@ -372,7 +378,8 @@
     ],
     "notes": "Strong pitch angle: unclaimed Google Business Profile plus no website. Could offer to claim/optimise the profile too. Cruise-ship angle: a review says it is the first shop cruise tourists pass when dropped at the Octagon (season Oct–Mar); the site uses this. Product categories are from the Yellow.co.nz listing. The storefront photo is Street View (Oct 2019); the left window may be the same shop or a neighbour, so check it.",
     "demo_path": "sites/nz-gift-shop-dunedin/",
-    "status": "draft"
+    "status": "draft",
+    "demo_url": "https://business-red-ten.vercel.app/nz-gift-shop-dunedin/"
   },
   {
     "slug": "tallulah-tauranga",
@@ -413,7 +420,8 @@
     ],
     "notes": "Likely a church/charity shop, not a private business: reviews say clothes are donated from Bethlehem Baptist church and proceeds go to the community. Pitch accordingly (cheap/free tier, or to the church) and confirm who runs it. Site also quotes Jackie Marevich and uses '$6 shirts' from Augustus Waters' review (4 years old). Photos: people at the counter cropped out; a framed painting cropped out.",
     "demo_path": "sites/tallulah-tauranga/",
-    "status": "draft"
+    "status": "draft",
+    "demo_url": "https://business-red-ten.vercel.app/tallulah-tauranga/"
   },
   {
     "slug": "patricks-bakery-rotorua",
@@ -458,6 +466,7 @@
     ],
     "notes": "Busiest lead so far (250 reviews) and the owner replies to reviews. Natural upsell: online cake orders (they sell birthday cakes), since delivery is ✗. Site also quotes Michelle Case (free parking, pastry chef at work). Photos are from the Maps listing (some from 2019); prices in photos not shown on the site since they may be out of date. Emoji in Michael Brodbeck's review read from a screenshot.",
     "demo_path": "sites/patricks-bakery-rotorua/",
-    "status": "draft"
+    "status": "draft",
+    "demo_url": "https://business-red-ten.vercel.app/patricks-bakery-rotorua/"
   }
 ]
