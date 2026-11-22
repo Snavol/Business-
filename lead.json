@@ -373,5 +373,46 @@
     "notes": "Strong pitch angle: unclaimed Google Business Profile plus no website. Could offer to claim/optimise the profile too. Cruise-ship angle: a review says it is the first shop cruise tourists pass when dropped at the Octagon (season Oct–Mar); the site uses this. Product categories are from the Yellow.co.nz listing. The storefront photo is Street View (Oct 2019); the left window may be the same shop or a neighbour, so check it.",
     "demo_path": "sites/nz-gift-shop-dunedin/",
     "status": "draft"
+  },
+  {
+    "slug": "tallulah-tauranga",
+    "business": "Tallulah Quality Recycled Clothing Boutique",
+    "trade": "Clothing store (preloved / recycled boutique, charity-linked)",
+    "town": "Bethlehem, Tauranga",
+    "region": "Bay of Plenty",
+    "country": "New Zealand",
+    "address": "189 Moffat Road, Bethlehem, Tauranga 3110, New Zealand",
+    "phone": "+64 7 578 9768",
+    "rating": 4.5,
+    "review_count": 62,
+    "hours": "Full hours not captured; listing showed 'Closed · Opens 9:30 AM' when checked",
+    "maps_link": "https://www.google.com/maps/search/?api=1&query=Tallulah+Quality+Recycled+Clothing+Boutique+189+Moffat+Road+Bethlehem+Tauranga",
+    "plus_code": "8436+3V Tauranga, New Zealand",
+    "website_status": "facebook_only",
+    "website_status_note": "No website on the Google listing and none found in a web search. Their own swing tags print a Facebook address (appears to read facebook.com/tallulahtwo; confirm), so they likely rely on Facebook only.",
+    "services": [
+      "Preloved women's clothing (range of sizes, incl. ball outfits)",
+      "Shoes and handbags",
+      "Jewellery, hats, scarves, trinkets",
+      "2 fitting rooms",
+      "In-store shopping and pick-up"
+    ],
+    "reviews": [
+      {
+        "name": "Theresa O'Reilly",
+        "text": "Exquisite eye for detail. All items clean, many new. Gorgeous display areas. Fantastic customer service. Looks and feels like a Parnell Boutique"
+      },
+      {
+        "name": "Tracy Metin",
+        "text": "Great shop to buy lovely modern preloved clothes and accessories.\nThe staff are friendly and helpful, she shop nicely set out and easy to look through clothes, 2 big fitting rooms and honest helpful feedback from the ladies serving in the shop.\nThey had lots of chic clean beautiful clothes. I brought quite a few items at reasonable prices  including 2 ball outfits.\nThanks ladies.\nWill definitely recommend and go back."
+      },
+      {
+        "name": "K VD",
+        "text": "Stunning second-hand store. Very well kept with beautiful clothes and trinkets. Lots of options and well priced."
+      }
+    ],
+    "notes": "Likely a church/charity shop, not a private business: reviews say clothes are donated from Bethlehem Baptist church and proceeds go to the community. Pitch accordingly (cheap/free tier, or to the church) and confirm who runs it. Site also quotes Jackie Marevich and uses '$6 shirts' from Augustus Waters' review (4 years old). Photos: people at the counter cropped out; a framed painting cropped out.",
+    "demo_path": "sites/tallulah-tauranga/",
+    "status": "draft"
   }
 ]

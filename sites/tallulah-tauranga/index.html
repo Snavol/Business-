@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tallulah — Quality Recycled Clothing Boutique, Bethlehem, Tauranga</title>
+<meta name="description" content="Tallulah Quality Recycled Clothing Boutique, 189 Moffat Road, Bethlehem, Tauranga. Beautiful preloved clothing, shoes, bags and accessories in a boutique setting, at op-shop prices. Rated 4.5 on Google.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italiana&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --black:#141414; --char:#222; --gold:#b8933a; --gold-l:#d9bd73; --white:#fdfcf9; --pearl:#f3efe7;
+  --ink:#1b1b1b; --muted:#6d6862; --line:#e4ddd0;
+  --serif:'Italiana',Georgia,serif; --sans:'DM Sans',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:var(--white);line-height:1.65;-webkit-font-smoothing:antialiased;font-size:17px}
+a{color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.05}
+
+header{position:sticky;top:0;z-index:20;background:rgba(20,20,20,.95);backdrop-filter:blur(10px);color:var(--white)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:70px}
+.logo{text-decoration:none;line-height:1}
+.logo b{display:block;font-family:var(--sans);font-weight:600;font-size:26px;letter-spacing:-.02em;color:var(--gold-l)}
+.logo small{display:block;font-size:9.5px;letter-spacing:.22em;text-transform:uppercase;opacity:.7;margin-top:4px}
+.nav ul{display:flex;gap:30px;list-style:none;font-size:14.5px}
+.nav ul a{text-decoration:none;opacity:.75}
+.nav ul a:hover{opacity:1;color:var(--gold-l)}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:15px 28px;font-weight:500;font-size:15px;letter-spacing:.03em;text-decoration:none;transition:transform .2s,background .2s,color .2s,border-color .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-gold{background:var(--gold);color:#fff}
+.btn-gold:hover{background:#9f7d2c}
+.btn-line{border:1px solid currentColor}
+.btn-dark{background:var(--black);color:var(--white)}
+.btn-dark:hover{background:#000}
+.nav .btn{padding:10px 18px}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1fr 1fr;min-height:640px;background:var(--pearl)}
+.hero .copy{display:flex;flex-direction:column;justify-content:center;padding:80px 64px 80px max(24px,calc((100vw - 1180px)/2 + 24px))}
+.tag{font-size:12.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:26px}
+.hero h1{font-size:clamp(50px,6.4vw,92px);letter-spacing:-.01em}
+.hero p.lead{margin-top:24px;max-width:460px;font-size:19px;color:var(--muted)}
+.ctas{margin-top:34px;display:flex;gap:12px;flex-wrap:wrap}
+.hero .rate{margin-top:40px;font-size:15px;color:var(--muted)}
+.hero .rate span{color:var(--gold);letter-spacing:2px;margin-right:6px}
+.hero .img{position:relative;overflow:hidden}
+.hero .img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%;transform:scale(1.05);animation:settle 2.2s cubic-bezier(.2,.7,.2,1) forwards}
+@keyframes settle{to{transform:scale(1)}}
+.reveal{opacity:0;transform:translateY(16px);animation:up .9s cubic-bezier(.2,.7,.2,1) forwards}
+.d1{animation-delay:.1s}.d2{animation-delay:.25s}.d3{animation-delay:.4s}.d4{animation-delay:.55s}
+@keyframes up{to{opacity:1;transform:none}}
+
+/* marquee quote */
+.quote{background:var(--black);color:var(--white);text-align:center;padding:78px 0}
+.quote p{font-family:var(--serif);font-size:clamp(32px,4.6vw,58px);line-height:1.15;max-width:900px;margin:0 auto}
+.quote p em{font-style:normal;color:var(--gold-l)}
+.quote cite{display:block;margin-top:18px;font-style:normal;font-size:14px;letter-spacing:.14em;text-transform:uppercase;opacity:.6}
+
+section{padding:104px 0}
+.eyebrow{font-size:12.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:16px}
+h2{font-size:clamp(40px,5.2vw,68px)}
+.sub{color:var(--muted);max-width:560px;margin-top:16px;font-size:18px}
+
+/* what */
+.what .grid{display:grid;grid-template-columns:1fr 1.1fr;gap:72px;align-items:center}
+.what img{width:100%;aspect-ratio:370/520;object-fit:cover}
+.list{margin-top:36px;border-top:1px solid var(--line)}
+.list div{display:grid;grid-template-columns:150px 1fr;gap:16px;padding:20px 0;border-bottom:1px solid var(--line)}
+.list b{font-family:var(--serif);font-weight:400;font-size:26px;line-height:1.1}
+.list span{color:var(--muted);font-size:16px}
+
+/* promise */
+.promise{background:var(--pearl)}
+.pgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:54px;border-top:1px solid var(--ink)}
+.pgrid div{padding:30px 26px 6px 0}
+.pgrid div+div{padding-left:26px;border-left:1px solid var(--line)}
+.pgrid .n{font-family:var(--serif);font-size:44px;color:var(--gold);line-height:1}
+.pgrid b{display:block;margin:14px 0 6px;font-weight:600}
+.pgrid span{color:var(--muted);font-size:15.5px}
+
+/* gallery */
+.gal{display:grid;grid-template-columns:1.25fr 1fr;gap:18px;margin-top:48px}
+.gal figure{overflow:hidden}
+.gal img{width:100%;height:520px;object-fit:cover;transition:transform .8s}
+.gal figure:hover img{transform:scale(1.04)}
+.gal p{margin-top:10px;font-size:13px;color:var(--muted)}
+
+/* reviews */
+.reviews{background:var(--black);color:var(--white)}
+.reviews .sub{color:rgba(253,252,249,.6)}
+.rgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:52px}
+.rc{border:1px solid rgba(217,189,115,.28);padding:32px 30px;display:flex;flex-direction:column;gap:16px;transition:border-color .3s,background .3s}
+.rc:hover{border-color:var(--gold-l);background:rgba(255,255,255,.02)}
+.rc .stars{color:var(--gold-l);letter-spacing:3px;font-size:14px}
+.rc blockquote{font-size:16.5px;line-height:1.65}
+.rc cite{margin-top:auto;font-style:normal;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-l)}
+.more{margin-top:30px;font-size:15px;opacity:.65}
+.more a{color:var(--gold-l)}
+
+/* visit */
+.visit .grid{display:grid;grid-template-columns:1fr 1.15fr;gap:56px;margin-top:44px}
+.facts div{display:grid;grid-template-columns:110px 1fr;gap:12px;padding:17px 0;border-bottom:1px solid var(--line)}
+.facts dt{font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:600;padding-top:3px}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}
+.badges span{font-size:13px;border:1px solid var(--line);padding:6px 13px}
+.map{width:100%;height:100%;min-height:460px;border:0;filter:grayscale(.5)}
+
+footer{background:var(--black);color:rgba(253,252,249,.6);padding:36px 0;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:center}
+
+.callbar{display:none}
+@media (max-width:940px){
+  .nav ul{display:none}
+  .logo small{display:none}
+  .hero{grid-template-columns:1fr;min-height:0}
+  .hero .img{order:-1;height:380px}
+  .hero .copy{padding:48px 24px 60px}
+  section{padding:76px 0}
+  .what .grid,.visit .grid{grid-template-columns:1fr;gap:40px}
+  .list div{grid-template-columns:1fr;gap:4px}
+  .pgrid{grid-template-columns:1fr 1fr}
+  .pgrid div,.pgrid div+div{padding:24px 16px 20px 0;border-left:0}
+  .gal{grid-template-columns:1fr}
+  .gal img{height:360px}
+  .rgrid{grid-template-columns:1fr}
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:30}
+  .callbar a{flex:1;text-align:center;padding:17px;text-decoration:none;font-weight:500;background:var(--black);color:var(--white)}
+  .callbar a+a{background:var(--gold)}
+  footer{padding-bottom:90px}
+}
+@media (prefers-reduced-motion:reduce){.reveal,.hero .img img{animation:none;opacity:1;transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#" class="logo"><b>tallulah</b><small>Quality recycled clothing boutique</small></a>
+    <ul>
+      <li><a href="#shop">The boutique</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#visit">Visit</a></li>
+    </ul>
+    <a class="btn btn-gold" href="tel:+6475789768">Call us</a>
+  </div>
+</header>
+
+<main>
+<section class="hero" style="padding:0">
+  <div class="copy">
+    <p class="tag reveal d1">Bethlehem · Tauranga</p>
+    <h1 class="reveal d2">Preloved, beautifully.</h1>
+    <p class="lead reveal d3">Quality recycled clothing, shoes, bags and accessories in a boutique that feels anything but second-hand, at prices that will surprise you.</p>
+    <div class="ctas reveal d4">
+      <a class="btn btn-dark" href="#visit">Visit the boutique</a>
+      <a class="btn btn-line" href="tel:+6475789768">07 578 9768</a>
+    </div>
+    <p class="rate reveal d4"><span aria-hidden="true">★★★★★</span>4.5 from 62 Google reviews</p>
+  </div>
+  <div class="img"><img src="images/chandelier.jpg" alt="Inside Tallulah: a crystal chandelier above rails of preloved clothing, a houndstooth jacket and hat on display" width="483" height="648"></div>
+</section>
+
+<div class="quote">
+  <p>“Love shopping here. It's like stepping into an <em>exclusive Boutique.</em>”</p>
+  <cite>Jackie Marevich · Google review</cite>
+</div>
+
+<section class="what" id="shop">
+  <div class="wrap grid">
+    <img src="images/rack.jpg" alt="Dress forms with a printed scarf beside a rail of colourful preloved tops" loading="lazy">
+    <div>
+      <p class="eyebrow">The boutique</p>
+      <h2>Chic, clean, carefully chosen</h2>
+      <p class="sub">Everything is clean and beautifully displayed, and many pieces are new.</p>
+      <div class="list">
+        <div><b>Clothing</b><span>Modern preloved clothing for women of all ages, in a range of sizes. Shoppers have even found ball outfits here.</span></div>
+        <div><b>Shoes &amp; bags</b><span>Heels, flats and handbags to finish the look.</span></div>
+        <div><b>Accessories</b><span>Jewellery, hats, scarves and trinkets on beautiful display tables.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="promise">
+  <div class="wrap">
+    <p class="eyebrow">Why shoppers love it</p>
+    <h2>The Tallulah difference</h2>
+    <div class="pgrid">
+      <div><span class="n">01</span><b>Boutique feel</b><span>Gorgeous displays, chandeliers and a space that smells good.</span></div>
+      <div><span class="n">02</span><b>Great prices</b><span>Quality pieces, with shirts from as little as $6.</span></div>
+      <div><span class="n">03</span><b>Two big fitting rooms</b><span>Try things on, with honest, friendly feedback from the team.</span></div>
+      <div><span class="n">04</span><b>Gives back</b><span>Proceeds go back to the community.</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Inside Tallulah</p>
+    <h2>Come and browse</h2>
+    <div class="gal">
+      <div style="background:var(--black);color:var(--white);padding:48px 44px;display:flex;flex-direction:column;justify-content:center;gap:22px">
+        <p style="font-family:var(--serif);font-size:clamp(30px,3.4vw,44px);line-height:1.15">New pieces arrive all the time, so there's always something new to find.</p>
+        <p style="opacity:.7">“Lots of options and well priced.” K VD, Google review</p>
+        <p><a class="btn btn-gold" href="#visit">Plan your visit</a></p>
+      </div>
+      <figure><img src="images/tags.jpg" alt="Tallulah tags hanging from a black branch display beside a teal top and beads" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <p class="eyebrow">Reviews</p>
+    <h2>Loved by Tauranga shoppers</h2>
+    <p class="sub">4.5 stars from 62 Google reviews.</p>
+    <div class="rgrid">
+      <figure class="rc"><span class="stars">★★★★★</span><blockquote>“Exquisite eye for detail. All items clean, many new. Gorgeous display areas. Fantastic customer service. Looks and feels like a Parnell Boutique”</blockquote><cite>Theresa O'Reilly</cite></figure>
+      <figure class="rc"><span class="stars">★★★★★</span><blockquote>“Great shop to buy lovely modern preloved clothes and accessories. The staff are friendly and helpful, she shop nicely set out and easy to look through clothes, 2 big fitting rooms and honest helpful feedback from the ladies serving in the shop.”</blockquote><cite>Tracy Metin</cite></figure>
+      <figure class="rc"><span class="stars">★★★★★</span><blockquote>“Stunning second-hand store. Very well kept with beautiful clothes and trinkets. Lots of options and well priced.”</blockquote><cite>K VD</cite></figure>
+    </div>
+    <p class="more">From Tallulah's Google reviews. <a href="https://www.google.com/maps/search/?api=1&amp;query=Tallulah+Quality+Recycled+Clothing+Boutique+189+Moffat+Road+Bethlehem+Tauranga" target="_blank" rel="noopener">Read them all →</a></p>
+  </div>
+</section>
+
+<section class="visit" id="visit">
+  <div class="wrap">
+    <p class="eyebrow">Visit</p>
+    <h2>189 Moffat Road, Bethlehem</h2>
+    <div class="grid">
+      <div>
+        <dl class="facts">
+          <div><dt>Address</dt><dd>189 Moffat Road, Bethlehem, Tauranga 3110</dd></div>
+          <div><dt>Phone</dt><dd><a href="tel:+6475789768">07 578 9768</a></dd></div>
+          <div><dt>Hours</dt><dd>Opens 9:30am. Call ahead or check Google Maps for today's hours</dd></div>
+        </dl>
+        <div class="badges"><span>Wheelchair accessible</span><span>In-store shopping</span><span>In-store pick-up</span></div>
+        <p style="margin-top:28px"><a class="btn btn-dark" href="https://www.google.com/maps/dir/?api=1&amp;destination=Tallulah+Quality+Recycled+Clothing+Boutique+189+Moffat+Road+Bethlehem+Tauranga" target="_blank" rel="noopener">Get directions</a></p>
+      </div>
+      <iframe class="map" title="Map showing Tallulah, 189 Moffat Road, Bethlehem, Tauranga" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://maps.google.com/maps?q=189%20Moffat%20Road%2C%20Bethlehem%2C%20Tauranga%203110&amp;z=17&amp;output=embed"></iframe>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span style="color:var(--gold-l);font-weight:600;font-size:18px">tallulah</span>
+    <span>189 Moffat Road, Bethlehem, Tauranga · 07 578 9768</span>
+    <span>Demo website prepared by Codzo</span>
+  </div>
+</footer>
+
+<nav class="callbar" aria-label="Quick contact">
+  <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Tallulah+Quality+Recycled+Clothing+Boutique+189+Moffat+Road+Bethlehem+Tauranga">Directions</a>
+  <a href="tel:+6475789768">Call now</a>
+</nav>
+</body>
+</html>
