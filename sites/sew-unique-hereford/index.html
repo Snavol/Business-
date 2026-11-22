@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sew Unique — Tailoring &amp; Alterations, Eign Gate, Hereford</title>
+<meta name="description" content="Sew Unique, 43 Eign Gate, Hereford. Wedding and prom dress alterations, tailoring and dressmaking by Mira. Rated 4.7 from 50 Google reviews.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ivory:#fbf7f2; --blush:#f3e4df; --rose:#b8576a; --rose-d:#9a4357;
+  --plum:#2b1d26; --ink:#2b2428; --muted:#7a6d72; --line:#e8d9d3;
+  --serif:'Playfair Display',Georgia,serif; --sans:'Jost',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:var(--ivory);line-height:1.65;-webkit-font-smoothing:antialiased;font-size:17px}
+a{color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.1}
+em{font-style:italic;color:var(--rose)}
+
+header{position:sticky;top:0;z-index:20;background:rgba(251,247,242,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font-family:var(--serif);font-size:26px;text-decoration:none;font-style:italic}
+.nav ul{display:flex;gap:30px;list-style:none;font-size:15px}
+.nav ul a{text-decoration:none;color:var(--muted)}
+.nav ul a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 28px;border-radius:999px;font-size:15px;font-weight:500;text-decoration:none;letter-spacing:.02em;transition:background .2s,color .2s,border-color .2s,transform .2s}
+.btn:hover{transform:translateY(-1px)}
+.btn-rose{background:var(--rose);color:#fff}
+.btn-rose:hover{background:var(--rose-d)}
+.btn-out{border:1px solid var(--ink)}
+.btn-out:hover{background:var(--ink);color:var(--ivory)}
+.nav .btn{padding:10px 20px}
+
+.hero{padding:72px 0 96px}
+.hero .wrap{display:grid;grid-template-columns:1fr 1.05fr;gap:64px;align-items:center}
+.tag{font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--rose);margin-bottom:22px}
+.hero h1{font-size:clamp(46px,6.4vw,84px)}
+.hero p.lead{margin-top:24px;max-width:480px;color:var(--muted);font-size:19px}
+.ctas{margin-top:34px;display:flex;gap:12px;flex-wrap:wrap}
+.rating{margin-top:40px;font-size:15px;color:var(--muted)}
+.rating b{color:var(--ink)}
+.stars{color:var(--rose);letter-spacing:2px;margin-right:8px}
+.hero-img{position:relative}
+.hero-img img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:220px 220px 8px 8px}
+.hero-img .chip{position:absolute;left:-28px;bottom:40px;background:#fff;border-radius:16px;padding:16px 22px;box-shadow:0 18px 40px -18px rgba(43,29,38,.35);font-size:14px;max-width:230px}
+.hero-img .chip b{font-family:var(--serif);font-size:20px;display:block;font-weight:500}
+.reveal{opacity:0;transform:translateY(16px);animation:up .9s cubic-bezier(.2,.7,.2,1) forwards}
+.d1{animation-delay:.05s}.d2{animation-delay:.2s}.d3{animation-delay:.35s}.d4{animation-delay:.5s}
+@keyframes up{to{opacity:1;transform:none}}
+
+section{padding:100px 0}
+h2{font-size:clamp(36px,4.6vw,56px)}
+.sub{color:var(--muted);max-width:560px;margin-top:16px}
+
+.services{background:var(--blush)}
+.sgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:52px}
+.s{background:var(--ivory);border-radius:18px;padding:32px 26px;transition:transform .3s,box-shadow .3s}
+.s:hover{transform:translateY(-4px);box-shadow:0 20px 40px -24px rgba(43,29,38,.35)}
+.s .ic{width:44px;height:44px;border-radius:50%;background:var(--blush);color:var(--rose);display:grid;place-items:center;font-family:var(--serif);font-size:18px;margin-bottom:22px}
+.s h3{font-size:24px;margin-bottom:10px}
+.s p{color:var(--muted);font-size:15px}
+
+.atelier .grid{display:grid;grid-template-columns:1.1fr 1fr;gap:64px;align-items:center}
+.atelier img{width:100%;border-radius:8px;aspect-ratio:3/2;object-fit:cover}
+.mira{font-family:var(--serif);font-size:clamp(26px,3vw,34px);line-height:1.3;font-style:italic;margin-top:22px}
+.mira-who{margin-top:16px;font-size:14px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
+.note{margin-top:28px;padding-top:24px;border-top:1px solid var(--line);color:var(--muted);font-size:15px}
+
+.gallery{padding-top:0}
+.gal{display:grid;grid-template-columns:2fr 1fr;gap:16px;margin-top:44px}
+.gal img{width:100%;height:440px;object-fit:cover;border-radius:8px;transition:transform .6s}
+.gal figure{overflow:hidden;border-radius:8px}
+.gal figure:hover img{transform:scale(1.03)}
+
+.reviews{background:var(--plum);color:var(--ivory)}
+.reviews .sub{color:rgba(251,247,242,.7)}
+.reviews em{color:#e7a3b2}
+.rgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:52px}
+.rc{border:1px solid rgba(251,247,242,.16);border-radius:18px;padding:34px;display:flex;flex-direction:column;gap:18px}
+.rc .stars{color:#e7a3b2}
+.rc blockquote{font-size:17px;line-height:1.6}
+.rc cite{margin-top:auto;font-style:normal;font-family:var(--serif);font-size:18px}
+.rc cite span{display:block;font-family:var(--sans);font-size:13px;opacity:.6;margin-top:2px}
+.more{margin-top:30px;font-size:15px;opacity:.75}
+.more a{color:#e7a3b2}
+
+.visit .grid{display:grid;grid-template-columns:1fr 1.1fr;gap:56px;margin-top:44px;align-items:stretch}
+.facts{display:grid;gap:4px}
+.facts div{display:grid;grid-template-columns:110px 1fr;gap:12px;padding:16px 0;border-bottom:1px solid var(--line)}
+.facts dt{color:var(--muted);font-size:14px;letter-spacing:.1em;text-transform:uppercase;padding-top:2px}
+.storefront{margin-top:28px;border-radius:8px;width:100%;aspect-ratio:2/1;object-fit:cover}
+.map{width:100%;height:100%;min-height:440px;border:0;border-radius:8px;filter:saturate(.7)}
+
+footer{border-top:1px solid var(--line);padding:36px 0;font-size:14px;color:var(--muted)}
+footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:center}
+footer .logo{color:var(--ink);font-size:20px}
+
+.callbar{display:none}
+@media (max-width:920px){
+  .nav ul{display:none}
+  .hero{padding:40px 0 72px}
+  .hero .wrap,.atelier .grid,.visit .grid{grid-template-columns:1fr;gap:44px}
+  .hero-img .chip{left:12px;bottom:16px}
+  section{padding:76px 0}
+  .sgrid{grid-template-columns:1fr 1fr}
+  .gal{grid-template-columns:1fr 1fr}
+  .gal{grid-template-columns:1fr}
+  .gal img{height:300px}
+  .rgrid{grid-template-columns:1fr}
+  .callbar{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:30;gap:8px}
+  .callbar a{flex:1;text-align:center;padding:15px;border-radius:999px;text-decoration:none;font-weight:500;background:var(--ink);color:var(--ivory);box-shadow:0 10px 30px -10px rgba(0,0,0,.4)}
+  .callbar a+a{background:var(--rose)}
+  footer{padding-bottom:100px}
+}
+@media (max-width:520px){.sgrid{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){.reveal{animation:none;opacity:1;transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#" class="logo">Sew Unique</a>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#atelier">About Mira</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#visit">Visit</a></li>
+    </ul>
+    <a class="btn btn-rose" href="tel:+447983993286">Call Mira</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="tag reveal d1">Tailoring · Alterations · Hereford</p>
+      <h1 class="reveal d2">Your dress, made to fit <em>perfectly</em>.</h1>
+      <p class="lead reveal d3">Wedding dresses, prom dresses and everyday alterations, done with care at 43 Eign Gate. Mira listens to what you want, then makes it right.</p>
+      <div class="ctas reveal d4">
+        <a class="btn btn-rose" href="tel:+447983993286">Call 07983 993286</a>
+        <a class="btn btn-out" href="#visit">Visit the boutique</a>
+      </div>
+      <p class="rating reveal d4"><span class="stars" aria-hidden="true">★★★★★</span><b>4.7</b> from 50 Google reviews</p>
+    </div>
+    <div class="hero-img reveal d3">
+      <img src="images/window.jpg" alt="A long printed silk gown displayed in the Sew Unique shop window" width="544" height="609">
+      <div class="chip"><b>Less than a day</b>One customer's dress was altered in under 24 hours.</div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <h2>What we <em>do</em></h2>
+    <p class="sub">From a big day to a simple hem, every piece gets the same attention.</p>
+    <div class="sgrid">
+      <div class="s"><div class="ic">i</div><h3>Wedding dresses</h3><p>Shortening, fitting the bodice, adding details, even with only weeks to go.</p></div>
+      <div class="s"><div class="ic">ii</div><h3>Prom &amp; occasion</h3><p>Prom and evening dresses altered with honest advice on what will work best.</p></div>
+      <div class="s"><div class="ic">iii</div><h3>Everyday alterations</h3><p>Trousers, school trousers and dresses for the whole family.</p></div>
+      <div class="s"><div class="ic">iv</div><h3>Tailoring &amp; dressmaking</h3><p>Made-to-fit pieces and finishing touches, such as a matching flower or shawl.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="atelier" id="atelier">
+  <div class="wrap grid">
+    <img src="images/atelier.jpg" alt="Mannequins in a white lace dress and a red dress against the boutique's brick wall" width="795" height="532" loading="lazy">
+    <div>
+      <p class="tag">The boutique</p>
+      <h2>Made with care, <em>stitch by stitch</em></h2>
+      <p class="mira">“You can tell a lot of care goes into every stitch.”</p>
+      <p class="mira-who">Mina Ahmed · Google review</p>
+      <p class="note">Sew Unique is a women-owned boutique on Eign Gate. You can shop in store and collect your finished pieces there.</p>
+    </div>
+  </div>
+</section>
+
+<section class="gallery">
+  <div class="wrap">
+    <div class="gal">
+      <figure><img src="images/storefront.jpg" alt="Sew Unique shopfront at 43 Eign Gate with gowns in the windows" loading="lazy"></figure>
+      <figure><img src="images/gown.jpg" alt="Black tulle gown with gold embroidered bodice" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <h2>Loved by <em>Hereford</em></h2>
+    <p class="sub">4.7 stars from 50 reviews. Here is what customers say about Mira's work.</p>
+    <div class="rgrid">
+      <figure class="rc"><span class="stars">★★★★★</span><blockquote>“Mira was incredibly talented with my dress! She was able to alter my dress in less than a day, and surprise me with a flower &amp; shawl that she made from my dress which was such a special gesture! Couldn't recommend enough, very happy and very grateful! Thank you x”</blockquote><cite>Danielle Baker<span>Google review</span></cite></figure>
+      <figure class="rc"><span class="stars">★★★★★</span><blockquote>“Thanks Mira for your amazing work on my daughters prom dress. You were kind , compassionate and overall caring. You listened to what she wanted and gave great advice on what alterations would give the best outcome. I will definitely be using your services again.”</blockquote><cite>Lisa Atta<span>Google review</span></cite></figure>
+      <figure class="rc"><span class="stars">★★★★★</span><blockquote>“Mira is amazing! I'm always happy with the work she always provides! She's super friendly, easy to talk to, and really listens to what you want. Always go to Mira for alterations for my dresses to my husband trousers, my son school trousers. You can tell a lot of care goes into every stitch. I always come back for more. Highly recommend to anyone looking for great service and beautiful tailoring!”</blockquote><cite>Mina Ahmed<span>Google review</span></cite></figure>
+      <figure class="rc"><span class="stars">★★★★★</span><blockquote>“My dress alterations were absolutely perfect! A professional and fast service. I'm delighted.”</blockquote><cite>Nikki Cook<span>Google review</span></cite></figure>
+    </div>
+    <p class="more">From Sew Unique's Google reviews. <a href="https://www.google.com/maps/search/?api=1&amp;query=Sew+Unique+Tailoring+43+Eign+Gate+Hereford+HR4+0AB" target="_blank" rel="noopener">Read them all →</a></p>
+  </div>
+</section>
+
+<section class="visit" id="visit">
+  <div class="wrap">
+    <h2>Visit the <em>boutique</em></h2>
+    <div class="grid">
+      <div>
+        <dl class="facts">
+          <div><dt>Address</dt><dd>43 Eign Gate, Hereford HR4 0AB</dd></div>
+          <div><dt>Phone</dt><dd><a href="tel:+447983993286">07983 993286</a></dd></div>
+          <div><dt>Hours</dt><dd>Call ahead or check Google Maps for today's opening times</dd></div>
+          <div><dt>Access</dt><dd>Wheelchair accessible</dd></div>
+        </dl>
+        <p style="margin-top:26px"><a class="btn btn-out" href="https://www.google.com/maps/dir/?api=1&amp;destination=Sew+Unique+43+Eign+Gate+Hereford+HR4+0AB" target="_blank" rel="noopener">Get directions</a></p>
+      </div>
+      <iframe class="map" title="Map showing Sew Unique, 43 Eign Gate, Hereford" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://maps.google.com/maps?q=43%20Eign%20Gate%2C%20Hereford%20HR4%200AB&amp;z=17&amp;output=embed"></iframe>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="logo">Sew Unique</span>
+    <span>43 Eign Gate, Hereford HR4 0AB · 07983 993286</span>
+    <span>Demo website prepared by Codzo</span>
+  </div>
+</footer>
+
+<nav class="callbar" aria-label="Quick contact">
+  <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Sew+Unique+43+Eign+Gate+Hereford+HR4+0AB">Directions</a>
+  <a href="tel:+447983993286">Call Mira</a>
+</nav>
+</body>
+</html>

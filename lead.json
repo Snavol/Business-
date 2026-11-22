@@ -81,5 +81,47 @@
     "notes": "Wheelchair accessible. Site also quotes the first sentence of Glyn Williams's review: \"I've been buying jeans from blacks for 40 YEARS and more.\" (rest of review was cut off by 'More'). Brands taken from reviews and shop signage; confirm stock. Interior photos are Google Street View captures from Aug 2019; replace with current shop photos before sending.",
     "demo_path": "sites/m-black-and-sons-hereford/",
     "status": "draft"
+  },
+  {
+    "slug": "sew-unique-hereford",
+    "business": "Sew unique -Tailoring and Alteration Boutique",
+    "trade": "Dressmaker (tailoring and alterations)",
+    "town": "Hereford",
+    "region": "Herefordshire",
+    "country": "United Kingdom",
+    "address": "43 Eign Gate, Hereford HR4 0AB, United Kingdom",
+    "phone": "+44 7983 993286",
+    "rating": 4.7,
+    "review_count": 50,
+    "hours": "Full hours not captured; listing showed 'Closed · Opens 9 AM Mon' when checked on a Sunday",
+    "maps_link": "https://www.google.com/maps/search/?api=1&query=Sew+Unique+Tailoring+43+Eign+Gate+Hereford+HR4+0AB",
+    "plus_code": "374J+H2 Hereford, UK",
+    "website_status": "none",
+    "website_status_note": "No website shown on the Google listing. Facebook/Instagram not checked.",
+    "services": [
+      "Wedding dress alterations",
+      "Prom and occasion dress alterations",
+      "Everyday alterations (dresses, trousers, school trousers)",
+      "Tailoring",
+      "Dressmaking / custom details (e.g. flower and shawl made from a dress)",
+      "In-store shopping and pick-up"
+    ],
+    "reviews": [
+      {
+        "name": "Danielle Baker",
+        "text": "Mira was incredibly talented with my dress! She was able to alter my dress in less than a day, and surprise me with a flower & shawl that she made from my dress which was such a special gesture! Couldn't recommend enough, very happy and very grateful! Thank you x"
+      },
+      {
+        "name": "Mina Ahmed",
+        "text": "Mira is amazing! I'm always happy with the work she always provides! She's super friendly, easy to talk to, and really listens to what you want. Always go to Mira for alterations for my dresses to my husband trousers, my son school trousers. You can tell a lot of care goes into every stitch. I always come back for more. Highly recommend to anyone looking for great service and beautiful tailoring! 💖👏🏽 x"
+      },
+      {
+        "name": "Lisa Atta",
+        "text": "Thanks Mira for your amazing work on my daughters prom dress. You were kind , compassionate and overall caring. You listened to what she wanted and gave great advice on what alterations would give the best outcome. I will definitely be using your services again."
+      }
+    ],
+    "notes": "Owner/tailor named in reviews: Mira (replies to reviews herself). Listing: identifies as women-owned, wheelchair accessible, in-store shopping and in-store pick-up. Site also shows Nikki Cook's review. A bride photo from the listing was left out (shows a private person). Emoji in Mina Ahmed's review were read from a screenshot; check them against the original.",
+    "demo_path": "sites/sew-unique-hereford/",
+    "status": "draft"
   }
 ]
