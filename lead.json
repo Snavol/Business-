@@ -734,5 +734,36 @@
     "demo_path": "sites/ella-davies-makeup/",
     "demo_url": "https://business-red-ten.vercel.app/ella-davies-makeup/",
     "status": "draft"
+  },
+  {
+    "slug": "m1-nails-nq",
+    "business": "M1 Nails Northern Quarter",
+    "trade": "Nail salon",
+    "town": "Manchester",
+    "region": "Greater Manchester",
+    "country": "United Kingdom",
+    "address": "8 Tib Street, Manchester M4 1PQ (off Market Street)",
+    "phone": null,
+    "instagram": "@m1nails_nq",
+    "rating": null,
+    "review_count": null,
+    "hours": "Opening time 10am-7pm (from Instagram highlight; days not stated). Holiday hours posted on Instagram.",
+    "maps_link": "https://maps.app.goo.gl/ZjWRdPVZvTDFXkby7",
+    "plus_code": null,
+    "website_status": "none",
+    "website_status_note": "Instagram bio links only to Google Maps (150 posts, 628 followers). Fresha has a non-bookable 'M1 Nails' (Shudehill) listing page with 'Call to book', but no website was found.",
+    "services": [
+      "Acrylic",
+      "Builder gel / BIAB",
+      "Shellac / gel polish",
+      "Pedicure & manicure",
+      "Nail design",
+      "Walk-ins welcome"
+    ],
+    "reviews": [],
+    "notes": "Built from Instagram screenshots only. No phone shown on the profile; booking by DM / walk-in. Left out: TikTok influencer selfie, hours graphics, scaffolding street photo, dark/sticker video stills. Site includes a client-side 'design your set' nail preview (shape, colour, finish, skin tone).",
+    "demo_path": "sites/m1-nails-nq/",
+    "demo_url": "https://business-red-ten.vercel.app/m1-nails-nq/",
+    "status": "draft"
   }
 ]
