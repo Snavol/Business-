@@ -561,5 +561,34 @@
     "demo_path": "sites/jewellers-bench-birkdale/",
     "demo_url": "https://business-red-ten.vercel.app/jewellers-bench-birkdale/",
     "status": "draft"
+  },
+  {
+    "slug": "mimi-and-bear",
+    "business": "Mimi&Bear",
+    "trade": "Bespoke charms (personalised name bag charms)",
+    "town": null,
+    "region": null,
+    "country": null,
+    "address": null,
+    "phone": null,
+    "instagram": "@_mimiandbear",
+    "rating": null,
+    "review_count": null,
+    "hours": null,
+    "maps_link": null,
+    "plus_code": null,
+    "website_status": "none",
+    "website_status_note": "No website link in the Instagram bio (108 posts, ~3.6K followers). Orders are taken by DM. Not verified by web search. Location not shown on the profile, so confirm town/country before pitching.",
+    "services": [
+      "Bespoke charms",
+      "Designed for all ages",
+      "Dispatched in 2-3 days",
+      "DM to order"
+    ],
+    "reviews": [],
+    "notes": "Built from Instagram screenshots only. Highlights seen: Disclaimer, Prices, Spotted, Order (contents not seen, so no prices or terms on the demo). Site includes a client-side 'type your name' charm preview. Left out photos showing a child (stroller shot, backpack with child's name and coat/shoes).",
+    "demo_path": "sites/mimi-and-bear/",
+    "demo_url": "https://business-red-ten.vercel.app/mimi-and-bear/",
+    "status": "draft"
   }
 ]
