@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pretty Little Party — Balloons &amp; Event Styling, Tarleton</title>
+<meta name="description" content="Pretty Little Party: custom balloons, balloon arches, sailboards, bubble balloons and luxury event setups in Tarleton and surrounding areas. Fully insured.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Allura&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sage:#a9a494; --sage-d:#7d7867; --olive:#5f5c4e;
+  --blush:#e9c9cf; --rose:#c9909b; --pink:#f4e3e5;
+  --cream:#faf6f1; --linen:#f1ebe3; --ink:#2f2d27;
+  --gold:#c4a874;
+  --r:999px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Manrope,system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1180px,92vw);margin:0 auto}
+.serif{font-family:"Cormorant Garamond",Georgia,serif}
+.script{font-family:Allura,cursive;font-weight:400}
+.eyebrow{font-size:12px;letter-spacing:.24em;text-transform:uppercase;font-weight:600;color:var(--sage-d)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 28px;border-radius:var(--r);font-weight:600;font-size:14px;letter-spacing:.04em;transition:transform .25s,background .25s,box-shadow .25s}
+.btn-dark{background:var(--olive);color:#fff}
+.btn-dark:hover{background:var(--ink);transform:translateY(-2px);box-shadow:0 12px 30px -12px rgba(47,45,39,.5)}
+.btn-line{border:1.5px solid var(--olive);color:var(--olive)}
+.btn-line:hover{background:var(--olive);color:#fff}
+.btn svg{width:18px;height:18px}
+
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(250,246,241,.86);backdrop-filter:blur(14px);border-bottom:1px solid rgba(125,120,103,.15)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:78px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{width:50px;height:50px;border-radius:50%}
+.brand b{font-family:"Cormorant Garamond",serif;font-size:23px;font-weight:600;line-height:1;display:block}
+.brand small{font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--sage-d)}
+.nav ul{display:flex;gap:34px;list-style:none;font-size:14px;font-weight:500}
+.nav ul a{position:relative}
+.nav ul a:after{content:"";position:absolute;left:0;bottom:-4px;height:1.5px;width:0;background:var(--rose);transition:width .3s}
+.nav ul a:hover:after{width:100%}
+.nav .btn{padding:11px 22px}
+
+/* hero */
+.hero{position:relative;padding:70px 0 100px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:50px;align-items:center}
+.hero h1{font-family:"Cormorant Garamond",serif;font-weight:500;font-size:clamp(46px,6.4vw,88px);line-height:.98;letter-spacing:-.01em;margin:18px 0 22px}
+.hero h1 .script{display:block;font-size:1.15em;color:var(--rose);line-height:.9;margin-top:6px}
+.hero p.lead{font-size:18px;color:#5b584d;max-width:470px;margin-bottom:34px}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+.hero-badges{display:flex;gap:22px;margin-top:40px;flex-wrap:wrap;font-size:13.5px;font-weight:600;color:var(--olive)}
+.hero-badges span{display:flex;align-items:center;gap:8px}
+.hero-badges i{width:8px;height:8px;border-radius:50%;background:var(--rose);display:inline-block}
+
+.arches{position:relative;display:grid;grid-template-columns:1fr 1.15fr 1fr;gap:16px;align-items:end;height:560px}
+.arch{border-radius:500px 500px 18px 18px;overflow:hidden;background:var(--linen);box-shadow:0 30px 60px -30px rgba(47,45,39,.45);position:relative}
+.arch img{width:100%;height:100%;object-fit:cover}
+.arch:nth-child(1){height:78%}
+.arch:nth-child(2){height:100%;border:8px solid #fff}
+.arch:nth-child(3){height:70%}
+.arch-tag{position:absolute;left:50%;bottom:16px;transform:translateX(-50%);background:rgba(255,255,255,.92);padding:6px 14px;border-radius:var(--r);font-size:11.5px;font-weight:600;letter-spacing:.06em;white-space:nowrap}
+
+.balloon{position:absolute;border-radius:50%;pointer-events:none;animation:float 7s ease-in-out infinite}
+.balloon:after{content:"";position:absolute;left:50%;top:100%;width:1px;height:70px;background:linear-gradient(rgba(125,120,103,.5),transparent)}
+.b1{width:120px;height:132px;background:radial-gradient(circle at 32% 30%,#fff 0 6%,var(--blush) 26%,var(--rose) 100%);top:30px;right:-30px;opacity:.85}
+.b2{width:70px;height:78px;background:radial-gradient(circle at 32% 30%,#fff 0 6%,#d8d3c4 30%,var(--sage) 100%);top:380px;left:-24px;animation-delay:-2s;opacity:.8}
+.b3{width:46px;height:52px;background:radial-gradient(circle at 32% 30%,#fff 0 8%,#e8d9b5 30%,var(--gold) 100%);top:140px;left:44%;animation-delay:-4s;opacity:.8}
+@keyframes float{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-22px) rotate(3deg)}}
+
+/* marquee */
+.marquee{background:var(--sage);color:#fff;overflow:hidden;padding:20px 0}
+.marquee-track{display:flex;gap:46px;width:max-content;animation:scroll 36s linear infinite}
+.marquee span{font-family:"Cormorant Garamond",serif;font-size:27px;font-style:italic;white-space:nowrap;display:flex;align-items:center;gap:46px}
+.marquee span:after{content:"✦";font-style:normal;font-size:14px;color:var(--pink)}
+@keyframes scroll{to{transform:translateX(-50%)}}
+
+/* section */
+section{padding:110px 0}
+.head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:54px;flex-wrap:wrap}
+.head h2{font-family:"Cormorant Garamond",serif;font-weight:500;font-size:clamp(38px,4.6vw,60px);line-height:1.02;margin-top:12px}
+.head h2 em{font-family:Allura,cursive;font-style:normal;color:var(--rose);font-size:1.2em}
+.head p{max-width:400px;color:#6a675b}
+
+/* services */
+.services{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.svc{background:#fff;border-radius:22px;overflow:hidden;transition:transform .35s,box-shadow .35s;display:flex;flex-direction:column}
+.svc:hover{transform:translateY(-6px);box-shadow:0 26px 50px -28px rgba(47,45,39,.45)}
+.svc figure{aspect-ratio:4/5;overflow:hidden;background:var(--linen)}
+.svc img{width:100%;height:100%;object-fit:cover;transition:transform .7s}
+.svc:hover img{transform:scale(1.06)}
+.svc div{padding:20px 22px 24px}
+.svc h3{font-family:"Cormorant Garamond",serif;font-size:25px;font-weight:600;line-height:1.1}
+.svc p{font-size:14px;color:#6a675b;margin-top:6px}
+.svc-text{background:var(--olive);color:#fff;justify-content:center;padding:34px}
+.svc-text h3{font-size:30px}
+.svc-text ul{list-style:none;margin-top:18px;display:grid;gap:10px;font-size:15px}
+.svc-text li{display:flex;gap:10px;align-items:center}
+.svc-text li:before{content:"";width:6px;height:6px;border-radius:50%;background:var(--blush)}
+.svc-text .btn{margin-top:26px;background:#fff;color:var(--olive);align-self:flex-start}
+
+/* signature */
+.signature{background:var(--linen);position:relative;overflow:hidden}
+.sig-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.sig-photos{position:relative;height:600px}
+.sig-photos .ph{position:absolute;border-radius:300px 300px 16px 16px;overflow:hidden;box-shadow:0 30px 60px -30px rgba(47,45,39,.5)}
+.sig-photos .ph img{width:100%;height:100%;object-fit:cover}
+.sig-photos .p1{width:58%;height:88%;left:0;top:0;border:8px solid #fff}
+.sig-photos .p2{width:46%;height:64%;right:0;bottom:0;border:8px solid #fff}
+.sig-copy h2{font-family:"Cormorant Garamond",serif;font-weight:500;font-size:clamp(38px,4.4vw,58px);line-height:1.04;margin:14px 0 22px}
+.sig-copy h2 em{font-family:Allura,cursive;font-style:normal;color:var(--rose);font-size:1.2em}
+.sig-copy p{color:#5b584d;margin-bottom:18px;font-size:16.5px}
+.occasions{display:flex;flex-wrap:wrap;gap:10px;margin:28px 0 34px}
+.occasions span{background:#fff;border:1px solid rgba(125,120,103,.25);padding:9px 18px;border-radius:var(--r);font-size:13.5px;font-weight:500}
+
+/* gallery */
+.gallery{columns:4 240px;column-gap:16px}
+.gallery figure{break-inside:avoid;margin-bottom:16px;border-radius:18px;overflow:hidden;position:relative;background:var(--linen)}
+.gallery img{width:100%;transition:transform .7s}
+.gallery figure:hover img{transform:scale(1.05)}
+.gallery figcaption{position:absolute;left:12px;bottom:12px;background:rgba(255,255,255,.92);border-radius:var(--r);padding:6px 13px;font-size:12px;font-weight:600;opacity:0;transform:translateY(8px);transition:.35s}
+.gallery figure:hover figcaption{opacity:1;transform:none}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.step{background:#fff;border-radius:24px;padding:38px 32px;position:relative;overflow:hidden}
+.step .n{font-family:Allura,cursive;font-size:76px;line-height:1;color:var(--blush)}
+.step h3{font-family:"Cormorant Garamond",serif;font-size:27px;font-weight:600;margin:6px 0 8px}
+.step p{color:#6a675b;font-size:15px}
+
+/* trust */
+.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(125,120,103,.2);border-radius:24px;overflow:hidden;margin-top:70px}
+.trust div{background:var(--cream);padding:34px 30px;text-align:center}
+.trust b{display:block;font-family:"Cormorant Garamond",serif;font-size:26px;font-weight:600}
+.trust span{font-size:14px;color:#6a675b}
+
+/* cta */
+.cta{padding:0 0 110px}
+.cta-card{background:var(--sage);border-radius:36px;color:#fff;padding:80px 60px;text-align:center;position:relative;overflow:hidden}
+.cta-card h2{font-family:"Cormorant Garamond",serif;font-weight:500;font-size:clamp(40px,5vw,68px);line-height:1.02;position:relative}
+.cta-card h2 em{font-family:Allura,cursive;font-style:normal;color:var(--pink);font-size:1.2em}
+.cta-card p{max-width:520px;margin:18px auto 34px;opacity:.92;font-size:17px;position:relative}
+.cta-card .btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;position:relative}
+.cta-card .btn-dark{background:#fff;color:var(--olive)}
+.cta-card .btn-line{border-color:#fff;color:#fff}
+.cta-card .btn-line:hover{background:#fff;color:var(--olive)}
+.cta-card .balloon{opacity:.5}
+
+footer{background:var(--ink);color:#d8d4c8;padding:64px 0 110px;font-size:14px}
+.foot{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}
+.foot b{font-family:"Cormorant Garamond",serif;font-size:26px;color:#fff;font-weight:500;display:block;margin-bottom:8px}
+.foot h4{font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--blush);margin-bottom:14px}
+.foot li{list-style:none;margin-bottom:8px}
+.foot a:hover{color:#fff}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:46px;padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:12.5px;opacity:.7}
+
+.mbar{display:none}
+
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .9s ease,transform .9s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.balloon,.marquee-track{animation:none}.reveal{opacity:1;transform:none}}
+
+@media (max-width:980px){
+  .nav ul{display:none}
+  .hero-grid,.sig-grid{grid-template-columns:1fr}
+  .arches{height:440px}
+  .services{grid-template-columns:repeat(2,1fr)}
+  .steps,.trust{grid-template-columns:1fr}
+  .foot{grid-template-columns:1fr}
+  .sig-photos{height:480px}
+}
+@media (max-width:600px){
+  .nav{height:66px}
+  .brand img{width:42px;height:42px}
+  .brand b{font-size:20px}
+  .nav .btn{display:none}
+  .hero{padding:40px 0 70px}
+  .arches{height:330px;gap:10px}
+  .arch:nth-child(2){border-width:5px}
+  .arch-tag{display:none}
+  section{padding:76px 0}
+  .services{grid-template-columns:1fr 1fr;gap:12px}
+  .svc div{padding:14px}
+  .svc h3{font-size:20px}
+  .svc p{display:none}
+  .svc-text,.svc:nth-child(3){grid-column:1/-1}
+  .svc:nth-child(3) figure{aspect-ratio:16/11}
+  .gallery{columns:2;column-gap:10px}
+  .gallery figure{margin-bottom:10px;border-radius:14px}
+  .cta-card{padding:56px 24px;border-radius:26px}
+  .sig-photos{height:400px}
+  .b1{width:80px;height:88px}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:10px;right:10px;bottom:10px;z-index:60}
+  .mbar a{display:flex;justify-content:center;align-items:center;gap:8px;padding:14px;border-radius:var(--r);font-weight:600;font-size:14px;box-shadow:0 10px 30px -10px rgba(0,0,0,.4)}
+  .mbar a:first-child{background:var(--olive);color:#fff}
+  .mbar a:last-child{background:#fff;color:var(--olive)}
+  .mbar svg{width:17px;height:17px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="brand"><img src="images/logo.jpg" alt="Pretty Little Party logo"><span><b>Pretty Little Party</b><small>Balloons &amp; Event Styling</small></span></a>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#setups">Setups</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#booking">Booking</a></li>
+    </ul>
+    <a class="btn btn-dark" href="https://ig.me/m/pretty_little_party_x" target="_blank" rel="noopener">Enquire now</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <span class="balloon b1"></span><span class="balloon b2"></span>
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <span class="eyebrow">Tarleton &amp; surrounding areas</span>
+      <h1>Where pretty<br>meets party<span class="script">made just for you</span></h1>
+      <p class="lead">Custom balloons, statement arches and luxury setups, styled around your colours, your names and your big day.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-dark" href="https://ig.me/m/pretty_little_party_x" target="_blank" rel="noopener">Bring your vision to life
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-line" href="#gallery">See our setups</a>
+      </div>
+      <div class="hero-badges"><span><i></i>Fully insured</span><span><i></i>Custom balloons</span><span><i></i>Luxury setups &amp; gifting</span></div>
+    </div>
+    <div class="arches reveal">
+      <span class="balloon b3"></span>
+      <div class="arch"><img src="images/zoo-arch-first.jpg" alt="Jungle-themed 1st birthday backdrop with sage and gold balloon garland"><span class="arch-tag">1st Birthday</span></div>
+      <div class="arch"><img src="images/christening-arch.jpg" alt="Blush, cream and gold balloon arch for a christening"><span class="arch-tag">Christening</span></div>
+      <div class="arch"><img src="images/engagement-arch.jpg" alt="All-white balloon arch for an engagement party"><span class="arch-tag">Engagement</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Balloon arches</span><span>Sailboards</span><span>Bubble balloons</span><span>Balloon stacks</span><span>Balloon hoops</span><span>Gender reveals</span><span>Helium balloons</span><span>Gifting</span>
+    <span>Balloon arches</span><span>Sailboards</span><span>Bubble balloons</span><span>Balloon stacks</span><span>Balloon hoops</span><span>Gender reveals</span><span>Helium balloons</span><span>Gifting</span>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <div class="head reveal">
+      <div><span class="eyebrow">What we offer</span><h2>Balloons for every<br><em>little</em> celebration</h2></div>
+      <p>From a single personalised bubble to a full backdrop, every piece is made to order in your colours and finished with your names, dates and details.</p>
+    </div>
+    <div class="services">
+      <article class="svc reveal"><figure><img src="images/number-30-bows.jpg" alt="Cream number 30 balloon stack with black bows" loading="lazy"></figure><div><h3>Balloon stacks</h3><p>Simple or deluxe number stacks, personalised with a name.</p></div></article>
+      <article class="svc reveal"><figure><img src="images/bubble-40th.jpg" alt="Clear bubble balloon reading Happy 40th Birthday" loading="lazy"></figure><div><h3>Bubble balloons</h3><p>Clear bubbles with custom lettering and balloons inside.</p></div></article>
+      <article class="svc reveal"><figure><img src="images/lucky-in-love-arch.jpg" alt="Casino-themed Lucky in Love backdrop with red, black and gold balloons" loading="lazy"></figure><div><h3>Arches &amp; backdrops</h3><p>Organic garlands and sailboards for statement setups.</p></div></article>
+      <article class="svc svc-text reveal">
+        <h3 class="serif">Also on the menu</h3>
+        <ul><li>Helium filled balloons</li><li>Balloon hoops</li><li>Balloon sailboards</li><li>Special occasion balloons</li><li>Gender reveals</li><li>Gifting</li></ul>
+        <a class="btn" href="https://ig.me/m/pretty_little_party_x" target="_blank" rel="noopener">Ask about yours</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="signature" id="setups">
+  <div class="wrap sig-grid">
+    <div class="sig-photos reveal">
+      <div class="ph p1"><img src="images/light-up-30-arch.jpg" alt="30th birthday backdrop with light-up numbers and sage and silver balloons" loading="lazy"></div>
+      <div class="ph p2"><img src="images/welcome-sign-jungle.jpg" alt="Welcome sign for a jungle 1st birthday with balloon garland and toy monkey" loading="lazy"></div>
+    </div>
+    <div class="sig-copy reveal">
+      <span class="eyebrow">Luxury setups</span>
+      <h2>The backdrop everyone <em>remembers</em></h2>
+      <p>Arched boards, organic balloon garlands, welcome signs and light-up numbers, all put together around your theme, so the photos look as good as the party feels.</p>
+      <p>Tell us the occasion, the colours and the names, and we'll design the rest.</p>
+      <div class="occasions"><span>Birthdays</span><span>1st birthdays</span><span>Christenings</span><span>Baby showers</span><span>Gender reveals</span><span>Engagements</span><span>Milestone birthdays</span><span>Christmas</span></div>
+      <a class="btn btn-dark" href="https://ig.me/m/pretty_little_party_x" target="_blank" rel="noopener">Plan my setup</a>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="wrap">
+    <div class="head reveal">
+      <div><span class="eyebrow">Recent work</span><h2>Fresh from<br>the <em>studio</em></h2></div>
+      <a class="btn btn-line" href="https://www.instagram.com/pretty_little_party_x/" target="_blank" rel="noopener">More on Instagram</a>
+    </div>
+    <div class="gallery">
+      <figure class="reveal"><img src="images/first-birthday-pink.jpg" alt="Pink and cream number 1 stack with Happy 1st Birthday bubble" loading="lazy"><figcaption>1st birthday stack</figcaption></figure>
+      <figure class="reveal"><img src="images/engagement-arch.jpg" alt="White balloon arch for an engagement party" loading="lazy"><figcaption>Engagement backdrop</figcaption></figure>
+      <figure class="reveal"><img src="images/chrome-mum-bubble.jpg" alt="Chrome balloon with gypsophila-filled bubble base" loading="lazy"><figcaption>Gifting balloon</figcaption></figure>
+      <figure class="reveal"><img src="images/one-little-duckling.jpg" alt="One little duckling number 1 stack in pink" loading="lazy"><figcaption>One little duckling</figcaption></figure>
+      <figure class="reveal"><img src="images/christening-arch.jpg" alt="Christening backdrop with blush and gold garland" loading="lazy"><figcaption>Christening</figcaption></figure>
+      <figure class="reveal"><img src="images/money-balloon-18th.jpg" alt="Happy 18th Birthday personalised balloon with gift column" loading="lazy"><figcaption>18th birthday</figcaption></figure>
+      <figure class="reveal"><img src="images/number-30-bows.jpg" alt="Cream 30 with black bows" loading="lazy"><figcaption>Bows &amp; neutrals</figcaption></figure>
+      <figure class="reveal"><img src="images/zoo-arch-first.jpg" alt="Zoo-themed 1st birthday backdrop" loading="lazy"><figcaption>Zoo theme</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="booking" style="background:var(--pink)">
+  <div class="wrap">
+    <div class="head reveal">
+      <div><span class="eyebrow">How it works</span><h2>Booking is <em>easy</em></h2></div>
+      <p>Everything starts with a message. Send over your date and ideas and we'll take it from there.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><div class="n">one</div><h3>Send a message</h3><p>DM us your date, the occasion and any names, colours or themes you have in mind.</p></div>
+      <div class="step reveal"><div class="n">two</div><h3>We design it</h3><p>We put together the balloons and styling around your vision, big or small.</p></div>
+      <div class="step reveal"><div class="n">three</div><h3>Party time</h3><p>Your balloons are ready for the day. Ask us for balloon care tips so they last.</p></div>
+    </div>
+    <div class="trust reveal">
+      <div><b>Fully insured</b><span>Peace of mind for every setup</span></div>
+      <div><b>Tarleton</b><span>&amp; surrounding areas</span></div>
+      <div><b>100% custom</b><span>Your names, colours &amp; theme</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <div class="cta-card reveal">
+      <span class="balloon b1" style="right:6%;top:30px"></span>
+      <span class="balloon b2" style="left:6%;top:60%"></span>
+      <h2>Let's make it a<br><em>pretty little party</em></h2>
+      <p>Tell us what you're celebrating and we'll bring your vision to life.</p>
+      <div class="btns">
+        <a class="btn btn-dark" href="https://ig.me/m/pretty_little_party_x" target="_blank" rel="noopener">Message on Instagram</a>
+        <a class="btn btn-line" href="https://www.facebook.com/share/15CcXRFMh3/" target="_blank" rel="noopener">Find us on Facebook</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div><b>Pretty Little Party</b><p>Balloons &amp; event styling. Luxury setups, gifting and custom balloons in Tarleton and surrounding areas. Fully insured.</p></div>
+      <div><h4>Explore</h4><ul><li><a href="#services">Services</a></li><li><a href="#setups">Luxury setups</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#booking">Booking</a></li></ul></div>
+      <div><h4>Say hello</h4><ul><li><a href="https://www.instagram.com/pretty_little_party_x/" target="_blank" rel="noopener">Instagram · @pretty_little_party_x</a></li><li><a href="https://www.facebook.com/share/15CcXRFMh3/" target="_blank" rel="noopener">Facebook · Pretty Little Party</a></li></ul></div>
+    </div>
+    <div class="foot-bottom"><span>© Pretty Little Party</span><span>Design concept prepared by Codzo</span></div>
+  </div>
+</footer>
+
+<nav class="mbar">
+  <a href="https://ig.me/m/pretty_little_party_x" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg>DM to book</a>
+  <a href="https://www.facebook.com/share/15CcXRFMh3/" target="_blank" rel="noopener">Facebook</a>
+</nav>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

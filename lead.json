@@ -497,5 +497,41 @@
     "demo_path": "sites/lucy-lous-boutique/",
     "demo_url": "https://business-red-ten.vercel.app/lucy-lous-boutique/",
     "status": "draft"
+  },
+  {
+    "slug": "pretty-little-party-tarleton",
+    "business": "Pretty Little Party",
+    "trade": "Balloons & event styling",
+    "town": "Tarleton",
+    "region": "Lancashire",
+    "country": "UK",
+    "address": null,
+    "phone": null,
+    "instagram": "@pretty_little_party_x",
+    "facebook": "https://www.facebook.com/share/15CcXRFMh3/",
+    "rating": null,
+    "review_count": null,
+    "hours": null,
+    "maps_link": null,
+    "plus_code": null,
+    "website_status": "facebook_only",
+    "website_status_note": "Instagram bio links only to a Facebook page; no website found. Instagram: 166 posts, ~800 followers. Booking is by DM.",
+    "services": [
+      "Helium filled balloons",
+      "Simple & deluxe balloon stacks",
+      "Balloon arches",
+      "Balloon hoops",
+      "Balloon sailboards",
+      "Bubble balloons",
+      "Special occasion balloons",
+      "Gender reveals",
+      "Luxury setups",
+      "Gifting"
+    ],
+    "reviews": [],
+    "notes": "Built from Instagram screenshots only. Serves 'Tarleton & surrounding areas', 'Fully insured'. Has a Testimonials highlight on Instagram (not read) and a pinned 'Booking info + balloon care' post. Left out: owner's personal 'about me' photos, and posts featuring licensed characters/brands (Spider-Man, Jellycat, Ronaldo shirt, Elf on the Shelf, KPop Demon Hunters). No phone, prices or Google rating captured.",
+    "demo_path": "sites/pretty-little-party-tarleton/",
+    "demo_url": "https://business-red-ten.vercel.app/pretty-little-party-tarleton/",
+    "status": "draft"
   }
 ]
