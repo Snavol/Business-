@@ -703,5 +703,36 @@
     "demo_path": "sites/rd-property-maintenance/",
     "demo_url": "https://business-red-ten.vercel.app/rd-property-maintenance/",
     "status": "draft"
+  },
+  {
+    "slug": "ella-davies-makeup",
+    "business": "Ella Davies Makeup",
+    "trade": "Makeup artist / bridal specialist",
+    "town": "Southport",
+    "region": "Merseyside",
+    "country": "United Kingdom",
+    "address": "330 Southport Road, Southport PR8 5LF (based at @stockshouse330)",
+    "phone": null,
+    "instagram": "@makeupbyellad",
+    "rating": null,
+    "review_count": null,
+    "hours": null,
+    "maps_link": "https://www.google.com/maps/search/?api=1&query=330+Southport+Road+Southport+PR8+5LF",
+    "plus_code": null,
+    "website_status": "none",
+    "website_status_note": "No website link in the Instagram bio (609 posts, ~4.2K followers). Bookings by DM. Web searches for the name found no website or listing for her (only other makeup artists called Ella).",
+    "services": [
+      "Bridal makeup",
+      "Occasion makeup",
+      "Destination weddings (Italy weddings highlights)",
+      "Photoshoots",
+      "Prom (highlight 'Prom 2026')",
+      "10+ years professional experience"
+    ],
+    "reviews": [],
+    "notes": "Built from Instagram screenshots only. Highlights seen: 2026 Weddings, Price List, Italy Weddings, Prom 2026, 2025 Weddings, Photoshoots (contents not seen, so no prices on the demo). Recent post: December appointments released, high demand. Left out: price-update and December graphics, certificate/TikTok post, personal photo with an older relative, video stills. A post with two people holding certificates may mean she runs training courses (unconfirmed, not on site).",
+    "demo_path": "sites/ella-davies-makeup/",
+    "demo_url": "https://business-red-ten.vercel.app/ella-davies-makeup/",
+    "status": "draft"
   }
 ]
