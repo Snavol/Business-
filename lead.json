@@ -533,5 +533,33 @@
     "demo_path": "sites/pretty-little-party-tarleton/",
     "demo_url": "https://business-red-ten.vercel.app/pretty-little-party-tarleton/",
     "status": "draft"
+  },
+  {
+    "slug": "jewellers-bench-birkdale",
+    "business": "The Jewellers Bench",
+    "trade": "Jeweller (repairs & restoration of fine jewellery)",
+    "town": "Birkdale",
+    "region": "Merseyside (Southport)",
+    "country": "UK",
+    "address": "24 Liverpool Road, Birkdale Village, PR8 4AY",
+    "phone": null,
+    "instagram": "@thejewellersbenchbirkdale",
+    "rating": null,
+    "review_count": null,
+    "hours": "Tue-Fri 9am-5pm, Sat 9am-2pm (Sun/Mon closed implied)",
+    "maps_link": "https://www.google.com/maps/search/?api=1&query=24+Liverpool+Road+Birkdale+Village+PR8+4AY",
+    "plus_code": null,
+    "website_status": "none",
+    "website_status_note": "No website link in the Instagram bio (verified badge, 647 posts, ~1.5K followers). A web search found no Birkdale site. CHECK BEFORE PITCHING: 'The Jewellers Bench' also exists in Widnes (tjbwidnes.com) and the same family runs Hallmark Jewellers in Formby; the Birkdale shop may be a sister branch, which would change the pitch.",
+    "services": [
+      "Repairs and restoration of fine jewellery",
+      "Piercing (Instagram highlight)",
+      "Curated showcase pieces"
+    ],
+    "reviews": [],
+    "notes": "Built from Instagram screenshots only. Showcase = 24 product shots on pink velvet stands. No prices, phone number or Google rating captured; item names are descriptive only (no stone/metal claims). Highlights seen: Showcase, Piercing!, Curated, GVC (GVC not understood, left out).",
+    "demo_path": "sites/jewellers-bench-birkdale/",
+    "demo_url": "https://business-red-ten.vercel.app/jewellers-bench-birkdale/",
+    "status": "draft"
   }
 ]
