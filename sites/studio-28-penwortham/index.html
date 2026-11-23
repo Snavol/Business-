@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Studio 28 &amp; Co — Hair Salon, Penwortham</title>
+<meta name="description" content="Studio 28 &amp; Co, 75 Liverpool Road, Penwortham. Quality hairdressing at a reasonable price for over 25 years. Cuts, colour, styling and treatments for all ages, genders and hair types. Call 01772 744836.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Outfit:wght@300;400;500;600&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1b1918;--char:#262220;--cream:#f6f0e8;--paper:#efe6da;--copper:#b8673b;--copper-l:#d99a6c;--blush:#e8c9bd;--muted:#6f655c;--line:rgba(27,25,24,.12);--ease:cubic-bezier(.2,.8,.2,1)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Outfit,system-ui,sans-serif;font-weight:400;background:var(--cream);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit;text-decoration:none}
+.wrap{width:min(1220px,92vw);margin:0 auto}
+.serif{font-family:Gloock,Georgia,serif;font-weight:400}
+.hand{font-family:Caveat,cursive;color:var(--copper);font-size:1.5em;line-height:1}
+.eyebrow{font-size:12px;letter-spacing:.3em;text-transform:uppercase;font-weight:500;color:var(--copper);display:inline-flex;align-items:center;gap:12px}
+.eyebrow:before{content:"";width:28px;height:1px;background:currentColor}
+.btn{position:relative;display:inline-flex;align-items:center;gap:12px;padding:16px 30px;border-radius:999px;font-weight:500;font-size:15px;letter-spacing:.02em;overflow:hidden;isolation:isolate;transition:color .4s var(--ease)}
+.btn:before{content:"";position:absolute;inset:0;border-radius:inherit;transform:translateY(101%);transition:transform .5s var(--ease);z-index:-1}
+.btn:hover:before{transform:none}
+.btn-copper{background:var(--copper);color:#fff}.btn-copper:before{background:var(--ink)}
+.btn-line{border:1px solid currentColor}.btn-line:before{background:var(--ink)}.btn-line:hover{color:var(--cream)}
+.btn-light{border:1px solid rgba(255,255,255,.4);color:#fff}.btn-light:before{background:#fff}.btn-light:hover{color:var(--ink)}
+.btn svg{width:17px;height:17px}
+
+/* progress + header */
+.progress{position:fixed;top:0;left:0;height:2px;background:var(--copper);width:0;z-index:100}
+header{position:fixed;top:0;left:0;right:0;z-index:60;transition:background .4s,box-shadow .4s,color .4s;color:#fff}
+header.solid{background:rgba(246,240,232,.92);backdrop-filter:blur(14px);color:var(--ink);box-shadow:0 1px 0 var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:84px}
+.logo{font-family:Gloock,serif;font-size:27px;letter-spacing:.01em;display:flex;align-items:baseline;gap:6px}
+.logo small{font-family:Outfit;font-size:10.5px;letter-spacing:.32em;text-transform:uppercase;opacity:.7}
+.nav ul{display:flex;gap:36px;list-style:none;font-size:14.5px}
+.nav ul a{position:relative;padding:4px 0}
+.nav ul a:after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:currentColor;transform:scaleX(0);transform-origin:right;transition:transform .4s var(--ease)}
+.nav ul a:hover:after{transform:scaleX(1);transform-origin:left}
+.nav .btn{padding:11px 22px;font-size:14px}
+
+/* hero */
+.hero{position:relative;min-height:100vh;background:var(--ink);color:#fff;overflow:hidden;display:flex;align-items:center;padding:120px 0 80px}
+.hero-bg{position:absolute;inset:0;display:grid;grid-template-columns:repeat(3,1fr);gap:0;opacity:.34}
+.hero-bg div{background-size:cover;background-position:center;animation:kb 22s ease-in-out infinite alternate}
+.hero-bg div:nth-child(2){animation-delay:-7s}.hero-bg div:nth-child(3){animation-delay:-14s}
+@keyframes kb{from{transform:scale(1.05)}to{transform:scale(1.18) translateY(-2%)}}
+.hero:after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 30% 50%,rgba(27,25,24,.55),rgba(27,25,24,.92) 70%)}
+.hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center}
+.hero h1{font-family:Gloock,serif;font-weight:400;font-size:clamp(52px,7.6vw,118px);line-height:.95;letter-spacing:-.02em;margin:22px 0 26px}
+.hero h1 .ln{display:block;overflow:hidden}
+.hero h1 .ln span{display:block;transform:translateY(105%);animation:up 1.1s var(--ease) forwards}
+.hero h1 .ln:nth-child(2) span{animation-delay:.12s}.hero h1 .ln:nth-child(3) span{animation-delay:.24s}
+.hero h1 em{font-style:italic;color:var(--copper-l)}
+@keyframes up{to{transform:none}}
+.hero p.lead{font-size:18.5px;font-weight:300;color:#e6ddd3;max-width:500px;margin-bottom:36px;opacity:0;animation:fade 1s .6s forwards}
+.hero .ctas{display:flex;gap:14px;flex-wrap:wrap;opacity:0;animation:fade 1s .8s forwards}
+@keyframes fade{to{opacity:1}}
+.hero-meta{display:flex;gap:34px;margin-top:54px;opacity:0;animation:fade 1s 1s forwards}
+.hero-meta div b{display:block;font-family:Gloock,serif;font-size:42px;font-weight:400;line-height:1;color:var(--copper-l)}
+.hero-meta div>span{font-size:13px;letter-spacing:.06em;color:#cfc5ba}
+.frame{position:relative;aspect-ratio:4/5;opacity:0;animation:fade 1.2s .4s forwards}
+.frame .pic{position:absolute;inset:0;border-radius:220px 220px 14px 14px;overflow:hidden;clip-path:inset(100% 0 0 0);animation:reveal 1.6s .5s var(--ease) forwards}
+.frame .pic img{width:100%;height:100%;object-fit:cover;transform:scale(1.15);animation:settle 2.2s .5s var(--ease) forwards}
+@keyframes reveal{to{clip-path:inset(0 0 0 0)}}
+@keyframes settle{to{transform:scale(1)}}
+.frame .ring{position:absolute;inset:-18px;border:1px solid rgba(217,154,108,.5);border-radius:240px 240px 24px 24px}
+.badge{position:absolute;left:-56px;bottom:60px;width:150px;height:150px;z-index:3;background:var(--ink);border-radius:50%;box-shadow:0 20px 40px -14px rgba(0,0,0,.7)}
+.badge svg{width:100%;height:100%;animation:spin 18s linear infinite}
+.badge .core{position:absolute;inset:38px;border-radius:50%;overflow:hidden;border:2px solid var(--copper-l)}
+.badge .core img{width:100%;height:100%;object-fit:cover}
+@keyframes spin{to{transform:rotate(360deg)}}
+.scissors{position:absolute;right:-10px;top:-34px;width:110px;color:var(--copper-l)}
+.scissors path,.scissors circle{stroke-dasharray:400;stroke-dashoffset:400;animation:draw 2.4s 1.2s var(--ease) forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.scroll-cue{position:absolute;left:50%;bottom:28px;transform:translateX(-50%);z-index:3;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:#bfb4a8;display:flex;flex-direction:column;align-items:center;gap:10px}
+.scroll-cue i{width:1px;height:44px;background:linear-gradient(#bfb4a8,transparent);animation:cue 2s ease-in-out infinite}
+@keyframes cue{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+/* marquee */
+.marquee{background:var(--copper);color:#fff;overflow:hidden;padding:22px 0;border-block:1px solid rgba(0,0,0,.1)}
+.mt{display:flex;width:max-content;animation:mq 38s linear infinite}
+.mt span{font-family:Gloock,serif;font-size:30px;white-space:nowrap;padding:0 26px;display:flex;align-items:center;gap:52px}
+.mt span:after{content:"✂";font-size:18px;opacity:.7}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+section{padding:130px 0;position:relative}
+.h2{font-family:Gloock,serif;font-weight:400;font-size:clamp(40px,5.2vw,76px);line-height:1;letter-spacing:-.015em;margin-top:18px}
+.h2 em{font-style:italic;color:var(--copper)}
+.sub{color:var(--muted);font-size:17.5px;font-weight:300;max-width:460px}
+
+/* about */
+.about-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:90px;align-items:center}
+.stack{position:relative;height:640px}
+.stack .s{position:absolute;overflow:hidden;border-radius:12px;box-shadow:0 40px 70px -40px rgba(27,25,24,.5)}
+.stack .s img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.stack .s:hover img{transform:scale(1.06)}
+.stack .s1{width:64%;height:78%;left:0;top:0}
+.stack .s2{width:50%;height:52%;right:0;bottom:0;border:10px solid var(--cream)}
+.stack .note{position:absolute;right:8%;top:6%;transform:rotate(6deg);background:#fff;padding:14px 20px 12px;box-shadow:0 18px 30px -18px rgba(0,0,0,.35);font-family:Caveat,cursive;font-size:26px;color:var(--ink);line-height:1.1;z-index:2}
+.stack .note:before{content:"";position:absolute;top:-12px;left:50%;width:70px;height:22px;transform:translateX(-50%) rotate(-3deg);background:rgba(217,154,108,.55)}
+.about p.body{font-size:18px;font-weight:300;color:#453e38;margin:26px 0}
+.welcome{display:flex;flex-wrap:wrap;gap:10px;margin:30px 0 38px}
+.welcome span{border:1px solid var(--line);padding:9px 18px;border-radius:999px;font-size:14px;background:#fff;transition:.3s}
+.welcome span:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+
+/* services */
+.services{background:var(--ink);color:#fff;overflow:hidden}
+.services .sub{color:#b8ada2}
+.svc-head{display:flex;justify-content:space-between;align-items:end;gap:40px;flex-wrap:wrap;margin-bottom:70px}
+.svc-list{border-top:1px solid rgba(255,255,255,.14)}
+.svc{display:grid;grid-template-columns:90px 1fr 1.2fr 60px;gap:30px;align-items:center;padding:34px 0;border-bottom:1px solid rgba(255,255,255,.14);position:relative;cursor:default}
+.svc .n{font-family:Gloock,serif;color:var(--copper-l);font-size:20px}
+.svc h3{font-family:Gloock,serif;font-weight:400;font-size:clamp(30px,3.4vw,50px);line-height:1;transition:transform .5s var(--ease),color .4s}
+.svc p{color:#b8ada2;font-weight:300}
+.svc .arr{width:46px;height:46px;border-radius:50%;border:1px solid rgba(255,255,255,.3);display:flex;align-items:center;justify-content:center;transition:.4s var(--ease)}
+.svc:hover h3{transform:translateX(16px);color:var(--copper-l)}
+.svc:hover .arr{background:var(--copper);border-color:var(--copper);transform:rotate(-45deg)}
+.svc .peek{position:absolute;right:12%;top:50%;width:200px;height:250px;border-radius:120px 120px 10px 10px;overflow:hidden;pointer-events:none;opacity:0;transform:translateY(-50%) scale(.85) rotate(-4deg);transition:opacity .4s,transform .6s var(--ease);z-index:2}
+.svc .peek img{width:100%;height:100%;object-fit:cover}
+.svc:hover .peek{opacity:1;transform:translateY(-50%) scale(1) rotate(3deg)}
+
+/* swatches */
+.swatch-wrap{margin-top:90px;display:grid;grid-template-columns:.8fr 1.2fr;gap:60px;align-items:center}
+.swatches{display:flex;gap:12px;align-items:flex-start;height:260px}
+.sw{flex:1;height:100%;border-radius:999px 999px 40px 40px;transform-origin:top center;animation:sway 5s ease-in-out infinite;position:relative;cursor:pointer;transition:height .5s var(--ease)}
+.sw:hover{height:115%}
+.sw:before{content:"";position:absolute;top:-10px;left:50%;width:70%;height:18px;transform:translateX(-50%);background:#55504a;border-radius:6px}
+.sw span{position:absolute;bottom:14px;left:50%;transform:translateX(-50%) rotate(-90deg);transform-origin:center;white-space:nowrap;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.85);opacity:0;transition:opacity .3s}
+.sw:hover span{opacity:1}
+@keyframes sway{0%,100%{transform:rotate(-1.4deg)}50%{transform:rotate(1.4deg)}}
+.sw:nth-child(2n){animation-delay:-1.3s}.sw:nth-child(3n){animation-delay:-2.6s}
+
+/* lisse feature */
+.feature{background:var(--paper)}
+.feat-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:80px;align-items:center}
+.ba{position:relative;aspect-ratio:4/5;border-radius:14px;overflow:hidden;box-shadow:0 40px 70px -40px rgba(27,25,24,.5)}
+.ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ba .tag{position:absolute;left:22px;bottom:22px;background:rgba(27,25,24,.8);color:#fff;border-radius:999px;padding:8px 16px;font-size:13px;letter-spacing:.05em;backdrop-filter:blur(6px)}
+.ticks{list-style:none;display:grid;gap:16px;margin:30px 0 38px}
+.ticks li{display:flex;gap:14px;align-items:flex-start;font-size:16.5px}
+.ticks li svg{flex:none;width:24px;height:24px;color:var(--copper);margin-top:2px}
+
+/* gallery horizontal */
+.hs{height:300vh;padding:0;background:var(--cream)}
+.hs-sticky{position:sticky;top:0;height:100vh;display:flex;flex-direction:column;justify-content:center;overflow:hidden}
+.hs-top{display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap;margin-bottom:44px}
+.filters{display:flex;gap:8px;flex-wrap:wrap}
+.filters button{font:500 14px Outfit,sans-serif;padding:10px 20px;border-radius:999px;border:1px solid var(--line);background:transparent;cursor:pointer;transition:.3s;color:var(--ink)}
+.filters button:hover{border-color:var(--ink)}
+.filters button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.hs-track{display:flex;gap:22px;padding-left:4vw;will-change:transform}
+.hs-card{flex:none;width:clamp(230px,22vw,320px);aspect-ratio:3/4;border-radius:12px;overflow:hidden;position:relative;transition:opacity .4s,filter .4s,transform .6s var(--ease)}
+.hs-card:nth-child(odd){transform:translateY(26px)}
+.hs-card img{width:100%;height:100%;object-fit:cover;transition:transform 1s var(--ease)}
+.hs-card:hover img{transform:scale(1.07)}
+.hs-card figcaption{position:absolute;left:0;right:0;bottom:0;padding:44px 18px 16px;background:linear-gradient(transparent,rgba(27,25,24,.78));color:#fff;display:flex;justify-content:space-between;align-items:end;transform:translateY(12px);opacity:.0;transition:.5s var(--ease)}
+.hs-card:hover figcaption{transform:none;opacity:1}
+.hs-card figcaption span{font-family:Gloock,serif;font-size:20px}
+.hs-card figcaption em{font-style:normal;font-size:11px;letter-spacing:.22em;text-transform:uppercase;opacity:.8}
+.hs-card.dim{opacity:.18;filter:grayscale(1)}
+.hs-bar{margin-top:56px;height:1px;background:var(--line);position:relative}
+.hs-bar i{position:absolute;left:0;top:-1px;height:3px;background:var(--copper);width:0}
+
+/* prices */
+.prices{background:var(--cream)}
+.price-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;align-items:start}
+.tabs{display:flex;gap:6px;position:relative;border-bottom:1px solid var(--line);margin-bottom:34px;flex-wrap:wrap}
+.tabs button{background:none;border:0;font:500 16px Outfit,sans-serif;padding:14px 18px;cursor:pointer;color:var(--muted);transition:color .3s}
+.tabs button.on{color:var(--ink)}
+.tabs .ink{position:absolute;bottom:-1px;height:2px;background:var(--copper);transition:left .45s var(--ease),width .45s var(--ease)}
+.plist{list-style:none;display:none}
+.plist.on{display:block;animation:plist .6s var(--ease)}
+@keyframes plist{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.plist li{display:flex;align-items:baseline;gap:14px;padding:15px 0;font-size:17px}
+.plist li i{flex:1;border-bottom:1px dotted rgba(27,25,24,.35);transform:translateY(-5px)}
+.plist li b{font-family:Gloock,serif;font-weight:400;font-size:21px;white-space:nowrap}
+.pnote{margin-top:22px;font-size:13.5px;color:var(--muted)}
+.offer{background:var(--ink);color:#fff;border-radius:16px;padding:34px;margin-top:34px;position:relative;overflow:hidden}
+.offer .hand{color:var(--copper-l);font-size:30px}
+.offer p{color:#cfc5ba;font-weight:300;margin-top:8px}
+
+/* reviews */
+.reviews{background:var(--copper);color:#fff;text-align:center;overflow:hidden}
+.reviews .eyebrow{color:#fff}
+.quote-wrap{position:relative;min-height:240px;max-width:900px;margin:40px auto 0}
+.q{position:absolute;inset:0;opacity:0;transform:translateY(20px);transition:opacity .8s,transform .8s var(--ease)}
+.q.on{opacity:1;transform:none}
+.q blockquote{font-family:Gloock,serif;font-size:clamp(30px,4vw,54px);line-height:1.12}
+.q cite{display:block;margin-top:24px;font-style:normal;font-size:13px;letter-spacing:.24em;text-transform:uppercase;opacity:.85}
+.dots{display:flex;gap:10px;justify-content:center;margin-top:30px}
+.dots button{width:10px;height:10px;border-radius:50%;border:1px solid #fff;background:transparent;cursor:pointer;transition:.3s}
+.dots button.on{background:#fff;width:30px;border-radius:6px}
+.bigq{position:absolute;font-family:Gloock,serif;font-size:420px;line-height:1;opacity:.08;top:-60px;left:4%}
+
+/* visit */
+.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:stretch}
+.card{background:#fff;border-radius:18px;padding:46px;box-shadow:0 30px 60px -45px rgba(27,25,24,.45)}
+.status{display:inline-flex;align-items:center;gap:10px;padding:8px 16px;border-radius:999px;background:var(--paper);font-size:14px;font-weight:500;margin-bottom:22px}
+.status i{width:9px;height:9px;border-radius:50%;background:#a89d92}
+.status.open i{background:#39b36b;box-shadow:0 0 0 0 rgba(57,179,107,.6);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(57,179,107,0)}100%{box-shadow:0 0 0 0 rgba(57,179,107,0)}}
+.hours{width:100%;border-collapse:collapse;margin:10px 0 28px}
+.hours td{padding:13px 0;border-bottom:1px solid var(--line);font-size:16px}
+.hours td:last-child{text-align:right;font-family:Gloock,serif;font-size:18px}
+.hours tr.today td{color:var(--copper)}
+.addr{font-size:18px;line-height:1.5;margin-bottom:8px}
+.phone{font-family:Gloock,serif;font-size:36px;display:inline-block;margin:6px 0 26px;background:linear-gradient(var(--copper),var(--copper)) 0 100%/0 2px no-repeat;transition:background-size .5s var(--ease)}
+.phone:hover{background-size:100% 2px}
+.map{border-radius:18px;overflow:hidden;min-height:520px;background:var(--paper)}
+.map iframe{width:100%;height:100%;min-height:520px;border:0;filter:grayscale(.4) contrast(1.05)}
+
+footer{background:var(--ink);color:#cfc5ba;padding:90px 0 40px;overflow:hidden}
+.ft-big{font-family:Gloock,serif;font-size:clamp(70px,15vw,230px);line-height:.85;color:#fff;letter-spacing:-.03em;white-space:nowrap}
+.ft-big em{color:var(--copper-l);font-style:italic}
+.ft-row{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;margin-top:60px;padding-top:30px;border-top:1px solid rgba(255,255,255,.12);font-size:14px}
+.ft-row a:hover{color:#fff}
+.mbar{display:none}
+
+.rv{opacity:0;transform:translateY(40px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
+.mask{overflow:hidden}.mask>*{display:block;transform:translateY(105%);transition:transform 1.1s var(--ease)}.mask.in>*{transform:none}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv,.mask>*,.hero h1 .ln span{opacity:1!important;transform:none!important}.frame,.frame .pic,.hero p.lead,.hero .ctas,.hero-meta{opacity:1!important;clip-path:none!important}}
+
+@media (max-width:1000px){
+ .nav ul{display:none}
+ .hero-grid,.about-grid,.feat-grid,.price-grid,.visit-grid,.swatch-wrap{grid-template-columns:1fr}
+ .frame{max-width:420px;margin:0 auto;width:100%}
+ .svc{grid-template-columns:50px 1fr 46px}.svc p{display:none}.svc .peek{display:none}
+ .stack{height:520px}
+}
+@media (max-width:640px){
+ .nav{height:68px}.logo{font-size:22px}.nav .btn{display:none}
+ .hero{padding:100px 0 70px;min-height:auto}.hero-bg{grid-template-columns:1fr}.hero-bg div:nth-child(n+2){display:none}
+ .hero-meta{gap:22px}.hero-meta div b{font-size:32px}
+ .badge{left:-8px;width:104px;height:104px}.badge .core{inset:27px}
+ section{padding:84px 0}
+ .stack{height:420px}.stack .note{font-size:21px}
+ .swatches{height:190px;gap:8px}
+ .hs{height:auto}.hs-sticky{position:static;height:auto;padding:84px 0}
+ .hs-track{overflow-x:auto;scroll-snap-type:x mandatory;padding:0 4vw 10px;transform:none!important;-webkit-overflow-scrolling:touch}
+ .hs-card{width:72vw;scroll-snap-align:center}.hs-card:nth-child(odd){transform:none}.hs-card figcaption{opacity:1;transform:none}
+ .hs-bar{display:none}
+ .card{padding:30px}.phone{font-size:30px}
+ .map,.map iframe{min-height:340px}
+ .quote-wrap{min-height:300px}
+ footer{padding-bottom:110px}
+ .mbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:10px;right:10px;bottom:10px;z-index:70}
+ .mbar a{display:flex;align-items:center;justify-content:center;gap:8px;padding:15px;border-radius:999px;font-weight:500;font-size:15px;box-shadow:0 12px 30px -12px rgba(0,0,0,.5)}
+ .mbar a:first-child{background:var(--copper);color:#fff}.mbar a:last-child{background:var(--ink);color:#fff}
+}
+</style>
+</head>
+<body>
+<div class="progress" id="prog"></div>
+<header id="hdr"><div class="wrap nav">
+  <a href="#top" class="logo">Studio 28 <span class="serif" style="font-style:italic">&amp; Co</span> <small>Penwortham</small></a>
+  <ul><li><a href="#about">About</a></li><li><a href="#services">Services</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#prices">Prices</a></li><li><a href="#visit">Visit</a></li></ul>
+  <a class="btn btn-copper" href="tel:01772744836">Call to book</a>
+</div></header>
+
+<main id="top">
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true"><div style="background-image:url(images/copper-balayage-waves.jpg)"></div><div style="background-image:url(images/blonde-curls-salon.jpg)"></div><div style="background-image:url(images/burgundy-long.jpg)"></div></div>
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow" style="color:var(--copper-l);opacity:0;animation:fade 1s .2s forwards">Hair salon · Liverpool Road, Penwortham</span>
+      <h1><span class="ln"><span>Quality hair,</span></span><span class="ln"><span><em>honestly</em></span></span><span class="ln"><span>priced.</span></span></h1>
+      <p class="lead">For over 25 years, Studio 28 &amp; Co has given Penwortham quality hairdressing at a reasonable price. We welcome all ages, genders and hair types, for any style you wish.</p>
+      <div class="ctas">
+        <a class="btn btn-copper" href="tel:01772744836"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>01772 744836</a>
+        <a class="btn btn-light" href="#prices">View prices</a>
+      </div>
+      <div class="hero-meta">
+        <div><b><span class="count" data-to="25">0</span>+</b><span>years in Penwortham</span></div>
+        <div><b>4</b><span>services under one roof</span></div>
+        <div><b>All</b><span>ages &amp; hair types</span></div>
+      </div>
+    </div>
+    <div class="frame">
+      <svg class="scissors" viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="30" cy="88" r="14"/><circle cx="60" cy="96" r="14"/><path d="M40 78 L100 14"/><path d="M52 84 L96 26"/><path d="M8 40 C30 20 50 30 46 52"/></svg>
+      <div class="ring"></div>
+      <div class="pic"><img src="images/copper-balayage-waves.jpg" alt="Copper balayage waves styled at Studio 28"></div>
+      <div class="badge">
+        <svg viewBox="0 0 200 200"><defs><path id="c" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs><text fill="#d99a6c" font-family="Outfit" font-size="17" letter-spacing="5.2"><textPath href="#c" textLength="488" lengthAdjust="spacing">STUDIO 28 &amp; CO · PENWORTHAM · HAIR ·</textPath></text></svg>
+        <div class="core"><img src="images/storefront.jpg" alt="Studio 28 &amp; Co shopfront"></div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-cue"><i></i>Scroll</div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="mt">
+  <span>Cuts</span><span>Colour</span><span>Balayage</span><span>Blow dries</span><span>Hair up</span><span>Lisse straightening</span><span>Olaplex</span><span>Perms</span>
+  <span>Cuts</span><span>Colour</span><span>Balayage</span><span>Blow dries</span><span>Hair up</span><span>Lisse straightening</span><span>Olaplex</span><span>Perms</span>
+</div></div>
+
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div class="stack rv">
+      <div class="s s1"><img src="images/blonde-curls-salon.jpg" alt="Long blonde curls in the Studio 28 salon" loading="lazy"></div>
+      <div class="s s2"><img src="images/split-dye.jpg" alt="Split dye colour" loading="lazy"></div>
+      <div class="note">“Relaxed atmosphere,<br>friendly staff”</div>
+    </div>
+    <div>
+      <span class="eyebrow rv">About the salon</span>
+      <h2 class="h2"><span class="mask"><span>A neighbourhood</span></span><span class="mask"><span>salon <em>for 25+ years.</em></span></span></h2>
+      <p class="body rv d1">Studio 28 &amp; Co has been part of Liverpool Road for more than 25 years. The idea hasn't changed: really good hairdressing, a warm welcome and prices that feel fair. Our clients tell us they love that we remember exactly how they like their hair.</p>
+      <div class="welcome rv d2"><span>All ages</span><span>All genders</span><span>All hair types</span><span>Any style you wish</span></div>
+      <a class="btn btn-line rv d3" href="#services">Explore services <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="svc-head">
+      <div><span class="eyebrow rv">What we do</span><h2 class="h2"><span class="mask"><span>Every service,</span></span><span class="mask"><span><em>done well.</em></span></span></h2></div>
+      <p class="sub rv">From a quick wet cut to full balayage and occasion hair, everything happens in one friendly salon.</p>
+    </div>
+    <div class="svc-list">
+      <div class="svc rv"><span class="n">01</span><h3>Cuts</h3><p>Cut &amp; blow dry, restyles and quick dry or wet cuts, plus children's cuts.</p><span class="arr">→</span><div class="peek"><img src="images/short-layered-cut.jpg" alt="" loading="lazy"></div></div>
+      <div class="svc rv"><span class="n">02</span><h3>Colour</h3><p>Roots, foils, balayage &amp; ombré, toners and gloss. Every colour includes a blow dry.</p><span class="arr">→</span><div class="peek"><img src="images/rose-blonde-waves.jpg" alt="" loading="lazy"></div></div>
+      <div class="svc rv"><span class="n">03</span><h3>Styling</h3><p>Blow dries, curls, pin curls and hair up for every occasion.</p><span class="arr">→</span><div class="peek"><img src="images/braided-updo.jpg" alt="" loading="lazy"></div></div>
+      <div class="svc rv"><span class="n">04</span><h3>Treatments</h3><p>Lisse Design straightening, Olaplex and perms.</p><span class="arr">→</span><div class="peek"><img src="images/copper-sleek.jpg" alt="" loading="lazy"></div></div>
+    </div>
+    <div class="swatch-wrap">
+      <div><span class="eyebrow rv" style="color:var(--copper-l)">The colour bar</span><h3 class="h2 rv" style="font-size:clamp(34px,3.6vw,52px)">From soft blonde to <em style="color:var(--copper-l)">bold</em> pink.</h3><p class="sub rv" style="margin-top:16px">Hover over a swatch. Colour correction and extreme colour are priced on consultation.</p></div>
+      <div class="swatches rv" aria-hidden="true">
+        <div class="sw" style="background:linear-gradient(#f4e6c8,#e8d2a6)"><span>Platinum</span></div>
+        <div class="sw" style="background:linear-gradient(#e2c48f,#c79b5e)"><span>Honey</span></div>
+        <div class="sw" style="background:linear-gradient(#e7b8a3,#c98f7d)"><span>Rosé</span></div>
+        <div class="sw" style="background:linear-gradient(#d4874f,#a9542b)"><span>Copper</span></div>
+        <div class="sw" style="background:linear-gradient(#8a5a3c,#5a3826)"><span>Chestnut</span></div>
+        <div class="sw" style="background:linear-gradient(#7a2235,#4a1220)"><span>Burgundy</span></div>
+        <div class="sw" style="background:linear-gradient(#e0559a,#8e3fb0)"><span>Pink &amp; violet</span></div>
+        <div class="sw" style="background:linear-gradient(#3a302a,#1c1714)"><span>Espresso</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="feature">
+  <div class="wrap feat-grid">
+    <div>
+      <span class="eyebrow rv">Featured treatment</span>
+      <h2 class="h2"><span class="mask"><span>Lisse Design</span></span><span class="mask"><span><em>smoothing.</em></span></span></h2>
+      <p class="sub rv d1" style="margin-top:22px;max-width:520px">A progressive straightening treatment from Alfaparf for dry, frizzy hair. One of our clients says it completely transformed her hair.</p>
+      <ul class="ticks">
+        <li class="rv d1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Formaldehyde and paraben free</li>
+        <li class="rv d2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Results that last at least 3 months</li>
+        <li class="rv d3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Colour can be done on the same day</li>
+      </ul>
+      <a class="btn btn-copper rv" href="tel:01772744836">Ask about Lisse · £50–£150</a>
+    </div>
+    <div class="ba rv"><img src="images/copper-sleek.jpg" alt="Sleek, glossy straight copper hair" loading="lazy"><span class="tag">Sleek, glossy finish</span></div>
+  </div>
+</section>
+
+<section class="hs" id="gallery">
+  <div class="hs-sticky">
+    <div class="wrap hs-top">
+      <div><span class="eyebrow">The gallery</span><h2 class="h2">Recent <em>work.</em></h2></div>
+      <div class="filters" role="tablist"><button class="on" data-f="all">All</button><button data-f="colour">Colour</button><button data-f="cuts">Cuts</button><button data-f="styling">Styling</button></div>
+    </div>
+    <div class="hs-track" id="track">
+        <figure class="hs-card" data-cat="colour"><img src="images/copper-balayage-waves.jpg" alt="Copper balayage at Studio 28" loading="lazy"><figcaption><span>Copper balayage</span><em>colour</em></figcaption></figure>
+        <figure class="hs-card" data-cat="colour"><img src="images/platinum-long.jpg" alt="Platinum blonde at Studio 28" loading="lazy"><figcaption><span>Platinum blonde</span><em>colour</em></figcaption></figure>
+        <figure class="hs-card" data-cat="colour"><img src="images/split-dye.jpg" alt="Split dye at Studio 28" loading="lazy"><figcaption><span>Split dye</span><em>colour</em></figcaption></figure>
+        <figure class="hs-card" data-cat="styling"><img src="images/bridal-curls.jpg" alt="Bridal curls at Studio 28" loading="lazy"><figcaption><span>Bridal curls</span><em>styling</em></figcaption></figure>
+        <figure class="hs-card" data-cat="colour"><img src="images/burgundy-long.jpg" alt="Rich burgundy at Studio 28" loading="lazy"><figcaption><span>Rich burgundy</span><em>colour</em></figcaption></figure>
+        <figure class="hs-card" data-cat="styling"><img src="images/textured-updo.jpg" alt="Textured updo at Studio 28" loading="lazy"><figcaption><span>Textured updo</span><em>styling</em></figcaption></figure>
+        <figure class="hs-card" data-cat="cuts"><img src="images/short-layered-cut.jpg" alt="Layered short cut at Studio 28" loading="lazy"><figcaption><span>Layered short cut</span><em>cuts</em></figcaption></figure>
+        <figure class="hs-card" data-cat="colour"><img src="images/rose-blonde-waves.jpg" alt="Rosé blonde waves at Studio 28" loading="lazy"><figcaption><span>Rosé blonde waves</span><em>colour</em></figcaption></figure>
+        <figure class="hs-card" data-cat="colour"><img src="images/pink-curls.jpg" alt="Pink & violet at Studio 28" loading="lazy"><figcaption><span>Pink & violet</span><em>colour</em></figcaption></figure>
+        <figure class="hs-card" data-cat="styling"><img src="images/braided-updo.jpg" alt="Braided updo at Studio 28" loading="lazy"><figcaption><span>Braided updo</span><em>styling</em></figcaption></figure>
+        <figure class="hs-card" data-cat="cuts"><img src="images/auburn-lob.jpg" alt="Auburn lob at Studio 28" loading="lazy"><figcaption><span>Auburn lob</span><em>cuts</em></figcaption></figure>
+        <figure class="hs-card" data-cat="colour"><img src="images/ash-blonde-waves.jpg" alt="Ash blonde waves at Studio 28" loading="lazy"><figcaption><span>Ash blonde waves</span><em>colour</em></figcaption></figure>
+        <figure class="hs-card" data-cat="colour"><img src="images/copper-curls.jpg" alt="Copper curls at Studio 28" loading="lazy"><figcaption><span>Copper curls</span><em>colour</em></figcaption></figure>
+        <figure class="hs-card" data-cat="styling"><img src="images/low-bun.jpg" alt="Soft low bun at Studio 28" loading="lazy"><figcaption><span>Soft low bun</span><em>styling</em></figcaption></figure>
+        <figure class="hs-card" data-cat="cuts"><img src="images/platinum-bob.jpg" alt="Platinum bob at Studio 28" loading="lazy"><figcaption><span>Platinum bob</span><em>cuts</em></figcaption></figure>
+        <figure class="hs-card" data-cat="styling"><img src="images/brunette-curls.jpg" alt="Brunette curls at Studio 28" loading="lazy"><figcaption><span>Brunette curls</span><em>styling</em></figcaption></figure>
+        <figure class="hs-card" data-cat="colour"><img src="images/soft-highlights.jpg" alt="Soft highlights at Studio 28" loading="lazy"><figcaption><span>Soft highlights</span><em>colour</em></figcaption></figure>
+        <figure class="hs-card" data-cat="cuts"><img src="images/dark-sleek.jpg" alt="Sleek & glossy at Studio 28" loading="lazy"><figcaption><span>Sleek & glossy</span><em>cuts</em></figcaption></figure>
+    </div>
+    <div class="wrap"><div class="hs-bar"><i id="hsbar"></i></div></div>
+  </div>
+</section>
+
+<section class="prices" id="prices">
+  <div class="wrap price-grid">
+    <div>
+      <span class="eyebrow rv">Price list</span>
+      <h2 class="h2"><span class="mask"><span>Fair prices,</span></span><span class="mask"><span><em>no surprises.</em></span></span></h2>
+      <p class="sub rv d1" style="margin-top:20px">Every colour service includes a blow dry. Call us for anything not listed and we'll be happy to help.</p>
+      <div class="offer rv d2"><span class="hand">Ask about offers</span><p>Keep an eye on our Instagram for seasonal offers and model days, and ask in the salon about apprentice blow dries.</p></div>
+    </div>
+    <div class="rv">
+      <div class="tabs" id="tabs"><button class="on" data-t="cuts">Cuts</button><button data-t="colour">Colour</button><button data-t="styling">Blow dry &amp; styling</button><button data-t="treat">Treatments</button><span class="ink" id="ink"></span></div>
+      <ul class="plist on" id="p-cuts">
+            <li><span>Cut &amp; blow dry, short hair</span><i></i><b>£36</b></li>
+            <li><span>Cut &amp; blow dry, below shoulder</span><i></i><b>£40</b></li>
+            <li><span>Restyle &amp; blow dry</span><i></i><b>£42</b></li>
+            <li><span>Dry / wet cut</span><i></i><b>£25</b></li>
+            <li><span>Children 5–13, cut &amp; blow</span><i></i><b>£25</b></li>
+            <li><span>Children 5–13, girls dry/wet cut</span><i></i><b>£15</b></li>
+            <li><span>Children 5–13, boys dry/wet cut</span><i></i><b>£12</b></li>
+            <li><span>Under 5s, dry/wet cut</span><i></i><b>£5</b></li>
+      </ul>
+      <ul class="plist" id="p-colour">
+            <li><span>Root regrowth</span><i></i><b>£48</b></li>
+            <li><span>T-section foils</span><i></i><b>£55</b></li>
+            <li><span>Full head foils</span><i></i><b>£70</b></li>
+            <li><span>Balayage &amp; ombré</span><i></i><b>£70</b></li>
+            <li><span>Semi-permanent colour</span><i></i><b>£50</b></li>
+            <li><span>Toner &amp; gloss</span><i></i><b>£20</b></li>
+            <li><span>Olaplex add-on</span><i></i><b>from £20</b></li>
+            <li><span>Colour correction</span><i></i><b>on consultation</b></li>
+      </ul>
+      <ul class="plist" id="p-styling">
+            <li><span>Blow dry, short hair</span><i></i><b>£15</b></li>
+            <li><span>Blow dry, shoulder length</span><i></i><b>£17</b></li>
+            <li><span>Blow dry, long &amp; bouncy</span><i></i><b>£25</b></li>
+            <li><span>Blow dry with pin curls</span><i></i><b>£25</b></li>
+            <li><span>Shampoo &amp; set, short hair</span><i></i><b>£15</b></li>
+            <li><span>Curling</span><i></i><b>£20</b></li>
+            <li><span>Hair up</span><i></i><b>from £15</b></li>
+      </ul>
+      <ul class="plist" id="p-treat">
+            <li><span>Lisse Design straightening</span><i></i><b>£50 – £150</b></li>
+            <li><span>Olaplex treatment</span><i></i><b>£20 – £35</b></li>
+            <li><span>Perm, short hair</span><i></i><b>£45</b></li>
+            <li><span>Perm, long hair</span><i></i><b>£65</b></li>
+      </ul>
+      <p class="pnote">Prices are taken from the salon's current website. Please confirm when you book.</p>
+    </div>
+  </div>
+</section>
+
+<section class="reviews">
+  <span class="bigq" aria-hidden="true">“</span>
+  <div class="wrap">
+    <span class="eyebrow rv">Kind words</span>
+    <div class="quote-wrap" id="quotes">
+      <div class="q on"><blockquote>“Relaxed atmosphere, friendly staff and reasonable prices.”</blockquote><cite>Salon client</cite></div>
+      <div class="q"><blockquote>“Everyone at Studio 28 is friendly and welcoming.”</blockquote><cite>Salon client</cite></div>
+      <div class="q"><blockquote>“The staff are friendly, chatty and remember how you like your hair.”</blockquote><cite>Salon client</cite></div>
+    </div>
+    <div class="dots" id="dots"><button class="on" aria-label="Review 1"></button><button aria-label="Review 2"></button><button aria-label="Review 3"></button></div>
+  </div>
+</section>
+
+<section id="visit">
+  <div class="wrap">
+    <span class="eyebrow rv">Visit us</span>
+    <h2 class="h2" style="margin-bottom:56px"><span class="mask"><span>Find us on</span></span><span class="mask"><span><em>Liverpool Road.</em></span></span></h2>
+    <div class="visit-grid">
+      <div class="card rv">
+        <div class="status" id="status"><i></i><span id="stxt">Tue–Sat · see hours below</span></div>
+        <p class="addr">75 Liverpool Road<br>Penwortham, Preston<br>PR1 9XD</p>
+        <a class="phone" href="tel:01772744836">01772 744836</a>
+        <table class="hours" id="hours">
+          <tr data-d="2"><td>Tuesday</td><td>9am – 5pm</td></tr>
+          <tr data-d="3"><td>Wednesday</td><td>9am – 6pm</td></tr>
+          <tr data-d="4"><td>Thursday</td><td>9am – 7pm</td></tr>
+          <tr data-d="5"><td>Friday</td><td>9am – 7pm</td></tr>
+          <tr data-d="6"><td>Saturday</td><td>9am – 5pm</td></tr>
+        </table>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <a class="btn btn-copper" href="tel:01772744836">Call to book</a>
+          <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&query=Studio+28+75+Liverpool+Road+Penwortham+PR1+9XD" target="_blank" rel="noopener">Directions</a>
+        </div>
+      </div>
+      <div class="map rv d1"><iframe title="Map to Studio 28 &amp; Co, 75 Liverpool Road, Penwortham" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=75+Liverpool+Road,+Penwortham,+Preston+PR1+9XD&output=embed"></iframe></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="ft-big">Studio 28 <em>&amp; Co</em></div>
+    <div class="ft-row">
+      <span>75 Liverpool Road, Penwortham, Preston PR1 9XD · <a href="tel:01772744836">01772 744836</a></span>
+      <span><a href="https://www.instagram.com/studio28andco/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/studio28hair" target="_blank" rel="noopener">Facebook</a></span>
+      <span>Design concept prepared by Codzo</span>
+    </div>
+  </div>
+</footer>
+
+<nav class="mbar"><a href="tel:01772744836">Call to book</a><a href="https://www.google.com/maps/search/?api=1&query=Studio+28+75+Liverpool+Road+Penwortham+PR1+9XD" target="_blank" rel="noopener">Directions</a></nav>
+
+<script>
+const hdr=document.getElementById('hdr'),prog=document.getElementById('prog');
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.rv,.mask').forEach(el=>io.observe(el));
+// count up
+document.querySelectorAll('.count').forEach(el=>{const to=+el.dataset.to;let s=null;const step=t=>{if(!s)s=t;const p=Math.min((t-s)/1600,1);el.textContent=Math.round(to*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(step)};setTimeout(()=>requestAnimationFrame(step),900)});
+// horizontal gallery
+const hs=document.querySelector('.hs'),track=document.getElementById('track'),bar=document.getElementById('hsbar');
+const mq=matchMedia('(max-width:640px)');
+function onScroll(){
+  const y=scrollY;hdr.classList.toggle('solid',y>60);
+  const h=document.documentElement.scrollHeight-innerHeight;prog.style.width=(y/h*100)+'%';
+  if(!mq.matches){const r=hs.getBoundingClientRect();const total=hs.offsetHeight-innerHeight;const p=Math.min(Math.max(-r.top/total,0),1);
+    const max=track.scrollWidth-innerWidth+innerWidth*.08;track.style.transform=`translateX(${-p*max}px)`;bar.style.width=(p*100)+'%'}
+}
+addEventListener('scroll',onScroll,{passive:true});addEventListener('resize',onScroll);onScroll();
+document.querySelectorAll('.filters button').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('.filters button').forEach(x=>x.classList.remove('on'));b.classList.add('on');
+  const f=b.dataset.f;document.querySelectorAll('.hs-card').forEach(c=>c.classList.toggle('dim',f!=='all'&&c.dataset.cat!==f));
+}));
+// tabs
+const ink=document.getElementById('ink');
+function moveInk(b){ink.style.left=b.offsetLeft+'px';ink.style.width=b.offsetWidth+'px';ink.style.top=(b.offsetTop+b.offsetHeight-1)+'px'}
+document.querySelectorAll('#tabs button').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('#tabs button').forEach(x=>x.classList.remove('on'));b.classList.add('on');moveInk(b);
+  document.querySelectorAll('.plist').forEach(l=>l.classList.remove('on'));document.getElementById('p-'+b.dataset.t).classList.add('on');
+}));
+addEventListener('load',()=>moveInk(document.querySelector('#tabs button.on')));addEventListener('resize',()=>moveInk(document.querySelector('#tabs button.on')));
+moveInk(document.querySelector('#tabs button.on'));
+// quotes
+const qs=[...document.querySelectorAll('.q')],ds=[...document.querySelectorAll('#dots button')];let qi=0,qt;
+function showQ(i){qs[qi].classList.remove('on');ds[qi].classList.remove('on');qi=i;qs[qi].classList.add('on');ds[qi].classList.add('on')}
+function auto(){clearInterval(qt);qt=setInterval(()=>showQ((qi+1)%qs.length),5000)}
+ds.forEach((d,i)=>d.addEventListener('click',()=>{showQ(i);auto()}));auto();
+// open now (UK time)
+try{
+  const p=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/London',weekday:'short',hour:'numeric',minute:'numeric',hour12:false}).formatToParts(new Date());
+  const g=k=>p.find(x=>x.type===k).value;const day={Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6}[g('weekday')];
+  const m=(+g('hour')%24)*60+(+g('minute'));
+  const H={2:[540,1020,'5pm'],3:[540,1080,'6pm'],4:[540,1140,'7pm'],5:[540,1140,'7pm'],6:[540,1020,'5pm']}[day];
+  const row=document.querySelector('#hours tr[data-d="'+day+'"]');if(row)row.classList.add('today');
+  if(H&&m>=H[0]&&m<H[1]){document.getElementById('status').classList.add('open');document.getElementById('stxt').textContent='Open now · until '+H[2]}
+}catch(e){}
+</script>
+</body>
+</html>

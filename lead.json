@@ -590,5 +590,51 @@
     "demo_path": "sites/mimi-and-bear/",
     "demo_url": "https://business-red-ten.vercel.app/mimi-and-bear/",
     "status": "draft"
+  },
+  {
+    "slug": "studio-28-penwortham",
+    "business": "Studio 28 & Co (Studio 28 Ltd)",
+    "trade": "Hair salon",
+    "town": "Penwortham",
+    "region": "Preston, Lancashire",
+    "country": "UK",
+    "address": "75 Liverpool Road, Penwortham, Preston PR1 9XD",
+    "phone": "01772 744836",
+    "instagram": "@studio28andco",
+    "facebook": "https://www.facebook.com/studio28hair",
+    "rating": null,
+    "review_count": null,
+    "hours": "Tue 9-5, Wed 9-6, Thu-Fri 9-7, Sat 9-5 (Sun/Mon not listed)",
+    "maps_link": "https://www.google.com/maps/search/?api=1&query=Studio+28+75+Liverpool+Road+Penwortham+PR1+9XD",
+    "plus_code": null,
+    "website_status": "has_website",
+    "website_status_note": "Free Wix subdomain site (studio28penwortham.wixsite.com/28ltd). No online booking ('BOOK NOW' heading but no link); some price-to-service pairings in the cuts list are ambiguous; generic layout. Redesign pitch.",
+    "services": [
+      "Cuts",
+      "Colour (roots, foils, balayage, toner)",
+      "Blow dry & styling / hair up",
+      "Lisse Design straightening",
+      "Olaplex",
+      "Perms",
+      "Children's cuts"
+    ],
+    "reviews": [
+      {
+        "name": null,
+        "text": "Relaxed atmosphere, friendly staff and reasonable prices."
+      },
+      {
+        "name": null,
+        "text": "Everyone at Studio 28 is friendly and welcoming."
+      },
+      {
+        "name": null,
+        "text": "The staff are friendly, chatty and remember how you like your hair."
+      }
+    ],
+    "notes": "Reviews are short excerpts from their current site; reviewer names (Kerry Dorcy, Annette Thompson) are not clearly matched to quotes, so shown as 'Salon client'. Cut prices are a best reading of an ambiguous layout. Staff mentioned on site: Vicky, Mechelle, Neha; Instagram also mentions Sophie and apprentice Tara. Left out the apprentice intro photo, the stylist's personal price-list graphics and model-call flyers.",
+    "demo_path": "sites/studio-28-penwortham/",
+    "demo_url": "https://business-red-ten.vercel.app/studio-28-penwortham/",
+    "status": "draft"
   }
 ]
