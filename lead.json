@@ -636,5 +636,37 @@
     "demo_path": "sites/studio-28-penwortham/",
     "demo_url": "https://business-red-ten.vercel.app/studio-28-penwortham/",
     "status": "draft"
+  },
+  {
+    "slug": "bonbons-coffee-bar",
+    "business": "BonBons Coffee Bar",
+    "trade": "Coffee shop / coffee bar",
+    "town": "Penwortham",
+    "region": "Preston, Lancashire",
+    "country": "UK",
+    "address": "44 Liverpool Road, Penwortham, Preston PR1 0DQ",
+    "phone": "01772 497772",
+    "instagram": "@bonbonscoffeebar",
+    "rating": null,
+    "review_count": null,
+    "hours": "Mon closed; Tue 12-5; Wed 11-5; Thu 11-4; Fri 11-5 (late Friday once a month); Sat 11-5; Sun 11-5 (from Instagram hours post)",
+    "maps_link": "https://www.google.com/maps/search/?api=1&query=BonBons+Coffee+Bar+44+Liverpool+Road+Penwortham+PR1+0DQ",
+    "plus_code": null,
+    "website_status": "none",
+    "website_status_note": "No website link in Instagram bio; bookings by phone. A third-party listing (tripaligner) shows an 'Official website' link, so double-check whether a site exists before pitching. Food hygiene rating 5 per hygienescore.co.uk (Jan 2026).",
+    "services": [
+      "Coffee & speciality lattes (Pink Kiss, matcha, Blue Chai)",
+      "Cakes, scones & bakes",
+      "Brunch",
+      "Salads",
+      "Hot chocolate",
+      "Table bookings by phone",
+      "Late Fridays (monthly)"
+    ],
+    "reviews": [],
+    "notes": "Built from Instagram screenshots. Blue Chai Latte £4.95 from their special-offer post. Not shown on demo: staff video still, hiring post, fox calendar, coffee-break closure posts. Web listings mention dog-friendly front lounge, garden and gluten-free options (third-party, not used on demo).",
+    "demo_path": "sites/bonbons-coffee-bar/",
+    "demo_url": "https://business-red-ten.vercel.app/bonbons-coffee-bar/",
+    "status": "draft"
   }
 ]

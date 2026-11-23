@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BonBons Coffee Bar — Penwortham</title>
+<meta name="description" content="BonBons Coffee Bar, 44 Liverpool Road, Penwortham. An atmospheric coffee bar for coffee, cake, brunch and catch-ups with friends. To book, call 01772 497772.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bean:#1a0f0a;--esp:#2a1810;--roast:#3d2418;--crema:#f3e3cc;--foam:#fff8ee;--caramel:#e8a24a;--pink:#ff5fa2;--matcha:#9bd16b;--chai:#5ec8e8;--cocoa:#8a5a3c;--ease:cubic-bezier(.2,.8,.2,1)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;background:var(--bean);color:var(--foam);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit;text-decoration:none}
+.wrap{width:min(1220px,92vw);margin:0 auto}
+.d{font-family:"Bricolage Grotesque",Inter,sans-serif;font-weight:800;letter-spacing:-.03em}
+.it{font-family:"Instrument Serif",Georgia,serif;font-style:italic;font-weight:400;letter-spacing:0}
+.tag{display:inline-flex;align-items:center;gap:8px;font:600 12px Inter;letter-spacing:.2em;text-transform:uppercase;color:var(--caramel)}
+.tag:before{content:"";width:8px;height:8px;border-radius:50%;background:currentColor;box-shadow:0 0 12px currentColor}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 28px;border-radius:999px;font:700 15px "Bricolage Grotesque",sans-serif;letter-spacing:.01em;transition:transform .25s var(--ease),box-shadow .25s,background .25s}
+.btn:hover{transform:translateY(-3px) rotate(-1deg)}
+.btn-pink{background:var(--pink);color:#fff;box-shadow:0 12px 30px -8px rgba(255,95,162,.7)}
+.btn-pink:hover{box-shadow:0 18px 40px -8px rgba(255,95,162,.9)}
+.btn-foam{background:var(--foam);color:var(--bean)}
+.btn-ghost{border:1.5px solid rgba(255,248,238,.35)}
+.btn-ghost:hover{border-color:var(--foam)}
+.btn svg{width:18px;height:18px}
+
+header{position:fixed;top:14px;left:0;right:0;z-index:60}
+.nav{display:flex;align-items:center;justify-content:space-between;background:rgba(26,15,10,.72);backdrop-filter:blur(16px);border:1px solid rgba(255,248,238,.1);border-radius:999px;padding:8px 8px 8px 10px}
+.brand{display:flex;align-items:center;gap:10px}
+.brand img{width:44px;height:44px;border-radius:50%;animation:spin 20s linear infinite}
+.brand b{font:800 20px "Bricolage Grotesque",sans-serif;letter-spacing:-.02em}
+.nav ul{display:flex;gap:6px;list-style:none}
+.nav ul a{padding:10px 16px;border-radius:999px;font-size:14px;font-weight:500;transition:background .25s}
+.nav ul a:hover{background:rgba(255,248,238,.1)}
+.nav .btn{padding:12px 20px;font-size:14px}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* hero */
+.hero{position:relative;min-height:100vh;padding:150px 0 90px;overflow:hidden;background:radial-gradient(900px 600px at 78% 40%,rgba(232,162,74,.28),transparent 60%),radial-gradient(600px 500px at 10% 90%,rgba(255,95,162,.18),transparent 60%),var(--bean)}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;position:relative;z-index:2}
+.hero h1{font-size:clamp(58px,8.4vw,132px);line-height:.86;margin:22px 0 26px}
+.hero h1 .it{display:block;color:var(--caramel);font-size:.82em;line-height:1;margin:.04em 0}
+.hero h1 .row{display:block;overflow:hidden}
+.hero h1 .row>span{display:inline-block;transform:translateY(110%) rotate(6deg);animation:rise 1s var(--ease) forwards}
+.hero h1 .row:nth-child(2)>span{animation-delay:.12s}.hero h1 .row:nth-child(3)>span{animation-delay:.24s}
+@keyframes rise{to{transform:none}}
+.hero h1 .pop{color:var(--pink);display:inline-block}
+.hero p{font-size:19px;color:#e9d8c4;max-width:480px;margin-bottom:34px;opacity:0;animation:fade .8s .6s forwards}
+.hero .ctas{display:flex;gap:12px;flex-wrap:wrap;opacity:0;animation:fade .8s .75s forwards}
+@keyframes fade{to{opacity:1}}
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:40px;opacity:0;animation:fade .8s .9s forwards}
+.chips span{padding:8px 16px;border-radius:999px;font-size:13.5px;font-weight:600;border:1px solid rgba(255,248,238,.18);background:rgba(255,248,238,.05)}
+
+.cup-stage{position:relative;height:600px}
+.blob{position:absolute;inset:6% 4%;border-radius:46% 54% 60% 40%/50% 42% 58% 50%;background:linear-gradient(135deg,var(--caramel),var(--pink));animation:morph 9s ease-in-out infinite;filter:saturate(1.1)}
+@keyframes morph{0%,100%{border-radius:46% 54% 60% 40%/50% 42% 58% 50%;transform:rotate(0)}50%{border-radius:60% 40% 38% 62%/40% 62% 38% 60%;transform:rotate(8deg)}}
+.hero-photo{position:absolute;inset:12% 12% 10%;border-radius:40px;overflow:hidden;border:6px solid var(--foam);transform:rotate(-4deg);box-shadow:0 40px 80px -30px rgba(0,0,0,.8);animation:bob 6s ease-in-out infinite}
+.hero-photo img{width:100%;height:100%;object-fit:cover}
+@keyframes bob{0%,100%{transform:rotate(-4deg) translateY(0)}50%{transform:rotate(-2deg) translateY(-14px)}}
+.mini{position:absolute;width:150px;height:180px;border-radius:24px;overflow:hidden;border:5px solid var(--foam);box-shadow:0 30px 50px -20px rgba(0,0,0,.8);z-index:3}
+.mini img{width:100%;height:100%;object-fit:cover}
+.mini.m1{right:-14px;top:6%;transform:rotate(9deg);animation:bob2 5s ease-in-out infinite}
+.mini.m2{left:-20px;bottom:4%;transform:rotate(-10deg);animation:bob2 5.5s ease-in-out infinite -2s}
+@keyframes bob2{50%{translate:0 -12px}}
+.stamp{position:absolute;z-index:4;width:136px;height:136px;left:2%;top:4%;border-radius:50%;background:var(--matcha);color:var(--bean);display:flex;align-items:center;justify-content:center;text-align:center;font:800 18px/1 "Bricolage Grotesque";transform:rotate(-12deg);box-shadow:0 14px 30px -10px rgba(0,0,0,.6)}
+.stamp svg{position:absolute;inset:0;animation:spin 14s linear infinite}
+.steam{position:absolute;left:50%;top:2%;width:120px;height:120px;transform:translateX(-50%);z-index:5;pointer-events:none}
+.steam i{position:absolute;bottom:0;width:14px;height:70px;border-radius:50%;background:linear-gradient(transparent,rgba(255,248,238,.55),transparent);filter:blur(5px);animation:steam 3.2s ease-out infinite}
+.steam i:nth-child(1){left:28px}.steam i:nth-child(2){left:54px;animation-delay:-1.1s}.steam i:nth-child(3){left:80px;animation-delay:-2.2s}
+@keyframes steam{0%{transform:translateY(20px) scaleX(.6);opacity:0}30%{opacity:1}100%{transform:translateY(-60px) scaleX(1.6) skewX(12deg);opacity:0}}
+.beans{position:absolute;inset:0;pointer-events:none;z-index:1}
+.beans b{position:absolute;top:-30px;width:14px;height:20px;border-radius:50%;background:var(--cocoa);opacity:.55;animation:fall linear infinite}
+.beans b:after{content:"";position:absolute;left:50%;top:10%;bottom:10%;width:2px;background:var(--bean);border-radius:2px;transform:translateX(-50%) rotate(8deg)}
+@keyframes fall{to{transform:translateY(110vh) rotate(540deg)}}
+
+/* ribbons */
+.ribbons{position:relative;height:230px;overflow:hidden;background:var(--bean)}
+.rib{position:absolute;left:-5%;right:-5%;padding:16px 0;overflow:hidden;white-space:nowrap}
+.rib .t{display:inline-flex;animation:mq 30s linear infinite}
+.rib span{font:800 32px "Bricolage Grotesque";letter-spacing:-.02em;padding:0 22px;display:inline-flex;align-items:center;gap:44px}
+.rib span:after{content:"☕";font-size:24px}
+.rib.a{background:var(--pink);top:30px;transform:rotate(-3deg);z-index:2}
+.rib.b{background:var(--matcha);color:var(--bean);top:120px;transform:rotate(2.5deg)}
+.rib.b .t{animation-direction:reverse;animation-duration:36s}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+section{padding:120px 0;position:relative}
+.h2{font-size:clamp(46px,6.4vw,100px);line-height:.9;margin-top:16px}
+.h2 .it{color:var(--caramel)}
+.lead{color:#d9c6b0;font-size:18px;max-width:480px}
+.head{display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap;margin-bottom:56px}
+
+/* sips */
+.sips{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.sip{position:relative;border-radius:30px;overflow:hidden;aspect-ratio:3/4.2;transform-style:preserve-3d;transition:transform .2s;cursor:default}
+.sip img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1s var(--ease)}
+.sip:hover img{transform:scale(1.08)}
+.sip:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(26,15,10,.92))}
+.sip .info{position:absolute;left:20px;right:20px;bottom:20px;z-index:2}
+.sip h3{font:800 26px/1 "Bricolage Grotesque";letter-spacing:-.02em}
+.sip p{font-size:13.5px;color:#e0cfbb;margin-top:8px}
+.sip .pill{position:absolute;top:16px;left:16px;z-index:2;padding:6px 14px;border-radius:999px;font:700 12px "Bricolage Grotesque";letter-spacing:.04em;color:var(--bean)}
+.sip .shine{position:absolute;inset:0;z-index:3;background:radial-gradient(circle at var(--mx,50%) var(--my,50%),rgba(255,255,255,.22),transparent 45%);opacity:0;transition:opacity .3s;pointer-events:none}
+.sip:hover .shine{opacity:1}
+
+/* special */
+.special{background:linear-gradient(135deg,#0e3446,#1a5f7a 55%,#5ec8e8);color:#fff;overflow:hidden}
+.sp-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+.special .tag{color:#d9f4ff}
+.special .h2 .it{color:#d9f4ff}
+.price-burst{position:relative;width:min(380px,80vw);aspect-ratio:1;margin:0 auto}
+.burst{position:absolute;inset:0;background:var(--foam);clip-path:polygon(50% 0,61% 12%,75% 4%,79% 20%,95% 21%,90% 37%,100% 50%,90% 63%,95% 79%,79% 80%,75% 96%,61% 88%,50% 100%,39% 88%,25% 96%,21% 80%,5% 79%,10% 63%,0 50%,10% 37%,5% 21%,21% 20%,25% 4%,39% 12%);animation:spin 30s linear infinite}
+.burst-in{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#0e3446;text-align:center}
+.burst-in b{font:800 92px/1 "Bricolage Grotesque";letter-spacing:-.04em}
+.burst-in span{font:600 13px Inter;letter-spacing:.2em;text-transform:uppercase}
+.free{display:flex;gap:10px;flex-wrap:wrap;margin:26px 0 32px}
+.free span{padding:8px 16px;border-radius:999px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);font-size:13.5px;font-weight:600}
+
+/* bakes */
+.bakes{background:var(--crema);color:var(--bean)}
+.bakes .lead{color:#6b4e3a}.bakes .tag{color:#c0392b}
+.bento{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:220px;gap:18px}
+.tile{position:relative;border-radius:28px;overflow:hidden;background:var(--esp)}
+.tile img{width:100%;height:100%;object-fit:cover;transition:transform 1s var(--ease)}
+.tile:hover img{transform:scale(1.07) rotate(.5deg)}
+.tile .lbl{position:absolute;left:14px;bottom:14px;background:var(--foam);color:var(--bean);padding:8px 16px;border-radius:999px;font:700 14px "Bricolage Grotesque";transform:rotate(-2deg);transition:transform .3s}
+.tile:hover .lbl{transform:rotate(1deg) scale(1.05)}
+.t1{grid-column:span 2;grid-row:span 2}.t2{grid-row:span 2}.t5{grid-column:span 2}
+.word{display:flex;align-items:center;justify-content:center;background:var(--pink);color:#fff;text-align:center;padding:20px}
+.word b{font:800 34px/1 "Bricolage Grotesque";letter-spacing:-.02em}
+.word .it{display:block;font-size:30px;margin-top:4px}
+
+/* vibe */
+.vibe-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.polaroids{position:relative;height:560px}
+.pol{position:absolute;background:var(--foam);padding:12px 12px 46px;box-shadow:0 30px 60px -25px rgba(0,0,0,.8);transition:transform .5s var(--ease);width:58%}
+.pol img{width:100%;aspect-ratio:1;object-fit:cover}
+.pol span{position:absolute;left:0;right:0;bottom:12px;text-align:center;color:var(--bean);font:400 22px "Instrument Serif";font-style:italic}
+.pol.p1{left:0;top:0;transform:rotate(-7deg)}.pol.p2{right:0;top:22%;transform:rotate(6deg)}
+.pol:hover{transform:rotate(0) scale(1.04);z-index:3}
+.feats{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:32px 0 36px}
+.feat{border:1px solid rgba(255,248,238,.14);border-radius:20px;padding:20px;background:rgba(255,248,238,.03);transition:border-color .3s,transform .3s}
+.feat:hover{border-color:var(--caramel);transform:translateY(-4px)}
+.feat b{display:block;font:800 19px "Bricolage Grotesque";margin-bottom:4px}
+.feat span{font-size:14px;color:#cdb9a3}
+
+/* visit */
+.visit{background:var(--esp)}
+.v-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.card{background:var(--bean);border:1px solid rgba(255,248,238,.1);border-radius:32px;padding:40px}
+.status{display:inline-flex;align-items:center;gap:10px;padding:8px 16px;border-radius:999px;background:rgba(255,248,238,.08);font-weight:600;font-size:14px;margin-bottom:24px}
+.status i{width:10px;height:10px;border-radius:50%;background:#8a7a6c}
+.status.open i{background:var(--matcha);box-shadow:0 0 14px var(--matcha)}
+.hours{width:100%;border-collapse:collapse}
+.hours td{padding:13px 0;border-bottom:1px dashed rgba(255,248,238,.15);font-size:16px}
+.hours td:last-child{text-align:right;font:700 17px "Bricolage Grotesque"}
+.hours tr.today td{color:var(--pink)}
+.hours tr.closed td:last-child{color:#8a7a6c}
+.note{margin-top:16px;font-size:13.5px;color:#cdb9a3}
+.big-phone{display:block;font:800 clamp(34px,4vw,52px)/1 "Bricolage Grotesque";letter-spacing:-.03em;margin:14px 0 6px;color:var(--caramel);transition:color .3s}
+.big-phone:hover{color:var(--pink)}
+.map{border-radius:24px;overflow:hidden;margin-top:26px;height:260px;background:var(--roast)}
+.map iframe{width:100%;height:100%;border:0;filter:sepia(.35) saturate(1.1)}
+
+footer{background:var(--bean);padding:70px 0 40px;overflow:hidden;border-top:1px solid rgba(255,248,238,.08)}
+.ft-big{font:800 clamp(80px,17vw,260px)/.8 "Bricolage Grotesque";letter-spacing:-.05em;background:linear-gradient(90deg,var(--caramel),var(--pink),var(--matcha),var(--chai));-webkit-background-clip:text;background-clip:text;color:transparent;background-size:200% 100%;animation:grad 8s linear infinite;white-space:nowrap}
+@keyframes grad{to{background-position:200% 0}}
+.ft-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:40px;font-size:14px;color:#cdb9a3}
+.ft-row a:hover{color:var(--foam)}
+.mbar{display:none}
+
+.rv{opacity:0;transform:translateY(40px) scale(.98);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.08s}.rv.d2{transition-delay:.16s}.rv.d3{transition-delay:.24s}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv,.hero h1 .row>span,.hero p,.hero .ctas,.chips{opacity:1!important;transform:none!important}}
+
+@media (max-width:1000px){
+ .nav ul{display:none}
+ .hero-grid,.sp-grid,.vibe-grid,.v-grid{grid-template-columns:1fr}
+ .cup-stage{height:520px}
+ .sips{grid-template-columns:repeat(2,1fr)}
+ .bento{grid-template-columns:repeat(2,1fr);grid-auto-rows:190px}.t1{grid-column:span 2}.t5{grid-column:span 2}
+}
+@media (max-width:620px){
+ header{top:10px}.brand b{font-size:17px}.nav .btn{padding:10px 16px;font-size:13px}
+ .hero{padding:110px 0 60px}.cup-stage{height:420px}.mini{width:110px;height:136px}.stamp{width:100px;height:100px;font-size:14px}
+ section{padding:80px 0}.ribbons{height:180px}.rib.a{top:24px}.rib.b{top:96px}.rib span{font-size:24px}
+ .sips{gap:12px}.sip{border-radius:22px}.sip h3{font-size:20px}.sip p{display:none}
+ .bento{grid-auto-rows:160px;gap:12px}.word b{font-size:24px}.word .it{font-size:22px}
+ .polaroids{height:420px}.feats{grid-template-columns:1fr}
+ .card{padding:26px}
+ footer{padding-bottom:110px}
+ .mbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:10px;right:10px;bottom:10px;z-index:70}
+ .mbar a{display:flex;align-items:center;justify-content:center;padding:15px;border-radius:999px;font:700 15px "Bricolage Grotesque";box-shadow:0 12px 30px -10px rgba(0,0,0,.7)}
+ .mbar a:first-child{background:var(--pink);color:#fff}.mbar a:last-child{background:var(--foam);color:var(--bean)}
+}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+  <a href="#top" class="brand"><img src="images/logo.jpg" alt="BonBons Coffee Bar cup logo"><b>BonBons</b></a>
+  <ul><li><a href="#sips">Sips</a></li><li><a href="#bakes">Bakes &amp; brunch</a></li><li><a href="#vibe">The vibe</a></li><li><a href="#visit">Visit</a></li></ul>
+  <a class="btn btn-pink" href="tel:01772497772">Book a table</a>
+</div></header>
+
+<main id="top">
+<section class="hero">
+  <div class="beans" id="beans" aria-hidden="true"></div>
+  <div class="wrap hero-grid">
+    <div>
+      <span class="tag" style="opacity:0;animation:fade .8s .1s forwards">Coffee bar · Liverpool Road, Penwortham</span>
+      <h1 class="d"><span class="row"><span>Coffee,</span></span><span class="row"><span class="it">cake &amp;</span></span><span class="row"><span><span class="pop">catch-ups.</span></span></span></h1>
+      <p>An atmospheric coffee bar in the heart of Penwortham. It's ideal for a catch-up with friends in perfect ambience and style.</p>
+      <div class="ctas">
+        <a class="btn btn-pink" href="tel:01772497772"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Book: 01772 497772</a>
+        <a class="btn btn-ghost" href="#sips">See the sips →</a>
+      </div>
+      <div class="chips"><span>☕ Lattes &amp; matcha</span><span>🍰 Cakes &amp; scones</span><span>🍳 Brunch</span><span>✨ Late Fridays</span></div>
+    </div>
+    <div class="cup-stage">
+      <div class="blob"></div>
+      <div class="steam" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="hero-photo"><img src="images/hot-chocolate-cream.jpg" alt="Hot chocolate topped with whipped cream next to a cake slice"></div>
+      <div class="mini m1"><img src="images/iced-lattes.jpg" alt="Iced latte and iced matcha"></div>
+      <div class="mini m2"><img src="images/gingerbread-matcha.jpg" alt="Matcha latte with a gingerbread biscuit"></div>
+      <div class="stamp"><svg viewBox="0 0 200 200"><defs><path id="cc" d="M100,100 m-80,0 a80,80 0 1,1 160,0 a80,80 0 1,1 -160,0"/></defs><text font-family="Inter" font-size="15" font-weight="700" letter-spacing="3" fill="#1a0f0a"><textPath href="#cc" textLength="495">BONBONS · COFFEE + CAKE · PENWORTHAM ·</textPath></text></svg>Coffee<br>+ cake</div>
+    </div>
+  </div>
+</section>
+
+<div class="ribbons" aria-hidden="true">
+  <div class="rib a"><div class="t"><span>Lattes</span><span>Matcha</span><span>Pink Kiss</span><span>Hot chocolate</span><span>Scones</span><span>Brunch</span><span>Lattes</span><span>Matcha</span><span>Pink Kiss</span><span>Hot chocolate</span><span>Scones</span><span>Brunch</span></div></div>
+  <div class="rib b"><div class="t"><span>Coffee + Cake</span><span>Catch-ups</span><span>Iced drinks</span><span>Sweet treats</span><span>Coffee + Cake</span><span>Catch-ups</span><span>Iced drinks</span><span>Sweet treats</span></div></div>
+</div>
+
+<section id="sips">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="tag rv">Signature sips</span><h2 class="h2 d rv d1">Pour me <span class="it">something</span> pretty.</h2></div>
+      <p class="lead rv d2">Pink, green, blue or classic: there's a cup for every mood.</p>
+    </div>
+    <div class="sips">
+      <article class="sip rv"><span class="pill" style="background:var(--pink)">Fan favourite</span><img src="images/pink-kiss-latte.jpg" alt="Pink Kiss latte" loading="lazy"><div class="info"><h3>Pink Kiss Latte</h3><p>Our pretty-in-pink superfood latte.</p></div><span class="shine"></span></article>
+      <article class="sip rv d1"><span class="pill" style="background:var(--matcha)">Iced</span><img src="images/iced-lattes.jpg" alt="Iced latte and iced matcha latte" loading="lazy"><div class="info"><h3>Iced Latte &amp; Matcha</h3><p>Cool, creamy and layered.</p></div><span class="shine"></span></article>
+      <article class="sip rv d2"><span class="pill" style="background:var(--caramel)">Cosy</span><img src="images/hot-chocolate-cream.jpg" alt="Hot chocolate with whipped cream" loading="lazy"><div class="info"><h3>Chocolate Whipped Cream</h3><p>Hot chocolate, piled high.</p></div><span class="shine"></span></article>
+      <article class="sip rv d3"><span class="pill" style="background:var(--foam)">Seasonal</span><img src="images/gingerbread-matcha.jpg" alt="Matcha latte with a gingerbread biscuit" loading="lazy"><div class="info"><h3>Matcha &amp; Gingerbread</h3><p>Latte art with a little friend.</p></div><span class="shine"></span></article>
+    </div>
+  </div>
+</section>
+
+<section class="special">
+  <div class="wrap sp-grid">
+    <div>
+      <span class="tag rv">Special offer</span>
+      <h2 class="h2 d rv d1">Blue <span class="it">Chai</span> Latte.</h2>
+      <p class="lead rv d2" style="color:#e6f8ff;margin-top:18px">A vibrant blend of chai with blue spirulina, vanilla and orange, sweetened with raw coconut nectar.</p>
+      <div class="free rv d3"><span>Organic</span><span>Dairy free</span><span>Gluten free</span><span>Caffeine free</span></div>
+      <a class="btn btn-foam rv" href="tel:01772497772">Come try one</a>
+    </div>
+    <div class="price-burst rv"><div class="burst"></div><div class="burst-in"><span>Only</span><b class="d">£4.95</b><span>Blue Chai Latte</span></div></div>
+  </div>
+</section>
+
+<section class="bakes" id="bakes">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="tag rv">Bakes &amp; brunch</span><h2 class="h2 d rv d1">Save room <span class="it" style="color:#c0392b">for this.</span></h2></div>
+      <p class="lead rv d2">Scones with clotted cream, a cabinet full of slices and plates worth photographing first.</p>
+    </div>
+    <div class="bento">
+      <div class="tile t1 rv"><img src="images/brunch-eggs-bacon.jpg" alt="Poached eggs and bacon on toast with a latte and hot chocolate" loading="lazy"><span class="lbl">Brunch plates</span></div>
+      <div class="tile t2 rv d1"><img src="images/cake-cabinet.jpg" alt="Cake cabinet with millionaire shortbread and biscuit slice" loading="lazy"><span class="lbl">The cake cabinet</span></div>
+      <div class="tile word rv d2"><div><b class="d">Coffee</b><span class="it">+ cake =</span><b class="d">♥</b></div></div>
+      <div class="tile rv d1"><img src="images/scones-clotted-cream.jpg" alt="Scones with clotted cream and jam" loading="lazy"><span class="lbl">Scones &amp; clotted cream</span></div>
+      <div class="tile t5 rv d2"><img src="images/salads.jpg" alt="Fresh salad plates" loading="lazy"><span class="lbl">Fresh salads</span></div>
+      <div class="tile t5 rv d3"><img src="images/cherry-scones.jpg" alt="Basket of cherry scones" loading="lazy"><span class="lbl">Cherry scones</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="vibe">
+  <div class="wrap vibe-grid">
+    <div class="polaroids rv">
+      <div class="pol p1"><img src="images/syrups-bar.jpg" alt="The coffee bar with syrups and matcha" loading="lazy"><span>behind the bar</span></div>
+      <div class="pol p2"><img src="images/sundae-doorway.jpg" alt="The BonBons doorway with fairy lights" loading="lazy"><span>see you at no. 44</span></div>
+    </div>
+    <div>
+      <span class="tag rv">The vibe</span>
+      <h2 class="h2 d rv d1">Your new <span class="it">favourite</span> table.</h2>
+      <p class="lead rv d2" style="margin-top:18px">Fairy lights, a buzzing coffee bar and a warm welcome on Liverpool Road. Pull up a chair and stay a while.</p>
+      <div class="feats">
+        <div class="feat rv"><b>☕ Catch-ups</b><span>Perfect ambience and style for time with friends.</span></div>
+        <div class="feat rv d1"><b>📞 Book ahead</b><span>Call 01772 497772 to book your table.</span></div>
+        <div class="feat rv d2"><b>✨ Late Fridays</b><span>Currently once a month. Call or ask the team.</span></div>
+        <div class="feat rv d3"><b>🍰 Coffee + cake</b><span>Always the right answer.</span></div>
+      </div>
+      <a class="btn btn-pink rv" href="tel:01772497772">Book your table</a>
+    </div>
+  </div>
+</section>
+
+<section class="visit" id="visit">
+  <div class="wrap">
+    <div class="head"><div><span class="tag rv">Visit us</span><h2 class="h2 d rv d1">Pop in <span class="it">for a cuppa.</span></h2></div></div>
+    <div class="v-grid">
+      <div class="card rv">
+        <div class="status" id="status"><i></i><span id="stxt">Open Tuesday to Sunday</span></div>
+        <table class="hours" id="hours">
+          <tr data-d="1" class="closed"><td>Monday</td><td>Closed</td></tr>
+          <tr data-d="2"><td>Tuesday</td><td>12pm – 5pm</td></tr>
+          <tr data-d="3"><td>Wednesday</td><td>11am – 5pm</td></tr>
+          <tr data-d="4"><td>Thursday</td><td>11am – 4pm</td></tr>
+          <tr data-d="5"><td>Friday</td><td>11am – 5pm*</td></tr>
+          <tr data-d="6"><td>Saturday</td><td>11am – 5pm</td></tr>
+          <tr data-d="0"><td>Sunday</td><td>11am – 5pm</td></tr>
+        </table>
+        <p class="note">*Late-night Fridays are currently limited to once a month. Call or pop in and ask the team for dates.</p>
+      </div>
+      <div class="card rv d1">
+        <span class="tag">To book, call</span>
+        <a class="big-phone" href="tel:01772497772">01772 497772</a>
+        <p style="font-size:17px;color:#e0cfbb">44 Liverpool Road, Penwortham<br>Preston, Lancashire PR1 0DQ</p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:22px">
+          <a class="btn btn-pink" href="tel:01772497772">Call to book</a>
+          <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&query=BonBons+Coffee+Bar+44+Liverpool+Road+Penwortham+PR1+0DQ" target="_blank" rel="noopener">Directions</a>
+        </div>
+        <div class="map"><iframe title="Map to BonBons Coffee Bar, 44 Liverpool Road, Penwortham" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=BonBons+Coffee+Bar,+44+Liverpool+Road,+Penwortham+PR1+0DQ&output=embed"></iframe></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">
+  <div class="ft-big">BonBons.</div>
+  <div class="ft-row"><span>44 Liverpool Road, Penwortham PR1 0DQ · <a href="tel:01772497772">01772 497772</a></span><span><a href="https://www.instagram.com/bonbonscoffeebar/" target="_blank" rel="noopener">Instagram · @bonbonscoffeebar</a></span><span>Design concept prepared by Codzo</span></div>
+</div></footer>
+
+<nav class="mbar"><a href="tel:01772497772">Call to book</a><a href="https://www.google.com/maps/search/?api=1&query=BonBons+Coffee+Bar+44+Liverpool+Road+Penwortham+PR1+0DQ" target="_blank" rel="noopener">Directions</a></nav>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+// falling beans
+const bz=document.getElementById('beans');
+if(!matchMedia('(prefers-reduced-motion:reduce)').matches){for(let i=0;i<14;i++){const b=document.createElement('b');b.style.left=Math.random()*100+'%';b.style.animationDuration=(9+Math.random()*10)+'s';b.style.animationDelay=(-Math.random()*18)+'s';b.style.transform=`scale(${.6+Math.random()*.8})`;bz.appendChild(b)}}
+// tilt + shine on sip cards
+document.querySelectorAll('.sip').forEach(c=>{
+  c.addEventListener('mousemove',e=>{const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;
+    c.style.transform=`perspective(800px) rotateY(${(x-.5)*12}deg) rotateX(${(.5-y)*12}deg)`;c.style.setProperty('--mx',x*100+'%');c.style.setProperty('--my',y*100+'%')});
+  c.addEventListener('mouseleave',()=>{c.style.transform=''})});
+// open now (UK)
+try{
+  const p=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/London',weekday:'short',hour:'numeric',minute:'numeric',hour12:false}).formatToParts(new Date());
+  const g=k=>p.find(x=>x.type===k).value,day={Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6}[g('weekday')],m=(+g('hour')%24)*60+(+g('minute'));
+  const H={0:[660,1020,'5pm'],2:[720,1020,'5pm'],3:[660,1020,'5pm'],4:[660,960,'4pm'],5:[660,1020,'5pm'],6:[660,1020,'5pm']}[day];
+  const row=document.querySelector('#hours tr[data-d="'+day+'"]');if(row)row.classList.add('today');
+  if(H&&m>=H[0]&&m<H[1]){document.getElementById('status').classList.add('open');document.getElementById('stxt').textContent='Open now · until '+H[2]}
+  else if(day===1){document.getElementById('stxt').textContent='Closed today · back Tuesday 12pm'}
+}catch(e){}
+</script>
+</body>
+</html>
