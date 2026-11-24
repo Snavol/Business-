@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Southport TV | Helping Southport look its best</title>
+<meta name="description" content="Southport TV: social content creators, videographers and event organisers helping Southport look its best. Reels, event films, business interviews and events around town.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&family=Space+Mono:wght@400;700&family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blk:#0a0a0b;--blk2:#141416;--blk3:#1d1d21;--wht:#fff;--red:#ff1f3d;--red2:#d60f2c;--yel:#ffd60a;--sky:#2bb6ff;--mute:#9a9aa3;
+  --h:'Anton',Impact,sans-serif;--mk:'Permanent Marker',cursive;--m:'Space Mono',monospace;--b:'Inter Tight',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;overflow-x:clip}
+body{font-family:var(--b);background:var(--blk);color:var(--wht);line-height:1.55;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer}
+.wrap{width:min(1240px,92vw);margin:0 auto}
+.mono{font-family:var(--m);font-size:.74rem;letter-spacing:.14em;text-transform:uppercase}
+.mk{font-family:var(--mk);color:var(--red)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 24px;font-weight:700;font-size:.95rem;border-radius:6px;transition:transform .2s,box-shadow .2s,background .2s,color .2s}
+.btn svg{width:18px;height:18px}
+.btn.r{background:var(--red);color:#fff;box-shadow:0 0 0 0 rgba(255,31,61,.6)}
+.btn.r:hover{transform:translateY(-2px);box-shadow:0 10px 30px -6px rgba(255,31,61,.8)}
+.btn.w{border:2px solid #fff}
+.btn.w:hover{background:#fff;color:var(--blk)}
+.rec{display:inline-flex;align-items:center;gap:8px}
+.rec i{width:10px;height:10px;border-radius:50%;background:var(--red);box-shadow:0 0 12px var(--red);animation:blink 1.1s steps(2) infinite}
+@keyframes blink{50%{opacity:.15}}
+
+/* boot */
+.boot{position:fixed;inset:0;z-index:300;background:#000;display:grid;place-items:center;pointer-events:none}
+.boot canvas{position:absolute;inset:0;width:100%;height:100%;opacity:.55}
+.boot .ln{position:relative;width:100%;height:3px;background:#fff;box-shadow:0 0 30px #fff,0 0 80px #9ef;transform:scaleX(0);animation:on1 .45s .55s cubic-bezier(.7,0,.3,1) forwards}
+.boot.go{animation:bootout .55s 1s forwards}
+@keyframes on1{to{transform:scaleX(1)}}
+@keyframes bootout{0%{clip-path:inset(49.6% 0 49.6% 0);background:#fff}100%{clip-path:inset(0 0 0 0);opacity:0;visibility:hidden}}
+
+/* nav */
+nav{position:fixed;top:0;left:0;right:0;z-index:80;padding:14px 0;transition:background .3s,padding .3s}
+nav.s{background:rgba(10,10,11,.86);backdrop-filter:blur(12px);padding:8px 0;box-shadow:0 1px 0 #222}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;align-items:center;gap:12px}
+.logo svg{width:52px;height:52px;flex:none}
+.logo b{font-family:var(--h);font-weight:400;font-size:1.4rem;letter-spacing:.04em;line-height:1}
+.logo b span{font-family:var(--mk);color:var(--red);font-size:1.5rem;margin-left:4px}
+.nl{display:flex;gap:26px;font-family:var(--m);font-size:.78rem;letter-spacing:.1em;text-transform:uppercase}
+.nl a{opacity:.7;transition:opacity .2s,color .2s}
+.nl a:hover{opacity:1;color:var(--red)}
+nav .btn{padding:10px 16px;font-size:.84rem}
+
+/* hero */
+.hero{position:relative;min-height:100vh;min-height:100svh;padding:96px 0 0;display:flex;flex-direction:column}
+.screen{position:relative;flex:1;margin:0 min(2.4vw,26px);border-radius:34px;overflow:hidden;background:#000;box-shadow:0 0 0 2px #222,0 0 0 14px #111,0 40px 80px -20px #000;min-height:560px}
+.slides{position:absolute;inset:0}
+.slide{position:absolute;inset:0;opacity:0;transition:opacity .6s}
+.slide.on{opacity:1}
+.slide img{width:100%;height:100%;object-fit:cover;filter:saturate(1.15) contrast(1.05);transform:scale(1.06);animation:kb 9s ease-out forwards}
+.slide:not(.on) img{animation:none}
+@keyframes kb{to{transform:scale(1.16)}}
+.slide.blur img{filter:blur(18px) saturate(1.3) brightness(.7);transform:scale(1.25)}
+.slide .fg{position:absolute;right:6%;top:50%;height:78%;aspect-ratio:3/4;transform:translateY(-50%) rotate(3deg);border:6px solid #fff;box-shadow:0 30px 60px rgba(0,0,0,.6);overflow:hidden}
+.slide .fg img{filter:none;transform:none;animation:none}
+.screen::before{content:"";position:absolute;inset:0;z-index:3;pointer-events:none;background:repeating-linear-gradient(0deg,rgba(0,0,0,.22) 0 1px,transparent 1px 3px);mix-blend-mode:multiply}
+.screen::after{content:"";position:absolute;inset:0;z-index:3;pointer-events:none;background:radial-gradient(ellipse at center,transparent 45%,rgba(0,0,0,.75) 100%),linear-gradient(90deg,rgba(0,0,0,.85),rgba(0,0,0,.25) 55%,transparent)}
+#noise{position:absolute;inset:0;width:100%;height:100%;z-index:4;opacity:.07;pointer-events:none;mix-blend-mode:screen;image-rendering:pixelated}
+.screen.glitch #noise{opacity:.55}
+.screen.glitch .slides{animation:jit .28s steps(3)}
+@keyframes jit{0%{transform:translate(0)}33%{transform:translate(-8px,3px) skewX(4deg)}66%{transform:translate(6px,-2px) skewX(-3deg)}100%{transform:none}}
+.osd{position:absolute;z-index:5;font-family:var(--m);font-weight:700;letter-spacing:.08em;text-shadow:0 0 8px rgba(0,0,0,.8)}
+.osd.tl{left:30px;top:26px;font-size:.82rem}
+.osd.tr{right:30px;top:22px;font-size:1.8rem;color:#7dff8a;text-shadow:0 0 12px rgba(125,255,138,.7)}
+.osd.tr small{display:block;font-size:.66rem;color:#fff;text-align:right;letter-spacing:.16em;text-shadow:none;margin-top:2px}
+.hcopy{position:absolute;z-index:5;left:clamp(26px,5vw,70px);top:50%;transform:translateY(-52%);max-width:min(720px,88%)}
+.hcopy .mono{color:var(--yel)}
+h1{font-family:var(--h);font-weight:400;text-transform:uppercase;line-height:.88;font-size:clamp(3.2rem,8.6vw,8.6rem);margin:16px 0 18px;letter-spacing:.005em}
+h1 .q{color:var(--red)}
+h1 .w{display:inline-block;opacity:0;transform:translateY(40px) skewY(6deg);animation:wd .7s cubic-bezier(.2,.8,.2,1) forwards}
+@keyframes wd{to{opacity:1;transform:none}}
+h1 .tv{font-family:var(--mk);color:var(--red);text-transform:none;font-size:1.05em;display:inline-block;transform:rotate(-6deg);margin-left:.1em}
+.hcopy p{font-size:clamp(1rem,1.4vw,1.2rem);color:rgba(255,255,255,.82);max-width:520px;margin-bottom:26px}
+.hcopy .cta{display:flex;gap:12px;flex-wrap:wrap}
+.l3{position:absolute;z-index:6;left:0;right:0;bottom:0;display:flex;align-items:stretch;height:52px;font-family:var(--m);font-weight:700;font-size:.86rem;letter-spacing:.06em;text-transform:uppercase}
+.l3 .badge{flex:none;background:var(--red);display:flex;align-items:center;gap:10px;padding:0 20px}
+.l3 .badge i{width:9px;height:9px;border-radius:50%;background:#fff;animation:blink 1.1s steps(2) infinite}
+.l3 .clock{flex:none;background:#fff;color:var(--blk);display:flex;align-items:center;padding:0 16px}
+.l3 .tk{flex:1;overflow:hidden;background:rgba(10,10,11,.92);display:flex;align-items:center}
+.l3 .tk .row{display:flex;width:max-content;animation:mq 40s linear infinite}
+.l3 .tk span{padding:0 22px;white-space:nowrap}
+.l3 .tk span::before{content:"▶ ";color:var(--yel)}
+@keyframes mq{to{transform:translateX(-50%)}}
+.dots{position:absolute;z-index:6;right:30px;bottom:72px;display:flex;gap:8px}
+.dots button{width:34px;height:5px;border:0;background:rgba(255,255,255,.3);border-radius:4px;overflow:hidden;position:relative}
+.dots button.on::after{content:"";position:absolute;inset:0;background:var(--red);transform-origin:left;animation:prog 4.2s linear forwards}
+@keyframes prog{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.stand{height:34px;display:flex;justify-content:center;align-items:flex-start}
+.stand span{width:34%;height:12px;background:linear-gradient(#1a1a1d,#0d0d0f);border-radius:0 0 30px 30px;box-shadow:0 10px 20px -6px #000}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border-block:1px solid #222;margin-top:40px}
+.stats div{padding:34px 26px;border-right:1px solid #222}
+.stats div:last-child{border-right:0}
+.stats b{display:block;font-family:var(--h);font-weight:400;font-size:clamp(2.6rem,5vw,4.2rem);line-height:1}
+.stats b em{font-style:normal;color:var(--red)}
+.stats span{font-family:var(--m);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--mute)}
+
+/* section heads */
+.sec{padding:120px 0}
+.hd{display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap;margin-bottom:56px}
+.hd .mono{color:var(--red);display:block;margin-bottom:14px}
+h2{font-family:var(--h);font-weight:400;text-transform:uppercase;font-size:clamp(2.8rem,6.4vw,5.8rem);line-height:.9}
+h2 .mk{text-transform:none;display:inline-block;transform:rotate(-4deg);font-size:1.02em}
+.hd p{max-width:420px;color:var(--mute)}
+
+/* channel tv */
+.tvset{display:grid;grid-template-columns:1fr 210px;gap:40px;align-items:center}
+.box{position:relative;background:linear-gradient(145deg,#2a2a2f,#121215);border-radius:36px;padding:26px;box-shadow:inset 0 2px 0 rgba(255,255,255,.08),0 40px 80px -30px #000}
+.box .sc{position:relative;aspect-ratio:16/9.4;border-radius:26px;overflow:hidden;background:#000}
+.box .sc img{position:absolute;right:0;top:0;width:58%;height:100%;object-fit:cover;transition:opacity .25s}
+.box .sc::before{content:"";position:absolute;inset:0;z-index:2;background:linear-gradient(90deg,#000 38%,rgba(0,0,0,.1) 70%),repeating-linear-gradient(0deg,rgba(0,0,0,.25) 0 1px,transparent 1px 3px);pointer-events:none}
+.box .sc canvas{position:absolute;inset:0;width:100%;height:100%;z-index:4;opacity:0;transition:opacity .1s;image-rendering:pixelated}
+.box .sc.st canvas{opacity:.9}
+.box .info{position:absolute;z-index:3;left:clamp(20px,4%,44px);top:50%;transform:translateY(-50%);width:44%}
+.box .info .cn{font-family:var(--m);font-weight:700;color:#7dff8a;font-size:1rem;text-shadow:0 0 12px rgba(125,255,138,.6)}
+.box .info h3{font-family:var(--h);font-weight:400;text-transform:uppercase;font-size:clamp(1.9rem,3.6vw,3.4rem);line-height:.92;margin:10px 0 12px}
+.box .info p{color:rgba(255,255,255,.75);font-size:clamp(.88rem,1.1vw,1rem)}
+.box .brand{display:flex;justify-content:space-between;align-items:center;margin-top:16px;padding:0 10px;font-family:var(--m);font-size:.7rem;letter-spacing:.2em;color:#777}
+.box .brand i{width:9px;height:9px;border-radius:50%;background:var(--red);box-shadow:0 0 10px var(--red)}
+.remote{background:linear-gradient(160deg,#2b2b31,#111114);border-radius:60px 60px 40px 40px;padding:30px 24px 34px;box-shadow:inset 0 2px 0 rgba(255,255,255,.08),0 30px 60px -20px #000;transform:rotate(6deg);transition:transform .4s}
+.remote:hover{transform:rotate(2deg)}
+.remote .pw{display:block;margin:0 auto 22px;width:44px;height:44px;border-radius:50%;border:0;background:var(--red);box-shadow:0 0 16px rgba(255,31,61,.6);color:#fff;font-size:1.1rem}
+.remote .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.remote .grid button{aspect-ratio:1;border:0;border-radius:50%;background:#3a3a41;color:#fff;font-family:var(--m);font-weight:700;font-size:1.2rem;box-shadow:inset 0 -3px 0 rgba(0,0,0,.4);transition:background .2s,transform .1s}
+.remote .grid button:hover{background:#4a4a52}
+.remote .grid button:active{transform:scale(.94)}
+.remote .grid button.on{background:#fff;color:var(--blk)}
+.remote .ch{display:flex;gap:10px;margin-top:18px}
+.remote .ch button{flex:1;height:44px;border:0;border-radius:22px;background:#26262b;color:#ddd;font-family:var(--m);font-weight:700;font-size:.8rem;box-shadow:inset 0 -3px 0 rgba(0,0,0,.4)}
+.remote .lbl{text-align:center;margin-top:20px;font-family:var(--mk);color:var(--red);font-size:1.3rem}
+.hint{margin-top:22px;color:var(--mute);font-family:var(--m);font-size:.74rem;letter-spacing:.08em}
+
+/* events wall */
+.ev{background:var(--yel);color:var(--blk);position:relative;overflow:hidden}
+.ev .hd .mono{color:var(--red2)}
+.ev .hd p{color:#3d3a2a}
+.wall{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;align-items:start}
+.post{position:relative;background:#fff;padding:10px 10px 16px;box-shadow:0 20px 40px -18px rgba(0,0,0,.5);transform:rotate(var(--r));transition:transform .45s cubic-bezier(.2,.8,.2,1),box-shadow .4s;cursor:zoom-in}
+.post:hover{transform:rotate(0) scale(1.04) translateY(-6px);z-index:3;box-shadow:0 34px 60px -20px rgba(0,0,0,.6)}
+.post::before{content:"";position:absolute;top:-12px;left:50%;width:80px;height:24px;transform:translateX(-50%) rotate(-3deg);background:rgba(255,255,255,.6);box-shadow:0 2px 4px rgba(0,0,0,.1)}
+.post img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.post h3{font-family:var(--h);font-weight:400;text-transform:uppercase;font-size:1.35rem;line-height:1;margin-top:12px}
+.post p{font-size:.84rem;color:#555;margin-top:4px}
+.post.txt{background:var(--red);color:#fff;padding:26px 22px;min-height:100%;display:flex;flex-direction:column;justify-content:space-between;gap:30px;cursor:default}
+.post.txt h3{font-size:2.4rem}
+.post.txt p{color:rgba(255,255,255,.85)}
+.post.txt .mk{color:#fff;font-size:1.6rem}
+.post:nth-child(even){margin-top:40px}
+
+/* reels */
+.reels .row{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;padding:10px 4vw 30px;scrollbar-width:none}
+.reels .row::-webkit-scrollbar{display:none}
+.phone{flex:none;width:clamp(220px,22vw,280px);aspect-ratio:9/17;border-radius:34px;background:#000;padding:9px;box-shadow:0 0 0 2px #2a2a2f,0 30px 60px -20px #000;scroll-snap-align:center;position:relative;transition:transform .35s}
+.phone:hover{transform:translateY(-8px) rotate(-1deg)}
+.phone .in{position:relative;width:100%;height:100%;border-radius:26px;overflow:hidden}
+.phone img{width:100%;height:100%;object-fit:cover}
+.phone .in::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 55%,rgba(0,0,0,.8))}
+.phone .pl{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:62px;height:62px;border-radius:50%;background:rgba(255,255,255,.2);backdrop-filter:blur(6px);display:grid;place-items:center;z-index:2;transition:transform .3s,background .3s}
+.phone:hover .pl{transform:translate(-50%,-50%) scale(1.12);background:var(--red)}
+.phone .pl svg{width:24px;height:24px;fill:#fff;margin-left:4px}
+.phone .cap{position:absolute;left:16px;right:16px;bottom:18px;z-index:2;font-weight:600;font-size:.92rem;line-height:1.3}
+.phone .cap small{display:block;font-family:var(--m);font-size:.66rem;letter-spacing:.1em;color:var(--yel);margin-bottom:4px}
+.phone .notch{position:absolute;top:16px;left:50%;transform:translateX(-50%);width:34%;height:20px;background:#000;border-radius:20px;z-index:3}
+
+/* business */
+.biz{background:var(--red);position:relative;overflow:hidden}
+.biz::before{content:"ON AIR";position:absolute;right:-2vw;bottom:-5vw;font-family:var(--h);font-size:24vw;line-height:1;color:rgba(0,0,0,.08);pointer-events:none}
+.biz .wrap{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center;position:relative}
+.biz .mono{color:var(--yel)}
+.biz h2 .mk{color:var(--yel)}
+.biz p.lead{font-size:1.12rem;margin:20px 0 30px;color:rgba(255,255,255,.9);max-width:480px}
+.biz ol{list-style:none;display:grid;gap:0;border-top:1px solid rgba(255,255,255,.3)}
+.biz li{display:grid;grid-template-columns:80px 1fr;gap:16px;padding:24px 0;border-bottom:1px solid rgba(255,255,255,.3)}
+.biz li b{font-family:var(--h);font-weight:400;font-size:2.6rem;line-height:1;color:var(--blk)}
+.biz li h3{font-family:var(--h);font-weight:400;text-transform:uppercase;font-size:1.6rem;line-height:1;margin-bottom:6px}
+.biz li p{color:rgba(255,255,255,.85);font-size:.95rem}
+.biz .btn.k{background:var(--blk);color:#fff}
+.biz .btn.k:hover{background:#fff;color:var(--blk)}
+.onair{display:inline-flex;align-items:center;gap:10px;border:3px solid #fff;padding:8px 16px;border-radius:8px;font-family:var(--h);font-size:1.4rem;letter-spacing:.08em;margin-bottom:24px;animation:glow 2.2s ease-in-out infinite}
+@keyframes glow{50%{box-shadow:0 0 26px rgba(255,255,255,.7);background:rgba(255,255,255,.12)}}
+
+/* contact */
+.contact{text-align:center;padding:140px 0 120px;position:relative;overflow:hidden}
+.contact h2{font-size:clamp(3.2rem,9vw,8.4rem)}
+.contact p{color:var(--mute);max-width:520px;margin:20px auto 34px;font-size:1.08rem}
+.contact .cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.bars{display:flex;height:120px}
+.bars span{flex:1}
+.bars2{display:flex;height:26px}
+.bars2 span{flex:1}
+footer{padding:34px 0 120px;background:#000}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-family:var(--m);font-size:.74rem;letter-spacing:.08em;color:var(--mute);text-transform:uppercase}
+footer a:hover{color:var(--red)}
+
+.mbar{display:none;position:fixed;left:12px;right:12px;bottom:12px;z-index:90;gap:10px}
+.mbar a{flex:1;text-align:center;padding:15px;border-radius:8px;font-weight:700;font-size:.92rem;box-shadow:0 10px 30px -10px #000}
+.mbar .a{background:var(--red)}.mbar .b{background:#fff;color:var(--blk)}
+
+.lb{position:fixed;inset:0;z-index:200;background:rgba(0,0,0,.92);display:none;place-items:center;padding:20px;cursor:zoom-out}
+.lb.on{display:grid}
+.lb img{max-height:88vh;max-width:92vw;border:6px solid #fff}
+
+.rv{opacity:0;transform:translateY(36px);transition:opacity .9s,transform .9s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}
+
+@media (max-width:980px){
+  .nl{display:none}
+  .tvset{grid-template-columns:1fr}
+  .remote{transform:none;display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:center;border-radius:30px;padding:18px}
+  .remote:hover{transform:none}
+  .remote .pw{margin:0}
+  .remote .grid{grid-template-columns:repeat(4,1fr)}
+  .remote .ch,.remote .lbl{display:none}
+  .wall{grid-template-columns:repeat(2,1fr)}
+  .biz .wrap{grid-template-columns:1fr;gap:40px}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .stats div:nth-child(2){border-right:0}
+  .stats div:nth-child(-n+2){border-bottom:1px solid #222}
+  .slide .fg{display:none}
+  .slide.blur img{filter:saturate(1.1) brightness(.85);transform:scale(1.04)}
+}
+@media (max-width:620px){
+  nav .btn{display:none}
+  .hero{padding-top:80px}
+  .screen{border-radius:22px;min-height:620px}
+  .screen::after{background:radial-gradient(ellipse at center,transparent 40%,rgba(0,0,0,.7) 100%),linear-gradient(0deg,rgba(0,0,0,.92) 20%,rgba(0,0,0,.2) 70%)}
+  .hcopy{top:auto;bottom:80px;transform:none}
+  .osd.tl{left:18px;top:18px;font-size:.7rem}.osd.tr{right:18px;top:14px;font-size:1.3rem}
+  .l3{height:44px;font-size:.72rem}.l3 .clock{display:none}
+  .dots{display:none}
+  .sec{padding:84px 0}
+  .box{padding:12px;border-radius:22px}
+  .box .sc{aspect-ratio:4/5;border-radius:16px}
+  .box .sc img{width:100%;height:58%}
+  .box .sc::before{background:linear-gradient(0deg,#000 45%,rgba(0,0,0,.1) 70%),repeating-linear-gradient(0deg,rgba(0,0,0,.25) 0 1px,transparent 1px 3px)}
+  .box .info{top:auto;bottom:20px;transform:none;width:auto;right:18px;left:18px}
+  .wall{gap:16px}.post h3{font-size:1.05rem}.post p{font-size:.76rem}.post.txt h3{font-size:1.7rem}
+  .post:nth-child(even){margin-top:24px}
+  .mbar{display:flex}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .boot{display:none}h1 .w{opacity:1;transform:none}.rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<div class="boot" id="boot" aria-hidden="true"><canvas id="bootn" width="160" height="90"></canvas><div class="ln"></div></div>
+
+<nav id="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Southport TV">
+      <svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="48" fill="#0a0a0b" stroke="#fff" stroke-width="2.5"/><defs><path id="arc" d="M18,54 A32,32 0 0,1 82,54"/></defs><text font-family="Anton,Impact" font-size="15" fill="#fff" letter-spacing="1"><textPath href="#arc" startOffset="50%" text-anchor="middle">SOUTHPORT</textPath></text><text x="50" y="80" text-anchor="middle" font-family="'Permanent Marker',cursive" font-size="38" fill="#ff1f3d" transform="rotate(-8 50 70)">TV</text></svg>
+      <b>SOUTHPORT<span>TV</span></b>
+    </a>
+    <div class="nl"><a href="#channels">Channels</a><a href="#events">Events</a><a href="#reels">Reels</a><a href="#business">Your business</a></div>
+    <a class="btn r" href="https://ig.me/m/southport_tv" target="_blank" rel="noopener">Get on screen</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="screen" id="screen">
+    <div class="slides" id="slides"></div>
+    <canvas id="noise" width="160" height="90"></canvas>
+    <div class="osd tl rec"><i></i>LIVE · SOUTHPORT</div>
+    <div class="osd tr" id="chn">CH 01<small id="chl">On location</small></div>
+    <div class="hcopy">
+      <span class="mono">Social content · Videography · Events</span>
+      <h1 id="h1"><span class="w">Helping</span> <span class="w">Southport</span> <span class="w">look</span> <span class="w">its</span> <span class="w q">best.</span></h1>
+      <p>Southport TV creates social content, shoots video and organises events that put the town on everyone's feed.</p>
+      <div class="cta">
+        <a class="btn r" href="https://ig.me/m/southport_tv" target="_blank" rel="noopener">Work with us <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn w" href="#channels">Change the channel</a>
+      </div>
+    </div>
+    <div class="dots" id="dots"></div>
+    <div class="l3">
+      <div class="badge"><i></i>On now</div>
+      <div class="clock" id="clock">--:--</div>
+      <div class="tk"><div class="row">
+        <span>Southport Disco Festival</span><span>SMILE! at the Big Wheel</span><span>Oktoberfest Southport</span><span>Bavarian Christmas Ice Skating · Victoria Park</span><span>Business interviews</span><span>Helping Southport look its best</span>
+        <span>Southport Disco Festival</span><span>SMILE! at the Big Wheel</span><span>Oktoberfest Southport</span><span>Bavarian Christmas Ice Skating · Victoria Park</span><span>Business interviews</span><span>Helping Southport look its best</span>
+      </div></div>
+    </div>
+  </div>
+  <div class="stand"><span></span></div>
+</header>
+
+<div class="wrap">
+  <div class="stats rv">
+    <div><b id="c1">1,769</b><span>Instagram followers</span></div>
+    <div><b id="c2">254</b><span>Posts &amp; reels</span></div>
+    <div><b>1<em>.</em></b><span>Town to show off</span></div>
+    <div><b>24<em>/</em>7</b><span>Southport pride</span></div>
+  </div>
+</div>
+
+<section class="sec" id="channels">
+  <div class="wrap">
+    <div class="hd rv">
+      <div><span class="mono">● What we do</span><h2>Pick a <span class="mk">channel</span></h2></div>
+      <p>Four things Southport TV does for the town, its businesses and its events. Grab the remote.</p>
+    </div>
+    <div class="tvset rv">
+      <div class="box">
+        <div class="sc" id="tvsc">
+          <img id="tvimg" src="images/presenter-2.jpg" alt="">
+          <canvas id="tvn" width="120" height="70"></canvas>
+          <div class="info"><div class="cn" id="tvcn">CH 01</div><h3 id="tvh">Social content</h3><p id="tvp"></p></div>
+        </div>
+        <div class="brand"><span>SOUTHPORT TV</span><i></i></div>
+      </div>
+      <div class="remote" aria-label="Channel remote">
+        <button class="pw" aria-label="Static" id="pw">⏻</button>
+        <div class="grid" id="rgrid"><button class="on" data-c="0">1</button><button data-c="1">2</button><button data-c="2">3</button><button data-c="3">4</button></div>
+        <div class="ch"><button id="cdn">CH −</button><button id="cup">CH +</button></div>
+        <div class="lbl">Southport TV</div>
+      </div>
+    </div>
+    <p class="hint">▶ Tip: use the remote, or your ← → keys.</p>
+  </div>
+</section>
+
+<section class="sec ev" id="events">
+  <div class="wrap">
+    <div class="hd rv">
+      <div><span class="mono">● On the channel</span><h2>Big nights,<br><span class="mk" style="color:var(--red2)">bigger crowds</span></h2></div>
+      <p>From festival weekends to free-entry parties and Christmas on ice, these are the events Southport TV has brought to your feed.</p>
+    </div>
+    <div class="wall">
+      <figure class="post rv" style="--r:-3deg"><img src="images/festival-7.jpg" alt="Southport Disco Festival 7 artwork" loading="lazy"><h3>Southport Disco Festival</h3><p>Festival weekends at Southport Pleasureland.</p></figure>
+      <figure class="post rv d1" style="--r:2deg"><img src="images/smile-poster.jpg" alt="SMILE! at the Big Wheel Southport poster" loading="lazy"><h3>SMILE! at the Big Wheel</h3><p>Free entry. Old skool + house classics.</p></figure>
+      <figure class="post rv d2" style="--r:-2deg"><img src="images/ice-xmas.jpg" alt="Christmas ice skating at Victoria Park poster" loading="lazy"><h3>Christmas on ice</h3><p>Bavarian Christmas Ice Skating, Victoria Park.</p></figure>
+      <div class="post txt rv d3" style="--r:3deg"><span class="mk">Prost!</span><div><h3>Oktoberfest Southport</h3><p>Steins up. Catch the highlights on our Instagram.</p></div></div>
+      <figure class="post rv" style="--r:2deg"><img src="images/entrance.jpg" alt="Fairground entrance at Southport Pleasureland" loading="lazy"><h3>Fairground nights</h3><p>A disco adventure in the middle of a theme park.</p></figure>
+      <figure class="post rv d1" style="--r:-3deg"><img src="images/speakers.jpg" alt="Huge speaker stack at an outdoor event" loading="lazy"><h3>Turn it up</h3><p>Sound systems built for the main stage.</p></figure>
+      <figure class="post rv d2" style="--r:3deg"><img src="images/heart-hands.jpg" alt="Hands making a heart around the Southport Disco Festival logo" loading="lazy"><h3>Made with love</h3><p>Events by Southport, for Southport.</p></figure>
+      <figure class="post rv d3" style="--r:-2deg"><img src="images/ice-rink.jpg" alt="Covered ice rink in Victoria Park" loading="lazy"><h3>On the ice</h3><p>The rink at Victoria Park.</p></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec reels" id="reels">
+  <div class="wrap">
+    <div class="hd rv">
+      <div><span class="mono">● Now streaming</span><h2>Straight to <span class="mk">your feed</span></h2></div>
+      <p>On-location reels from around Southport. Swipe through, then watch the full videos on Instagram.</p>
+    </div>
+  </div>
+  <div class="row">
+    <a class="phone rv" href="https://www.instagram.com/southport_tv/reels/" target="_blank" rel="noopener"><span class="notch"></span><div class="in"><img src="images/presenter-1.jpg" alt="Southport TV presenter in front of a mural" loading="lazy"><span class="pl"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></span><div class="cap"><small>▶ ON LOCATION</small>Out and about in Southport</div></div></a>
+    <a class="phone rv d1" href="https://www.instagram.com/southport_tv/reels/" target="_blank" rel="noopener"><span class="notch"></span><div class="in"><img src="images/presenter-2.jpg" alt="Southport TV presenter at the fairground" loading="lazy"><span class="pl"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></span><div class="cap"><small>▶ FESTIVAL SEASON</small>Live from the fairground</div></div></a>
+    <a class="phone rv d2" href="https://www.instagram.com/southport_tv/reels/" target="_blank" rel="noopener"><span class="notch"></span><div class="in"><img src="images/presenter-3.jpg" alt="Southport TV presenter on the promenade" loading="lazy"><span class="pl"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></span><div class="cap"><small>▶ SUNNY DAYS</small>Seaside summer vibes</div></div></a>
+    <a class="phone rv d3" href="https://www.instagram.com/southport_tv/reels/" target="_blank" rel="noopener"><span class="notch"></span><div class="in"><img src="images/presenter-4.jpg" alt="Southport TV presenter talking to camera" loading="lazy"><span class="pl"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></span><div class="cap"><small>▶ STRAIGHT TALK</small>The latest from Southport TV</div></div></a>
+    <a class="phone rv" href="https://www.instagram.com/southport_tv/reels/" target="_blank" rel="noopener"><span class="notch"></span><div class="in"><img src="images/uk-map.jpg" alt="Map graphic showing Southport on the UK map" loading="lazy" style="object-position:40% 50%"><span class="pl"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></span><div class="cap"><small>▶ ON THE MAP</small>Putting Southport on the map</div></div></a>
+  </div>
+</section>
+
+<section class="sec biz" id="business">
+  <div class="wrap">
+    <div class="rv">
+      <span class="onair">● ON AIR</span>
+      <span class="mono" style="display:block">● For Southport businesses</span>
+      <h2 style="margin-top:14px">Put your business<br><span class="mk">on screen</span></h2>
+      <p class="lead">Southport TV films business interviews and social content that show local businesses at their best, then shares them with an audience that loves the town.</p>
+      <a class="btn k" href="https://ig.me/m/southport_tv" target="_blank" rel="noopener">Book a business feature</a>
+    </div>
+    <ol class="rv d1">
+      <li><b>01</b><div><h3>Get in touch</h3><p>Message Southport TV with your business, event or idea.</p></div></li>
+      <li><b>02</b><div><h3>Lights, camera</h3><p>The team comes to you and films on location.</p></div></li>
+      <li><b>03</b><div><h3>You're on</h3><p>Your video goes live on Southport TV's channels for the town to see.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap rv">
+    <span class="mono rec" style="color:var(--red)"><i></i>Recording</span>
+    <h2 style="margin-top:16px">Got something<br><span class="mk">worth filming?</span></h2>
+    <p>Events, businesses, people and places that make Southport brilliant. Send it our way.</p>
+    <div class="cta">
+      <a class="btn r" href="https://ig.me/m/southport_tv" target="_blank" rel="noopener">Message on Instagram</a>
+      <a class="btn w" href="https://www.facebook.com/southportTV" target="_blank" rel="noopener">Find us on Facebook</a>
+    </div>
+  </div>
+</section>
+
+<div class="bars" aria-hidden="true"><span style="background:#c0c0c0"></span><span style="background:#c0c000"></span><span style="background:#00c0c0"></span><span style="background:#00c000"></span><span style="background:#c000c0"></span><span style="background:#c00000"></span><span style="background:#0000c0"></span></div>
+<div class="bars2" aria-hidden="true"><span style="background:#0000c0"></span><span style="background:#131313"></span><span style="background:#c000c0"></span><span style="background:#131313"></span><span style="background:#00c0c0"></span><span style="background:#131313"></span><span style="background:#c0c0c0"></span></div>
+<footer>
+  <div class="wrap"><span>© Southport TV · Helping Southport look its best</span><span><a href="https://www.instagram.com/southport_tv/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/southportTV" target="_blank" rel="noopener">Facebook</a></span></div>
+</footer>
+
+<div class="mbar"><a class="a" href="https://ig.me/m/southport_tv" target="_blank" rel="noopener">Message us</a><a class="b" href="https://www.facebook.com/southportTV" target="_blank" rel="noopener">Facebook</a></div>
+<div class="lb" id="lb"><img alt=""></div>
+
+<script>
+(()=>{
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+function noise(cv){const c=cv.getContext('2d'),w=cv.width,h=cv.height,d=c.createImageData(w,h);for(let i=0;i<d.data.length;i+=4){const v=Math.random()*255|0;d.data[i]=d.data[i+1]=d.data[i+2]=v;d.data[i+3]=255}c.putImageData(d,0,0)}
+
+// boot
+const boot=document.getElementById('boot'),bn=document.getElementById('bootn');
+if(reduce){boot.remove()}else{let t=setInterval(()=>noise(bn),70);setTimeout(()=>boot.classList.add('go'),40);setTimeout(()=>{clearInterval(t);boot.remove()},1700)}
+document.querySelectorAll('h1 .w').forEach((w,i)=>w.style.animationDelay=(1.25+i*.1)+'s');
+
+// nav
+const nav=document.getElementById('nav');addEventListener('scroll',()=>nav.classList.toggle('s',scrollY>30),{passive:true});
+
+// reveal
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+
+// hero slides
+const S=[['presenter-2','On location'],['festival-7','Festival season'],['presenter-1','Out & about'],['entrance','Pleasureland'],['presenter-3','Seaside days'],['speakers','Main stage']];
+const sl=document.getElementById('slides'),dots=document.getElementById('dots'),scr=document.getElementById('screen'),nz=document.getElementById('noise');
+sl.innerHTML=S.map(([n],i)=>`<div class="slide blur${i?'':' on'}"><img src="images/${n}.jpg" alt=""><div class="fg"><img src="images/${n}.jpg" alt=""></div></div>`).join('');
+dots.innerHTML=S.map((_,i)=>`<button aria-label="Channel ${i+1}" class="${i?'':'on'}"></button>`).join('');
+let cur=0,timer;
+function go(i){
+  cur=(i+S.length)%S.length;scr.classList.add('glitch');
+  setTimeout(()=>{[...sl.children].forEach((s,k)=>s.classList.toggle('on',k===cur));[...dots.children].forEach((d,k)=>{d.classList.remove('on');if(k===cur){void d.offsetWidth;d.classList.add('on')}});
+    document.getElementById('chn').firstChild.textContent='CH 0'+(cur+1);document.getElementById('chl').textContent=S[cur][1]},140);
+  setTimeout(()=>scr.classList.remove('glitch'),300);
+  clearTimeout(timer);if(!reduce)timer=setTimeout(()=>go(cur+1),4200);
+}
+[...dots.children].forEach((d,i)=>d.onclick=()=>go(i));
+if(!reduce)timer=setTimeout(()=>go(1),4200);
+let nrun=true;new IntersectionObserver(e=>nrun=e[0].isIntersecting).observe(scr);
+if(!reduce)setInterval(()=>{if(nrun)noise(nz)},90);
+
+// clock
+const ck=document.getElementById('clock');
+function tick(){ck.textContent=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/London',hour:'2-digit',minute:'2-digit'}).format(new Date())+' UK'}
+tick();setInterval(tick,15000);
+
+// counters
+function count(el,to,fmt){new IntersectionObserver((e,o)=>{if(!e[0].isIntersecting)return;o.disconnect();if(reduce){el.textContent=fmt(to);return}let t0;const f=t=>{t0??=t;const p=Math.min((t-t0)/1400,1);el.textContent=fmt(Math.round(to*(1-Math.pow(1-p,3))));if(p<1)requestAnimationFrame(f)};requestAnimationFrame(f)}).observe(el)}
+count(document.getElementById('c1'),1769,v=>v.toLocaleString('en-GB'));
+count(document.getElementById('c2'),254,v=>v);
+
+// channel tv
+const CH=[
+ ['Social content','presenter-2','Scroll-stopping reels and posts filmed on location around Southport, made to get people talking and out the door.'],
+ ['Videography','speakers','Event films, promos and highlight videos, shot and edited to show your event at its loudest.'],
+ ['Event organising','festival-7','Festival weekends, free-entry parties and seasonal events that bring the town together.'],
+ ['Business interviews','presenter-4','Put your business in the spotlight with a Southport TV interview, shared with people who love the town.']
+];
+const sc=document.getElementById('tvsc'),tn=document.getElementById('tvn'),ti=document.getElementById('tvimg');
+let cc=0;
+function setCh(i){
+  cc=(i+CH.length)%CH.length;sc.classList.add('st');let k=0;const it=setInterval(()=>{noise(tn);if(++k>4)clearInterval(it)},50);
+  setTimeout(()=>{const[c,img,p]=CH[cc];ti.src='images/'+img+'.jpg';ti.alt=c;document.getElementById('tvcn').textContent='CH 0'+(cc+1);document.getElementById('tvh').textContent=c;document.getElementById('tvp').textContent=p;
+    document.querySelectorAll('#rgrid button').forEach((b,j)=>b.classList.toggle('on',j===cc))},150);
+  setTimeout(()=>sc.classList.remove('st'),300);
+}
+document.querySelectorAll('#rgrid button').forEach(b=>b.onclick=()=>setCh(+b.dataset.c));
+document.getElementById('cup').onclick=()=>setCh(cc+1);document.getElementById('cdn').onclick=()=>setCh(cc-1);
+document.getElementById('pw').onclick=()=>{sc.classList.add('st');let k=0;const it=setInterval(()=>{noise(tn);if(++k>12){clearInterval(it);sc.classList.remove('st')}},50)};
+addEventListener('keydown',e=>{const r=sc.getBoundingClientRect();if(r.top>innerHeight||r.bottom<0)return;if(e.key==='ArrowRight')setCh(cc+1);if(e.key==='ArrowLeft')setCh(cc-1)});
+document.getElementById('tvp').textContent=CH[0][2];
+
+// lightbox
+const lb=document.getElementById('lb');
+document.addEventListener('click',e=>{const t=e.target.closest('figure.post');if(!t)return;const i=t.querySelector('img');lb.firstChild.src=i.src;lb.firstChild.alt=i.alt;lb.classList.add('on')});
+lb.onclick=()=>lb.classList.remove('on');addEventListener('keydown',e=>{if(e.key==='Escape')lb.classList.remove('on')});
+})();
+</script>
+</body>
+</html>

@@ -765,5 +765,35 @@
     "demo_path": "sites/m1-nails-nq/",
     "demo_url": "https://business-red-ten.vercel.app/m1-nails-nq/",
     "status": "draft"
+  },
+  {
+    "slug": "southport-tv",
+    "business": "Southport TV",
+    "trade": "Social content creators, videographers & event organisers",
+    "town": "Southport",
+    "region": "Merseyside",
+    "country": "United Kingdom",
+    "address": null,
+    "phone": null,
+    "instagram": "@southport_tv",
+    "facebook": "https://www.facebook.com/southportTV",
+    "rating": null,
+    "review_count": null,
+    "hours": null,
+    "maps_link": null,
+    "plus_code": null,
+    "website_status": "facebook_only",
+    "website_status_note": "Instagram bio links only to facebook.com/southportTV (254 posts, 1,769 followers). No Southport TV website found. Events they post about have their own sites on posters (southportdiscofestival.com, iceskatingsouthport.com), so confirm their role in those events before pitching.",
+    "services": [
+      "Social content creation",
+      "Videography",
+      "Event organising",
+      "Business interviews (highlight 'Interview' - Mastercraft business interview)"
+    ],
+    "reviews": [],
+    "notes": "Built from Instagram screenshots only. Highlights: Oktoberfest 23, Smile!, Interview, Disco Festival 4. Events shown on the site are described as events featured on their channel, not claimed as organised by them. Left out: Grinch posters (licensed character), Gemini Lounge flyer (another venue), child skating video still, dark/like-overlay stills, car park 360 still, line-up posters.",
+    "demo_path": "sites/southport-tv/",
+    "demo_url": "https://business-red-ten.vercel.app/southport-tv/",
+    "status": "draft"
   }
 ]
