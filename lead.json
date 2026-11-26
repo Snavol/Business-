@@ -824,5 +824,35 @@
     "demo_path": "sites/nood-chorlton/",
     "demo_url": "https://business-red-ten.vercel.app/nood-chorlton/",
     "status": "draft"
+  },
+  {
+    "slug": "idontbookwithyou",
+    "business": "idontbookwithyou (Jess)",
+    "trade": "Book content creator / bookstagrammer",
+    "town": null,
+    "region": "Scotland",
+    "country": "United Kingdom",
+    "address": null,
+    "phone": null,
+    "email": "idontbookwithyou@gmail.com",
+    "instagram": "@idontbookwithyou",
+    "rating": null,
+    "review_count": null,
+    "hours": null,
+    "maps_link": null,
+    "plus_code": null,
+    "website_status": "none",
+    "website_status_note": "Instagram bio links only to Threads (445 posts, 50K followers). No website link in bio. Not checked further for an existing blog/site.",
+    "services": [
+      "Book recommendations & reading lists",
+      "Monthly diaries (Diaries of a book publicist / Things that made me happy)",
+      "What's on my Kindle / 99p Kindle deals",
+      "Collaborations via email"
+    ],
+    "reviews": [],
+    "notes": "Individual creator (also head of campaigns at Bookouture per bio, 'views my own'). Pitch as a creator/media-kit site with searchable reading lists. Site 'about' copy is written in third person from her bio; inside-cover tagline is placeholder copy, not her quote. Left out: swimsuit photos, post showing her work email signature/office address, travel posts with text overlays.",
+    "demo_path": "sites/idontbookwithyou/",
+    "demo_url": "https://business-red-ten.vercel.app/idontbookwithyou/",
+    "status": "draft"
   }
 ]
