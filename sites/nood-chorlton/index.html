@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Nood | Independent boutique, 36 Beech Road, Chorlton</title>
+<meta name="description" content="Nood is an independent boutique on Beech Road, Chorlton, selling a mix of hand-picked labels. Plenty of colour and pattern, timeless pieces you'll love for years to come.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Quicksand:wght@300;400;500;600&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --teal:#46625f;--teal2:#344b49;--cream:#f7f2e8;--cream2:#efe7d8;--wood:#b9612e;--wood2:#8f4520;--mustard:#e2a529;--blue:#2f5ea8;--pink:#e9897f;--ink:#26302f;--mute:#6e7a78;
+  --s:'Young Serif',Georgia,serif;--q:'Quicksand',system-ui,sans-serif;--b:'DM Sans',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;overflow-x:clip}
+body{font-family:var(--b);background:var(--cream);color:var(--ink);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1200px,90vw);margin:0 auto}
+.eye{font-family:var(--q);font-weight:600;font-size:.76rem;letter-spacing:.24em;text-transform:uppercase;color:var(--wood)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 26px;border-radius:40px;font-weight:600;font-size:.95rem;transition:transform .25s,background .25s,color .25s,box-shadow .25s}
+.btn svg{width:18px;height:18px}
+.btn.t{background:var(--teal);color:#fff;box-shadow:0 12px 24px -12px rgba(52,75,73,.8)}
+.btn.t:hover{background:var(--teal2);transform:translateY(-2px)}
+.btn.o{border:1.5px solid var(--ink)}
+.btn.o:hover{background:var(--ink);color:var(--cream)}
+
+/* nav */
+nav{position:fixed;top:0;left:0;right:0;z-index:50;transition:background .35s,box-shadow .35s}
+nav.s{background:rgba(247,242,232,.88);backdrop-filter:blur(12px);box-shadow:0 1px 0 rgba(38,48,47,.1)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:76px}
+.logo{display:flex;align-items:center;gap:12px}
+.logo i{width:46px;height:46px;border-radius:50%;background:var(--teal);display:grid;place-items:center;font-family:var(--q);font-weight:300;font-style:normal;color:#fff;font-size:.95rem;letter-spacing:.02em}
+.logo b{font-family:var(--q);font-weight:400;font-size:1.05rem;letter-spacing:.02em}
+.logo b small{display:block;font-size:.62rem;letter-spacing:.24em;text-transform:uppercase;color:var(--mute);font-weight:600}
+.nl{display:flex;gap:30px;font-weight:500;font-size:.92rem}
+.nl a{position:relative}
+.nl a::after{content:"";position:absolute;left:0;right:100%;bottom:-5px;height:2px;border-radius:2px;background:var(--wood);transition:right .3s}
+.nl a:hover::after{right:0}
+nav .btn{padding:10px 18px;font-size:.85rem}
+
+/* hero */
+.hero{position:relative;padding:120px 0 70px;min-height:100vh;min-height:100svh;display:flex;align-items:center;overflow:hidden}
+.hero::before{content:"";position:absolute;right:-12vw;top:-14vw;width:56vw;height:56vw;border-radius:50%;background:radial-gradient(circle,rgba(226,165,41,.22),transparent 65%)}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center;position:relative}
+h1{font-family:var(--s);font-weight:400;font-size:clamp(2.9rem,6.2vw,5.6rem);line-height:1.02;letter-spacing:-.02em;margin:20px 0 24px}
+h1 .ln{display:block;overflow:hidden;padding-bottom:.08em}
+h1 .ln>span{display:inline-block;transform:translateY(105%);animation:up 1s cubic-bezier(.2,.8,.2,1) forwards}
+h1 .ln:nth-child(2)>span{animation-delay:.12s}h1 .ln:nth-child(3)>span{animation-delay:.24s}
+@keyframes up{to{transform:none}}
+.c1{color:var(--wood)}.c2{color:var(--blue)}
+.pat{background:repeating-linear-gradient(45deg,var(--mustard) 0 6px,var(--wood) 6px 12px);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.lead{font-size:1.15rem;color:var(--mute);max-width:480px;margin-bottom:32px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.addr{display:flex;align-items:center;gap:10px;margin-top:36px;font-family:var(--q);font-weight:500;color:var(--mute)}
+.addr i{width:10px;height:10px;border-radius:50%;background:var(--wood);box-shadow:0 0 0 5px rgba(185,97,46,.18)}
+
+.shop{position:relative;justify-self:center;width:min(440px,100%)}
+.fascia{background:linear-gradient(180deg,#c96f39,#a9552a);border-radius:10px 10px 0 0;padding:16px 22px 14px;display:flex;justify-content:space-between;align-items:center;color:#fff;box-shadow:inset 0 -6px 0 rgba(0,0,0,.12)}
+.fascia::before{content:"";position:absolute;left:0;right:0;top:0;height:64px;border-radius:10px 10px 0 0;background:repeating-linear-gradient(0deg,rgba(255,255,255,.07) 0 2px,transparent 2px 9px);pointer-events:none}
+.fascia span{font-family:var(--q);font-size:.78rem;letter-spacing:.06em;opacity:.9}
+.fascia b{font-family:var(--q);font-weight:300;font-size:2.2rem;line-height:1}
+.win{position:relative;aspect-ratio:4/5;border:12px solid #8f4520;border-top:0;overflow:hidden;background:#222;box-shadow:0 40px 70px -30px rgba(38,48,47,.6)}
+.win img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.06);transition:opacity 1.2s,transform 6s linear}
+.win img.on{opacity:1;transform:scale(1)}
+.win::before{content:"";position:absolute;inset:0;z-index:2;background:linear-gradient(115deg,rgba(255,255,255,.28) 0%,rgba(255,255,255,0) 30%,rgba(255,255,255,0) 60%,rgba(255,255,255,.12) 70%,rgba(255,255,255,0) 80%);pointer-events:none}
+.win::after{content:"";position:absolute;left:50%;top:0;bottom:0;width:10px;margin-left:-5px;background:#8f4520;z-index:2}
+.sill{height:16px;background:linear-gradient(#f3efe6,#d8d1c3);border-radius:0 0 8px 8px;box-shadow:0 10px 20px -10px rgba(0,0,0,.3)}
+.sign{position:absolute;left:-46px;top:110px;z-index:4;transform-origin:50% 0;animation:sway 3.8s ease-in-out infinite}
+.sign::before{content:"";position:absolute;left:50%;top:-34px;width:2px;height:34px;background:#555;box-shadow:-26px 6px 0 -0px transparent}
+.sign .card{background:var(--cream);border:3px solid var(--teal);border-radius:10px;padding:10px 16px;text-align:center;box-shadow:0 14px 24px -10px rgba(0,0,0,.4)}
+.sign .card b{display:block;font-family:var(--s);font-weight:400;font-size:1.5rem;color:var(--teal);line-height:1}
+.sign .card small{font-family:var(--q);font-weight:600;font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--wood)}
+@keyframes sway{0%,100%{transform:rotate(-6deg)}50%{transform:rotate(6deg)}}
+.tag{position:absolute;right:-30px;bottom:70px;z-index:4;background:var(--mustard);color:var(--ink);padding:12px 18px 12px 28px;font-family:var(--q);font-weight:600;font-size:.86rem;clip-path:polygon(16px 0,100% 0,100% 100%,16px 100%,0 50%);transform:rotate(-8deg);box-shadow:0 10px 20px -8px rgba(0,0,0,.4)}
+.tag::before{content:"";position:absolute;left:10px;top:50%;width:7px;height:7px;margin-top:-3.5px;border-radius:50%;background:var(--cream)}
+
+/* swatch ribbon */
+.swatches{padding:26px 0;overflow:hidden;border-block:1px solid rgba(38,48,47,.12);background:var(--cream2)}
+.swatches .row{display:flex;gap:16px;width:max-content;animation:mq 50s linear infinite;align-items:center}
+.sw{width:78px;height:78px;border-radius:50%;flex:none;box-shadow:inset 0 0 0 4px rgba(255,255,255,.5),0 6px 14px -8px rgba(0,0,0,.4);transition:transform .4s}
+.sw:hover{transform:scale(1.15) rotate(20deg)}
+.word{font-family:var(--s);font-size:clamp(1.6rem,3vw,2.4rem);white-space:nowrap;padding:0 14px}
+@keyframes mq{to{transform:translateX(-50%)}}
+.p1{background:repeating-linear-gradient(90deg,var(--blue) 0 10px,#fff 10px 20px)}
+.p2{background:radial-gradient(circle,var(--wood) 30%,transparent 32%) 0 0/16px 16px,var(--cream)}
+.p3{background:repeating-conic-gradient(var(--teal) 0 25%,#d9e3e1 0 50%) 0 0/20px 20px}
+.p4{background:repeating-linear-gradient(45deg,var(--mustard) 0 8px,var(--wood) 8px 16px)}
+.p5{background:linear-gradient(90deg,rgba(233,137,127,.6) 50%,transparent 0) 0 0/18px 18px,linear-gradient(rgba(233,137,127,.6) 50%,transparent 0) 0 0/18px 18px,#fff}
+.p6{background:repeating-linear-gradient(-30deg,#2a2a2a 0 3px,#d77a3f 3px 12px)}
+.p7{background:radial-gradient(circle at 30% 30%,#7a4a2c 18%,transparent 20%) 0 0/22px 22px,radial-gradient(circle at 70% 70%,#2b1d14 12%,transparent 14%) 0 0/22px 22px,#d9a066}
+.p8{background:var(--blue)}
+
+/* rail */
+.railsec{padding:120px 0 80px;overflow:hidden}
+.hd{display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap;margin-bottom:46px}
+h2{font-family:var(--s);font-weight:400;font-size:clamp(2.4rem,5vw,4.2rem);line-height:1.05;letter-spacing:-.015em;margin-top:12px}
+h2 em{font-style:normal;color:var(--wood)}
+.hd p{max-width:400px;color:var(--mute)}
+.rail{position:relative;padding:0 0 40px}
+.pipe{position:relative;height:16px;margin:0 2vw;border-radius:10px;background:linear-gradient(180deg,#e9ecec,#9aa3a3 55%,#c9cfcf);box-shadow:0 6px 10px -4px rgba(0,0,0,.35)}
+.pipe::before,.pipe::after{content:"";position:absolute;top:-6px;width:28px;height:28px;border-radius:6px;background:linear-gradient(#cfd5d5,#8e9797)}
+.pipe::before{left:-4px}.pipe::after{right:-4px}
+.hangers{display:flex;gap:clamp(14px,2vw,26px);padding:0 4vw;margin-top:-6px;overflow-x:auto;scrollbar-width:none;cursor:grab;scroll-snap-type:x proximity}
+.hangers::-webkit-scrollbar{display:none}
+.hanger{flex:none;width:clamp(200px,20vw,260px);transform-origin:50% 0;scroll-snap-align:start;animation:swing 1.6s cubic-bezier(.3,1.6,.4,1) both;animation-play-state:paused}
+.rail.go .hanger{animation-play-state:running}
+@keyframes swing{0%{transform:rotate(14deg)}100%{transform:rotate(0)}}
+.hanger:hover{animation:wiggle .9s ease-in-out}
+@keyframes wiggle{25%{transform:rotate(4deg)}60%{transform:rotate(-3deg)}100%{transform:rotate(0)}}
+.hook{display:block;margin:0 auto;width:40px;height:46px}
+.hook path{fill:none;stroke:#6d6f6f;stroke-width:3;stroke-linecap:round}
+.hanger .ph{position:relative;margin-top:-4px;border-radius:14px;overflow:hidden;aspect-ratio:3/4;box-shadow:0 24px 40px -22px rgba(38,48,47,.7);background:var(--cream2)}
+.hanger .ph img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.hanger:hover .ph img{transform:scale(1.06)}
+.hanger .lab{position:absolute;right:12px;top:12px;background:#fff;color:var(--ink);font-family:var(--q);font-weight:600;font-size:.74rem;padding:6px 10px;border-radius:30px}
+.drag{display:flex;align-items:center;gap:10px;justify-content:center;font-family:var(--q);font-weight:600;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+
+/* values */
+.vals{background:var(--teal);color:#fff;padding:110px 0;position:relative;overflow:hidden}
+.vals::after{content:"nood";position:absolute;right:-3vw;bottom:-7vw;font-family:var(--q);font-weight:300;font-size:30vw;line-height:1;color:rgba(255,255,255,.05);pointer-events:none}
+.vals .eye{color:var(--mustard)}
+.vals h2 em{color:var(--mustard)}
+.vgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:50px;position:relative;z-index:1}
+.vc{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:24px;padding:32px 28px;transition:transform .35s,background .35s}
+.vc:hover{transform:translateY(-6px);background:rgba(255,255,255,.12)}
+.vc .sw{width:56px;height:56px;margin-bottom:22px}
+.vc h3{font-family:var(--s);font-weight:400;font-size:1.6rem;margin-bottom:8px}
+.vc p{color:rgba(255,255,255,.75)}
+
+/* windows */
+.wins{padding:120px 0}
+.wgrid{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:190px;gap:16px}
+.wf{position:relative;border-radius:18px;overflow:hidden;cursor:zoom-in;background:var(--cream2)}
+.wf img{width:100%;height:100%;object-fit:cover;transition:transform 1s cubic-bezier(.2,.8,.2,1)}
+.wf:hover img{transform:scale(1.06)}
+.wf figcaption{position:absolute;left:14px;bottom:14px;background:rgba(247,242,232,.92);padding:7px 12px;border-radius:30px;font-family:var(--q);font-weight:600;font-size:.78rem;transform:translateY(10px);opacity:0;transition:all .4s}
+.wf:hover figcaption{transform:none;opacity:1}
+.w1{grid-column:span 2;grid-row:span 2}.w2{grid-column:span 2;grid-row:span 2}.w3{grid-column:span 2;grid-row:span 2}
+.w4{grid-column:span 3;grid-row:span 2}.w5{grid-column:span 3;grid-row:span 2}
+.sale{margin-top:40px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;background:var(--mustard);border-radius:24px;padding:26px 32px}
+.sale b{font-family:var(--s);font-weight:400;font-size:1.7rem}
+.sale p{max-width:520px}
+
+/* visit */
+.visit{padding:110px 0;background:var(--cream2)}
+.visit .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:56px;align-items:stretch}
+.vaddr{font-family:var(--s);font-size:clamp(2rem,4vw,3.2rem);line-height:1.1;margin:14px 0 24px}
+.hours{list-style:none;border-top:1px solid rgba(38,48,47,.15);margin-bottom:12px}
+.hours li{display:flex;justify-content:space-between;padding:13px 0;border-bottom:1px solid rgba(38,48,47,.15);font-size:.98rem}
+.hours li span:last-child{font-weight:600}
+.note{font-size:.84rem;color:var(--mute);margin-bottom:28px}
+.map{border-radius:28px;overflow:hidden;min-height:440px;position:relative;border:10px solid #fff;box-shadow:0 30px 60px -30px rgba(38,48,47,.5)}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:saturate(.8)}
+
+footer{background:var(--ink);color:rgba(255,255,255,.7);padding:70px 0 110px;text-align:center;overflow:hidden}
+.fn{font-family:var(--q);font-weight:300;font-size:clamp(6rem,24vw,20rem);line-height:.9;color:#fff;letter-spacing:-.02em}
+.fn span{display:inline-block;transition:transform .4s,color .4s}
+.fn span:hover{transform:translateY(-10px);color:var(--mustard)}
+footer p{margin-top:16px;font-size:.88rem}
+footer a{color:#fff;border-bottom:1px solid rgba(255,255,255,.3)}
+
+.mbar{display:none;position:fixed;left:12px;right:12px;bottom:12px;z-index:60;gap:10px}
+.mbar a{flex:1;text-align:center;padding:15px;border-radius:40px;font-weight:600;box-shadow:0 10px 30px -10px rgba(0,0,0,.5)}
+.mbar .a{background:var(--teal);color:#fff}.mbar .b{background:#fff;color:var(--ink)}
+.lb{position:fixed;inset:0;z-index:100;background:rgba(38,48,47,.92);display:none;place-items:center;padding:20px;cursor:zoom-out}
+.lb.on{display:grid}
+.lb img{max-height:88vh;max-width:92vw;border-radius:18px;border:6px solid #fff}
+
+.rv{opacity:0;transform:translateY(34px);transition:opacity .9s,transform .9s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}
+
+@media (max-width:980px){
+  .nl{display:none}
+  .hero .wrap,.visit .wrap{grid-template-columns:1fr}
+  .shop{width:min(380px,82%);margin-top:20px}
+  .vgrid{grid-template-columns:1fr}
+  .wgrid{grid-template-columns:repeat(2,1fr);grid-auto-rows:210px}
+  .w1,.w2,.w3,.w4,.w5{grid-column:span 1;grid-row:span 1}.w1{grid-column:span 2;grid-row:span 2}
+}
+@media (max-width:620px){
+  nav .btn{display:none}
+  .hero{padding:100px 0 60px}
+  .fascia b{font-size:1.6rem}.fascia span{font-size:.66rem}
+  .sign{left:-22px;top:90px;transform:scale(.8)}
+  .tag{right:-10px}
+  .sw{width:58px;height:58px}
+  .railsec,.wins,.visit,.vals{padding:80px 0}
+  .wgrid{grid-auto-rows:150px;gap:10px}
+  .wf figcaption{opacity:1;transform:none}
+  .map{min-height:340px}
+  .mbar{display:flex}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  h1 .ln>span{transform:none}.rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Nood, Chorlton"><i>nood</i><b>Nood<small>Chorlton</small></b></a>
+    <div class="nl"><a href="#rail">New in</a><a href="#about">About</a><a href="#windows">Windows</a><a href="#visit">Visit</a></div>
+    <a class="btn t" href="#visit">Visit the shop</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eye">Independent boutique · Beech Road</span>
+      <h1>
+        <span class="ln"><span>Plenty of <span class="c1">colour.</span></span></span>
+        <span class="ln"><span>Plenty of <span class="pat">pattern.</span></span></span>
+        <span class="ln"><span><span class="c2">Timeless</span> pieces.</span></span>
+      </h1>
+      <p class="lead">A mix of hand-picked labels on Chorlton's Beech Road. Pieces you'll love for years to come.</p>
+      <div class="cta">
+        <a class="btn t" href="#rail">See what's on the rails <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn o" href="#visit">Find us</a>
+      </div>
+      <div class="addr"><i></i>36 Beech Rd, Chorlton, Manchester M21 9EL</div>
+    </div>
+    <div class="shop rv">
+      <div class="sign" aria-hidden="true"><div class="card"><b>Come in</b><small>&amp; browse</small></div></div>
+      <div class="fascia"><span>clothing &amp; accessories</span><b>nood</b></div>
+      <div class="win" id="win">
+        <img class="on" src="images/window-2.jpg" alt="Nood shop window on Beech Road">
+        <img src="images/shopfront-2.jpg" alt="Autumn window display at Nood">
+        <img src="images/window-1.jpg" alt="Summer window display at Nood">
+        <img src="images/window-3.jpg" alt="Window display with dresses and bags">
+      </div>
+      <div class="sill"></div>
+      <div class="tag" aria-hidden="true">Hand-picked labels</div>
+    </div>
+  </div>
+</header>
+
+<div class="swatches" aria-hidden="true"><div class="row" id="sw"></div></div>
+
+<section class="railsec" id="rail">
+  <div class="wrap">
+    <div class="hd rv">
+      <div><span class="eye">On the rails</span><h2>Fresh off<br>the <em>rail</em></h2></div>
+      <p>Denim, cord, florals and checks. A taste of what's in store right now. Drag the rail to browse.</p>
+    </div>
+  </div>
+  <div class="rail" id="railbox">
+    <div class="pipe"></div>
+    <div class="hangers" id="hangers"></div>
+  </div>
+  <div class="drag">← drag the rail →</div>
+</section>
+
+<section class="vals" id="about">
+  <div class="wrap">
+    <div class="rv"><span class="eye">Why Nood</span><h2>An independent with<br><em>plenty of personality</em></h2></div>
+    <div class="vgrid">
+      <div class="vc rv"><span class="sw p4" style="display:block"></span><h3>Hand-picked labels</h3><p>A mix of labels chosen piece by piece, so every rail feels different from the high street.</p></div>
+      <div class="vc rv d1"><span class="sw p1" style="display:block"></span><h3>Colour &amp; pattern</h3><p>Stripes, checks, florals and bold colour. Plenty to brighten up your wardrobe.</p></div>
+      <div class="vc rv d2"><span class="sw p3" style="display:block"></span><h3>Made to last</h3><p>Timeless pieces you'll keep reaching for, and love for years to come.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="wins" id="windows">
+  <div class="wrap">
+    <div class="hd rv">
+      <div><span class="eye">Window watching</span><h2>Our windows,<br><em>every season</em></h2></div>
+      <p>The Nood windows change with the seasons. Tap to take a closer look.</p>
+    </div>
+    <div class="wgrid">
+      <figure class="wf w1 rv"><img src="images/shopfront-1.jpg" alt="Autumn window at Nood" loading="lazy"><figcaption>Autumn layers</figcaption></figure>
+      <figure class="wf w2 rv d1"><img src="images/window-1.jpg" alt="Summer dresses in the Nood window" loading="lazy"><figcaption>Summer whites</figcaption></figure>
+      <figure class="wf w3 rv d2"><img src="images/shopfront-3.jpg" alt="Nood shopfront on Beech Road" loading="lazy"><figcaption>36 Beech Road</figcaption></figure>
+      <figure class="wf w4 rv"><img src="images/window-3.jpg" alt="Dresses and bags in the window" loading="lazy"><figcaption>Prints &amp; bags</figcaption></figure>
+      <figure class="wf w5 rv d1"><img src="images/window-2.jpg" alt="Blue and pink window display" loading="lazy"><figcaption>Blues &amp; pinks</figcaption></figure>
+    </div>
+    <div class="sale rv">
+      <b>Sale rail Saturdays</b>
+      <p>Keep an eye on Instagram for sale rail days with discounts on past-season stock.</p>
+      <a class="btn t" href="https://www.instagram.com/noodboutique/" target="_blank" rel="noopener">@noodboutique</a>
+    </div>
+  </div>
+</section>
+
+<section class="visit" id="visit">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eye">Come and browse</span>
+      <div class="vaddr">36 Beech Road<br>Chorlton, Manchester<br>M21 9EL</div>
+      <ul class="hours">
+        <li><span>Monday</span><span>Closed</span></li>
+        <li><span>Tuesday – Friday</span><span>10.30 – 5.30</span></li>
+        <li><span>Saturday</span><span>10 – 5.30</span></li>
+        <li><span>Sunday</span><span>12 – 5</span></li>
+      </ul>
+      <p class="note">Opening times as last posted on Instagram. Check there for holiday hours.</p>
+      <div class="cta">
+        <a class="btn t" href="https://www.google.com/maps/search/?api=1&query=Nood+36+Beech+Road+Chorlton+Manchester+M21+9EL" target="_blank" rel="noopener">Get directions</a>
+        <a class="btn o" href="https://ig.me/m/noodboutique" target="_blank" rel="noopener">Message us</a>
+      </div>
+    </div>
+    <div class="map rv d1"><iframe title="Map: 36 Beech Road, Chorlton, Manchester M21 9EL" loading="lazy" src="https://www.google.com/maps?q=36+Beech+Road,+Chorlton,+Manchester+M21+9EL&output=embed"></iframe></div>
+  </div>
+</section>
+
+<footer>
+  <div class="fn" aria-hidden="true"><span>n</span><span>o</span><span>o</span><span>d</span></div>
+  <p>Independent boutique · 36 Beech Road, Chorlton, Manchester M21 9EL · <a href="https://www.instagram.com/noodboutique/" target="_blank" rel="noopener">Instagram</a></p>
+</footer>
+
+<div class="mbar"><a class="a" href="https://www.google.com/maps/search/?api=1&query=Nood+36+Beech+Road+Chorlton+Manchester+M21+9EL" target="_blank" rel="noopener">Directions</a><a class="b" href="https://ig.me/m/noodboutique" target="_blank" rel="noopener">Message</a></div>
+<div class="lb" id="lb"><img alt=""></div>
+
+<script>
+(()=>{
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const nav=document.getElementById('nav');addEventListener('scroll',()=>nav.classList.toggle('s',scrollY>30),{passive:true});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+
+// window slideshow
+const ws=[...document.querySelectorAll('#win img')];let wi=0;
+if(!reduce)setInterval(()=>{ws[wi].classList.remove('on');wi=(wi+1)%ws.length;ws[wi].classList.add('on')},3600);
+
+// swatch ribbon
+const P=['p1','p2','p3','p4','p5','p6','p7','p8'],W=['Colour','Pattern','Hand-picked','Timeless','Beech Road','Chorlton'];
+let h='';for(let i=0;i<12;i++){h+=`<span class="sw ${P[i%8]}"></span>`;if(i%2)h+=`<span class="word">${W[(i>>1)%W.length]}</span>`}
+document.getElementById('sw').innerHTML=h+h;
+
+// rail
+const R=[['rail-1','Denim & zebra'],['mannequin-3','Knit vest'],['rail-2','Cobalt blue'],['mannequin-2','Graphic tee'],['rail-3','Patchwork'],['mannequin-1','Cord & check'],['rail-4','Stripes'],['shopfront-2','In the window']];
+const hg=document.getElementById('hangers');
+const hook='<svg class="hook" viewBox="0 0 40 46"><path d="M20 22 C 20 14, 28 14, 28 8 C 28 3, 22 1, 18 3"/><path d="M20 22 L 4 44 M20 22 L36 44"/></svg>';
+hg.innerHTML=R.map(([n,l],i)=>`<div class="hanger" style="animation-delay:${i*.09}s">${hook}<div class="ph"><img src="images/${n}.jpg" alt="${l} at Nood" loading="lazy"><span class="lab">${l}</span></div></div>`).join('');
+new IntersectionObserver((e,o)=>{if(e[0].isIntersecting){document.getElementById('railbox').classList.add('go');o.disconnect()}},{threshold:.25}).observe(hg);
+let down=false,sx=0,sl=0;
+hg.addEventListener('mousedown',e=>{down=true;sx=e.pageX;sl=hg.scrollLeft;hg.style.cursor='grabbing'});
+addEventListener('mouseup',()=>{down=false;hg.style.cursor=''});
+hg.addEventListener('mousemove',e=>{if(!down)return;e.preventDefault();hg.scrollLeft=sl-(e.pageX-sx)});
+
+// lightbox
+const lb=document.getElementById('lb');
+document.addEventListener('click',e=>{const t=e.target.closest('.wf');if(!t)return;const i=t.querySelector('img');lb.firstChild.src=i.src;lb.firstChild.alt=i.alt;lb.classList.add('on')});
+lb.onclick=()=>lb.classList.remove('on');addEventListener('keydown',e=>{if(e.key==='Escape')lb.classList.remove('on')});
+})();
+</script>
+</body>
+</html>

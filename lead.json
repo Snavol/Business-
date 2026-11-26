@@ -795,5 +795,34 @@
     "demo_path": "sites/southport-tv/",
     "demo_url": "https://business-red-ten.vercel.app/southport-tv/",
     "status": "draft"
+  },
+  {
+    "slug": "nood-chorlton",
+    "business": "Nood (Nood In Chorlton)",
+    "trade": "Independent clothing & accessories boutique",
+    "town": "Chorlton, Manchester",
+    "region": "Greater Manchester",
+    "country": "United Kingdom",
+    "address": "36 Beech Rd, Chorlton, Manchester M21 9EL",
+    "phone": null,
+    "email": null,
+    "instagram": "@noodboutique",
+    "rating": null,
+    "review_count": null,
+    "hours": "As posted (August opening times): Mon closed; Tue-Fri 10.30-5.30; Sat 10-5.30; Sun 12-5",
+    "maps_link": "https://www.google.com/maps/search/?api=1&query=Nood+36+Beech+Road+Chorlton+Manchester+M21+9EL",
+    "plus_code": null,
+    "website_status": "broken",
+    "website_status_note": "No website link in Instagram bio (718 posts, 3,141 followers). A Manc article lists nood.co.uk, but it could not be loaded (fetch failed). Check in a browser: if it's live and fine, downgrade this lead; if down/outdated, pitch as a replacement.",
+    "services": [
+      "Hand-picked labels (womenswear/clothing & accessories)",
+      "Colour & pattern, timeless pieces",
+      "Sale rail days"
+    ],
+    "reviews": [],
+    "notes": "Built from Instagram screenshots. Hours shown are from an 'August opening times' post, labelled 'as last posted'. No email found - find it on nood.co.uk (if live), Google listing or ask by DM. Left out: greeting-card prints (third-party designs), sale-rail and hours text posts.",
+    "demo_path": "sites/nood-chorlton/",
+    "demo_url": "https://business-red-ten.vercel.app/nood-chorlton/",
+    "status": "draft"
   }
 ]
