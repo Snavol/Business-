@@ -918,5 +918,37 @@
     "demo_path": "sites/deepwear/",
     "demo_url": "https://business-red-ten.vercel.app/deepwear/",
     "status": "draft"
+  },
+  {
+    "slug": "jp-devine-cabinetmaker",
+    "business": "JP Devine Cabinetmaker",
+    "trade": "Bespoke furniture maker & designer",
+    "town": "Chorlton, Manchester",
+    "region": "Greater Manchester",
+    "country": "United Kingdom",
+    "address": null,
+    "phone": null,
+    "email": null,
+    "instagram": "@jpdevinecabinetmaker",
+    "rating": null,
+    "review_count": null,
+    "hours": null,
+    "maps_link": null,
+    "plus_code": null,
+    "website_status": "none",
+    "website_status_note": "No website link in Instagram bio (45 posts, 243 followers). A web search found no site or directory listing for this business; competitors on Checkatrade/Houzz in Chorlton do have listings.",
+    "services": [
+      "Fitted wardrobes",
+      "Alcove shelving & bookcases",
+      "Under-stairs storage",
+      "Window seats & benches",
+      "Media units & desks",
+      "Kitchen & bathroom cabinetry"
+    ],
+    "reviews": [],
+    "notes": "Built from Instagram screenshots. Finish labels on the 'Choose your timber' filter (oak/walnut/ply/painted) are judged from photos, so confirm with JP. No contact details on profile, so the enquiry builder copies a brief and opens an Instagram DM. Left out: SKOF shop-sign photo, person-drilling photo, wardrobe photo with Keith Haring print.",
+    "demo_path": "sites/jp-devine-cabinetmaker/",
+    "demo_url": "https://business-red-ten.vercel.app/jp-devine-cabinetmaker/",
+    "status": "draft"
   }
 ]
