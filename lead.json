@@ -884,5 +884,39 @@
     "demo_path": "sites/blue-rinse-manchester/",
     "demo_url": "https://business-red-ten.vercel.app/blue-rinse-manchester/",
     "status": "draft"
+  },
+  {
+    "slug": "deepwear",
+    "business": "Deepwear",
+    "trade": "Global fashion agency (sourcing, manufacturing, design, distribution)",
+    "town": "Bangkok",
+    "region": null,
+    "country": "Thailand",
+    "address": "Ekkamai Villa 438/30, Sukhumvit 63, Bangkok 10110",
+    "phone": "+66 84 333 8757",
+    "email": "enquire@deepwear.info",
+    "instagram": "@deepwear",
+    "rating": null,
+    "review_count": null,
+    "hours": null,
+    "maps_link": null,
+    "plus_code": null,
+    "website_status": "has_website",
+    "website_status_note": "deepwear.info (WordPress, custom theme). Weak points: duplicated labels ('Garment Garment', 'REQUEST A MEETING' twice), mismatched card headings, product block repeated, leftover form text ('Looks good!'), typos ('more the 30 countries', 'Lets us show you'), conflicting stats (12 vs 17 offices; 30% savings vs 30% more competitive), 3 country pages with no copy, factory catalogue gated behind newsletter, no case studies, no hreflang, mismatched titles, small social image, empty alt text.",
+    "services": [
+      "Design",
+      "Sourcing",
+      "Manufacturing",
+      "Buying",
+      "Image",
+      "Logistics",
+      "Distribution",
+      "Consulting"
+    ],
+    "reviews": [],
+    "notes": "B2B agency, 27.4K IG followers, 8,378 posts. Demo uses their own stats (20+ yrs, 2,000+ suppliers, 17 hub countries, 100+ collections, buyers in 30+ countries) and client names shown as logos on their site. Brief builder sends to enquire@deepwear.info / WhatsApp. Left out: other brands' boxes (Koton), Vicenzaoro trade-show photo, staff portraits.",
+    "demo_path": "sites/deepwear/",
+    "demo_url": "https://business-red-ten.vercel.app/deepwear/",
+    "status": "draft"
   }
 ]
