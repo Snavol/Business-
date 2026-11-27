@@ -854,5 +854,35 @@
     "demo_path": "sites/idontbookwithyou/",
     "demo_url": "https://business-red-ten.vercel.app/idontbookwithyou/",
     "status": "draft"
+  },
+  {
+    "slug": "blue-rinse-manchester",
+    "business": "Blue Rinse Manchester (and Kilo Shop)",
+    "trade": "Vintage, reworked & thrifty clothing shop + £10 kilo sale events",
+    "town": "Manchester (Northern Quarter)",
+    "region": "Greater Manchester",
+    "country": "United Kingdom",
+    "address": "Oldham Street, Manchester M1 1JG (listings give 21-23 or 29-31 Oldham St)",
+    "phone": "0161 834 7877 (from a 2014 article - verify)",
+    "email": null,
+    "instagram": "@blue.rinse.manchester",
+    "rating": 4.2,
+    "review_count": 151,
+    "hours": "Mon-Sat 10am-6pm; Sun 11am-5pm (Instagram bio)",
+    "maps_link": "https://www.google.com/maps/search/?api=1&query=Blue+Rinse+Oldham+Street+Manchester+M1+1JG",
+    "plus_code": null,
+    "website_status": "has_website",
+    "website_status_note": "bluerinsevintage.co.uk (Shopify). Homepage shows no Manchester address/hours, no kilo sale dates (links out to thekilosale.com), placeholder 'Loading...'/'Error' text, duplicated heading, dead Google+ link. Pitch as a redesign. Note: Blue Rinse is a multi-store company (Leeds too) - may have an in-house/agency web team; pitch a Manchester store + kilo sale site.",
+    "services": [
+      "Vintage clothing",
+      "Reworked / Remade in England range",
+      "£10 per kilo sale at Sachas Hotel (free entry, 11-5)",
+      "10% student discount on £20+"
+    ],
+    "reviews": [],
+    "notes": "Built from Instagram screenshots. Kilo sale 2026 dates from their flyer: Apr 11+12, May 9+10, Jun 13+14, Oct 10+11, Oct 24+25, Nov 14+15, Dec 12+13. Kilo calculator weights are rough estimates, labelled on site. Left out: celebrity/film/meme images, hidden post, local artist's window artwork.",
+    "demo_path": "sites/blue-rinse-manchester/",
+    "demo_url": "https://business-red-ten.vercel.app/blue-rinse-manchester/",
+    "status": "draft"
   }
 ]

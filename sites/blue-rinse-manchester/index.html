@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Blue Rinse Manchester | Vintage, reworked &amp; thrifty clothing, Oldham Street</title>
+<meta name="description" content="Blue Rinse Manchester: vintage, reworked and thrifty clothing on Oldham Street in the Northern Quarter, plus the £10 kilo sale at Sachas Hotel.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Permanent+Marker&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blk:#0d0d0f;--blk2:#18181c;--ppr:#f4efe4;--y:#ffd21f;--p:#ff3fa4;--b:#1fa3ff;--g:#2ee59d;--o:#ff7a1a;--v:#8b5cff;--mute:#9a96a3;
+  --h:'Bowlby One',Impact,sans-serif;--mk:'Permanent Marker',cursive;--s:'Space Grotesk',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;overflow-x:clip}
+body{font-family:var(--s);background:var(--blk);color:#fff;line-height:1.55;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer}
+.wrap{width:min(1220px,92vw);margin:0 auto}
+.mk{font-family:var(--mk)}
+.rb span:nth-child(5n+1){color:var(--y)}.rb span:nth-child(5n+2){color:var(--p)}.rb span:nth-child(5n+3){color:var(--b)}.rb span:nth-child(5n+4){color:var(--g)}.rb span:nth-child(5n+5){color:var(--o)}
+.rb span{display:inline-block}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 24px;font-weight:700;border-radius:10px;border:3px solid #fff;transition:transform .2s,box-shadow .2s;font-size:1rem}
+.btn.y{background:var(--y);color:var(--blk);border-color:var(--blk);box-shadow:5px 5px 0 var(--p)}
+.btn.y:hover{transform:translate(-3px,-3px);box-shadow:8px 8px 0 var(--p)}
+.btn.w:hover{background:#fff;color:var(--blk)}
+.sticker{display:inline-block;font-family:var(--mk);background:var(--y);color:var(--blk);padding:6px 14px;border-radius:6px;transform:rotate(-3deg);box-shadow:3px 3px 0 #000}
+
+/* nav */
+nav{position:fixed;top:0;left:0;right:0;z-index:60;transition:background .3s}
+nav.s{background:rgba(13,13,15,.9);backdrop-filter:blur(10px);box-shadow:0 2px 0 #222}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:72px;gap:20px}
+.logo{display:flex;align-items:center;gap:10px}
+.logo .dot{width:48px;height:48px;border-radius:50%;background:#000;border:2px solid #333;display:grid;place-items:center;font-family:var(--h);font-size:.62rem;line-height:.85;text-align:center}
+.logo b{font-family:var(--h);font-weight:400;font-size:1.3rem;letter-spacing:.02em}
+.nl{display:flex;gap:26px;font-weight:500}
+.nl a{opacity:.8}.nl a:hover{opacity:1;color:var(--y)}
+nav .btn{padding:9px 16px;font-size:.88rem;border-width:2px;box-shadow:3px 3px 0 var(--p)}
+
+/* hero */
+.hero{position:relative;min-height:100vh;min-height:100svh;padding:110px 0 60px;display:flex;align-items:center;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;position:relative;z-index:2}
+.zig{position:absolute;inset:0;opacity:.09;background:
+  repeating-linear-gradient(45deg,transparent 0 22px,#fff 22px 24px),repeating-linear-gradient(-45deg,transparent 0 22px,#fff 22px 24px)}
+h1{font-family:var(--h);font-weight:400;font-size:clamp(2.6rem,7.4vw,7rem);line-height:.9;letter-spacing:-.01em;margin:18px 0 22px;text-shadow:4px 4px 0 #000}
+h1 .w{display:block;white-space:nowrap}
+h1 .rb span{opacity:0;transform:translateY(60px) rotate(-12deg);animation:pop .6s cubic-bezier(.2,1.5,.4,1) forwards}
+@keyframes pop{to{opacity:1;transform:none}}
+.hero p.lead{font-size:1.15rem;color:#ddd;max-width:520px;margin-bottom:28px}
+.hero p.lead b{color:var(--y)}
+.cta{display:flex;gap:14px;flex-wrap:wrap}
+.open{display:inline-flex;align-items:center;gap:10px;margin-top:28px;background:var(--blk2);border:2px solid #2a2a30;border-radius:40px;padding:9px 16px;font-weight:600}
+.open i{width:10px;height:10px;border-radius:50%;background:var(--g);box-shadow:0 0 10px var(--g)}
+.open.closed i{background:var(--p);box-shadow:0 0 10px var(--p)}
+.open span{color:var(--mute);font-weight:400}
+
+.pile{position:relative;height:min(600px,70vh)}
+.pol{position:absolute;background:#fff;padding:9px 9px 34px;box-shadow:0 26px 50px -18px rgba(0,0,0,.8);cursor:grab;user-select:none;touch-action:none;transition:box-shadow .2s}
+.pol:active{cursor:grabbing;box-shadow:0 40px 70px -18px rgba(0,0,0,.9)}
+.pol img{width:100%;aspect-ratio:355/378;object-fit:cover;pointer-events:none}
+.pol span{position:absolute;left:0;right:0;bottom:6px;text-align:center;font-family:var(--mk);color:#222;font-size:1.05rem}
+.pile .hint{position:absolute;right:0;bottom:-4px;font-family:var(--mk);color:var(--y);transform:rotate(-4deg)}
+
+/* tape */
+.tape{background:var(--y);color:var(--blk);overflow:hidden;border-block:4px solid #000;transform:rotate(-1.5deg) scale(1.04);position:relative;z-index:3}
+.tape .row{display:flex;width:max-content;animation:mq 30s linear infinite}
+.tape span{font-family:var(--h);font-size:clamp(1.3rem,2.6vw,2.1rem);padding:12px 22px;white-space:nowrap;display:flex;align-items:center;gap:44px}
+.tape span::after{content:"✸";color:var(--p)}
+@keyframes mq{to{transform:translateX(-50%)}}
+.tapew{overflow:hidden;padding:18px 0}
+
+/* sections */
+.sec{padding:110px 0;position:relative}
+.hd{display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap;margin-bottom:50px}
+h2{font-family:var(--h);font-weight:400;font-size:clamp(2.6rem,6.4vw,5.6rem);line-height:.9;margin-top:14px}
+.hd p{max-width:420px;color:var(--mute)}
+
+/* three things */
+.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.tc{border-radius:24px;overflow:hidden;position:relative;color:var(--blk);transition:transform .35s;min-height:440px;display:flex;flex-direction:column}
+.tc:hover{transform:rotate(-1.5deg) translateY(-6px)}
+.tc .im{height:250px;overflow:hidden}
+.tc .im img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.tc:hover .im img{transform:scale(1.08)}
+.tc .tx{padding:22px 24px 26px;flex:1}
+.tc h3{font-family:var(--h);font-weight:400;font-size:2rem;line-height:1}
+.tc p{margin-top:8px;font-weight:500}
+.t1{background:var(--y)}.t2{background:var(--p)}.t3{background:var(--b)}
+
+/* kilo */
+.kilo{background:var(--ppr);color:var(--blk);overflow:hidden}
+.kilo .hd p{color:#555}
+.kgrid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:start}
+.next{background:var(--blk);color:#fff;border-radius:24px;padding:30px;position:relative;box-shadow:8px 8px 0 var(--p)}
+.next .lbl{font-family:var(--mk);color:var(--y);font-size:1.3rem}
+.next h3{font-family:var(--h);font-weight:400;font-size:clamp(2rem,4vw,3rem);line-height:1;margin:8px 0 6px}
+.next .where{color:#ccc}
+.cd{display:flex;gap:12px;margin:22px 0}
+.cd div{flex:1;background:var(--blk2);border:2px solid #2a2a30;border-radius:14px;padding:14px 6px;text-align:center}
+.cd b{display:block;font-family:var(--h);font-size:clamp(1.8rem,3.4vw,2.6rem);line-height:1;color:var(--y)}
+.cd span{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--mute)}
+.dates{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.dates span{border:2px solid #333;border-radius:30px;padding:6px 12px;font-weight:600;font-size:.88rem}
+.dates span.past{opacity:.35;text-decoration:line-through}
+.dates span.nx{background:var(--y);color:var(--blk);border-color:var(--y)}
+.facts{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.facts span{background:#fff;color:var(--blk);border-radius:8px;padding:8px 12px;font-weight:700;font-size:.88rem}
+
+.scale{background:#fff;border:3px solid var(--blk);border-radius:24px;padding:26px;box-shadow:8px 8px 0 var(--b)}
+.scale h3{font-family:var(--h);font-weight:400;font-size:1.7rem;line-height:1}
+.scale p.s{color:#555;font-size:.92rem;margin:6px 0 16px}
+.items{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.items button{border:2px solid var(--blk);background:var(--ppr);border-radius:12px;padding:10px 6px;font-weight:700;font-size:.84rem;transition:transform .15s,background .2s;line-height:1.2}
+.items button small{display:block;font-weight:500;color:#666;font-size:.72rem}
+.items button:hover{background:var(--y)}
+.items button:active{transform:scale(.94)}
+.dial{margin:20px 0 12px;position:relative;height:150px;display:flex;justify-content:center}
+.dial svg{height:150px}
+#needle{transform-origin:100px 100px;transition:transform .6s cubic-bezier(.3,1.6,.5,1)}
+.tot{display:flex;justify-content:space-between;align-items:center;border-top:2px dashed #bbb;padding-top:14px}
+.tot b{font-family:var(--h);font-size:2.2rem;line-height:1}
+.tot span{color:#555;font-size:.9rem}
+.bag{display:flex;flex-wrap:wrap;gap:6px;min-height:30px;margin-top:10px}
+.bag span{background:var(--blk);color:#fff;border-radius:20px;padding:3px 10px;font-size:.78rem}
+.reset{margin-top:10px;background:none;border:0;text-decoration:underline;color:#555;font-size:.86rem}
+
+/* rails */
+.rails .row{display:flex;gap:18px;overflow-x:auto;padding:10px 4vw 30px;scroll-snap-type:x mandatory;scrollbar-width:none;cursor:grab}
+.rails .row::-webkit-scrollbar{display:none}
+.tag{flex:none;width:clamp(210px,20vw,260px);scroll-snap-align:start;position:relative;transform:rotate(var(--r));transition:transform .4s}
+.tag:hover{transform:rotate(0) translateY(-6px)}
+.tag .ph{border-radius:16px;overflow:hidden;border:3px solid #fff;aspect-ratio:355/378;cursor:zoom-in}
+.tag img{width:100%;height:100%;object-fit:cover}
+.tag .lab{position:absolute;right:-8px;top:18px;background:var(--c);color:var(--blk);font-family:var(--mk);padding:6px 12px 6px 18px;clip-path:polygon(10px 0,100% 0,100% 100%,10px 100%,0 50%);transform:rotate(6deg);font-size:1rem}
+
+/* deals */
+.deals{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.deal{border-radius:24px;padding:34px;position:relative;overflow:hidden;color:var(--blk)}
+.deal b{font-family:var(--h);font-weight:400;font-size:clamp(3rem,7vw,5.6rem);line-height:.9;display:block}
+.deal p{font-weight:600;font-size:1.1rem;margin-top:10px;max-width:360px}
+.deal.a{background:var(--g)}.deal.b{background:var(--o)}
+.deal::after{content:"";position:absolute;right:-40px;bottom:-40px;width:180px;height:180px;border-radius:50%;border:16px dashed rgba(0,0,0,.15);animation:spin 20s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* windows */
+.wins{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.wins figure{border-radius:16px;overflow:hidden;position:relative;cursor:zoom-in;aspect-ratio:355/378}
+.wins img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.wins figure:hover img{transform:scale(1.07)}
+.wins figure.big{grid-column:span 2;grid-row:span 2;aspect-ratio:auto}
+
+/* visit */
+.visit{background:var(--blk2)}
+.vgrid{display:grid;grid-template-columns:1fr 1.1fr;gap:50px;align-items:stretch}
+.hours{list-style:none;margin:24px 0}
+.hours li{display:flex;justify-content:space-between;padding:14px 0;border-bottom:2px dashed #333;font-size:1.05rem}
+.hours li b{font-family:var(--h);font-weight:400}
+.hours li.today{color:var(--y)}
+.map{border-radius:24px;overflow:hidden;min-height:440px;position:relative;border:4px solid #fff;box-shadow:8px 8px 0 var(--y)}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:saturate(1.2)}
+
+footer{padding:70px 0 120px;text-align:center;overflow:hidden}
+.fbig{font-family:var(--h);font-size:clamp(4rem,17vw,16rem);line-height:.85;white-space:nowrap}
+footer p{color:var(--mute);margin-top:18px}
+footer p a{color:#fff;border-bottom:2px solid var(--p)}
+
+.mbar{display:none;position:fixed;left:12px;right:12px;bottom:12px;z-index:70;gap:10px}
+.mbar a{flex:1;text-align:center;padding:15px;border-radius:12px;font-weight:700;border:3px solid #000}
+.mbar .a{background:var(--y);color:var(--blk)}.mbar .b{background:#fff;color:var(--blk)}
+.lb{position:fixed;inset:0;z-index:100;background:rgba(0,0,0,.9);display:none;place-items:center;padding:20px;cursor:zoom-out}
+.lb.on{display:grid}
+.lb img{max-height:88vh;max-width:92vw;border:6px solid #fff;border-radius:12px}
+
+.rv{opacity:0;transform:translateY(34px);transition:opacity .8s,transform .8s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}
+
+@media (max-width:980px){
+  .nl{display:none}
+  .hero .wrap,.kgrid,.vgrid{grid-template-columns:1fr}
+  .pile{height:460px}
+  .trio{grid-template-columns:1fr}
+  .tc{min-height:0}
+  .wins{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:620px){
+  nav .btn{display:none}
+  .hero{padding:96px 0 40px}
+  h1{font-size:12vw}
+  .pile{height:400px}
+  .sec{padding:80px 0}
+  .deals{grid-template-columns:1fr}
+  .deal{padding:26px}
+  .next,.scale{padding:22px}
+  .cd{gap:8px}
+  .map{min-height:340px}
+  .mbar{display:flex}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  h1 .rb span{opacity:1;transform:none}.rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Blue Rinse Manchester"><span class="dot rb"><span>BLUE</span><br><span>RINSE</span></span><b class="rb"><span>Blue</span> <span>Rinse</span></b></a>
+    <div class="nl"><a href="#kilo">Kilo sale</a><a href="#rails">The rails</a><a href="#deals">Deals</a><a href="#visit">Visit</a></div>
+    <a class="btn y" href="#kilo">Next kilo sale</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="zig"></div>
+  <div class="wrap">
+    <div>
+      <span class="sticker">Oldham Street · Northern Quarter</span>
+      <h1>
+        <span class="w rb" id="t1">Vintage.</span>
+        <span class="w rb" id="t2">Reworked.</span>
+        <span class="w rb" id="t3">Thrifty.</span>
+      </h1>
+      <p class="lead">One-off vintage, reworked pieces and rails of thrifty finds in Manchester's Northern Quarter. Plus the <b>£10 kilo sale</b>, where you pay by the weight.</p>
+      <div class="cta">
+        <a class="btn y" href="#kilo">See kilo sale dates →</a>
+        <a class="btn w" href="#visit">Find the shop</a>
+      </div>
+      <div class="open" id="open"><i></i><b id="ost">Open today</b><span id="ohr"></span></div>
+    </div>
+    <div class="pile" id="pile">
+      <span class="hint">↖ drag the pile!</span>
+    </div>
+  </div>
+</header>
+
+<div class="tapew" aria-hidden="true"><div class="tape"><div class="row">
+  <span>£10 per kilo</span><span>Vintage</span><span>Reworked</span><span>Thrifty clothing</span><span>Free entry</span><span>One-off pieces</span><span>Northern Quarter</span>
+  <span>£10 per kilo</span><span>Vintage</span><span>Reworked</span><span>Thrifty clothing</span><span>Free entry</span><span>One-off pieces</span><span>Northern Quarter</span>
+</div></div></div>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="hd rv">
+      <div><span class="sticker">What's in store</span><h2>Three ways<br>to <span style="color:var(--p)">rummage</span></h2></div>
+      <p>From knits and leather to denim and tracktops, every piece on the rails is a one-off.</p>
+    </div>
+    <div class="trio">
+      <div class="tc t1 rv"><div class="im"><img src="images/leather-jacket.jpg" alt="Vintage leather jacket" loading="lazy"></div><div class="tx"><h3>Vintage</h3><p>Knits, leather, denim, sportswear and more, picked from the decades.</p></div></div>
+      <div class="tc t2 rv d1"><div class="im"><img src="images/embroidered-jeans.jpg" alt="Reworked embroidered jeans" loading="lazy"></div><div class="tx"><h3>Reworked</h3><p>Original vintage, reworked into something new. No two the same.</p></div></div>
+      <div class="tc t3 rv d2"><div class="im"><img src="images/kilo-hall.jpg" alt="Rails at the kilo sale" loading="lazy"></div><div class="tx"><h3>Thrifty</h3><p>Rails of bargains, and kilo sales where you pay £10 per kilo.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec kilo" id="kilo">
+  <div class="wrap">
+    <div class="hd rv">
+      <div><span class="sticker" style="background:var(--p);color:#fff">£10 per kilo</span><h2>The kilo<br>sale</h2></div>
+      <p>Fill a bag, put it on the scale, pay £10 per kilo. Free entry, 11am–5pm, at Sachas Hotel on Oldham Street.</p>
+    </div>
+    <div class="kgrid">
+      <div class="next rv">
+        <span class="lbl" id="nlbl">Next kilo sale</span>
+        <h3 id="ndate">—</h3>
+        <div class="where">Sachas Hotel, Oldham St, Manchester M1 1JG · 11am–5pm</div>
+        <div class="cd" id="cd"><div><b id="cdd">0</b><span>days</span></div><div><b id="cdh">0</b><span>hours</span></div><div><b id="cdm">0</b><span>mins</span></div><div><b id="cds">0</b><span>secs</span></div></div>
+        <div class="lbl" style="font-size:1.1rem">2026 dates</div>
+        <div class="dates" id="dates"></div>
+        <div class="facts"><span>Free entry</span><span>£10 per kilo</span><span>Sat &amp; Sun 11–5</span></div>
+      </div>
+      <div class="scale rv d1">
+        <h3>How many items in a kilo?</h3>
+        <p class="s">Tap to add items to your bag. Weights are rough guides, so the scale on the day has the final say.</p>
+        <div class="items" id="items"></div>
+        <div class="dial">
+          <svg viewBox="0 0 200 120" aria-hidden="true">
+            <path d="M20 100 A80 80 0 0 1 180 100" fill="none" stroke="#eee" stroke-width="18" stroke-linecap="round"/>
+            <path d="M20 100 A80 80 0 0 1 180 100" fill="none" stroke="url(#gr)" stroke-width="18" stroke-linecap="round" stroke-dasharray="252" id="arc" stroke-dashoffset="252" style="transition:stroke-dashoffset .6s"/>
+            <defs><linearGradient id="gr"><stop offset="0" stop-color="#2ee59d"/><stop offset=".5" stop-color="#ffd21f"/><stop offset="1" stop-color="#ff3fa4"/></linearGradient></defs>
+            <g id="needle"><line x1="100" y1="100" x2="100" y2="32" stroke="#0d0d0f" stroke-width="5" stroke-linecap="round"/></g>
+            <circle cx="100" cy="100" r="9" fill="#0d0d0f"/>
+            <text x="20" y="118" font-size="10" text-anchor="middle" font-family="Space Grotesk" fill="#666">0</text>
+            <text x="180" y="118" font-size="10" text-anchor="middle" font-family="Space Grotesk" fill="#666">3kg</text>
+          </svg>
+        </div>
+        <div class="tot"><div><span>Your bag</span><br><b id="kg">0.0 kg</b></div><div style="text-align:right"><span>About</span><br><b id="gbp" style="color:var(--p)">£0</b></div></div>
+        <div class="bag" id="bag"></div>
+        <button class="reset" id="reset">Empty the bag</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="tapew" aria-hidden="true"><div class="tape" style="background:var(--p);color:#fff;transform:rotate(1.5deg) scale(1.04)"><div class="row" style="animation-direction:reverse">
+  <span>Denim</span><span>Knits</span><span>Leather</span><span>Tracktops</span><span>Slips &amp; lace</span><span>Fleeces</span><span>Jumpers</span>
+  <span>Denim</span><span>Knits</span><span>Leather</span><span>Tracktops</span><span>Slips &amp; lace</span><span>Fleeces</span><span>Jumpers</span>
+</div></div></div>
+
+<section class="sec rails" id="rails">
+  <div class="wrap">
+    <div class="hd rv">
+      <div><span class="sticker" style="background:var(--b)">Fresh in</span><h2>On the<br><span style="color:var(--y)">rails</span></h2></div>
+      <p>A taste of what's been hitting the shop floor. Drag to browse, tap to see it bigger.</p>
+    </div>
+  </div>
+  <div class="row" id="rail"></div>
+</section>
+
+<section class="sec" id="deals" style="padding-top:40px">
+  <div class="wrap">
+    <div class="deals">
+      <div class="deal a rv"><b>10% off</b><p>Student discount when you spend £20 or more.</p></div>
+      <div class="deal b rv d1"><b>£10/kg</b><p>At the kilo sale. Fill your bag and pay by the weight.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:40px">
+  <div class="wrap">
+    <div class="hd rv">
+      <div><span class="sticker" style="background:var(--g)">Window watching</span><h2>Our windows</h2></div>
+      <p>The Oldham Street windows change all the time. Here are a few recent ones.</p>
+    </div>
+    <div class="wins">
+      <figure class="big rv"><img src="images/shopfront-street.jpg" alt="Blue Rinse shopfront on Oldham Street" loading="lazy"></figure>
+      <figure class="rv d1"><img src="images/window-red.jpg" alt="Red window display" loading="lazy"></figure>
+      <figure class="rv d2"><img src="images/shopfront-pink.jpg" alt="Shop window with mannequins" loading="lazy"></figure>
+      <figure class="rv"><img src="images/window-horse.jpg" alt="Window display with horse motifs" loading="lazy"></figure>
+      <figure class="rv d1"><img src="images/shopfront-mural.jpg" alt="Painted shop window" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec visit" id="visit">
+  <div class="wrap vgrid">
+    <div class="rv">
+      <span class="sticker">Come rummage</span>
+      <h2 style="margin-top:14px">Oldham Street,<br><span style="color:var(--y)">M1 1JG</span></h2>
+      <p style="color:var(--mute);margin-top:12px">In the heart of the Northern Quarter, Manchester.</p>
+      <ul class="hours" id="hours">
+        <li data-d="1-6"><span>Monday – Saturday</span><b>10am – 6pm</b></li>
+        <li data-d="0"><span>Sunday</span><b>11am – 5pm</b></li>
+      </ul>
+      <div class="cta">
+        <a class="btn y" href="https://www.google.com/maps/search/?api=1&query=Blue+Rinse+Oldham+Street+Manchester+M1+1JG" target="_blank" rel="noopener">Get directions</a>
+        <a class="btn w" href="https://www.instagram.com/blue.rinse.manchester/" target="_blank" rel="noopener">@blue.rinse.manchester</a>
+      </div>
+    </div>
+    <div class="map rv d1"><iframe title="Map: Blue Rinse, Oldham Street, Manchester" loading="lazy" src="https://www.google.com/maps?q=Blue+Rinse+Oldham+Street+Manchester+M1+1JG&output=embed"></iframe></div>
+  </div>
+</section>
+
+<footer>
+  <div class="fbig rb"><span>BLUE</span> <span>RINSE</span></div>
+  <p>Vintage, reworked &amp; thrifty clothing · Oldham Street, Manchester M1 1JG · <a href="https://www.instagram.com/blue.rinse.manchester/" target="_blank" rel="noopener">Instagram</a></p>
+</footer>
+
+<div class="mbar"><a class="a" href="#kilo">Kilo sale dates</a><a class="b" href="https://www.google.com/maps/search/?api=1&query=Blue+Rinse+Oldham+Street+Manchester+M1+1JG" target="_blank" rel="noopener">Directions</a></div>
+<div class="lb" id="lb"><img alt=""></div>
+
+<script>
+(()=>{
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const nav=document.getElementById('nav');addEventListener('scroll',()=>nav.classList.toggle('s',scrollY>30),{passive:true});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+
+// rainbow letters
+let k=0;['t1','t2','t3'].forEach(id=>{const el=document.getElementById(id);el.innerHTML=[...el.textContent].map(c=>`<span style="animation-delay:${(k++)*.04}s">${c}</span>`).join('')});
+
+// UK time helpers
+function uk(){const p=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/London',weekday:'short',hour:'numeric',minute:'numeric',hour12:false}).formatToParts(new Date());const o={};p.forEach(x=>o[x.type]=x.value);return{d:['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(o.weekday),m:(+o.hour%24)*60+ +o.minute}}
+const t=uk(),[a,b]=t.d===0?[660,1020]:[600,1080],op=t.m>=a&&t.m<b;
+const oe=document.getElementById('open');if(!op)oe.classList.add('closed');
+document.getElementById('ost').textContent=op?'Open now':'Closed now';
+document.getElementById('ohr').textContent=t.d===0?'Sunday 11am–5pm':'Today 10am–6pm';
+document.querySelectorAll('#hours li').forEach(li=>{const d=li.dataset.d;if((d==='0'&&t.d===0)||(d==='1-6'&&t.d>0))li.classList.add('today')});
+
+// draggable pile
+const pile=document.getElementById('pile');
+const PI=[['jumper-scarf','knits'],['tracktop-jeans','sportswear'],['fur-collar-jacket','leather'],['wolf-sweat','lonesome wolf'],['slips','slips & lace'],['denim-flatlay','denim']];
+const pos=[[2,6,-8],[40,0,6],[18,34,-3],[54,30,9],[6,52,4],[44,56,-6]];
+PI.forEach(([n,l],i)=>{const d=document.createElement('div');d.className='pol';d.style.cssText=`left:${pos[i][0]}%;top:${pos[i][1]}%;width:clamp(150px,15vw,200px);transform:rotate(${pos[i][2]}deg);z-index:${i+1}`;
+  d.innerHTML=`<img src="images/${n}.jpg" alt="${l}"><span>${l}</span>`;pile.appendChild(d)});
+let z=20;
+pile.querySelectorAll('.pol').forEach(p=>{let sx,sy,ox,oy,drag=false;
+  p.addEventListener('pointerdown',e=>{drag=true;p.setPointerCapture(e.pointerId);sx=e.clientX;sy=e.clientY;ox=p.offsetLeft;oy=p.offsetTop;p.style.zIndex=++z});
+  p.addEventListener('pointermove',e=>{if(!drag)return;p.style.left=(ox+e.clientX-sx)+'px';p.style.top=(oy+e.clientY-sy)+'px'});
+  p.addEventListener('pointerup',()=>drag=false)});
+
+// kilo sale dates (from their 2026 flyer)
+const D=[['2026-04-11','April 11 + 12'],['2026-05-09','May 9 + 10'],['2026-06-13','June 13 + 14'],['2026-10-10','Oct 10 + 11'],['2026-10-24','Oct 24 + 25'],['2026-11-14','Nov 14 + 15'],['2026-12-12','Dec 12 + 13']];
+const now=new Date();let nx=null;
+document.getElementById('dates').innerHTML=D.map(([d,l])=>{const end=new Date(d+'T17:00:00Z');end.setUTCDate(end.getUTCDate()+1);const past=end<now;if(!past&&!nx)nx=[d,l];return `<span class="${past?'past':''}${nx&&nx[0]===d?' nx':''}">${l}</span>`}).join('');
+if(nx){document.getElementById('ndate').textContent=nx[1]+', 2026';
+  const st=new Date(nx[0]+'T11:00:00Z');
+  const cdf=()=>{let s=Math.max(0,(st-new Date())/1000);if(s===0){document.getElementById('nlbl').textContent='On now!'}
+    document.getElementById('cdd').textContent=Math.floor(s/86400);document.getElementById('cdh').textContent=Math.floor(s%86400/3600);document.getElementById('cdm').textContent=Math.floor(s%3600/60);document.getElementById('cds').textContent=Math.floor(s%60)};
+  cdf();setInterval(cdf,1000);
+}else{document.getElementById('ndate').textContent='2027 dates coming soon';document.getElementById('cd').style.display='none'}
+
+// kilo scale (rough guide weights)
+const IT=[['T-shirt',.18],['Shirt',.25],['Jeans',.6],['Jumper',.5],['Fleece',.45],['Jacket',1.0],['Dress',.3],['Skirt',.25],['Scarf',.1]];
+const items=document.getElementById('items'),bag=document.getElementById('bag');let tot=0,list=[];
+items.innerHTML=IT.map(([n,w],i)=>`<button data-i="${i}">${n}<small>~${w<1?w*1000+'g':w+'kg'}</small></button>`).join('');
+function upd(){const kg=Math.min(tot,3);document.getElementById('kg').textContent=tot.toFixed(1)+' kg';document.getElementById('gbp').textContent='£'+Math.round(tot*10);
+  document.getElementById('needle').style.transform=`rotate(${-90+kg/3*180}deg)`;document.getElementById('arc').style.strokeDashoffset=252-252*kg/3;
+  bag.innerHTML=list.map(n=>`<span>${n}</span>`).join('')}
+items.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;const[n,w]=IT[b.dataset.i];tot+=w;list.push(n);upd()});
+document.getElementById('reset').onclick=()=>{tot=0;list=[];upd()};upd();
+
+// rail
+const RL=[['jeans-pile','denim','#ffd21f',-3],['fairisle','knits','#ff3fa4',2],['mannequins','fresh fits','#1fa3ff',-2],['ski-jumper','winter knits','#2ee59d',3],['denim-rail','shorts','#ff7a1a',-2],['knit-closeup','patterns','#8b5cff',2],['colour-pile','colour','#ffd21f',-3],['tops-rail','tops','#ff3fa4',2],['pegboard-wall','the wall','#1fa3ff',-2],['mural-wall','rails','#2ee59d',3],['jumper-scarf','winter','#ff7a1a',-2]];
+const rail=document.getElementById('rail');
+rail.innerHTML=RL.map(([n,l,c,r])=>`<div class="tag" style="--r:${r}deg;--c:${c}"><div class="ph"><img src="images/${n}.jpg" alt="${l} at Blue Rinse" loading="lazy"></div><span class="lab">${l}</span></div>`).join('');
+let dn=false,dx=0,sl=0,moved=false;
+rail.addEventListener('mousedown',e=>{dn=true;moved=false;dx=e.pageX;sl=rail.scrollLeft});
+addEventListener('mouseup',()=>dn=false);
+rail.addEventListener('mousemove',e=>{if(!dn)return;if(Math.abs(e.pageX-dx)>5)moved=true;rail.scrollLeft=sl-(e.pageX-dx)});
+
+// lightbox
+const lb=document.getElementById('lb');
+document.addEventListener('click',e=>{const t=e.target.closest('.tag .ph,.wins figure');if(!t||moved)return;const i=t.querySelector('img');lb.firstChild.src=i.src;lb.firstChild.alt=i.alt;lb.classList.add('on')});
+lb.onclick=()=>lb.classList.remove('on');addEventListener('keydown',e=>{if(e.key==='Escape')lb.classList.remove('on')});
+})();
+</script>
+</body>
+</html>
