@@ -950,5 +950,39 @@
     "demo_path": "sites/jp-devine-cabinetmaker/",
     "demo_url": "https://business-red-ten.vercel.app/jp-devine-cabinetmaker/",
     "status": "draft"
+  },
+  {
+    "slug": "the-metropolitan-didsbury",
+    "business": "The Metropolitan (The Met)",
+    "trade": "Pub, bar & restaurant",
+    "town": "West Didsbury, Manchester",
+    "region": "Greater Manchester",
+    "country": "United Kingdom",
+    "address": "2 Lapwing Lane, West Didsbury, Manchester M20 2WS",
+    "phone": "0161 445 3145",
+    "email": null,
+    "instagram": "@metdidsbury",
+    "rating": 4.2,
+    "review_count": 2722,
+    "hours": "Open all day, every day (bio)",
+    "maps_link": null,
+    "plus_code": null,
+    "website_status": "has_website",
+    "website_status_note": "Operated by Stonegate; its site is a page on heritagepubs.co.uk (group template). Weekly deals, quiz, Taskmaster and Burton Road events live only in Instagram graphics. Decision likely sits with Stonegate head office - low-probability lead; pitch the GM a Met-only 'what's on' site.",
+    "services": [
+      "Burger & Drink Tue",
+      "Pie & Drink Wed",
+      "Nigel's Quiz Wed 8pm £2",
+      "Steak & Wine Thu",
+      "Taskmaster every other Thu",
+      "Sunday lunch 12-9",
+      "Breakfast",
+      "Events with Burton Road Events"
+    ],
+    "reviews": [],
+    "notes": "Demo matches their bottle-green poster style. Departure-board events from their posts: Singles Christmas Party 5 Dec, Breakfast with Santa 19-20 Dec, Carol singers 19 Dec 4-6pm, Boxing Day Quiz £3. Left out: team member photos, Burton Road membership post, third-party event branding.",
+    "demo_path": "sites/the-metropolitan-didsbury/",
+    "demo_url": "https://business-red-ten.vercel.app/the-metropolitan-didsbury/",
+    "status": "draft"
   }
 ]
