@@ -1049,5 +1049,36 @@
     "demo_path": "sites/electrik-chorlton/",
     "demo_url": "https://business-red-ten.vercel.app/electrik-chorlton/",
     "status": "draft"
+  },
+  {
+    "slug": "pmak-agency",
+    "business": "PMAK agency (PMAKstudio)",
+    "trade": "Creative / branding agency",
+    "town": null,
+    "region": null,
+    "country": null,
+    "address": null,
+    "phone": null,
+    "email": "info@pmakstudio.com",
+    "instagram": "https://www.instagram.com/pmakagency",
+    "rating": null,
+    "review_count": null,
+    "hours": null,
+    "maps_link": null,
+    "plus_code": null,
+    "website_status": "has_website",
+    "website_status_note": "pmakstudio.com is a Wix gallery of ~65 numbered images with no text about services; empty alt text; About links to /index, two different contact URLs. Footer copyright: Patricija Mazeikaite.",
+    "services": [
+      "Brand strategy",
+      "Branding / identity",
+      "Content",
+      "(hiring) website developer",
+      "(hiring) business development manager"
+    ],
+    "reviews": null,
+    "notes": "Tiny agency (16 posts, 40 followers). Currently hiring a Website Developer (posted 18 Nov) and a BDM: pitch Codzo as white-label web dev partner instead of a hire. Location unknown. Service list on demo is placeholder copy. Their case-study posts on other brands (Fear of God, Refy, Blank Street) left out.",
+    "demo_path": "sites/pmak-agency/",
+    "demo_url": "https://business-red-ten.vercel.app/pmak-agency/",
+    "status": "draft"
   }
 ]
