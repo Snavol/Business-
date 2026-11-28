@@ -1110,5 +1110,39 @@
     "demo_path": "sites/intuitive-flow-coaching/",
     "demo_url": "https://business-red-ten.vercel.app/intuitive-flow-coaching/",
     "status": "draft"
+  },
+  {
+    "slug": "smart-waste-clearance",
+    "business": "Smart Waste & Clearance Ltd",
+    "trade": "Waste removal, site clearance, soft strip-out, labour supply",
+    "town": "Bristol",
+    "region": "South West",
+    "country": "UK",
+    "address": null,
+    "phone": "07767 533606",
+    "email": "smartwasteandclearance@outlook.com",
+    "instagram": "https://www.instagram.com/smartwasteclearance",
+    "rating": null,
+    "review_count": null,
+    "hours": null,
+    "maps_link": null,
+    "plus_code": null,
+    "website_status": "none",
+    "website_status_note": "No website found. Posted 15 Sept 2026 that they're looking for a website designer (and a content creator), ideally Bristol/South West, asking for examples of previous work. May have hired since.",
+    "services": [
+      "General house removals",
+      "Site clearances",
+      "Site deliveries",
+      "Scrap collection",
+      "Long-haul transportation",
+      "Soft strip-out",
+      "Labour supply",
+      "Site clearance & waste management support"
+    ],
+    "reviews": null,
+    "notes": "Ltd company (CHAS Standard / SSIP cert posted) so B2B email OK. Sponsors local football. Not Bristol-based ourselves: address the 'local' preference head-on.",
+    "demo_path": "sites/smart-waste-clearance/",
+    "demo_url": "https://business-red-ten.vercel.app/smart-waste-clearance/",
+    "status": "draft"
   }
 ]

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Smart Waste & Clearance · Bristol & South West</title>
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Smart Waste & Clearance Ltd. House removals, site clearances, soft strip-out, labour supply, scrap collection and long-haul transport across Bristol and the South West. CHAS accredited, fully insured.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0f1012;--char:#17191c;--char2:#202328;--orange:#f46a12;--orange2:#ff8a3d;--green:#2fae4a;--paper:#f3f1ec;--muted:#9a9ca1;--line:#2c2f35}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:#fff;font-family:Inter,system-ui,sans-serif;line-height:1.55;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+.d{font-family:Anton,Impact,sans-serif;text-transform:uppercase;letter-spacing:.01em;font-weight:400}
+.wrap{width:min(1200px,92vw);margin:0 auto}
+.kick{display:inline-flex;align-items:center;gap:.6rem;font-size:.75rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--orange)}
+.kick::before{content:"";width:28px;height:3px;background:var(--orange)}
+h2{font-family:Anton,Impact,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(2.4rem,6vw,4.8rem);line-height:.95;margin:.7rem 0 1rem}
+h2 span{color:var(--orange)}
+.lead{color:#c4c6ca;max-width:58ch;font-size:1.05rem}
+section{padding:110px 0;position:relative}
+.rv{opacity:0;transform:translateY(30px);transition:opacity .8s,transform .8s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.btn{display:inline-flex;align-items:center;gap:.6rem;padding:1rem 1.5rem;font-weight:800;font-size:.95rem;text-decoration:none;border:2px solid var(--orange);color:#fff;background:none;cursor:pointer;font-family:inherit;transition:.2s;clip-path:polygon(0 0,100% 0,100% calc(100% - 12px),calc(100% - 12px) 100%,0 100%)}
+.btn.fill{background:var(--orange);color:#111}
+.btn:hover{transform:translateY(-2px);background:var(--orange2);border-color:var(--orange2);color:#111}
+.hazard{height:14px;background:repeating-linear-gradient(-45deg,var(--orange) 0 18px,#111 18px 36px)}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:14px 4vw;background:rgba(15,16,18,.82);backdrop-filter:blur(10px);border-bottom:1px solid #24272c}
+.logo{display:flex;align-items:center;gap:.6rem;text-decoration:none;line-height:.9}
+.logo .s{font-family:Anton,sans-serif;color:var(--orange);font-size:1.55rem;letter-spacing:.03em}
+.logo .w{font-family:Anton,sans-serif;font-size:.72rem;letter-spacing:.08em;display:block}
+.logo svg{width:30px;height:30px}
+nav ul{display:flex;gap:1.8rem;list-style:none;font-weight:600;font-size:.9rem}
+nav ul a{text-decoration:none;opacity:.8}nav ul a:hover{opacity:1;color:var(--orange)}
+.tel{font-weight:800;text-decoration:none;display:flex;align-items:center;gap:.5rem}
+.tel b{background:var(--orange);color:#111;padding:.55rem .9rem}
+@media(max-width:960px){nav ul{display:none}}
+@media(max-width:560px){.tel span{display:none}}
+
+/* HERO */
+.hero{padding:120px 0 70px;min-height:100vh;min-height:100svh;display:flex;align-items:center;background:radial-gradient(ellipse at 80% 30%,rgba(244,106,18,.18),transparent 55%),var(--ink);position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:60px 60px;mask-image:linear-gradient(transparent,#000 30%,#000 70%,transparent)}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:3rem;align-items:center;position:relative}
+.hero h1{font-family:Anton,Impact,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(3.4rem,8.4vw,7.6rem);line-height:.88}
+.hero h1 .o{color:var(--orange)}
+.hero h1 .st{display:block;-webkit-text-stroke:2px #fff;color:transparent}
+.hero p{margin:1.4rem 0 2rem}
+.ctas{display:flex;gap:.8rem;flex-wrap:wrap}
+.badges{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:2rem}
+.badges span{display:inline-flex;align-items:center;gap:.45rem;border:1px solid #33363c;padding:.5rem .8rem;font-size:.8rem;font-weight:600;background:rgba(255,255,255,.03)}
+.badges i{width:8px;height:8px;background:var(--green);border-radius:50%;font-style:normal}
+.clearbox{position:relative;aspect-ratio:356/383;width:100%;max-width:520px;margin:0 auto;border:3px solid #fff;box-shadow:18px 18px 0 var(--orange);touch-action:none;cursor:crosshair;user-select:none}
+.clearbox img{width:100%;height:100%;object-fit:cover}
+.clearbox canvas{position:absolute;inset:0;width:100%;height:100%}
+.tag{position:absolute;z-index:3;font-family:Anton,sans-serif;text-transform:uppercase;padding:.3rem .8rem;font-size:1.1rem;transform:rotate(-4deg)}
+.tag.b{top:14px;left:-14px;background:var(--orange);color:#111}
+.tag.a{bottom:14px;right:-14px;background:var(--green);color:#fff;opacity:0;transition:opacity .5s}
+.tag.a.on{opacity:1}
+.hint{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:3;background:rgba(0,0,0,.75);padding:.8rem 1.2rem;font-weight:800;font-size:.9rem;pointer-events:none;transition:opacity .4s;text-align:center;border:1px solid var(--orange)}
+.meterbar{position:absolute;left:0;right:0;bottom:-38px;height:8px;background:#26292e}
+.meterbar i{display:block;height:100%;width:0;background:var(--green);transition:width .2s}
+.meterlab{position:absolute;right:0;bottom:-62px;font-size:.75rem;font-weight:800;letter-spacing:.12em;color:var(--muted)}
+.disc{font-size:.72rem;color:#6f7277;margin-top:0;text-align:center}
+.clearbox{margin-bottom:80px!important}
+@media(max-width:900px){.hero .wrap{grid-template-columns:1fr}.clearbox{max-width:380px}}
+
+/* TICKER */
+.ticker{background:var(--orange);color:#111;overflow:hidden;white-space:nowrap}
+.ticker div{display:inline-flex;gap:2.4rem;padding:.9rem 0;animation:tk 30s linear infinite;font-family:Anton,sans-serif;font-size:1.3rem;text-transform:uppercase}
+@keyframes tk{to{transform:translateX(-50%)}}
+
+/* WHO TOGGLE */
+.toggle{display:inline-flex;border:2px solid #fff;margin:1.5rem 0 2.4rem}
+.toggle button{padding:.9rem 1.6rem;background:none;border:0;color:#fff;font-family:Anton,sans-serif;font-size:1.2rem;text-transform:uppercase;cursor:pointer;transition:.25s;letter-spacing:.03em}
+.toggle button.on{background:#fff;color:#111}
+.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.sv{position:relative;overflow:hidden;min-height:330px;display:flex;flex-direction:column;justify-content:flex-end;padding:1.5rem;border:1px solid var(--line);isolation:isolate;animation:in .6s both}
+@keyframes in{from{opacity:0;transform:translateY(20px)}}
+.sv img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;filter:saturate(.8) brightness(.55);transition:transform 1s,filter .6s}
+.sv::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(transparent 30%,rgba(10,10,12,.95))}
+.sv:hover img{transform:scale(1.07);filter:saturate(1) brightness(.6)}
+.sv .n{position:absolute;top:1rem;left:1.2rem;font-family:Anton,sans-serif;font-size:3rem;color:transparent;-webkit-text-stroke:1.5px rgba(255,255,255,.6);line-height:1}
+.sv h3{font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;font-size:1.7rem;line-height:1}
+.sv p{color:#cfd1d4;font-size:.92rem;margin-top:.5rem}
+.sv .bar{width:40px;height:4px;background:var(--orange);margin-bottom:.8rem;transition:width .4s}
+.sv:hover .bar{width:90px}
+@media(max-width:900px){.svc{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.svc{grid-template-columns:1fr}.sv{min-height:240px}}
+
+/* LOAD ESTIMATOR */
+.est{background:var(--paper);color:#111}
+.est .lead{color:#55585e}
+.estg{display:grid;grid-template-columns:1.05fr 1fr;gap:3rem;align-items:center;margin-top:2rem}
+.truck{width:100%}
+.truck .load rect{transition:opacity .35s,transform .45s cubic-bezier(.3,1.5,.5,1);transform-box:fill-box;transform-origin:bottom}
+.truck .load rect.off{opacity:0;transform:translateY(-30px)}
+.lvl{display:flex;justify-content:space-between;margin-top:1rem;font-family:Anton,sans-serif;text-transform:uppercase;font-size:1.05rem;color:#999}
+.lvl b{color:#111;font-weight:400}
+.form label{display:block;font-size:.72rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#6b6e74;margin:1.1rem 0 .5rem}
+.form label:first-child{margin-top:0}
+.chips{display:flex;flex-wrap:wrap;gap:.45rem}
+.chip{padding:.6rem .95rem;border:2px solid #111;background:none;font:inherit;font-weight:600;font-size:.86rem;cursor:pointer;transition:.15s;color:#111}
+.chip.on{background:#111;color:#fff}
+input[type=range]{width:100%;accent-color:var(--orange);height:28px}
+.form input[type=text]{width:100%;padding:.85rem 1rem;border:2px solid #111;font:inherit;background:#fff}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}
+.two>*{min-width:0}
+.out{margin-top:1.3rem;background:#111;color:#e8e8e8;padding:1.1rem 1.2rem;font-size:.88rem;white-space:pre-line;border-left:5px solid var(--orange)}
+.acts{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:1rem}
+.est .btn{color:#111}
+.est .btn.fill{color:#111}
+.btn.wa{background:#25d366;border-color:#25d366;color:#0b2416}
+@media(max-width:900px){.estg{grid-template-columns:1fr}}
+
+/* CONTRACTORS */
+.con{background:var(--char)}
+.cong{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.list{list-style:none;margin:1.6rem 0 2rem}
+.list li{display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--line);align-items:baseline}
+.list li b{font-family:Anton,sans-serif;color:var(--orange);font-size:1.2rem;font-weight:400;min-width:2rem}
+.stack{position:relative;aspect-ratio:1}
+.stack img{position:absolute;width:62%;aspect-ratio:356/383;object-fit:cover;border:3px solid #fff;box-shadow:0 30px 50px -20px #000}
+.stack img:nth-child(1){top:0;left:0;transform:rotate(-4deg)}
+.stack img:nth-child(2){bottom:0;right:0;transform:rotate(3deg)}
+.chas{position:absolute;right:4%;top:2%;width:30%!important;aspect-ratio:auto!important;transform:rotate(6deg);z-index:2;border:4px solid #fff}
+@media(max-width:900px){.cong{grid-template-columns:1fr}}
+
+/* WORK */
+.filters{display:flex;gap:.5rem;flex-wrap:wrap;margin:1rem 0 2rem}
+.filters button{padding:.6rem 1.1rem;border:1px solid #3a3d44;background:none;color:#fff;font:inherit;font-weight:600;cursor:pointer;font-size:.88rem}
+.filters button.on{background:var(--orange);border-color:var(--orange);color:#111}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.grid figure{position:relative;overflow:hidden;aspect-ratio:356/383;cursor:zoom-in;background:#222}
+.grid figure.hide{display:none}
+.grid img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.grid figure:hover img{transform:scale(1.06)}
+.grid figcaption{position:absolute;left:0;bottom:0;background:var(--orange);color:#111;font-weight:800;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;padding:.3rem .6rem}
+@media(max-width:900px){.grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:560px){.grid{grid-template-columns:1fr 1fr}}
+
+/* AREA */
+.area{display:grid;grid-template-columns:1fr 1.1fr;gap:3rem;align-items:center}
+.map{position:relative;aspect-ratio:1.1;border:2px solid #fff;overflow:hidden}
+.map iframe{width:100%;height:100%;border:0;filter:grayscale(1) invert(.92) contrast(.9)}
+.rings{position:absolute;inset:0;pointer-events:none;display:grid;place-items:center}
+.rings i{position:absolute;border:2px solid var(--orange);border-radius:50%;width:var(--s);aspect-ratio:1;opacity:.75;animation:pulse 3s ease-out infinite;animation-delay:var(--d)}
+@keyframes pulse{0%{transform:scale(.3);opacity:.9}100%{transform:scale(1.4);opacity:0}}
+.towns{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.4rem}
+.towns span{border:1px solid #3a3d44;padding:.45rem .9rem;font-weight:600;font-size:.88rem}
+@media(max-width:900px){.area{grid-template-columns:1fr}}
+
+/* COMMUNITY */
+.comm{background:var(--orange);color:#111}
+.comm .wrap{display:grid;grid-template-columns:auto 1fr;gap:3rem;align-items:center}
+.comm img{width:220px;aspect-ratio:356/383;object-fit:cover;border:4px solid #111;transform:rotate(-3deg)}
+.comm h2 span{color:#fff}
+@media(max-width:700px){.comm .wrap{grid-template-columns:1fr}.comm img{width:160px}}
+
+/* CONTACT */
+.cta{text-align:center}
+.cta h2{font-size:clamp(2.8rem,8vw,6.6rem)}
+.big{display:block;font-family:Anton,sans-serif;font-size:clamp(2.4rem,7vw,5.5rem);color:var(--orange);text-decoration:none;margin:1rem 0 .4rem;transition:.2s}
+.big:hover{color:#fff}
+footer{border-top:1px solid #24272c;padding:40px 0 110px;color:#7b7e84;font-size:.82rem}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+
+.lb{position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:90;display:none;place-items:center;cursor:zoom-out}
+.lb.on{display:grid}.lb img{max-width:90vw;max-height:86vh}
+.mbar{display:none}
+@media(max-width:760px){section{padding:80px 0}.mbar{display:grid;grid-template-columns:1fr 1fr 1fr;position:fixed;bottom:0;left:0;right:0;z-index:60;background:#111;border-top:2px solid var(--orange)}.mbar a{padding:1rem 0;text-align:center;font-weight:800;text-decoration:none;font-size:.88rem}.mbar a:nth-child(2){color:#25d366}.mbar a:last-child{background:var(--orange);color:#111}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute"><defs><symbol id="rec" viewBox="0 0 32 32"><g fill="#2fae4a"><path d="M13 4l3-2 3 2 4 7-3 2-4-7-2 3-3-2z"/><path d="M27 18l1 4-2 3-8 0v-4h7l-2-3 3-2z"/><path d="M6 26l-3-1-1-3 4-7 3 2-3 6h4v4z"/><path d="M24 9l1 6-6-1z"/><path d="M19 29l-5-3 5-3z"/><path d="M4 13l5-3 1 6z"/></g></symbol></defs></svg>
+
+<nav id="nav">
+ <a class="logo" href="#top"><svg><use href="#rec"/></svg><span><span class="s">SMART</span><span class="w">WASTE &amp; CLEARANCE</span></span></a>
+ <ul><li><a href="#services">Services</a></li><li><a href="#quote">Get a quote</a></li><li><a href="#contractors">For contractors</a></li><li><a href="#work">Our work</a></li><li><a href="#area">Area</a></li></ul>
+ <a class="tel" href="tel:+447767533606"><span>Call us</span><b>07767 533606</b></a>
+</nav>
+
+<header class="hero" id="top">
+ <div class="wrap">
+  <div class="rv">
+   <span class="kick">Bristol &amp; the South West</span>
+   <h1 style="margin-top:1rem">Cleared.<br><span class="o">Loaded.</span><span class="st">Gone.</span></h1>
+   <p class="lead">House removals, site clearances, soft strip-out and labour supply for homeowners, businesses and main contractors. One call, and the job's handled.</p>
+   <div class="ctas"><a class="btn fill" href="#quote">Get a free quote →</a><a class="btn" href="#contractors">Subcontract to us</a></div>
+   <div class="badges"><span><i></i>CHAS accredited</span><span><i></i>SSIP approved</span><span><i></i>Fully insured</span><span><i></i>Fully licensed</span><span><i></i>Ltd company</span></div>
+  </div>
+  <div class="rv">
+   <div class="clearbox" id="cb">
+    <span class="tag b">Before</span><span class="tag a" id="ta">After</span>
+    <img src="images/fence.jpg" alt="A cleared, tidy yard">
+    <canvas id="cv"></canvas>
+    <div class="hint" id="hint">👆 Drag to clear it</div>
+    <div class="meterbar"><i id="mb"></i></div><div class="meterlab" id="ml">0% CLEARED</div>
+   </div>
+   <p class="disc">Illustration using photos from different jobs.</p>
+  </div>
+ </div>
+</header>
+
+<div class="hazard"></div>
+<div class="ticker"><div id="tick"></div></div>
+
+<section id="services">
+ <div class="wrap">
+  <span class="kick rv">What we do</span>
+  <h2 class="rv">Big job. Small job. <span>Cleared.</span></h2>
+  <div class="toggle rv" id="tg"><button class="on" data-k="home">Homes &amp; businesses</button><button data-k="trade">Contractors</button></div>
+  <div class="svc" id="svc"></div>
+ </div>
+</section>
+
+<section class="est" id="quote">
+ <div class="wrap">
+  <span class="kick rv">Free quote in 60 seconds</span>
+  <h2 class="rv" style="color:#111">How much <span>needs to go?</span></h2>
+  <p class="lead rv">Tell us roughly what you've got and we'll come back with a price. Photos help, so send them over on WhatsApp.</p>
+  <div class="estg">
+   <div class="rv">
+    <svg class="truck" viewBox="0 0 520 260" aria-hidden="true">
+     <g class="load" id="load"></g>
+     <rect x="20" y="150" width="300" height="12" fill="#111"/>
+     <rect x="20" y="70" width="6" height="86" fill="#cfcfcf"/><rect x="314" y="70" width="6" height="86" fill="#cfcfcf"/>
+     <rect x="20" y="70" width="300" height="5" fill="#cfcfcf"/>
+     <rect x="26" y="120" width="288" height="30" fill="none" stroke="#cfcfcf" stroke-width="3"/>
+     <path d="M330 162V92h80l42 42v28z" fill="#f46a12"/><path d="M342 104h58l30 30h-88z" fill="#1d2b36"/>
+     <rect x="320" y="150" width="190" height="14" fill="#111"/>
+     <rect x="470" y="140" width="22" height="8" fill="#ffd27a"/>
+     <circle cx="90" cy="190" r="30" fill="#111"/><circle cx="90" cy="190" r="12" fill="#888"/>
+     <circle cx="410" cy="190" r="30" fill="#111"/><circle cx="410" cy="190" r="12" fill="#888"/>
+     
+     <rect x="0" y="222" width="520" height="4" fill="#ddd"/>
+    </svg>
+    <div class="lvl" id="lvl"><span>Few items</span><span>¼ load</span><span>½ load</span><span>¾ load</span><span>Full load+</span></div>
+   </div>
+   <div class="form rv">
+    <label>The job</label>
+    <div class="chips" id="job"><button class="chip on">House clearance</button><button class="chip">Garden waste</button><button class="chip">Garage / loft</button><button class="chip">Builders' waste</button><button class="chip">Office / commercial</button><button class="chip">Scrap collection</button></div>
+    <label for="sz">How much? <span id="szl" style="color:#111">½ load</span></label>
+    <input type="range" id="sz" min="0" max="4" value="2">
+    <label>Access</label>
+    <div class="chips" id="acc"><button class="chip on">Ground floor / kerbside</button><button class="chip">Stairs</button><button class="chip">Tight access</button></div>
+    <div class="two"><div><label for="pc">Postcode</label><input type="text" id="pc" placeholder="BS1"></div><div><label for="wh">When</label><input type="text" id="wh" placeholder="ASAP / this week"></div></div>
+    <div class="out" id="out"></div>
+    <div class="acts"><a class="btn wa" id="wa" target="_blank" rel="noopener">Send on WhatsApp</a><a class="btn" id="em">Email it</a></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="con" id="contractors">
+ <div class="wrap cong">
+  <div>
+   <span class="kick rv">For main contractors</span>
+   <h2 class="rv">Your strip-out &amp; labour <span>partner.</span></h2>
+   <p class="lead rv">Reliable subcontractor services for main contractors and larger construction companies across commercial and domestic projects.</p>
+   <ul class="list rv">
+    <li><b>01</b><span><strong>Soft strip-out works:</strong> offices, retail, industrial, residential</span></li>
+    <li><b>02</b><span><strong>Labour supply:</strong> skilled &amp; general operatives</span></li>
+    <li><b>03</b><span><strong>Site clearance &amp; waste management</strong> support</span></li>
+    <li><b>04</b><span><strong>Site deliveries &amp; long-haul</strong> transportation</span></li>
+   </ul>
+   <p class="rv" style="color:#c4c6ca;margin-bottom:1.6rem">Experienced, professional teams · flexible labour to suit project demands · strong focus on safety, efficiency &amp; programme delivery · short or long-term projects.</p>
+   <a class="btn fill rv" href="mailto:smartwasteandclearance@outlook.com?subject=Subcontract%20enquiry">Discuss a project, rates &amp; availability →</a>
+  </div>
+  <div class="stack rv"><img src="images/office-strip.jpg" alt="Office floor after soft strip" loading="lazy"><img src="images/big-warehouse.jpg" alt="Large warehouse site with crew and plant" loading="lazy"><img class="chas" src="images/chas.jpg" alt="CHAS certificate of compliance" loading="lazy"></div>
+ </div>
+</section>
+
+<section id="work">
+ <div class="wrap">
+  <span class="kick rv">Recent jobs</span>
+  <h2 class="rv">Proof's in the <span>pictures.</span></h2>
+  <div class="filters rv" id="flt"><button class="on" data-f="all">All</button><button data-f="strip">Strip-out</button><button data-f="site">Site clearance</button><button data-f="home">Domestic</button><button data-f="fleet">On the road</button></div>
+  <div class="grid" id="grid"></div>
+ </div>
+</section>
+
+<section id="area" style="padding-top:40px">
+ <div class="wrap area">
+  <div>
+   <span class="kick rv">Where we work</span>
+   <h2 class="rv">Bristol &amp; <span>the South West.</span></h2>
+   <p class="lead rv">Based in Bristol, working across the surrounding areas, with long-haul transport available for jobs further afield.</p>
+   <div class="towns rv"><span>Bristol</span><span>Bath</span><span>Weston-super-Mare</span><span>Portishead</span><span>Keynsham</span><span>South Gloucestershire</span><span>+ further on request</span></div>
+  </div>
+  <div class="map rv"><iframe loading="lazy" title="Bristol service area" src="https://www.google.com/maps?q=Bristol,UK&z=9&output=embed"></iframe><div class="rings"><i style="--s:30%;--d:0s"></i><i style="--s:30%;--d:1s"></i><i style="--s:30%;--d:2s"></i></div></div>
+ </div>
+</section>
+
+<section class="comm">
+ <div class="wrap">
+  <img class="rv" src="images/kit.jpg" alt="Football kit sponsored by Smart Waste & Clearance" loading="lazy">
+  <div><span class="kick rv" style="color:#111">Local, and proud of it</span><h2 class="rv">Backing Bristol's <span>grassroots.</span></h2><p class="rv" style="max-width:56ch;font-weight:500">We sponsor local football: kits, players and clubs. Bristol's where we work, so it's where we put back.</p></div>
+ </div>
+</section>
+
+<section class="cta">
+ <div class="wrap">
+  <span class="kick rv">Got something that needs shifting?</span>
+  <h2 class="rv">Give us a <span>message.</span><br>We'll do the rest.</h2>
+  <a class="big rv" href="tel:+447767533606">07767 533606</a>
+  <a class="rv" href="mailto:smartwasteandclearance@outlook.com" style="font-weight:600;color:#c4c6ca">smartwasteandclearance@outlook.com</a>
+  <div class="ctas rv" style="justify-content:center;margin-top:2rem"><a class="btn wa" href="https://wa.me/447767533606">WhatsApp photos of the job</a><a class="btn" href="https://www.instagram.com/smartwasteclearance" target="_blank" rel="noopener">Follow on Instagram</a></div>
+ </div>
+</section>
+
+<footer><div class="wrap"><span>© Smart Waste &amp; Clearance Ltd · Bristol</span><span>Demo concept by Codzo · photos from @smartwasteclearance</span></div></footer>
+
+<div class="mbar"><a href="tel:+447767533606">Call</a><a href="https://wa.me/447767533606">WhatsApp</a><a href="#quote">Quote</a></div>
+<div class="lb" id="lb"><img id="lbi" alt=""></div>
+
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+/* CLEAR CANVAS */
+const cb=$('#cb'),cv=$('#cv'),ctx=cv.getContext('2d');const mess=new Image();mess.src='images/front-junk.jpg';
+let W,H,cleared=false;
+function setup(){const r=cb.getBoundingClientRect();const dpr=Math.min(2,devicePixelRatio||1);W=cv.width=r.width*dpr;H=cv.height=r.height*dpr;ctx.globalCompositeOperation='source-over';ctx.drawImage(mess,0,0,W,H);ctx.globalCompositeOperation='destination-out'}
+mess.onload=setup;if(mess.complete)setup();
+let drawing=false,last=null,checkT=0;
+function pos(e){const r=cv.getBoundingClientRect();return[(e.clientX-r.left)/r.width*W,(e.clientY-r.top)/r.height*H]}
+function erase(p){ctx.lineCap='round';ctx.lineWidth=W*.16;ctx.beginPath();if(last){ctx.moveTo(last[0],last[1])}else ctx.moveTo(p[0],p[1]);ctx.lineTo(p[0]+.1,p[1]);ctx.stroke();last=p;if(++checkT%6===0)meter()}
+function meter(){const d=ctx.getImageData(0,0,W,H).data;let c=0,t=0;for(let i=3;i<d.length;i+=64){t++;if(d[i]<20)c++}const p=Math.round(c/t*100);$('#mb').style.width=p+'%';$('#ml').textContent=p+'% CLEARED';if(p>62&&!cleared){cleared=true;ctx.clearRect(0,0,W,H);$('#mb').style.width='100%';$('#ml').textContent='100% CLEARED ✓';$('#ta').classList.add('on')}}
+cv.addEventListener('pointerdown',e=>{drawing=true;last=null;$('#hint').style.opacity=0;cv.setPointerCapture(e.pointerId);erase(pos(e))});
+cv.addEventListener('pointermove',e=>{if(drawing)erase(pos(e))});
+cv.addEventListener('pointerup',()=>{drawing=false;last=null;meter()});
+$('#cb').addEventListener('dblclick',()=>{cleared=false;$('#ta').classList.remove('on');setup();meter()});
+
+/* TICKER */
+const T=['House removals','Site clearances','Soft strip-out','Labour supply','Scrap collection','Site deliveries','Long-haul transport','CHAS accredited'];
+$('#tick').innerHTML=[...T,...T].map(t=>'<span>'+t+'</span><span>♻</span>').join('');
+
+/* SERVICES */
+const SV={home:[['House removals','Full or part house clearances, done quickly and respectfully.','house-junk'],['Garden & green waste','Overgrown gardens, cuttings, old sheds and fencing cleared back.','overgrown'],['Garage & loft clear-outs','Years of stored stuff, gone in an afternoon.','garage'],['Builders\' waste','Rubble, timber, plasterboard and packaging after the trades.','scaffold-junk'],['Office & commercial','Furniture, fit-out waste and whole floors cleared.','hall-pile'],['Scrap collection','Metal and scrap picked up and taken away.','tipper-wood']],
+ trade:[['Soft strip-out','Offices, retail, industrial and residential, stripped back ready for the next trade.','classroom-strip'],['Labour supply','Skilled and general operatives, flexed to your programme.','big-warehouse'],['Site clearance','Clearance and waste management support on live sites.','demo-debris'],['Site deliveries','Materials delivered to site when you need them.','timber-site'],['Long-haul transport','Loads moved across the South West and beyond.','truck-bins'],['Waste management','Bins, bags and container loads handled properly.','container']]};
+function svc(k){$('#svc').innerHTML=SV[k].map((s,i)=>`<div class="sv" style="animation-delay:${i*.07}s"><img src="images/${s[2]}.jpg" alt="" loading="lazy"><span class="n">0${i+1}</span><div class="bar"></div><h3>${s[0]}</h3><p>${s[1]}</p></div>`).join('')}
+$$('#tg button').forEach(b=>b.onclick=()=>{$$('#tg button').forEach(x=>x.classList.remove('on'));b.classList.add('on');svc(b.dataset.k)});svc('home');
+
+/* ESTIMATOR */
+const load=$('#load');let blocks='';const cols=['#8a6a4a','#6b7480','#a3825a','#4f5a63','#c47a3a','#5d6b55','#9c9c9c','#7a5a3a'];
+for(let r=0;r<5;r++)for(let c=0;c<7;c++){const x=30+c*40+(r%2)*6,y=118-r*22;blocks+=`<rect x="${x}" y="${y}" width="${36-(r>2?4:0)}" height="${30}" rx="3" fill="${cols[(r*7+c)%8]}" data-r="${r}"/>`}
+load.innerHTML=blocks;
+const LV=['Few items','¼ load','½ load','¾ load','Full load+'];
+let job='House clearance',acc='Ground floor / kerbside';
+function est(){const v=+$('#sz').value;$('#szl').textContent=LV[v];$$('#lvl span').forEach((s,i)=>s.innerHTML=i===v?'<b>'+LV[i]+'</b>':LV[i]);
+ const rows=[0.4,1,2,3.4,5][v];$$('#load rect').forEach((b,i)=>{const r=+b.dataset.r;const c=i%7;const on=r<Math.floor(rows)||(r===Math.floor(rows)&&c<Math.round((rows%1)*7));b.classList.toggle('off',!on)});
+ const msg=`Hi Smart Waste, I'd like a quote please.\n• Job: ${job}\n• Amount: ${LV[v]}\n• Access: ${acc}\n• Postcode: ${$('#pc').value||'-'}\n• When: ${$('#wh').value||'-'}\nI can send photos.`;
+ $('#out').textContent=msg;$('#wa').href='https://wa.me/447767533606?text='+encodeURIComponent(msg);$('#em').href='mailto:smartwasteandclearance@outlook.com?subject='+encodeURIComponent('Quote request: '+job)+'&body='+encodeURIComponent(msg)}
+function chips(id,set){$$('#'+id+' .chip').forEach(c=>c.onclick=()=>{$$('#'+id+' .chip').forEach(x=>x.classList.remove('on'));c.classList.add('on');set(c.textContent);est()})}
+chips('job',v=>job=v);chips('acc',v=>acc=v);['#sz','#pc','#wh'].forEach(s=>$(s).oninput=est);est();
+
+/* WORK */
+const G=[['classroom-strip','strip','Strip-out'],['office-strip','strip','Strip-out'],['stripped-room','strip','Strip-out'],['warehouse','site','Commercial'],['big-warehouse','site','Commercial'],['scaffold','site','Site'],['wrap','site','Site'],['demo-debris','site','Site clearance'],['timber-site','site','Site clearance'],['house-junk','home','Domestic'],['front-junk','home','Domestic'],['garage','home','Domestic'],['overgrown2','home','Garden'],['drive-junk','home','Domestic'],['patio','home','Finished'],['fence','home','Finished'],['truck-bins','fleet','On the road'],['truck-bins2','fleet','On the road'],['tipper-wood','fleet','Loaded'],['container','site','Waste'],['clean-corridor','strip','Handover'],['street-bags','home','Domestic'],['mezzanine','site','Commercial'],['pool-room','strip','Handover']];
+$('#grid').innerHTML=G.map((g,i)=>`<figure data-f="${g[1]}" data-i="${i}"><img src="images/${g[0]}.jpg" alt="${g[2]} job" loading="lazy"><figcaption>${g[2]}</figcaption></figure>`).join('');
+$$('#flt button').forEach(b=>b.onclick=()=>{$$('#flt button').forEach(x=>x.classList.remove('on'));b.classList.add('on');$$('#grid figure').forEach(f=>f.classList.toggle('hide',b.dataset.f!=='all'&&f.dataset.f!==b.dataset.f))});
+$$('#grid figure').forEach(f=>f.onclick=()=>{$('#lbi').src=f.querySelector('img').src;$('#lb').classList.add('on')});$('#lb').onclick=()=>$('#lb').classList.remove('on');
+
+/* REVEAL */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+$$('.rv').forEach(el=>io.observe(el));
+addEventListener('resize',()=>{if(!cleared)setup()});
+</script>
+</body>
+</html>
