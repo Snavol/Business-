@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stone Arts Kenya · Discover the Luxury</title>
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Stone Arts Kenya. Natural marble, travertine, granite, cladding and bespoke stone for homes, churches, hotels and malls. Showrooms on Mombasa Road, Galleria Mall Langata and Nyali, Mombasa.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ivory:#f5f0e8;--stone:#e9e1d4;--char:#1b1a18;--char2:#262421;--copper:#c4793a;--gold:#b99863;--muted:#7d766b;--line:#d9cfbf}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--ivory);color:var(--char);font-family:Manrope,system-ui,sans-serif;font-weight:300;line-height:1.7;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:min(1220px,90vw);margin:0 auto}
+.cz{font-family:Cinzel,serif;letter-spacing:.18em;text-transform:uppercase}
+.kick{font-family:Cinzel,serif;font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:var(--copper)}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:300;line-height:1.02}
+h2{font-size:clamp(2.4rem,5.4vw,4.6rem);margin:.8rem 0 1.2rem}
+h2 em,h1 em{font-style:italic;color:var(--copper);font-weight:400}
+.lead{color:var(--muted);max-width:56ch;font-size:1.05rem}
+section{padding:130px 0;position:relative}
+.rv{opacity:0;transform:translateY(30px);transition:opacity 1.2s ease,transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.btn{display:inline-flex;align-items:center;gap:.8rem;padding:1rem 1.9rem;font-family:Cinzel,serif;font-size:.75rem;letter-spacing:.22em;text-transform:uppercase;text-decoration:none;border:1px solid currentColor;transition:.4s;background:none;cursor:pointer;color:inherit}
+.btn.fill{background:var(--copper);border-color:var(--copper);color:#fff}
+.btn:hover{background:var(--char);border-color:var(--char);color:var(--ivory)}
+.btn.fill:hover{background:#a9642c;border-color:#a9642c}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:22px 5vw;color:#fff;transition:.5s}
+nav.solid{background:rgba(245,240,232,.92);backdrop-filter:blur(12px);color:var(--char);padding:13px 5vw;box-shadow:0 1px 0 var(--line)}
+.logo{text-decoration:none;text-align:center;line-height:1}
+.logo svg{width:120px;height:18px;display:block;margin:0 auto 3px}
+.logo b{font-family:Cormorant Garamond,serif;font-weight:500;font-size:1.35rem;letter-spacing:.04em}.logo b span{color:var(--copper)}
+.logo small{display:block;font-family:"Cormorant Garamond",serif;font-style:italic;font-size:.8rem;opacity:.8;margin-top:2px}
+nav ul{display:flex;gap:2.2rem;list-style:none;font-family:Cinzel,serif;font-size:.68rem;letter-spacing:.22em;text-transform:uppercase}
+nav ul a{text-decoration:none;opacity:.85}
+@media(max-width:980px){nav ul{display:none}}
+nav .btn{padding:.7rem 1.2rem}
+@media(max-width:560px){nav .btn{display:none}}
+
+/* HERO */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:#111;padding:0 0 9vh}
+.slides{position:absolute;inset:0}
+.slides div{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transform:scale(1.12);transition:opacity 2s ease,transform 9s linear;filter:blur(1px) brightness(.62)}
+.slides div.on{opacity:1;transform:scale(1)}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.45),transparent 30%,transparent 50%,rgba(0,0,0,.75))}
+.hero .wrap{position:relative;z-index:2;display:flex;justify-content:space-between;align-items:flex-end;gap:2rem;flex-wrap:wrap}
+.hero h1{font-size:clamp(3.4rem,10vw,9rem);letter-spacing:-.01em}
+.hero h1 .l{display:block;overflow:hidden}
+.hero h1 .l span{display:inline-block;transform:translateY(105%);transition:transform 1.4s cubic-bezier(.2,.7,.2,1)}
+.hero.go h1 .l span{transform:none}
+.hero h1 .l:nth-child(2) span{transition-delay:.15s}
+.hero .side{max-width:340px;opacity:0;transition:opacity 1.5s .9s}
+.hero.go .side{opacity:1}
+.hero .side p{color:#e9e2d6;margin:1rem 0 1.6rem}
+.dots{display:flex;gap:.5rem;margin-top:1.6rem}
+.dots i{width:26px;height:2px;background:rgba(255,255,255,.35);transition:.5s}
+.dots i.on{background:#fff;width:46px}
+.cap{font-family:Cinzel,serif;font-size:.65rem;letter-spacing:.3em;text-transform:uppercase;color:#d8cfc0}
+
+/* MARQUEE */
+.mq{background:var(--char);color:var(--stone);overflow:hidden;white-space:nowrap;border-block:1px solid #3a3631}
+.mq div{display:inline-flex;gap:3rem;padding:1.15rem 0;animation:mq 50s linear infinite;font-family:"Cormorant Garamond",serif;font-size:1.5rem;font-style:italic}
+.mq b{font-family:Cinzel,serif;font-style:normal;font-size:.7rem;letter-spacing:.3em;color:var(--copper);align-self:center}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* INTRO */
+.intro{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+.arch{position:relative;max-width:470px;margin:0 auto;width:100%}
+.arch .frame{border-radius:240px 240px 0 0;overflow:hidden;aspect-ratio:3/4;box-shadow:0 40px 80px -40px rgba(0,0,0,.45)}
+.arch img{width:100%;height:100%;object-fit:cover}
+.arch .tag{position:absolute;left:-10%;bottom:9%;background:var(--ivory);padding:1.2rem 1.5rem;box-shadow:0 20px 40px -20px rgba(0,0,0,.35)}
+.arch .tag b{font-family:"Cormorant Garamond",serif;font-weight:400;font-size:2.6rem;line-height:1;display:block;color:var(--copper)}
+.arch .tag span{font-family:Cinzel,serif;font-size:.62rem;letter-spacing:.24em}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:2.4rem;border-top:1px solid var(--line);padding-top:1.6rem}
+.stats b{font-family:"Cormorant Garamond",serif;font-weight:400;font-size:2.6rem;line-height:1}
+.stats small{display:block;font-family:Cinzel,serif;font-size:.6rem;letter-spacing:.2em;color:var(--muted);margin-top:.4rem}
+@media(max-width:900px){.intro{grid-template-columns:1fr}.arch .tag{left:0}}
+
+/* LIBRARY */
+.lib{background:var(--char);color:var(--ivory)}
+.lib .lead{color:#b8afa1}
+.libg{display:grid;grid-template-columns:1.25fr 1fr;gap:3.5rem;align-items:center;margin-top:3rem}
+.stage{position:relative;aspect-ratio:355/350;overflow:hidden}
+.stage img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1s,transform 6s linear;transform:scale(1.08)}
+.stage img.on{opacity:1;transform:scale(1)}
+.stage .lab{position:absolute;left:1.4rem;bottom:1.4rem;z-index:2;background:rgba(27,26,24,.78);backdrop-filter:blur(6px);padding:.9rem 1.2rem;border-left:2px solid var(--copper)}
+.stage .lab b{font-family:"Cormorant Garamond",serif;font-weight:400;font-size:1.7rem;display:block;line-height:1.1}
+.stage .lab span{font-size:.8rem;color:#c9c0b1}
+.sw{display:grid;grid-template-columns:repeat(3,1fr);gap:.9rem}
+.sw button{aspect-ratio:1;border:1px solid #3a3631;background:var(--m) center/cover;cursor:pointer;position:relative;transition:transform .4s,border-color .4s;overflow:hidden}
+.sw button::after{content:attr(data-n);position:absolute;left:0;right:0;bottom:0;padding:.5rem .4rem;background:linear-gradient(transparent,rgba(0,0,0,.75));color:#fff;font-family:Cinzel,serif;font-size:.58rem;letter-spacing:.16em;text-transform:uppercase;text-align:left}
+.sw button:hover{transform:translateY(-4px)}
+.sw button.on{border-color:var(--copper);box-shadow:0 0 0 2px var(--copper)}
+.swnote{margin-top:1.4rem;color:#b8afa1;font-size:.9rem}
+@media(max-width:900px){.libg{grid-template-columns:1fr}}
+
+/* STUDIOS */
+.studios{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:3rem}
+.st{background:var(--ivory);padding:2rem 1.6rem 1.8rem;position:relative;overflow:hidden;min-height:250px;display:flex;flex-direction:column;justify-content:space-between;transition:color .5s;isolation:isolate;text-decoration:none}
+.st::before{content:"";position:absolute;inset:0;background:var(--img) center/cover;z-index:-2;opacity:0;transform:scale(1.1);transition:opacity .6s,transform 1.2s}
+.st::after{content:"";position:absolute;inset:0;background:rgba(20,18,16,.55);z-index:-1;opacity:0;transition:opacity .6s}
+.st:hover{color:#fff}.st:hover::before{opacity:1;transform:scale(1)}.st:hover::after{opacity:1}
+.st .n{font-family:Cinzel,serif;font-size:.7rem;letter-spacing:.25em;color:var(--copper)}
+.st h3{font-size:1.75rem;margin-top:.6rem}
+.st p{font-size:.88rem;opacity:.75}
+@media(max-width:900px){.studios{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.studios{grid-template-columns:1fr}.st{min-height:180px}}
+
+/* MYTHS */
+.myth{background:var(--stone)}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem;margin-top:3rem}
+.fc{perspective:1000px;aspect-ratio:3/4;cursor:pointer}
+.fc>div{position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform .9s cubic-bezier(.3,.8,.3,1)}
+.fc.flip>div{transform:rotateY(180deg)}
+.fc .f,.fc .b{position:absolute;inset:0;backface-visibility:hidden;padding:1.8rem;display:flex;flex-direction:column;justify-content:space-between}
+.fc .f{background:var(--ivory);border:1px solid var(--line)}
+.fc .b{background:var(--char);color:var(--ivory);transform:rotateY(180deg)}
+.fc .t{font-family:Cinzel,serif;font-size:1.4rem;letter-spacing:.2em}
+.fc q{font-family:"Cormorant Garamond",serif;font-size:1.55rem;font-style:italic;line-height:1.25}
+.fc .b p{font-size:.98rem;color:#d8d0c3}
+.fc small{font-family:Cinzel,serif;font-size:.6rem;letter-spacing:.24em;color:var(--copper)}
+@media(max-width:900px){.cards{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.cards{grid-template-columns:1fr}.fc{aspect-ratio:4/3}}
+
+/* PROJECTS */
+.proj{display:grid;grid-template-columns:repeat(12,1fr);gap:1rem;margin-top:3rem}
+.pj{position:relative;overflow:hidden;cursor:zoom-in}
+.pj img{width:100%;height:100%;object-fit:cover;transition:transform 1.4s cubic-bezier(.2,.7,.2,1)}
+.pj:hover img{transform:scale(1.06)}
+.pj figcaption{position:absolute;left:0;right:0;bottom:0;padding:2.5rem 1.3rem 1.2rem;background:linear-gradient(transparent,rgba(0,0,0,.75));color:#fff}
+.pj figcaption b{font-family:"Cormorant Garamond",serif;font-weight:400;font-size:1.5rem;display:block;line-height:1.1}
+.pj figcaption span{font-family:Cinzel,serif;font-size:.58rem;letter-spacing:.24em}
+.pj:nth-child(1){grid-column:span 5;grid-row:span 2}
+.pj:nth-child(2){grid-column:span 4}
+.pj:nth-child(3){grid-column:span 3}
+.pj:nth-child(4){grid-column:span 3}
+.pj:nth-child(5){grid-column:span 4}
+.pj{aspect-ratio:auto;min-height:300px}
+.clients{display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem 2.6rem;margin-top:3.2rem;font-family:Cinzel,serif;font-size:.78rem;letter-spacing:.22em;color:var(--muted);text-transform:uppercase}
+@media(max-width:900px){.proj{grid-template-columns:1fr 1fr}.pj:nth-child(n){grid-column:span 1;grid-row:auto;min-height:240px}}
+
+/* PROCESS */
+.proc{background:var(--char);color:var(--ivory);overflow:hidden}
+.proc .lead{color:#b8afa1}
+.steps{display:grid;grid-template-columns:repeat(6,1fr);gap:0;margin-top:3.5rem;position:relative}
+.steps::before{content:"";position:absolute;top:27px;left:4%;right:4%;height:1px;background:#3d3833}
+.steps .bar{position:absolute;top:27px;left:4%;height:1px;background:var(--copper);width:0;transition:width 2.4s cubic-bezier(.4,0,.2,1)}
+.proc.in .steps .bar{width:92%}
+.sp{text-align:center;padding:0 .6rem;position:relative}
+.sp i{width:55px;height:55px;border-radius:50%;border:1px solid #4a443d;background:var(--char);display:grid;place-items:center;margin:0 auto 1.2rem;font-style:normal;font-family:Cinzel,serif;font-size:.9rem;color:var(--copper);position:relative;z-index:1;transition:background .6s,color .6s}
+.proc.in .sp i{background:var(--copper);color:#fff;border-color:var(--copper)}
+.sp h3{font-size:1.4rem}
+.sp p{font-size:.84rem;color:#a9a093;margin-top:.4rem}
+@media(max-width:900px){.steps{grid-template-columns:1fr 1fr;gap:2rem 1rem}.steps::before,.steps .bar{display:none}}
+
+/* ESTIMATOR */
+.estg{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;margin-top:2.6rem}
+.room{position:relative;aspect-ratio:1.25;background:var(--stone);border:1px solid var(--line);overflow:hidden}
+.room svg{width:100%;height:100%}
+.f label{display:block;font-family:Cinzel,serif;font-size:.64rem;letter-spacing:.24em;color:var(--muted);margin:1.3rem 0 .6rem}
+.f label:first-child{margin-top:0}
+.ch{display:flex;flex-wrap:wrap;gap:.45rem}
+.ch button{padding:.6rem 1rem;border:1px solid var(--line);background:none;font:inherit;font-size:.86rem;cursor:pointer;transition:.25s;color:var(--char)}
+.ch button.on{background:var(--char);color:var(--ivory);border-color:var(--char)}
+.f input{width:100%;padding:.85rem 1rem;border:1px solid var(--line);background:#fff;font:inherit}
+.f input[type=range]{padding:0;border:0;background:none;accent-color:var(--copper)}
+.area{font-family:"Cormorant Garamond",serif;font-size:3rem;line-height:1}
+.area small{font-family:Manrope;font-size:.85rem;color:var(--muted)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}.two>*{min-width:0}
+.out{margin-top:1.4rem;padding:1.1rem 1.3rem;background:var(--stone);font-size:.88rem;white-space:pre-line;border-left:2px solid var(--copper)}
+.acts{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:1.1rem}
+@media(max-width:900px){.estg{grid-template-columns:1fr}}
+
+/* SHOWROOMS */
+.sr{background:var(--stone)}
+.tabs{display:flex;gap:0;border-bottom:1px solid var(--line);margin-top:2.4rem;overflow-x:auto}
+.tabs button{padding:1rem 1.6rem;background:none;border:0;border-bottom:2px solid transparent;font-family:Cinzel,serif;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;cursor:pointer;white-space:nowrap;color:var(--muted);transition:.3s}
+.tabs button.on{color:var(--char);border-color:var(--copper)}
+.srg{display:grid;grid-template-columns:1fr 1.3fr;gap:3rem;margin-top:2.4rem;align-items:stretch}
+.srg .info h3{font-size:2.4rem}
+.srg .info p{color:var(--muted);margin:.8rem 0 1.4rem}
+.srg .map{min-height:360px;border:1px solid var(--line);filter:sepia(.25) saturate(.8)}
+.srg .map iframe{width:100%;height:100%;min-height:360px;border:0}
+.line{display:flex;gap:1rem;padding:.8rem 0;border-bottom:1px solid var(--line);font-size:.95rem}
+.line b{font-family:Cinzel,serif;font-size:.62rem;letter-spacing:.22em;color:var(--copper);min-width:80px;padding-top:.3rem;font-weight:400}
+@media(max-width:900px){.srg{grid-template-columns:1fr}}
+
+footer{background:var(--char);color:#a9a093;padding:90px 0 110px;text-align:center;overflow:hidden}
+footer .mega{font-family:"Cormorant Garamond",serif;font-weight:300;font-size:clamp(3.4rem,13vw,11rem);line-height:.9;color:var(--ivory);white-space:nowrap}
+footer .mega span{color:var(--copper)}
+footer .tl{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:1.5rem;color:var(--gold);margin:.4rem 0 2rem}
+footer .row{display:flex;justify-content:center;flex-wrap:wrap;gap:1.6rem;font-family:Cinzel,serif;font-size:.66rem;letter-spacing:.22em;text-transform:uppercase}
+footer .row a{text-decoration:none}
+footer .demo{font-size:.72rem;opacity:.6;margin-top:2rem}
+
+.lb{position:fixed;inset:0;background:rgba(20,18,16,.94);z-index:90;display:none;place-items:center;cursor:zoom-out}
+.lb.on{display:grid}.lb img{max-width:90vw;max-height:86vh}
+.mbar{display:none}
+@media(max-width:760px){section{padding:85px 0}.mbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;bottom:0;left:0;right:0;z-index:60;background:var(--char);border-top:1px solid #3a3631}.mbar a{padding:1rem 0;text-align:center;color:var(--ivory);text-decoration:none;font-family:Cinzel,serif;font-size:.7rem;letter-spacing:.2em}.mbar a:last-child{background:var(--copper)}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}.hero h1 .l span{transform:none}.hero .side{opacity:1}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute"><defs><symbol id="orn" viewBox="0 0 120 18"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M60 9c-6-8-14-8-16 0s10 8 16 0c6-8 14-8 16 0s-10 8-16 0"/><circle cx="34" cy="9" r="4"/><circle cx="86" cy="9" r="4"/><path d="M4 9h24M92 9h24"/><circle cx="22" cy="9" r="1.6"/><circle cx="98" cy="9" r="1.6"/></g></symbol></defs></svg>
+
+<nav id="nav">
+ <a class="logo" href="#top"><svg><use href="#orn"/></svg><b><span>stone</span> arts</b><small>Discover the Luxury</small></a>
+ <ul><li><a href="#library">Stone library</a></li><li><a href="#studios">Studios</a></li><li><a href="#projects">Projects</a></li><li><a href="#estimate">Estimate</a></li><li><a href="#showrooms">Showrooms</a></li></ul>
+ <a class="btn" href="#estimate">Get a quote</a>
+</nav>
+
+<header class="hero" id="top">
+ <div class="slides" id="slides"></div>
+ <div class="wrap">
+  <div>
+   <span class="cap" id="capt">Residential · Travertine flooring</span>
+   <h1 style="margin-top:1rem"><span class="l"><span>Discover</span></span><span class="l"><span>the <em>luxury.</em></span></span></h1>
+   <div class="dots" id="dots"></div>
+  </div>
+  <div class="side">
+   <p>Natural marble, travertine, granite and stone cladding, crafted for homes, churches, hotels and malls across Kenya and East Africa.</p>
+   <a class="btn fill" href="#library">Explore the stone library</a>
+  </div>
+ </div>
+</header>
+
+<div class="mq"><div id="mq"></div></div>
+
+<section id="about">
+ <div class="wrap intro">
+  <div class="arch rv"><div class="frame"><img src="images/showroom.jpg" alt="Stone Arts showroom with stone basins and columns"></div><div class="tag"><b>3</b><span>Showrooms</span></div></div>
+  <div>
+   <span class="kick rv">Our legacy</span>
+   <h2 class="rv">Every corner <em>tells a story.</em></h2>
+   <p class="lead rv">From flooring and wall cladding to fireplaces, basins, staircases and bespoke stone furniture, we design, select, cut and install natural stone that's built to outlast trends. Stone has remained timeless across centuries of architecture. We just help you choose the right one.</p>
+   <div class="stats rv"><div><b>2,000+</b><small>Clients</small></div><div><b>177</b><small>Google reviews</small></div><div><b>6</b><small>Step process</small></div></div>
+   <p class="rv" style="margin-top:1.8rem;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.25rem;color:var(--muted)">Founded by Pankaj Sakhuja.</p>
+  </div>
+ </div>
+</section>
+
+<section class="lib" id="library">
+ <div class="wrap">
+  <span class="kick rv">The stone library</span>
+  <h2 class="rv">Not sure what marble <em>to pick?</em></h2>
+  <p class="lead rv">Tap a stone to see it in a real space. Every slab has its own veining, movement and character, so no two are identical. Come and see them in person.</p>
+  <div class="libg">
+   <div class="stage rv" id="stage"><div class="lab"><b id="sn">Pistachio Marble</b><span id="sd"></span></div></div>
+   <div class="rv"><div class="sw" id="sw"></div><p class="swnote">Plus travertine, Kassata, lime split, white rustic stacking, Kenya black tumbled granite and more in the showroom.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="studios">
+ <div class="wrap">
+  <span class="kick rv">Our studios</span>
+  <h2 class="rv">Great design doesn't <em>stop at the floor.</em></h2>
+  <div class="studios" id="stu"></div>
+ </div>
+</section>
+
+<section class="myth">
+ <div class="wrap">
+  <span class="kick rv">Myth vs fact</span>
+  <h2 class="rv">Things people <em>get wrong</em> about stone.</h2>
+  <p class="lead rv">Tap a card to reveal the fact.</p>
+  <div class="cards" id="cards"></div>
+ </div>
+</section>
+
+<section id="projects">
+ <div class="wrap">
+  <span class="kick rv">From concept to reality</span>
+  <h2 class="rv">Spaces we've <em>shaped.</em></h2>
+  <div class="proj">
+   <figure class="pj rv"><img src="images/church.jpg" alt="Milimani Catholic Church altar in stone" loading="lazy"><figcaption><span>Institutional</span><b>Milimani Catholic Church</b></figcaption></figure>
+   <figure class="pj rv"><img src="images/inzovu.jpg" alt="Inzovu Mall" loading="lazy"><figcaption><span>Commercial</span><b>Inzovu Mall</b></figcaption></figure>
+   <figure class="pj rv"><img src="images/portico.jpg" alt="Residential portico with stone columns" loading="lazy"><figcaption><span>Residential</span><b>Columned entrance</b></figcaption></figure>
+   <figure class="pj rv"><img src="images/fireplace.jpg" alt="Travertine fireplace" loading="lazy"><figcaption><span>Residential</span><b>Travertine fireplace</b></figcaption></figure>
+   <figure class="pj rv"><img src="images/swirl.jpg" alt="Carved wave stone feature wall" loading="lazy"><figcaption><span>Artisan series</span><b>Carved feature wall</b></figcaption></figure>
+  </div>
+  <div class="clients rv"><span>Australian High Commission</span><span>BBS Mall</span><span>Inzovu Mall</span><span>Pearl Mara</span><span>Ritz Carlton</span></div>
+ </div>
+</section>
+
+<section class="proc" id="process">
+ <div class="wrap">
+  <span class="kick rv">How we work</span>
+  <h2 class="rv">Quality <em>without compromise.</em></h2>
+  <div class="steps"><div class="bar"></div>
+   <div class="sp"><i>I</i><h3>Design</h3><p>We start with your space and how you live in it.</p></div>
+   <div class="sp"><i>II</i><h3>Selection</h3><p>Choose your stone, slab by slab.</p></div>
+   <div class="sp"><i>III</i><h3>Sizing</h3><p>Precise measurement and cutting.</p></div>
+   <div class="sp"><i>IV</i><h3>Layout</h3><p>Veins and patterns matched before fixing.</p></div>
+   <div class="sp"><i>V</i><h3>Installation</h3><p>By our own trained, protected teams.</p></div>
+   <div class="sp"><i>VI</i><h3>Final fit</h3><p>Finishing, sealing and handover.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="estimate">
+ <div class="wrap">
+  <span class="kick rv">Your project</span>
+  <h2 class="rv">Start your <em>enquiry.</em></h2>
+  <p class="lead rv">Pick the space, the stone and roughly how big it is. We'll send your brief straight to our team for a quote.</p>
+  <div class="estg">
+   <div class="room rv"><svg viewBox="0 0 500 400" id="roomsvg">
+    <defs><pattern id="pat" width="70" height="70" patternUnits="userSpaceOnUse"><image id="patimg" href="images/tex-pistachio.jpg" width="70" height="70" preserveAspectRatio="none"/><rect width="70" height="70" fill="none" stroke="rgba(0,0,0,.10)"/></pattern></defs>
+    <rect width="500" height="400" fill="#efe8dc"/>
+    <polygon points="0,400 500,400 400,250 100,250" fill="url(#pat)" id="floor"/>
+    <polygon points="100,40 400,40 400,250 100,250" fill="#f6f1e9" id="wall"/>
+    <polygon points="0,0 100,40 100,250 0,400" fill="#e7dfd1" id="lwall"/>
+    <polygon points="500,0 400,40 400,250 500,400" fill="#e2d9ca" id="rwall"/>
+    <rect x="200" y="120" width="100" height="130" fill="#d7cdbd" id="feat"/>
+    <path d="M220 250v-90a30 30 0 0 1 60 0v90" fill="#2a2724" opacity=".85" id="hearth"/>
+    <text x="250" y="30" text-anchor="middle" font-family="Cinzel" font-size="11" letter-spacing="3" fill="#7d766b" id="rlab">FLOORING</text>
+   </svg></div>
+   <div class="f rv">
+    <label>The space</label>
+    <div class="ch" id="space"><button class="on">Flooring</button><button>Wall cladding</button><button>Fireplace</button><button>Countertop / vanity</button><button>Staircase</button><button>Facade / exterior</button></div>
+    <label>The stone</label>
+    <div class="ch" id="stone"></div>
+    <label for="ar">Approximate area</label>
+    <div class="area"><span id="arv">40</span> m² <small id="arn"></small></div>
+    <input type="range" id="ar" min="2" max="400" value="40">
+    <div class="two"><div><label for="nm">Name</label><input id="nm" placeholder="Your name"></div><div><label for="loc">Location</label><input id="loc" placeholder="e.g. Karen, Nairobi"></div></div>
+    <div class="out" id="out"></div>
+    <div class="acts"><a class="btn fill" id="em">Email the brief</a><a class="btn" href="tel:+254113181818">Call 0113 18 18 18</a></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="sr" id="showrooms">
+ <div class="wrap">
+  <span class="kick rv">Visit us</span>
+  <h2 class="rv">See it, touch it, <em>choose it.</em></h2>
+  <div class="tabs rv" id="tabs"><button class="on" data-i="0">Mombasa Road</button><button data-i="1">Galleria Mall, Langata</button><button data-i="2">Nyali, Mombasa</button></div>
+  <div class="srg rv">
+   <div class="info"><h3 id="srn">Mombasa Road</h3><p id="srd"></p>
+    <div class="line"><b>Phone</b><a href="tel:+254113181818">+254 113 18 18 18</a></div>
+    <div class="line"><b>Email</b><a href="mailto:info@stoneartskenya.com">info@stoneartskenya.com</a></div>
+    <div class="line"><b>Social</b><a href="https://www.instagram.com/stone_arts_kenya" target="_blank" rel="noopener">@stone_arts_kenya</a></div>
+   </div>
+   <div class="map"><iframe id="map" loading="lazy" title="Showroom map"></iframe></div>
+  </div>
+ </div>
+</section>
+
+<footer>
+ <svg style="width:140px;height:22px;color:var(--gold);margin:0 auto 1rem;display:block"><use href="#orn"/></svg>
+ <div class="mega"><span>stone</span> arts</div>
+ <p class="tl">Discover the luxury.</p>
+ <div class="row"><a href="tel:+254113181818">0113 18 18 18</a><a href="mailto:info@stoneartskenya.com">info@stoneartskenya.com</a><a href="https://www.instagram.com/stone_arts_kenya" target="_blank" rel="noopener">Instagram</a></div>
+ <p class="demo">Demo concept by Codzo · images from @stone_arts_kenya</p>
+</footer>
+
+<div class="mbar"><a href="tel:+254113181818">Call</a><a href="#estimate">Get a quote</a></div>
+<div class="lb" id="lb"><img id="lbi" alt=""></div>
+
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+/* HERO */
+const H=[['dining','Residential · Travertine flooring'],['foyer','Pistachio marble · Fantasy brown borders'],['stairs','Floating stone staircase'],['fireplace','Residential · Travertine fireplace'],['church','Milimani Catholic Church']];
+$('#slides').innerHTML=H.map(h=>`<div style="background-image:url(images/${h[0]}.jpg)"></div>`).join('');
+$('#dots').innerHTML=H.map(()=>'<i></i>').join('');
+let hi=0;function hs(){$$('#slides div').forEach((d,i)=>d.classList.toggle('on',i===hi));$$('#dots i').forEach((d,i)=>d.classList.toggle('on',i===hi));$('#capt').textContent=H[hi][1];hi=(hi+1)%H.length}
+hs();setInterval(hs,5500);setTimeout(()=>$('.hero').classList.add('go'),250);
+
+/* MARQUEE */
+const M=['Marble','Travertine','Granite','Sintered stone','Wall cladding','Fireplaces','Basins','Countertops','Staircases','Paving','Memorials','Bespoke furniture'];
+$('#mq').innerHTML=[...M,...M].map(m=>`<span>${m}</span><b>◆</b>`).join('');
+
+/* LIBRARY */
+const L=[['Pistachio Marble','pistachio','Warm cream with soft veining. Shown in a bedroom.'],['Dark Emperador','emperador','Deep brown with gold veins. Shown in a bathroom.'],['Perlato','perlato','Light beige with fine fossil flecks. Shown on stairs.'],['Z Beige Marble','zbeige','Classic beige, here with a black wrought-iron rail.'],['Classic Travertine','dining','Honed travertine, laid across a dining room.'],['Lime Split cladding','lime-arch','Split-face lime stone around an arched niche.']];
+$('#sw').innerHTML=L.map((l,i)=>`<button data-i="${i}" data-n="${l[0]}" style="--m:url(images/${l[1]}.jpg)" aria-label="${l[0]}"></button>`).join('');
+$('#stage').insertAdjacentHTML('afterbegin',L.map(l=>`<img src="images/${l[1]}.jpg" alt="${l[0]}">`).join(''));
+function pick(i){$$('#stage img').forEach((im,j)=>im.classList.toggle('on',j===i));$$('#sw button').forEach((b,j)=>b.classList.toggle('on',j===i));$('#sn').textContent=L[i][0];$('#sd').textContent=L[i][2]}
+$$('#sw button').forEach(b=>b.onclick=()=>pick(+b.dataset.i));pick(0);
+
+/* STUDIOS */
+const S=[['Flooring Studio','Marble, travertine and granite floors.','foyer'],['Cladding Studio','Stacking, split and wet cladding.','cladding'],['Architectural Artistry','Columns, arches, window & door surrounds.','surrounds'],['Luxury Fireplaces','Statement hearths in natural stone.','fireplace'],['Counter & Vanity','Kitchen tops and bathroom vanities.','emperador'],['Stone Basins','Hand-carved basins and sinks.','showroom'],['Bespoke Furniture','Tables, stools and stone pieces.','table'],['Garden & Memorials','Planters, garden accents and memorials.','vase']];
+$('#stu').innerHTML=S.map((s,i)=>`<a class="st rv" href="#estimate" style="--img:url(images/${s[2]}.jpg)"><div><span class="n">0${i+1}</span><h3>${s[0]}</h3></div><p>${s[1]}</p></a>`).join('');
+
+/* MYTHS */
+const MF=[['Natural stone goes out of trend.','Stone has remained timeless across centuries of architecture and design.'],['Sintered stone and marble are the same thing.','Natural marble is formed by nature over time; sintered stone is engineered for high performance and uniformity.'],['All white marbles look the same.','Every marble slab has unique veining, movement, texture and character. No two are identical.'],['Marble is only for flooring.','Stone can transform fireplaces, walls, staircases, vanities, planters, facades, sinks and furniture too.']];
+$('#cards').innerHTML=MF.map(m=>`<div class="fc rv" tabindex="0"><div><div class="f"><span class="t">Myth</span><q>${m[0]}</q><small>Tap to reveal</small></div><div class="b"><span class="t" style="color:var(--copper)">Fact</span><p>${m[1]}</p><small>Stone Arts Kenya</small></div></div></div>`).join('');
+$$('.fc').forEach(c=>{c.onclick=()=>c.classList.toggle('flip');c.onkeydown=e=>{if(e.key==='Enter')c.classList.toggle('flip')}});
+
+/* ESTIMATOR */
+const ST=[['Pistachio','pistachio'],['Dark Emperador','emperador'],['Perlato','perlato'],['Z Beige','zbeige'],['Travertine','dining'],['Not sure yet','slabs']];
+$('#stone').innerHTML=ST.map((s,i)=>`<button class="${i?'':'on'}" data-i="${i}">${s[0]}</button>`).join('');
+let space='Flooring',stone=0;
+function room(){const img=ST[stone][1];$('#patimg').setAttribute('href','images/tex-'+img+'.jpg');
+ const ids=['floor','wall','lwall','rwall','feat','hearth'];ids.forEach(id=>{const e=$('#'+id);e.setAttribute('fill',{floor:'#cfc4b2',wall:'#f6f1e9',lwall:'#e7dfd1',rwall:'#e2d9ca',feat:'#d7cdbd',hearth:'#2a2724'}[id]);e.style.display=''});
+ const map={'Flooring':['floor'],'Wall cladding':['wall'],'Fireplace':['feat'],'Countertop / vanity':['feat'],'Staircase':['floor'],'Facade / exterior':['wall','lwall','rwall']};
+ if(space!=='Fireplace')$('#hearth').style.display='none';
+ map[space].forEach(id=>$('#'+id).setAttribute('fill','url(#pat)'));$('#rlab').textContent=space.toUpperCase();
+ const a=+$('#ar').value;$('#arv').textContent=a;$('#arn').textContent=a<10?'· a feature':a<60?'· a room':a<150?'· a floor of a home':'· a whole project';
+ const msg=`Hello Stone Arts,\n\nI'd like a quote for:\n• Space: ${space}\n• Stone: ${ST[stone][0]}\n• Approx. area: ${a} m²\n• Location: ${$('#loc').value||'-'}\n\nName: ${$('#nm').value||'-'}`;
+ $('#out').textContent=msg;$('#em').href='mailto:info@stoneartskenya.com?subject='+encodeURIComponent('Quote request: '+space+' in '+ST[stone][0])+'&body='+encodeURIComponent(msg)}
+$$('#space button').forEach(b=>b.onclick=()=>{$$('#space button').forEach(x=>x.classList.remove('on'));b.classList.add('on');space=b.textContent;room()});
+$$('#stone button').forEach(b=>b.onclick=()=>{$$('#stone button').forEach(x=>x.classList.remove('on'));b.classList.add('on');stone=+b.dataset.i;room()});
+['#ar','#nm','#loc'].forEach(s=>$(s).oninput=room);room();
+
+/* SHOWROOMS */
+const SR=[['Mombasa Road','Our head office and main showroom at the Cabanas, Mombasa Road, Nairobi. Slabs, cladding, basins and finished displays under one roof.','Stone Arts Kenya, Mombasa Road, Cabanas, Nairobi'],['Galleria Mall, Langata','Our showroom inside Galleria Mall, Langata Road. Easy to drop in while you shop.','Galleria Mall, Langata Road, Nairobi'],['Nyali, Mombasa','Stone Arts Mombasa in Nyali, next to Mamba Village, for clients at the coast.','Mamba Village, Nyali, Mombasa']];
+function sr(i){$$('#tabs button').forEach((b,j)=>b.classList.toggle('on',j===i));$('#srn').textContent=SR[i][0];$('#srd').textContent=SR[i][1];$('#map').src='https://www.google.com/maps?q='+encodeURIComponent(SR[i][2])+'&output=embed'}
+$$('#tabs button').forEach(b=>b.onclick=()=>sr(+b.dataset.i));sr(0);
+
+/* LIGHTBOX */
+$$('.pj').forEach(p=>p.onclick=()=>{$('#lbi').src=p.querySelector('img').src;$('#lb').classList.add('on')});$('#lb').onclick=()=>$('#lb').classList.remove('on');
+
+/* NAV + REVEAL */
+addEventListener('scroll',()=>$('#nav').classList.toggle('solid',scrollY>60),{passive:true});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+$$('.rv,.proc').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

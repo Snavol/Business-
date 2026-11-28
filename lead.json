@@ -1144,5 +1144,42 @@
     "demo_path": "sites/smart-waste-clearance/",
     "demo_url": "https://business-red-ten.vercel.app/smart-waste-clearance/",
     "status": "draft"
+  },
+  {
+    "slug": "stone-arts-kenya",
+    "business": "Stone Arts Kenya",
+    "trade": "Natural stone: marble, travertine, granite, cladding, bespoke stone",
+    "town": "Nairobi",
+    "region": "Nairobi / Mombasa",
+    "country": "Kenya",
+    "address": "Mombasa Road (Cabanas), Galleria Mall Langata, Nyali Mombasa next to Mamba Village",
+    "phone": "+254 113 18 18 18",
+    "email": "info@stoneartskenya.com (HR: hrsupport@stoneartskenya.com)",
+    "instagram": "https://www.instagram.com/stone_arts_kenya",
+    "rating": null,
+    "review_count": "177 Google (per their site)",
+    "hours": null,
+    "maps_link": null,
+    "plus_code": null,
+    "website_status": "has_website",
+    "website_status_note": "WordPress/Elementor stoneartskenya.com: FAQ email and Contact link point to a hostingersite.com staging domain; footer tel +254782554290 doesn't match 0113 18 18 18; projects counter shows '0+'; 'Artisen/Artisan' typo; WhatsApp button with no number; only Mombasa Road showroom listed though IG lists three; IG feed shows placeholder images; no blog posts.",
+    "services": [
+      "Flooring",
+      "Cladding",
+      "Architectural artistry",
+      "Fireplaces",
+      "Counters & vanities",
+      "Garden accents",
+      "Memorials",
+      "Stone basins",
+      "Bespoke furniture",
+      "Artisan series",
+      "Paving"
+    ],
+    "reviews": null,
+    "notes": "Hiring an in-house web designer (posted 20 Nov 2026, apply to hrsupport@). Pitch Codzo as agency alternative. Founder Pankaj Sakhuja. 3,872 IG followers.",
+    "demo_path": "sites/stone-arts-kenya/",
+    "demo_url": "https://business-red-ten.vercel.app/stone-arts-kenya/",
+    "status": "draft"
   }
 ]
