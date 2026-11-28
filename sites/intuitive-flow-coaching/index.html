@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Intuitive Flow Coaching · Jackie Herbert-Valentine</title>
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Intuitive Flow Coaching with Jackie Herbert-Valentine. A journey of inner reflection: connect to your intuition to make significant change. Coaching, retreat days and Parts Journalling Sunday.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Jost:wght@300;400;500&family=Caveat:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#f6f1e8;--cream2:#efe7da;--sage:#8a9a7b;--deep:#4b5c48;--blush:#ecd3ca;--rose:#c98f84;--gold:#b49a62;--ink:#38392f;--muted:#7b7a6c}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--ink);font-family:Jost,system-ui,sans-serif;font-weight:300;line-height:1.7;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+.serif,h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:400}
+.hand{font-family:Caveat,cursive}
+em{font-style:italic;color:var(--deep)}
+.wrap{width:min(1160px,90vw);margin:0 auto}
+.kick{font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--sage);font-weight:400}
+h2{font-size:clamp(2.3rem,5vw,4rem);line-height:1.05;margin:.6rem 0 1.2rem}
+.lead{color:var(--muted);max-width:54ch;font-size:1.05rem}
+section{padding:120px 0;position:relative}
+.rv{opacity:0;transform:translateY(26px);transition:opacity 1.3s ease,transform 1.3s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.btn{display:inline-flex;align-items:center;gap:.6rem;padding:1rem 1.7rem;border-radius:999px;text-decoration:none;font-size:.9rem;letter-spacing:.06em;border:1px solid var(--deep);color:var(--deep);transition:.4s;background:none;cursor:pointer;font-family:inherit}
+.btn.fill{background:var(--deep);color:var(--cream)}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 30px -14px rgba(75,92,72,.6)}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:20px 5vw;transition:.5s}
+nav.solid{background:rgba(246,241,232,.88);backdrop-filter:blur(12px);padding:12px 5vw;box-shadow:0 1px 0 rgba(0,0,0,.05)}
+.logo{display:flex;align-items:center;gap:.7rem;text-decoration:none}
+.logo svg{width:44px;height:30px}
+.logo b{font-family:"Cormorant Garamond",serif;font-weight:500;font-size:1.05rem;letter-spacing:.22em;text-transform:uppercase;line-height:1}
+.logo small{display:block;font-size:.55rem;letter-spacing:.35em;color:var(--sage);margin-top:3px}
+nav ul{display:flex;gap:2rem;list-style:none;font-size:.85rem}
+nav ul a{text-decoration:none;opacity:.75}nav ul a:hover{opacity:1}
+@media(max-width:900px){nav ul{display:none}}
+@media(max-width:760px){nav>.btn{display:none}.pol{max-width:78%}}
+
+/* HERO */
+.hero{min-height:100vh;min-height:100svh;display:flex;align-items:center;padding:130px 0 80px;overflow:hidden;background:radial-gradient(ellipse at 75% 45%,#f9e9e2 0,transparent 55%),var(--cream)}
+.hero .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:3rem;align-items:center}
+.hero h1{font-size:clamp(3rem,7.2vw,6.4rem);line-height:.98;letter-spacing:-.01em}
+.hero h1 em{display:block}
+.hero p{margin:1.6rem 0 2.2rem}
+.hero .ctas{display:flex;gap:.8rem;flex-wrap:wrap}
+.note{font-family:Caveat,cursive;font-size:1.5rem;color:var(--rose);margin-top:1.8rem;transform:rotate(-2deg);display:inline-block}
+.orb{position:relative;aspect-ratio:1;width:min(480px,82vw);margin:0 auto;display:grid;place-items:center}
+.ring{position:absolute;border-radius:50%;border:1px solid rgba(138,154,123,.45);inset:var(--i);animation:breathe 10s ease-in-out infinite;animation-delay:var(--d)}
+.ring.fillr{background:radial-gradient(circle,rgba(236,211,202,.55),rgba(236,211,202,0) 70%);border:none}
+@keyframes breathe{0%,100%{transform:scale(.86);opacity:.55}40%{transform:scale(1.04);opacity:1}}
+.face{width:52%;aspect-ratio:1;border-radius:50%;overflow:hidden;position:relative;z-index:2;box-shadow:0 30px 60px -25px rgba(75,92,72,.55);border:6px solid var(--cream)}
+.face img{width:100%;height:100%;object-fit:cover}
+.bw{position:absolute;bottom:2%;left:50%;transform:translateX(-50%);z-index:3;font-family:Caveat,cursive;font-size:1.7rem;color:var(--deep);white-space:nowrap;transition:opacity 1s}
+.branch{position:absolute;top:-6%;right:-12%;width:70%;z-index:1;opacity:.75;pointer-events:none}
+.branch path{fill:none;stroke:#9a9586;stroke-width:1.1;stroke-dasharray:900;stroke-dashoffset:900;animation:draw 4.5s ease forwards .4s}
+.branch .bl{fill:var(--blush);stroke:var(--rose);stroke-width:.8;opacity:0;animation:pop 1s ease forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes pop{to{opacity:1}}
+@media(max-width:860px){.hero .wrap{grid-template-columns:1fr}.orb{order:-1;width:min(330px,80vw)}.hero{padding-top:110px}}
+
+/* RELEASE */
+.release{background:var(--deep);color:var(--cream);overflow:hidden}
+.release .kick{color:#c7d0bc}
+.release em{color:var(--blush)}
+.release .lead{color:#d3d6c8}
+.rel{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;margin-top:2rem}
+.dand{position:relative;aspect-ratio:1;max-width:420px;margin:0 auto;width:100%}
+.dand svg{width:100%;height:100%;overflow:visible}
+.seed{transition:transform 3.5s cubic-bezier(.2,.6,.3,1),opacity 3.5s}
+.seed.fly{opacity:0}
+.box{background:rgba(246,241,232,.07);border:1px solid rgba(246,241,232,.18);border-radius:24px;padding:2rem}
+.box label{font-size:.72rem;letter-spacing:.25em;text-transform:uppercase;color:#c7d0bc}
+.box textarea{width:100%;margin-top:.7rem;background:transparent;border:0;border-bottom:1px solid rgba(246,241,232,.4);color:var(--cream);font-family:Caveat,cursive;font-size:1.7rem;resize:none;outline:none;padding:.3rem 0;min-height:3.2rem}
+.box textarea::placeholder{color:rgba(246,241,232,.4)}
+.ask{margin-top:1.6rem;display:none}
+.ask.on{display:block}
+.ask p{font-family:"Cormorant Garamond",serif;font-size:1.6rem;font-style:italic;margin-bottom:1rem;line-height:1.3}
+.ask .opts{display:flex;gap:.6rem;flex-wrap:wrap}
+.release .btn{border-color:var(--cream);color:var(--cream)}
+.release .btn.fill{background:var(--cream);color:var(--deep)}
+.flying{position:fixed;pointer-events:none;z-index:80;font-family:Caveat,cursive;font-size:1.7rem;color:var(--cream);transition:transform 3.2s cubic-bezier(.2,.6,.3,1),opacity 3.2s}
+.held{margin-top:1.4rem;display:flex;flex-wrap:wrap;gap:.5rem;min-height:1px}
+.held span{font-family:Caveat,cursive;font-size:1.2rem;background:var(--cream);color:var(--deep);padding:.2rem .9rem;border-radius:99px;animation:pop .8s}
+.msg{margin-top:1.2rem;font-size:.95rem;color:#d3d6c8;min-height:1.6em}
+.credit{font-size:.8rem;color:#aeb6a3;margin-top:1.6rem}
+@media(max-width:860px){.rel{grid-template-columns:1fr}.dand{max-width:260px}}
+
+/* ABOUT */
+.about{display:grid;grid-template-columns:.9fr 1.1fr;gap:4.5rem;align-items:center}
+.pol{position:relative;max-width:400px;margin:0 auto;width:100%}
+.pol .p1{background:#fff;padding:14px 14px 56px;box-shadow:0 24px 50px -24px rgba(0,0,0,.35);transform:rotate(-3deg);transition:transform .8s}
+.pol .p1:hover{transform:rotate(0)}
+.pol .p1 img{aspect-ratio:4/5;object-fit:cover;width:100%}
+.pol .p1 span{position:absolute;bottom:14px;left:0;right:0;text-align:center;font-family:Caveat,cursive;font-size:1.6rem;color:var(--ink)}
+.pol .tape{position:absolute;top:-14px;left:50%;width:110px;height:30px;margin-left:-55px;background:rgba(201,180,140,.55);transform:rotate(4deg)}
+.pol .p2{position:absolute;right:-16%;top:-8%;width:48%;background:#fff;padding:8px 8px 30px;box-shadow:0 20px 40px -20px rgba(0,0,0,.35);transform:rotate(6deg)}
+.facts{list-style:none;margin:1.6rem 0;display:grid;gap:.1rem}
+.facts li{display:flex;gap:1rem;padding:.85rem 0;border-bottom:1px solid #e1d8c9;align-items:baseline}
+.facts li b{font-family:"Cormorant Garamond",serif;font-weight:500;font-size:1.25rem;color:var(--deep);min-width:2.2rem}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1rem}
+.chips span{border:1px solid var(--sage);color:var(--deep);padding:.4rem 1rem;border-radius:99px;font-size:.85rem}
+@media(max-width:860px){.about{grid-template-columns:1fr}.pol .p2{right:-4%;width:40%}}
+
+/* HOW */
+.how{background:var(--cream2)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:3rem}
+.step{background:var(--cream);border-radius:200px 200px 22px 22px;padding:3.2rem 1.8rem 2rem;text-align:center;position:relative;transition:transform .6s,box-shadow .6s}
+.step:hover{transform:translateY(-8px);box-shadow:0 30px 50px -30px rgba(75,92,72,.5)}
+.step .n{font-family:Caveat,cursive;font-size:2.6rem;color:var(--rose);line-height:1}
+.step h3{font-size:1.9rem;margin:.4rem 0 .6rem}
+.step p{color:var(--muted);font-size:.95rem}
+.step svg{width:54px;height:54px;margin:0 auto 1rem;stroke:var(--deep);fill:none;stroke-width:1.2}
+.callcard{margin-top:2.4rem;display:flex;justify-content:space-between;align-items:center;gap:1.5rem;flex-wrap:wrap;background:var(--deep);color:var(--cream);border-radius:22px;padding:2rem 2.4rem}
+.callcard h3{font-size:2rem;line-height:1.1}
+.callcard p{color:#d3d6c8;font-size:.95rem}
+.callcard .btn{border-color:var(--cream);color:var(--cream)}
+@media(max-width:860px){.steps{grid-template-columns:1fr}}
+
+/* RETREAT */
+.ret{display:grid;grid-template-columns:1fr 1.05fr;gap:4rem;align-items:center}
+.poster{position:relative;max-width:420px;margin:0 auto}
+.poster img{border-radius:6px;box-shadow:0 34px 60px -30px rgba(0,0,0,.4)}
+.poster .petal{position:absolute;width:16px;height:12px;background:var(--blush);border-radius:80% 0 80% 0;opacity:.85;animation:fall linear infinite}
+@keyframes fall{0%{transform:translate(0,-20px) rotate(0)}100%{transform:translate(-60px,560px) rotate(540deg);opacity:0}}
+.count{display:flex;gap:1rem;margin:1.8rem 0}
+.count div{text-align:center;min-width:72px}
+.count b{display:block;font-family:"Cormorant Garamond",serif;font-weight:500;font-size:3rem;line-height:1;color:var(--deep)}
+.count small{font-size:.65rem;letter-spacing:.25em;text-transform:uppercase;color:var(--muted)}
+.dets{list-style:none;margin-bottom:2rem}
+.dets li{padding:.6rem 0;border-bottom:1px dashed #d8cdbb;display:flex;gap:1rem}
+.dets li span{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--sage);min-width:80px;padding-top:.25rem}
+.badge{display:inline-block;background:var(--blush);color:#8a4f45;padding:.35rem .9rem;border-radius:99px;font-size:.8rem;letter-spacing:.08em;margin-bottom:.6rem}
+@media(max-width:860px){.ret{grid-template-columns:1fr}}
+.venue{display:grid;grid-template-columns:repeat(4,1fr);gap:.9rem;margin-top:4rem}
+.venue figure{overflow:hidden;border-radius:16px;position:relative;cursor:zoom-in}
+.venue figure:nth-child(odd){transform:translateY(24px)}
+.venue img{width:100%;aspect-ratio:3/4;object-fit:cover;transition:transform 1.2s}
+.venue figure:hover img{transform:scale(1.06)}
+.venue figcaption{position:absolute;bottom:.8rem;left:.8rem;font-family:Caveat,cursive;font-size:1.3rem;color:#fff;text-shadow:0 2px 10px rgba(0,0,0,.6)}
+@media(max-width:760px){.venue{grid-template-columns:1fr 1fr}}
+.quote{margin-top:6rem;text-align:center;max-width:780px;margin-left:auto;margin-right:auto}
+.quote p{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:clamp(1.6rem,3.2vw,2.5rem);line-height:1.3;color:var(--deep)}
+.quote span{display:block;margin-top:1.2rem;font-size:.75rem;letter-spacing:.25em;text-transform:uppercase;color:var(--muted)}
+
+/* JOURNAL */
+.jr{background:linear-gradient(var(--cream),#f3e6df)}
+.jgrid{display:grid;grid-template-columns:1.1fr .9fr;gap:4rem;align-items:center}
+.book{position:relative;background:#fffdf8;border-radius:10px 22px 22px 10px;padding:2.4rem 2.2rem 2.4rem 3.2rem;box-shadow:0 30px 60px -30px rgba(0,0,0,.3),inset 16px 0 0 #efe6d6;min-height:380px;background-image:repeating-linear-gradient(transparent 0 37px,#e6dccb 37px 38px)}
+.book .line{font-family:Caveat,cursive;font-size:1.9rem;color:#3d4a8a;line-height:38px;min-height:38px;white-space:nowrap;overflow:hidden;border-right:2px solid transparent;width:0}
+.book .line.typing{border-color:#3d4a8a;animation:caret .8s steps(1) infinite}
+@keyframes caret{50%{border-color:transparent}}
+.zoom{display:flex;align-items:center;gap:1rem;margin-top:2rem;padding:1.2rem 1.4rem;background:#fff;border-radius:16px;box-shadow:0 16px 30px -22px rgba(0,0,0,.4)}
+.zoom i{width:46px;height:46px;border-radius:12px;background:#2d8cff;display:grid;place-items:center;color:#fff;font-style:normal;font-weight:500;flex:none}
+@media(max-width:860px){.jgrid{grid-template-columns:1fr}}
+
+/* DECK */
+.deck{display:flex;flex-direction:column;align-items:center;text-align:center}
+.cardwrap{perspective:1200px;width:min(340px,82vw);aspect-ratio:3/4.2;margin:2.4rem 0 1.6rem;cursor:pointer}
+.fc{position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform 1s cubic-bezier(.3,.8,.3,1)}
+.fc.flip{transform:rotateY(180deg)}
+.fc>div{position:absolute;inset:0;border-radius:20px;backface-visibility:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2.2rem;box-shadow:0 30px 60px -30px rgba(0,0,0,.4)}
+.front{background:var(--deep) radial-gradient(circle at 50% 40%,rgba(236,211,202,.25),transparent 60%);color:var(--cream)}
+.front svg{width:90px;height:62px;stroke:var(--blush);fill:none;stroke-width:1.4;margin-bottom:1.4rem}
+.front span{font-size:.72rem;letter-spacing:.35em;text-transform:uppercase}
+.back{background:#fffdf8;transform:rotateY(180deg);border:1px solid #e8dfcf}
+.back p{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:1.65rem;line-height:1.3;color:var(--ink)}
+.back small{margin-top:1.4rem;font-size:.65rem;letter-spacing:.3em;text-transform:uppercase;color:var(--sage)}
+
+/* SIGNUP */
+.sign{background:var(--deep);color:var(--cream);border-radius:32px;padding:clamp(2rem,5vw,4.5rem);display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;position:relative;overflow:hidden}
+.sign .kick{color:#c7d0bc}.sign em{color:var(--blush)}.sign .lead{color:#d3d6c8}
+.sign form{display:grid;gap:.8rem}
+.sign input{padding:1rem 1.3rem;border-radius:99px;border:1px solid rgba(246,241,232,.35);background:rgba(246,241,232,.08);color:var(--cream);font:inherit;outline:none}
+.sign input::placeholder{color:rgba(246,241,232,.55)}
+.sign button{padding:1rem;border-radius:99px;border:0;background:var(--cream);color:var(--deep);font:inherit;font-weight:500;letter-spacing:.06em;cursor:pointer;transition:.3s}
+.sign button:hover{background:var(--blush)}
+.ok{font-family:Caveat,cursive;font-size:1.6rem;color:var(--blush);min-height:2rem}
+@media(max-width:860px){.sign{grid-template-columns:1fr}}
+
+/* CONTACT */
+.contact{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:2.4rem}
+.contact a{display:block;text-decoration:none;background:var(--cream2);border-radius:20px;padding:1.8rem;transition:.4s}
+.contact a:hover{background:var(--blush)}
+.contact small{font-size:.7rem;letter-spacing:.25em;text-transform:uppercase;color:var(--sage)}
+.contact b{display:block;font-family:"Cormorant Garamond",serif;font-weight:500;font-size:1.45rem;margin-top:.4rem;word-break:break-word}
+@media(max-width:760px){.contact{grid-template-columns:1fr}}
+
+footer{text-align:center;padding:70px 0 110px;border-top:1px solid #e3d9c9}
+footer svg{width:70px;height:48px;stroke:var(--sage);fill:none;stroke-width:1.3}
+footer p{font-size:.85rem;color:var(--muted);margin-top:.6rem}
+footer .demo{font-size:.72rem;opacity:.7;margin-top:1rem}
+
+.lb{position:fixed;inset:0;background:rgba(40,44,36,.92);z-index:90;display:none;place-items:center;cursor:zoom-out}
+.lb.on{display:grid}.lb img{max-width:88vw;max-height:86vh;border-radius:10px}
+.mbar{display:none}
+@media(max-width:760px){section{padding:84px 0}.mbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;bottom:0;left:0;right:0;z-index:60;background:rgba(246,241,232,.96);backdrop-filter:blur(10px);border-top:1px solid #e3d9c9}.mbar a{padding:1rem 0;text-align:center;text-decoration:none;font-size:.9rem}.mbar a:last-child{background:var(--deep);color:var(--cream)}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}.branch path{stroke-dashoffset:0}.branch .bl{opacity:1}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute"><defs><symbol id="inf" viewBox="0 0 64 44"><path d="M32 26c-6-8-12-14-19-14a8 8 0 0 0 0 16c7 0 13-6 19-14 6 8 12 14 19 14a8 8 0 0 0 0-16c-7 0-13 6-19 14z"/><path d="M32 10c-3-3-3-7 0-9 3 2 3 6 0 9z"/><circle cx="32" cy="6" r="0.1"/><path d="M24 12c2-4 5-5 8-2M40 12c-2-4-5-5-8-2"/></symbol></defs></svg>
+
+<nav id="nav">
+ <a class="logo" href="#top"><svg stroke="#4b5c48" fill="none" stroke-width="1.6"><use href="#inf"/></svg><span><b>Intuitive Flow</b><small>COACHING · JACKIE</small></span></a>
+ <ul><li><a href="#release">A gentle practice</a></li><li><a href="#about">About</a></li><li><a href="#coaching">Coaching</a></li><li><a href="#retreats">Retreats</a></li><li><a href="#journal">Journalling</a></li></ul>
+ <a class="btn fill" href="#early" style="padding:.65rem 1.2rem;font-size:.8rem">Early access</a>
+</nav>
+
+<header class="hero" id="top">
+ <div class="wrap">
+  <div class="rv">
+   <span class="kick">Intuitive Flow Coaching · with Jackie Herbert-Valentine</span>
+   <h1 style="margin-top:1.2rem">Inner reflection<em>takes practice.</em></h1>
+   <p class="lead">A journey of inner reflection, supporting you to connect to your intuition and make significant change. Rooted in trust of self &amp; universe.</p>
+   <div class="ctas"><a class="btn fill" href="#coaching">Book a free discovery call</a><a class="btn" href="#retreats">Spring Retreat 2027</a></div>
+   <span class="note">Pause. Breathe. Listen inward ✨</span>
+  </div>
+  <div class="orb rv">
+   <svg class="branch" viewBox="0 0 300 260"><path d="M290 10 C230 40 190 70 150 120 S80 200 20 250"/><path d="M200 70 C215 50 240 45 255 50"/><path d="M160 112 C150 85 160 60 175 48"/><path d="M110 170 C130 165 150 175 160 190"/><path d="M75 205 C60 185 62 165 70 150"/>
+    <g><ellipse class="bl" cx="255" cy="50" rx="9" ry="6" style="animation-delay:2.6s"/><ellipse class="bl" cx="175" cy="48" rx="8" ry="6" style="animation-delay:3s"/><ellipse class="bl" cx="160" cy="190" rx="9" ry="6" style="animation-delay:3.4s"/><ellipse class="bl" cx="70" cy="150" rx="8" ry="6" style="animation-delay:3.8s"/><ellipse class="bl" cx="230" cy="38" rx="6" ry="4" style="animation-delay:4.1s"/></g></svg>
+   <div class="ring fillr" style="--i:0;--d:0s"></div>
+   <div class="ring" style="--i:6%;--d:.3s"></div>
+   <div class="ring" style="--i:14%;--d:.6s"></div>
+   <div class="ring" style="--i:-4%;--d:.9s"></div>
+   <div class="face"><img src="images/jackie-profile.jpg" alt="Jackie Herbert-Valentine smiling"></div>
+   <div class="bw" id="bw">breathe in…</div>
+  </div>
+ </div>
+</header>
+
+<section class="release" id="release">
+ <div class="wrap">
+  <span class="kick rv">A gentle practice</span>
+  <h2 class="rv">Is this <em>mine to hold?</em></h2>
+  <p class="lead rv">Write down something you're carrying. Close your eyes and ask yourself the question. If there's resistance in your body, your intuition may be telling you it isn't yours to hold.</p>
+  <div class="rel">
+   <div class="dand rv"><svg viewBox="0 0 200 220" id="dsvg"><path d="M100 120 Q98 170 104 218" stroke="#a7b39a" stroke-width="2" fill="none"/><circle cx="100" cy="100" r="7" fill="#c7d0bc"/><g id="seeds"></g></svg></div>
+   <div class="box rv">
+    <label for="worry">What's weighing on you?</label>
+    <textarea id="worry" rows="2" placeholder="e.g. everyone else's expectations"></textarea>
+    <button class="btn fill" id="askb" style="margin-top:1.2rem">Ask the question</button>
+    <div class="ask" id="ask"><p>Close your eyes. Ask: <br>“Is this mine to hold?” How does it feel?</p>
+     <div class="opts"><button class="btn" id="heavy">Heavy · not mine</button><button class="btn" id="light">Light · it's mine</button></div></div>
+    <div class="msg" id="msg"></div>
+    <div class="held" id="held"></div>
+    <p class="credit">Inspired by Jackie's Q&amp;A on protecting your peace.</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="about">
+ <div class="wrap about">
+  <div class="pol rv"><div class="p1"><div class="tape"></div><img src="images/jackie.jpg" alt="Jackie at home"><span>Hello! I'm Jackie</span></div><div class="p2"><img src="images/journal-sketch.jpg" alt="Journal page: trust yourself, stay connected, unburden"></div></div>
+  <div>
+   <span class="kick rv">About</span>
+   <h2 class="rv">I'm so grateful you've <em>found your way here.</em></h2>
+   <p class="lead rv">I'm on my way to becoming a fully accredited master intuitive psychology coach. I'm also a specialist midwife, accountable to the NMC, and part of the Association for Coaching.</p>
+   <ul class="facts rv">
+    <li><b>01</b><span>A past life as a nightclub manager, so I've met people from every walk of life. I still love the dance floor.</span></li>
+    <li><b>02</b><span>Happiest outdoors, with a good book, after an ice bath or at the gym.</span></li>
+    <li><b>03</b><span>Neurodiverse myself, so I understand when a different approach is needed to meet your coaching needs.</span></li>
+   </ul>
+   <span class="kick rv">What inspires me</span>
+   <div class="chips rv"><span>The small details</span><span>Building community</span><span>Supporting growth</span><span>Creativity</span></div>
+  </div>
+ </div>
+</section>
+
+<section class="how" id="coaching">
+ <div class="wrap">
+  <span class="kick rv">Coaching</span>
+  <h2 class="rv">A different way in. <em>Eyes closed.</em></h2>
+  <p class="lead rv">Coaching for ambitious people who are open to a different approach, one that gets to the heart of the matter quickly. A safe space to tap into your intuition, look at what's holding you back, and move through it.</p>
+  <div class="steps">
+   <div class="step rv"><svg viewBox="0 0 54 54"><circle cx="27" cy="27" r="20"/><circle cx="27" cy="27" r="11"/></svg><div class="n">one</div><h3>Pause</h3><p>Slow down long enough to notice what's really going on beneath the overthinking.</p></div>
+   <div class="step rv"><svg viewBox="0 0 54 54"><path d="M8 28c6-8 13-12 19-12s13 4 19 12c-6 8-13 12-19 12S14 36 8 28z"/><path d="M18 30q9 6 18 0"/></svg><div class="n">two</div><h3>Listen inward</h3><p>With eyes closed, connect to your heart space and hear what your intuition already knows.</p></div>
+   <div class="step rv"><svg viewBox="0 0 54 54"><path d="M27 46V20"/><path d="M27 26c-8 0-12-6-12-12 8 0 12 6 12 12zM27 22c0-7 5-12 12-12 0 7-5 12-12 12z"/></svg><div class="n">three</div><h3>Shift</h3><p>Release what isn't yours to hold, and take aligned steps towards the change you want.</p></div>
+  </div>
+  <div class="callcard rv"><div><h3>Free 15-minute discovery call</h3><p>A gentle conversation to see if we're a good fit. No pressure, no script.</p></div><a class="btn" href="https://wa.me/447850277186?text=Hi%20Jackie%2C%20I%27d%20love%20to%20book%20a%20free%20discovery%20call%20%F0%9F%8C%BF">Book on WhatsApp →</a></div>
+ </div>
+</section>
+
+<section id="retreats">
+ <div class="wrap">
+  <div class="ret">
+   <div class="poster rv" id="poster"><img src="images/spring-poster.jpg" alt="Spring Retreat by Intuitive Flow Coaching, Sunday 18th April 2027, Scenic Sauna Northleach"></div>
+   <div>
+    <span class="badge rv">🌸 Early bird offer now live</span><br>
+    <span class="kick rv">Retreat day</span>
+    <h2 class="rv">The Spring <em>Retreat.</em></h2>
+    <p class="lead rv">A day to slow down, rest and reconnect with yourself and your intuition, surrounded by nature.</p>
+    <div class="count rv" id="count"><div><b id="cd">–</b><small>Days</small></div><div><b id="ch">–</b><small>Hours</small></div><div><b id="cm">–</b><small>Mins</small></div></div>
+    <ul class="dets rv"><li><span>When</span>Sunday 18th April 2027 · 10am – 5pm</li><li><span>Where</span>Scenic Sauna, Northleach</li><li><span>Spaces</span>Small group · early access for the waitlist</li></ul>
+    <a class="btn fill rv" href="#early">Get early access</a>
+   </div>
+  </div>
+  <div class="venue">
+   <figure class="rv"><img src="images/sauna-exhale.jpg" alt="And exhale sign at the sauna" loading="lazy"><figcaption>and exhale</figcaption></figure>
+   <figure class="rv"><img src="images/retreat-room-b.jpg" alt="Mats and blankets laid out" loading="lazy"><figcaption>the space</figcaption></figure>
+   <figure class="rv"><img src="images/altar.jpg" alt="Candles and autumn leaves centrepiece" loading="lazy"><figcaption>by candlelight</figcaption></figure>
+   <figure class="rv"><img src="images/hut.jpg" alt="Wooden sauna huts among trees" loading="lazy"><figcaption>in the trees</figcaption></figure>
+  </div>
+  <div class="quote rv"><p>“I came away feeling so relaxed, grateful and like I'd had a little bit of time just for me.”</p><span>Retreat feedback · Intuitive Retreat, Nov 2026</span></div>
+ </div>
+</section>
+
+<section class="jr" id="journal">
+ <div class="wrap jgrid">
+  <div>
+   <span class="kick rv">Free · monthly · on Zoom</span>
+   <h2 class="rv">Parts Journalling <em>Sunday.</em></h2>
+   <p class="lead rv">For the Sunday scaries. A free monthly get-together to journal, set intentions, and let go of the week before it begins.</p>
+   <div class="zoom rv"><i>Z</i><div><b style="font-weight:500">Monthly, on a Sunday</b><br><span style="color:var(--muted);font-size:.9rem">Join the list to get the link</span></div></div>
+  </div>
+  <div class="book rv" id="book"><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div></div>
+ </div>
+</section>
+
+<section>
+ <div class="wrap deck">
+  <span class="kick rv">Draw a card</span>
+  <h2 class="rv">A little something <em>for today.</em></h2>
+  <div class="cardwrap rv" id="cw"><div class="fc" id="fc"><div class="front"><svg><use href="#inf"/></svg><span>Tap to draw</span></div><div class="back"><p id="cardtxt"></p><small>Intuitive Flow</small></div></div></div>
+  <button class="btn rv" id="again">Draw another</button>
+ </div>
+</section>
+
+<section id="early" style="padding-top:20px">
+ <div class="wrap">
+  <div class="sign rv">
+   <div><span class="kick">First access</span><h2>Retreats fill fast. <em>Hear first.</em></h2><p class="lead">Early access to retreat days, the Parts Journalling Zoom link, and gentle notes from Jackie. Nothing more.</p></div>
+   <form id="form"><input id="fn" placeholder="First name" required><input id="fe" type="email" placeholder="Email address" required><button type="submit">Join the list 🌿</button><div class="ok" id="ok"></div></form>
+  </div>
+  <div class="contact">
+   <a class="rv" href="https://wa.me/447850277186"><small>WhatsApp</small><b>07850 277186</b></a>
+   <a class="rv" href="mailto:Jackie.intuitiveflow@gmail.com"><small>Email</small><b>Jackie.intuitiveflow@gmail.com</b></a>
+   <a class="rv" href="https://www.instagram.com/intuitive_flow_coaching" target="_blank" rel="noopener"><small>Instagram</small><b>@intuitive_flow_coaching</b></a>
+  </div>
+ </div>
+</section>
+
+<footer>
+ <svg><use href="#inf"/></svg>
+ <p>Intuitive Flow Coaching · Jackie Herbert-Valentine · Cheltenham &amp; online</p>
+ <p class="demo">Demo concept by Codzo · images from @intuitive_flow_coaching</p>
+</footer>
+
+<div class="mbar"><a href="https://wa.me/447850277186">WhatsApp Jackie</a><a href="#early">Early access</a></div>
+<div class="lb" id="lb"><img id="lbi" alt=""></div>
+
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+/* breathe text in sync: 10s cycle, inhale 4s */
+const bw=$('#bw');let inh=true;function br(){bw.style.opacity=0;setTimeout(()=>{bw.textContent=inh?'and exhale…':'breathe in…';bw.style.opacity=1;inh=!inh},500)}
+setInterval(()=>br(),5000);
+
+/* dandelion seeds */
+const g=$('#seeds');const N=36;
+for(let i=0;i<N;i++){const a=i/N*Math.PI*2,L=48+(i%3)*8;const x=100+Math.cos(a)*L,y=100+Math.sin(a)*L;
+ g.insertAdjacentHTML('beforeend',`<g class="seed" data-a="${a}"><line x1="100" y1="100" x2="${x}" y2="${y}" stroke="rgba(246,241,232,.55)" stroke-width=".7"/><circle cx="${x}" cy="${y}" r="3.2" fill="rgba(246,241,232,.85)"/></g>`)}
+let left=$$('.seed');
+function blow(n){for(let k=0;k<n&&left.length;k++){const s=left.splice(Math.floor(Math.random()*left.length),1)[0];
+ const dx=120+Math.random()*260,dy=-80-Math.random()*200;s.style.transform=`translate(${dx}px,${dy}px) rotate(${Math.random()*90}deg)`;s.classList.add('fly')}}
+$('#askb').onclick=()=>{if(!$('#worry').value.trim()){$('#worry').focus();$('#msg').textContent='Write a few words first.';return}$('#msg').textContent='';$('#ask').classList.add('on')};
+$('#heavy').onclick=()=>{const ta=$('#worry');const r=ta.getBoundingClientRect();const txt=ta.value.trim();if(!txt)return;
+ [...txt].forEach((ch,i)=>{const sp=document.createElement('span');sp.className='flying';sp.textContent=ch;sp.style.left=(r.left+12+i*13%(r.width-20))+'px';sp.style.top=(r.top+10+Math.floor(i*13/(r.width-20))*30)+'px';document.body.appendChild(sp);
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{sp.style.transform=`translate(${-150-Math.random()*300}px,${-120-Math.random()*260}px) rotate(${Math.random()*260-130}deg)`;sp.style.opacity=0}));setTimeout(()=>sp.remove(),3400)});
+ blow(8);ta.value='';$('#ask').classList.remove('on');$('#msg').textContent='Let it drift. It was never yours to carry.';
+ if(!left.length)setTimeout(()=>{$$('.seed').forEach(s=>{s.style.transition='none';s.style.transform='';s.classList.remove('fly')});left=$$('.seed');setTimeout(()=>$$('.seed').forEach(s=>s.style.transition=''),50)},3600)};
+$('#light').onclick=()=>{const txt=$('#worry').value.trim();if(!txt)return;$('#held').insertAdjacentHTML('beforeend',`<span>${txt.replace(/[<>&]/g,'')}</span>`);$('#worry').value='';$('#ask').classList.remove('on');$('#msg').textContent='Hold it gently. You get to choose how.'};
+
+/* countdown to 18 Apr 2027 10:00 London (BST = UTC+1) */
+const T=Date.UTC(2027,3,18,9,0,0);
+function cd(){let d=Math.max(0,T-Date.now());$('#cd').textContent=Math.floor(d/864e5);$('#ch').textContent=Math.floor(d/36e5)%24;$('#cm').textContent=Math.floor(d/6e4)%60}cd();setInterval(cd,30000);
+
+/* petals */
+const po=$('#poster');for(let i=0;i<9;i++){const p=document.createElement('i');p.className='petal';p.style.left=(10+Math.random()*85)+'%';p.style.top='-10px';p.style.animationDuration=(7+Math.random()*7)+'s';p.style.animationDelay=(-Math.random()*10)+'s';p.style.transform=`scale(${.6+Math.random()*.8})`;po.appendChild(p)}
+
+/* journal typing */
+const LINES=['Trust yourself','Stay connected','Unburden','Part of me is…','…ready to slow down',"This week I'll be kind",'to myself.',''];
+let typed=false;
+function typeBook(){if(typed)return;typed=true;const ls=$$('#book .line');let i=0;
+ (function next(){if(i>=LINES.length)return;const el=ls[i];el.textContent=LINES[i];el.classList.add('typing');el.style.transition='none';el.style.width='0';
+  const w=el.scrollWidth;requestAnimationFrame(()=>{el.style.transition=`width ${Math.max(.4,LINES[i].length*.07)}s steps(${Math.max(1,LINES[i].length)})`;el.style.width=w+4+'px'});
+  setTimeout(()=>{el.classList.remove('typing');i++;next()},Math.max(400,LINES[i].length*70)+350)})()}
+
+/* deck */
+const C=['The confidence you seek grows from the inner wisdom you unlock when you connect to your intuition.',"Sometimes a meditation is needed, and that's more than enough.",'You are not a machine.','Are you distracting, or connecting?','Life becomes more beautiful when you slow down and enjoy the little moments.','Unlearning the need to always be productive.','Inner reflection takes practice.','Is this mine to hold?'];
+let ci=-1;function draw(){const fc=$('#fc');if(fc.classList.contains('flip')){fc.classList.remove('flip');setTimeout(pick,500)}else pick()}
+function pick(){let n;do{n=Math.floor(Math.random()*C.length)}while(n===ci);ci=n;$('#cardtxt').textContent=C[n];$('#fc').classList.add('flip')}
+$('#cw').onclick=draw;$('#again').onclick=draw;
+
+/* signup */
+$('#form').onsubmit=e=>{e.preventDefault();const n=$('#fn').value,em=$('#fe').value;
+ $('#ok').textContent=`Thank you ${n} 🌸 you're on the list.`;
+ location.href='mailto:Jackie.intuitiveflow@gmail.com?subject='+encodeURIComponent('Early access list')+'&body='+encodeURIComponent(`Hi Jackie, please add me to the early access list.\n\nName: ${n}\nEmail: ${em}`)};
+
+/* lightbox */
+$$('.venue figure').forEach(f=>f.onclick=()=>{$('#lbi').src=f.querySelector('img').src;$('#lb').classList.add('on')});$('#lb').onclick=()=>$('#lb').classList.remove('on');
+
+/* nav + reveal */
+addEventListener('scroll',()=>$('#nav').classList.toggle('solid',scrollY>40),{passive:true});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');if(e.target.id==='book')typeBook();io.unobserve(e.target)}}),{threshold:.15});
+$$('.rv').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

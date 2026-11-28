@@ -1080,5 +1080,35 @@
     "demo_path": "sites/pmak-agency/",
     "demo_url": "https://business-red-ten.vercel.app/pmak-agency/",
     "status": "draft"
+  },
+  {
+    "slug": "intuitive-flow-coaching",
+    "business": "Intuitive Flow Coaching (Jackie Herbert-Valentine)",
+    "trade": "Intuitive / life coach, retreat days",
+    "town": "Cheltenham",
+    "region": "Gloucestershire",
+    "country": "UK",
+    "address": "Home address listed on her site, not used in demo",
+    "phone": "WhatsApp +44 7850 277186",
+    "email": "Jackie.intuitiveflow@gmail.com",
+    "instagram": "https://www.instagram.com/intuitive_flow_coaching",
+    "rating": null,
+    "review_count": null,
+    "hours": "By arrangement",
+    "maps_link": null,
+    "plus_code": null,
+    "website_status": "has_website",
+    "website_status_note": "Squarespace site intuitiveflowcoachingbyjackieherbert-valentine.co.uk: newsletter block shows 'needs a storage option' (sign-up broken) while IG posts send people there for retreat early access; no retreat date/price/venue; no credentials/testimonials; Instagram link points to /home. She posted asking for a Squarespace website designer recommendation.",
+    "services": [
+      "Intuitive flow coaching",
+      "Free 15-min discovery call",
+      "Retreat days (Intuitive Retreat 14.11.26; Spring Retreat Sun 18 Apr 2027, Scenic Sauna Northleach 10-5, early bird live)",
+      "Parts Journalling Sunday (free monthly Zoom)"
+    ],
+    "reviews": "Retreat feedback post (anonymous)",
+    "notes": "Sole trader: PECR, contact via Instagram DM first (reply to her designer-wanted post), email as follow-up. She wants Squarespace specifically. Verified IG, 394 followers.",
+    "demo_path": "sites/intuitive-flow-coaching/",
+    "demo_url": "https://business-red-ten.vercel.app/intuitive-flow-coaching/",
+    "status": "draft"
   }
 ]
