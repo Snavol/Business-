@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Electrik — Neighbourhood boozer, Chorlton</title>
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Electrik, 559a Wilbraham Road, Chorlton. Craft beer, cask ale, cocktails, Quingo on Tuesdays, DJs at the weekend and Sunday roasts.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,500;0,700;1,500&family=Space+Mono:wght@400;700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#121317;--slate:#1c1f25;--slate2:#262a32;--amber:#ffb547;--amber2:#f08a24;--red:#c8323a;--cream:#f4ead7;--muted:#a59c8c;--yellow:#ffe14d}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--cream);font-family:Manrope,system-ui,sans-serif;line-height:1.6;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+.slab{font-family:"Zilla Slab",Georgia,serif}
+.mono{font-family:"Space Mono",monospace}
+.wrap{width:min(1180px,92vw);margin:0 auto}
+.kick{font-family:"Space Mono",monospace;font-size:.75rem;letter-spacing:.22em;text-transform:uppercase;color:var(--amber)}
+h2{font-family:"Zilla Slab",serif;font-weight:700;font-size:clamp(2.2rem,5.4vw,4.2rem);line-height:1;letter-spacing:-.01em;margin:.5rem 0 1rem}
+h2 em{font-style:italic;font-weight:500;color:var(--amber)}
+.lead{color:var(--muted);max-width:56ch;font-size:1.05rem}
+section{padding:110px 0;position:relative}
+.rv{opacity:0;transform:translateY(28px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.btn{display:inline-flex;align-items:center;gap:.55rem;padding:.95rem 1.5rem;border-radius:999px;font-weight:700;text-decoration:none;font-size:.95rem;border:1.5px solid var(--amber);transition:.25s;cursor:pointer;background:none;color:var(--cream);font-family:inherit}
+.btn.fill{background:var(--amber);color:#1a1206}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 30px -10px rgba(255,181,71,.6)}
+
+/* NAV */
+nav{position:fixed;inset:0 0 auto 0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:18px 4vw;transition:.4s}
+nav.solid{background:rgba(18,19,23,.86);backdrop-filter:blur(10px);padding:12px 4vw;border-bottom:1px solid #2a2d35}
+.logo{font-family:"Zilla Slab",serif;font-weight:700;font-size:1.45rem;letter-spacing:.08em;text-decoration:none;color:var(--amber);display:flex;align-items:center;gap:.5rem}
+.logo svg{width:16px;height:26px}
+nav ul{display:flex;gap:1.6rem;list-style:none;font-size:.9rem}
+nav ul a{text-decoration:none;opacity:.8}nav ul a:hover{opacity:1;color:var(--amber)}
+@media(max-width:860px){nav ul{display:none}}
+
+/* HERO */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:grid;place-items:center;text-align:center;overflow:hidden;padding:120px 0 90px}
+.hero .bg{position:absolute;inset:0;background:url(images/booth-e.jpg) center/cover;filter:brightness(.12) saturate(.6) blur(2px);transform:scale(1.08);transition:filter 1.6s ease}
+.hero.on .bg{filter:brightness(.55) saturate(1.1) blur(1px)}
+.hero::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 35%,transparent 20%,rgba(18,19,23,.75) 75%),linear-gradient(transparent 60%,var(--ink));pointer-events:none}
+.bulbs{position:absolute;top:0;left:0;right:0;display:flex;justify-content:space-around;padding:0 12vw;z-index:2;pointer-events:none}
+.bulb{display:flex;flex-direction:column;align-items:center}
+.bulb .cord{width:2px;background:#444;height:var(--h)}
+.bulb svg{width:34px;height:54px;overflow:visible}
+.bulb .glass{fill:rgba(255,255,255,.05);stroke:#6b6355;stroke-width:1.2;transition:.4s}
+.bulb .fil{stroke:#5a5147;stroke-width:1.3;fill:none;transition:.4s}
+.hero.on .bulb .glass{fill:rgba(255,190,90,.28);stroke:#ffcc80}
+.hero.on .bulb .fil{stroke:#fff4d6;filter:drop-shadow(0 0 4px #ffb547)}
+.bulb .halo{position:absolute;width:160px;height:160px;border-radius:50%;margin-top:calc(var(--h) - 40px);background:radial-gradient(circle,rgba(255,181,71,.45),transparent 65%);opacity:0;transition:opacity 1.2s}
+.hero.on .bulb .halo{opacity:1;animation:hum 4s ease-in-out infinite}
+@keyframes hum{50%{opacity:.75}}
+.hero-in{position:relative;z-index:3}
+.sw{display:inline-flex;flex-direction:column;align-items:center;gap:.6rem;margin-bottom:2rem;cursor:pointer;background:none;border:0;color:var(--muted);font-family:"Space Mono",monospace;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase}
+.plate{width:64px;height:96px;border-radius:10px;background:linear-gradient(145deg,#ece3d2,#bfb39c);box-shadow:0 10px 30px rgba(0,0,0,.6),inset 0 1px 0 #fff;display:grid;place-items:center;position:relative}
+.plate::before,.plate::after{content:"";position:absolute;width:6px;height:6px;border-radius:50%;background:#9a8f7b;left:29px}
+.plate::before{top:8px}.plate::after{bottom:8px}
+.toggle{width:22px;height:40px;border-radius:5px;background:linear-gradient(#f9f3e6,#d7cbb4);box-shadow:0 6px 0 #a89a80,0 8px 10px rgba(0,0,0,.35);transition:.25s cubic-bezier(.3,1.6,.5,1);transform:perspective(80px) rotateX(-22deg)}
+.hero.on .toggle{transform:perspective(80px) rotateX(22deg);box-shadow:0 -6px 0 #a89a80,0 -8px 10px rgba(0,0,0,.25)}
+.word{font-family:"Zilla Slab",serif;font-weight:700;font-size:clamp(3.6rem,14.5vw,11.5rem);line-height:.9;letter-spacing:.04em;display:flex;justify-content:center;white-space:nowrap}
+.word span{color:#2b2c31;transition:color .1s,text-shadow .1s}
+.word span.lit{color:var(--amber);text-shadow:0 0 18px rgba(255,170,60,.7),0 0 60px rgba(255,140,40,.35)}
+.word span.flick{animation:flick 2.6s 1}
+@keyframes flick{0%,12%,20%,48%{color:var(--amber)}10%,16%,46%{color:#3a3a40;text-shadow:none}}
+.hero .tag{font-family:"Zilla Slab",serif;font-style:italic;font-size:clamp(1.2rem,2.6vw,1.8rem);margin:.6rem 0 .3rem;opacity:0;transition:opacity 1s .8s}
+.hero .sub{color:var(--muted);opacity:0;transition:opacity 1s 1s}
+.hero.on .tag,.hero.on .sub,.hero.on .cta,.hero.on .status{opacity:1}
+.hero .cta{display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap;margin-top:1.8rem;opacity:0;transition:opacity 1s 1.2s}
+.status{display:inline-flex;align-items:center;gap:.55rem;margin-top:1.4rem;font-family:"Space Mono",monospace;font-size:.8rem;padding:.45rem .9rem;border:1px solid #3a3d45;border-radius:999px;background:rgba(0,0,0,.35);opacity:0;transition:opacity 1s 1.4s}
+.dot{width:9px;height:9px;border-radius:50%;background:#7b7466}
+.dot.open{background:#5ee07b;box-shadow:0 0 0 0 rgba(94,224,123,.6);animation:ping 1.8s infinite}
+@keyframes ping{70%{box-shadow:0 0 0 9px rgba(94,224,123,0)}100%{box-shadow:0 0 0 0 rgba(94,224,123,0)}}
+
+/* AWNING TICKER */
+.awning{background:var(--red);overflow:hidden;border-block:3px solid #8e1f26;position:relative;z-index:4}
+.awning::before{content:"";position:absolute;inset:auto 0 -3px 0;height:10px;background:radial-gradient(circle at 10px -2px,var(--red) 9px,transparent 10px) 0 0/20px 10px repeat-x}
+.tick{display:flex;gap:2.4rem;white-space:nowrap;padding:.85rem 0;animation:tk 38s linear infinite;width:max-content;font-family:"Zilla Slab",serif;font-weight:700;font-size:1.15rem;letter-spacing:.06em;text-transform:uppercase}
+.tick b{color:var(--yellow)}
+@keyframes tk{to{transform:translateX(-50%)}}
+
+/* TONIGHT */
+.tonight{padding:70px 0 20px}
+.tn{display:grid;grid-template-columns:1.2fr 1fr;gap:1.4rem}
+.card{background:var(--slate);border:1px solid #2c3038;border-radius:22px;padding:2rem;position:relative;overflow:hidden}
+.card .big{font-family:"Zilla Slab",serif;font-size:clamp(1.8rem,3.6vw,2.7rem);font-weight:700;line-height:1.05;margin:.4rem 0 .5rem}
+.card .big em{color:var(--amber);font-weight:500}
+.hh{display:flex;align-items:center;gap:1.4rem}
+.meter{flex:none;width:96px;height:96px;border-radius:50%;background:conic-gradient(var(--amber) calc(var(--p)*1%),#2e323a 0);display:grid;place-items:center}
+.meter i{width:76px;height:76px;border-radius:50%;background:var(--slate);display:grid;place-items:center;font-style:normal;font-family:"Space Mono",monospace;font-size:.78rem;text-align:center;line-height:1.2}
+@media(max-width:760px){.tn{grid-template-columns:1fr}}
+
+/* TURNTABLE WEEK */
+.week{display:grid;grid-template-columns:1.05fr 1fr;gap:3rem;align-items:center;margin-top:2.5rem}
+.deck{aspect-ratio:1.12;background:linear-gradient(160deg,#2c2620,#191512);border-radius:22px;position:relative;box-shadow:0 40px 80px -30px #000,inset 0 1px 0 rgba(255,255,255,.08);border:1px solid #3a3129}
+.deck::after{content:"";position:absolute;inset:10px;border-radius:16px;background:repeating-linear-gradient(90deg,rgba(255,255,255,.015) 0 2px,transparent 2px 5px);pointer-events:none}
+.platter{position:absolute;left:7%;top:8%;width:73%;aspect-ratio:1;border-radius:50%;background:#0c0c0e;box-shadow:0 0 0 6px #3b3c40,0 0 0 8px #222,0 14px 30px rgba(0,0,0,.6)}
+.record{position:absolute;inset:3%;border-radius:50%;background:repeating-radial-gradient(circle,#111 0 2px,#1b1b1e 2px 3.4px);animation:spin 1.8s linear infinite;animation-play-state:paused;display:grid;place-items:center}
+.record::before{content:"";position:absolute;inset:0;border-radius:50%;background:conic-gradient(from 20deg,transparent 0 20%,rgba(255,255,255,.08) 25%,transparent 30% 70%,rgba(255,255,255,.06) 75%,transparent 80%)}
+.deck.play .record{animation-play-state:running}
+@keyframes spin{to{transform:rotate(360deg)}}
+.label{width:38%;aspect-ratio:1;border-radius:50%;background:var(--lab,#ffb547);display:grid;place-items:center;text-align:center;color:#17120a;position:relative;padding:8%}
+.label::after{content:"";position:absolute;width:7%;aspect-ratio:1;background:#0c0c0e;border-radius:50%}
+.label b{font-family:"Zilla Slab",serif;font-size:clamp(.7rem,1.5vw,1rem);line-height:1;display:block;transform:translateY(-58%)}
+.label small{font-family:"Space Mono",monospace;font-size:clamp(.45rem,.9vw,.6rem);letter-spacing:.12em;position:absolute;bottom:18%}
+.arm{position:absolute;right:7%;top:9%;width:30%;height:70%;transform-origin:78% 9%;transform:rotate(-24deg);transition:transform .9s cubic-bezier(.4,1.4,.5,1)}
+.deck.play .arm{transform:rotate(4deg)}
+.arm svg{width:100%;height:100%;overflow:visible}
+.knob{position:absolute;right:9%;bottom:9%;display:flex;gap:10px}
+.knob i{width:26px;height:26px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#d8d1c2,#6d675d);box-shadow:0 3px 6px #000}
+.led{position:absolute;left:8%;bottom:7%;font-family:"Space Mono",monospace;font-size:.7rem;color:#ff6b4a;letter-spacing:.15em;display:flex;align-items:center;gap:.5rem}
+.led::before{content:"";width:8px;height:8px;border-radius:50%;background:#ff6b4a;box-shadow:0 0 8px #ff6b4a}
+.crate{display:grid;grid-template-columns:repeat(7,1fr);gap:.45rem;margin:1.6rem 0}
+.sleeve{aspect-ratio:1;border-radius:6px;border:1px solid #3a3d45;background:var(--slate);cursor:pointer;display:grid;place-items:center;font-family:"Zilla Slab",serif;font-weight:700;font-size:1rem;transition:.25s;position:relative;color:var(--cream)}
+.sleeve:hover{transform:translateY(-6px)}
+.sleeve.on{background:var(--lab);color:#17120a;transform:translateY(-10px);border-color:transparent}
+.sleeve.today::after{content:"TODAY";position:absolute;bottom:-1.3rem;font-family:"Space Mono",monospace;font-size:.5rem;letter-spacing:.15em;color:var(--amber)}
+.night h3{font-family:"Zilla Slab",serif;font-size:2rem;line-height:1.1;margin-bottom:.4rem}
+.night .when{font-family:"Space Mono",monospace;color:var(--amber);font-size:.85rem;margin-bottom:.8rem}
+.night p{color:var(--muted)}
+@media(max-width:860px){.week{grid-template-columns:1fr}}
+
+/* TAPS */
+.bar{margin-top:2.8rem;display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:center}
+.taps{background:linear-gradient(#262a32,#1a1d22);border-radius:22px;padding:2.2rem 1.4rem 0;border:1px solid #30343d;position:relative;overflow:hidden}
+.rail{display:flex;justify-content:space-around;align-items:flex-end;height:250px;position:relative}
+.rail::before{content:"";position:absolute;top:38px;left:-2rem;right:-2rem;height:16px;background:linear-gradient(#d8d2c6,#8f897d);border-radius:4px}
+.tap{display:flex;flex-direction:column;align-items:center;cursor:pointer;position:relative;width:18%;background:none;border:0;color:var(--cream);font-family:inherit}
+.handle{width:22px;height:72px;border-radius:8px 8px 4px 4px;background:var(--c);transform-origin:50% 100%;transition:transform .45s cubic-bezier(.3,1.5,.5,1);position:relative;z-index:2;box-shadow:inset -4px 0 0 rgba(0,0,0,.18)}
+.tap.on .handle{transform:rotate(-28deg)}
+.spout{width:12px;height:42px;background:linear-gradient(90deg,#9b958a,#e8e2d6,#9b958a);border-radius:0 0 6px 6px;margin-top:2px}
+.stream{width:5px;height:0;background:var(--c);opacity:.85;transition:height .3s}
+.tap.on .stream{height:40px}
+.glass{width:52px;height:74px;margin-top:auto;border:2px solid rgba(255,255,255,.35);border-top:0;border-radius:0 0 10px 10px;position:relative;overflow:hidden;background:rgba(255,255,255,.04)}
+.glass i{position:absolute;inset:auto 0 0 0;height:0;background:var(--c);transition:height 1.4s ease .2s}
+.glass i::before{content:"";position:absolute;top:-6px;left:0;right:0;height:8px;background:var(--foam,#fff6e4);border-radius:3px;opacity:.9}
+.tap.on .glass i{height:82%}
+.tap span{font-family:"Space Mono",monospace;font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;margin:.7rem 0 1rem;opacity:.7}
+.tap.on span{opacity:1;color:var(--amber)}
+.drip{height:16px;background:repeating-linear-gradient(90deg,#111 0 6px,#2a2a2a 6px 8px);margin:0 -1.4rem}
+.pour{display:grid;grid-template-columns:150px 1fr;gap:1.4rem;align-items:center}
+.pour img{width:150px;height:200px;object-fit:cover;border-radius:14px}
+.pour h3{font-family:"Zilla Slab",serif;font-size:1.9rem;line-height:1.05;margin-bottom:.5rem}
+.pour p{color:var(--muted)}
+.pour ul{margin-top:.7rem;list-style:none;font-size:.92rem}
+.pour li{padding:.3rem 0;border-bottom:1px dashed #353943}
+.pour li::before{content:"✦ ";color:var(--amber)}
+.facts{display:flex;gap:2rem;margin-top:2.4rem;flex-wrap:wrap}
+.facts div{font-family:"Zilla Slab",serif;font-size:3rem;font-weight:700;color:var(--amber);line-height:1}
+.facts small{display:block;font-family:"Space Mono",monospace;font-size:.68rem;color:var(--muted);letter-spacing:.14em;text-transform:uppercase;margin-top:.4rem}
+@media(max-width:860px){.bar{grid-template-columns:1fr}.pour{grid-template-columns:110px 1fr}.pour img{width:110px;height:150px}}
+
+/* POSTERS */
+.wall{background:#2a2723 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='60'%3E%3Crect width='120' height='60' fill='none' stroke='%23332f2a' stroke-width='3'/%3E%3Crect x='60' y='30' width='120' height='60' fill='none' stroke='%23332f2a' stroke-width='3'/%3E%3Crect x='-60' y='30' width='120' height='60' fill='none' stroke='%23332f2a' stroke-width='3'/%3E%3C/svg%3E")}
+.posters{display:flex;justify-content:center;flex-wrap:wrap;gap:2.8rem 1.4rem;margin-top:2.5rem}
+.poster{width:min(192px,40vw);position:relative;transform:rotate(var(--r));transition:transform .35s;box-shadow:0 18px 30px -12px rgba(0,0,0,.8);cursor:zoom-in}
+.poster:hover{transform:rotate(0) scale(1.06);z-index:3}
+.poster img{width:100%;aspect-ratio:355/475;object-fit:cover}
+.poster::before{content:"";position:absolute;top:-10px;left:50%;width:70px;height:22px;margin-left:-35px;background:rgba(240,230,200,.55);transform:rotate(-3deg);z-index:2}
+.poster figcaption{position:absolute;bottom:-1.8rem;left:0;right:0;text-align:center;font-family:"Space Mono",monospace;font-size:.62rem;letter-spacing:.12em;color:var(--muted);text-transform:uppercase}
+
+/* SPACES */
+.spaces{display:flex;gap:.8rem;height:520px;margin-top:2.5rem}
+.sp{flex:1;border-radius:20px;overflow:hidden;position:relative;transition:flex .7s cubic-bezier(.3,.8,.2,1);cursor:pointer}
+.sp.on{flex:3.2}
+.sp img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s}
+.sp.on img{transform:scale(1.04)}
+.sp::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 40%,rgba(10,10,12,.88))}
+.sp .t{position:absolute;left:1.4rem;right:1.4rem;bottom:1.4rem;z-index:2}
+.sp h3{font-family:"Zilla Slab",serif;font-size:1.7rem;white-space:nowrap}
+.sp p{color:#d8cfbf;max-width:42ch;opacity:0;max-height:0;transition:.5s;font-size:.95rem}
+.sp.on p{opacity:1;max-height:200px;margin-top:.3rem}
+@media(max-width:760px){.spaces{flex-direction:column;height:auto}.sp{height:150px}.sp.on{height:340px}}
+
+/* GALLERY */
+.gal{columns:4 220px;column-gap:12px;margin-top:2.5rem}
+.gal img{width:100%;margin-bottom:12px;border-radius:12px;cursor:zoom-in;filter:saturate(.9);transition:.35s;break-inside:avoid}
+.gal img:hover{filter:saturate(1.15) brightness(1.08);transform:scale(1.02)}
+.lb{position:fixed;inset:0;background:rgba(8,8,10,.94);z-index:90;display:none;place-items:center}
+.lb.on{display:grid}
+.lb img{max-height:86vh;max-width:90vw;border-radius:10px}
+.lb button{position:absolute;background:none;border:0;color:var(--cream);font-size:2.4rem;cursor:pointer;padding:1rem}
+.lb .x{top:1rem;right:1.5rem}.lb .p{left:1rem}.lb .n{right:1rem}
+
+/* BOOK */
+.book{display:grid;grid-template-columns:1fr 1.1fr;gap:3rem;align-items:start}
+.form{background:var(--slate);border:1px solid #2f333c;border-radius:22px;padding:2rem}
+.form label{display:block;font-family:"Space Mono",monospace;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin:1.1rem 0 .5rem}
+.form label:first-child{margin-top:0}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem}
+.chip{padding:.55rem 1rem;border-radius:999px;border:1px solid #444955;background:none;color:var(--cream);cursor:pointer;font-family:inherit;font-size:.9rem;transition:.2s}
+.chip.on{background:var(--amber);border-color:var(--amber);color:#1a1206;font-weight:700}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}
+.form input{width:100%;padding:.8rem 1rem;border-radius:12px;border:1px solid #444955;background:#15171b;color:var(--cream);font-family:inherit;font-size:.95rem;color-scheme:dark}
+.step{display:flex;align-items:center;border:1px solid #444955;border-radius:12px;overflow:hidden}
+.step button{width:46px;height:46px;background:none;border:0;color:var(--amber);font-size:1.3rem;cursor:pointer}
+.step output{flex:1;text-align:center;font-family:"Space Mono",monospace}
+.preview{margin-top:1.3rem;background:#0f2a1c;border-radius:14px 14px 14px 4px;padding:1rem 1.1rem;font-size:.9rem;color:#d9f3e2;white-space:pre-line;border:1px solid #1f4a33}
+.form .acts{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1.2rem}
+.btn.wa{background:#25d366;border-color:#25d366;color:#0b2416}
+.info p{color:var(--muted);margin-bottom:1rem}
+.info .line{display:flex;gap:.8rem;padding:.9rem 0;border-bottom:1px solid #2c3038;align-items:baseline}
+.info .line b{font-family:"Space Mono",monospace;font-size:.7rem;letter-spacing:.16em;color:var(--amber);width:90px;flex:none}
+.book>*,.find>*,.row>*{min-width:0}
+@media(max-width:860px){.book{grid-template-columns:1fr}}
+
+/* HIRING */
+.hire{background:var(--yellow);color:#151208;padding:46px 0}
+.hire .wrap{display:flex;justify-content:space-between;align-items:center;gap:1.5rem;flex-wrap:wrap}
+.hire h3{font-family:"Zilla Slab",serif;font-size:clamp(2rem,4.5vw,3.4rem);line-height:1}
+.hire p{font-weight:500}
+.hire .btn{border-color:#151208;color:#151208}
+.hire .btn:hover{background:#151208;color:var(--yellow)}
+
+/* FIND */
+.find{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+.hours{width:100%;border-collapse:collapse;font-family:"Space Mono",monospace;font-size:.88rem}
+.hours td{padding:.75rem 0;border-bottom:1px solid #2c3038}
+.hours td:last-child{text-align:right}
+.hours tr.now td{color:var(--amber)}
+.hours tr.now td:first-child::before{content:"● ";color:#5ee07b}
+.map{border-radius:20px;overflow:hidden;min-height:380px;border:1px solid #2c3038;filter:grayscale(.4) contrast(1.05)}
+.map iframe{width:100%;height:100%;min-height:380px;border:0}
+.perks{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.4rem}
+.perks span{padding:.45rem .9rem;border:1px solid #3a3e47;border-radius:999px;font-size:.85rem}
+@media(max-width:860px){.find{grid-template-columns:1fr}}
+
+footer{padding:90px 0 120px;text-align:center;border-top:1px solid #23262d;overflow:hidden}
+footer .mega{font-family:"Zilla Slab",serif;font-weight:700;font-size:clamp(3.4rem,16vw,13rem);line-height:.85;color:transparent;-webkit-text-stroke:1.5px #3d3a34;letter-spacing:.04em;transition:.6s;white-space:nowrap}
+footer .mega:hover{color:var(--amber);-webkit-text-stroke-color:var(--amber);text-shadow:0 0 40px rgba(255,170,60,.4)}
+footer p{color:var(--muted);font-size:.85rem;margin-top:1.2rem}
+footer .demo{font-family:"Space Mono",monospace;font-size:.7rem;opacity:.6;margin-top:1.4rem}
+
+.mbar{display:none}
+@media(max-width:760px){
+ section{padding:80px 0}
+ .mbar{display:grid;grid-template-columns:repeat(3,1fr);position:fixed;bottom:0;left:0;right:0;z-index:60;background:rgba(18,19,23,.95);backdrop-filter:blur(10px);border-top:1px solid #2f333c}
+ .mbar a{padding:.95rem 0;text-align:center;text-decoration:none;font-weight:700;font-size:.85rem}
+ .mbar a:nth-child(2){color:#25d366}.mbar a:last-child{background:var(--amber);color:#1a1206}
+ .bulbs{padding:0 4vw}.bulb:nth-child(n+4){display:none}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<nav id="nav">
+ <a class="logo" href="#top"><svg viewBox="0 0 16 26"><path d="M9 0 1 15h6l-2 11 10-16H9z" fill="#ffb547"/></svg>ELECTRIK</a>
+ <ul><li><a href="#week">What's on</a></li><li><a href="#bar">The bar</a></li><li><a href="#spaces">Spaces</a></li><li><a href="#book">Book</a></li><li><a href="#find">Find us</a></li></ul>
+ <a class="btn fill" href="#book" style="padding:.6rem 1.1rem">Book a table</a>
+</nav>
+
+<header class="hero" id="top">
+ <div class="bg"></div>
+ <div class="bulbs">
+  <div class="bulb" style="--h:110px"><div class="cord"></div><div class="halo"></div><svg viewBox="0 0 34 54"><rect x="12" y="0" width="10" height="8" fill="#3a3530"/><path class="glass" d="M12 8h10c0 6 10 12 10 26a15 15 0 0 1-30 0C2 20 12 14 12 8z"/><path class="fil" d="M14 12v14l3 8 3-8V12M12 30q5 6 10 0"/></svg></div>
+  <div class="bulb" style="--h:160px"><div class="cord"></div><div class="halo"></div><svg viewBox="0 0 34 54"><rect x="12" y="0" width="10" height="8" fill="#3a3530"/><path class="glass" d="M12 8h10c0 6 10 12 10 26a15 15 0 0 1-30 0C2 20 12 14 12 8z"/><path class="fil" d="M14 12v14l3 8 3-8V12M12 30q5 6 10 0"/></svg></div>
+  <div class="bulb" style="--h:95px"><div class="cord"></div><div class="halo"></div><svg viewBox="0 0 34 54"><rect x="12" y="0" width="10" height="8" fill="#3a3530"/><path class="glass" d="M12 8h10c0 6 10 12 10 26a15 15 0 0 1-30 0C2 20 12 14 12 8z"/><path class="fil" d="M14 12v14l3 8 3-8V12M12 30q5 6 10 0"/></svg></div>
+  <div class="bulb" style="--h:140px"><div class="cord"></div><div class="halo"></div><svg viewBox="0 0 34 54"><rect x="12" y="0" width="10" height="8" fill="#3a3530"/><path class="glass" d="M12 8h10c0 6 10 12 10 26a15 15 0 0 1-30 0C2 20 12 14 12 8z"/><path class="fil" d="M14 12v14l3 8 3-8V12M12 30q5 6 10 0"/></svg></div>
+  <div class="bulb" style="--h:100px"><div class="cord"></div><div class="halo"></div><svg viewBox="0 0 34 54"><rect x="12" y="0" width="10" height="8" fill="#3a3530"/><path class="glass" d="M12 8h10c0 6 10 12 10 26a15 15 0 0 1-30 0C2 20 12 14 12 8z"/><path class="fil" d="M14 12v14l3 8 3-8V12M12 30q5 6 10 0"/></svg></div>
+ </div>
+ <div class="hero-in wrap">
+  <button class="sw" id="sw" aria-label="Switch the lights on"><span class="plate"><span class="toggle"></span></span><span id="swtxt">Flick the switch</span></button>
+  <h1 class="word" id="word" aria-label="Electrik"><span>E</span><span>L</span><span>E</span><span>C</span><span>T</span><span>R</span><span>I</span><span>K</span></h1>
+  <p class="tag">Neighbourhood boozer, Chorlton.</p>
+  <p class="sub">Craft beer, cask, cocktails, records and roasts on Wilbraham Road since 2009.</p>
+  <div class="status" id="status"><span class="dot" id="dot"></span><span id="stxt">Checking the doors…</span></div>
+  <div class="cta"><a class="btn fill" href="#book">Book a table</a><a class="btn" href="#week">What's on this week</a></div>
+ </div>
+</header>
+
+<div class="awning"><div class="tick" id="tick"></div></div>
+
+<section class="tonight">
+ <div class="wrap tn">
+  <div class="card rv"><span class="kick" id="tnk">Tonight</span><div class="big" id="tnt">—</div><p class="lead" id="tnp"></p></div>
+  <div class="card rv hh"><div class="meter" id="meter" style="--p:0"><i id="mtxt">—</i></div><div><span class="kick">Happy hour</span><div class="big" style="font-size:1.6rem" id="hht">—</div><p class="lead" style="font-size:.92rem">Mon–Sat 4pm–7:30pm, and all day Sunday.</p></div></div>
+ </div>
+</section>
+
+<section id="week">
+ <div class="wrap">
+  <span class="kick rv">The week, on rotation</span>
+  <h2 class="rv">Pick a day. <em>Drop the needle.</em></h2>
+  <p class="lead rv">Electrik was started by DJ duo The Unabombers, so the week runs like a record crate. Pull out a night.</p>
+  <div class="week">
+   <div class="deck rv" id="deck">
+    <div class="platter"><div class="record"><div class="label" id="lab"><b id="labt">Quingo</b><small id="labd">TUESDAY</small></div></div></div>
+    <div class="arm"><svg viewBox="0 0 100 230"><circle cx="78" cy="20" r="16" fill="#cfc8ba" stroke="#7d776b" stroke-width="3"/><circle cx="78" cy="20" r="6" fill="#55504a"/><path d="M78 20 L74 170 L50 210" stroke="#d8d2c6" stroke-width="6" fill="none" stroke-linecap="round"/><rect x="36" y="200" width="24" height="18" rx="3" fill="#2b2b2e" transform="rotate(38 48 209)"/></svg></div>
+    <div class="knob"><i></i><i></i></div>
+    <div class="led">33⅓ RPM</div>
+   </div>
+   <div>
+    <div class="crate" id="crate"></div>
+    <div class="night" id="night" aria-live="polite"><div class="when" id="nw"></div><h3 id="nh"></h3><p id="np"></p></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="bar" style="background:linear-gradient(var(--ink),#17191e)">
+ <div class="wrap">
+  <span class="kick rv">On the bar</span>
+  <h2 class="rv">Pull a tap. <em>See what pours.</em></h2>
+  <div class="bar">
+   <div class="taps rv">
+    <div class="rail" id="rail"></div>
+    <div class="drip"></div>
+   </div>
+   <div class="pour rv" id="pour" aria-live="polite"><img id="pimg" src="images/tap-beer.jpg" alt=""><div><span class="kick" id="pk"></span><h3 id="ph"></h3><p id="pp"></p><ul id="pl"></ul></div></div>
+  </div>
+  <div class="facts rv"><div>11<small>Keg lines</small></div><div>5<small>Cask hand pulls</small></div><div>1<small>House ale with Happy Valley</small></div></div>
+ </div>
+</section>
+
+<section class="wall" id="posters">
+ <div class="wrap" style="text-align:center">
+  <span class="kick rv">Off the poster wall</span>
+  <h2 class="rv">Nights we've <em>thrown lately</em></h2>
+  <p class="lead rv" style="margin:0 auto">DJ all-dayers, bank holiday parties, Halloween and Quingo specials. Next posters go up on <a href="https://www.instagram.com/electrikbar" target="_blank" rel="noopener" style="color:var(--amber)">@electrikbar</a>.</p>
+  <div class="posters" id="posterwall"></div>
+ </div>
+</section>
+
+<section id="spaces">
+ <div class="wrap">
+  <span class="kick rv">Pick your spot</span>
+  <h2 class="rv">Three rooms, <em>one bar</em></h2>
+  <div class="spaces rv" id="spc">
+   <div class="sp on"><img src="images/booth-lamps.jpg" alt="Wooden booths under pendant lamps" loading="lazy"><div class="t"><h3>The booths</h3><p>Timber walls, hanging lamps and candlelit tables. Where quiz teams set up camp on Tuesdays.</p></div></div>
+   <div class="sp"><img src="images/facade-sun.jpg" alt="Electrik's front terrace on Wilbraham Road" loading="lazy"><div class="t"><h3>Front terrace</h3><p>Under the red awning on Wilbraham Road. A pint and the world going by.</p></div></div>
+   <div class="sp"><img src="images/garden.jpg" alt="The secret garden at the back" loading="lazy"><div class="t"><h3>Secret garden</h3><p>Tucked away round the back. Bench seating, candles and plants.</p></div></div>
+  </div>
+ </div>
+</section>
+
+<section id="gallery" style="padding-top:20px">
+ <div class="wrap">
+  <span class="kick rv">After dark</span>
+  <h2 class="rv">Seen at <em>Electrik</em></h2>
+  <div class="gal" id="gal"></div>
+ </div>
+</section>
+
+<div class="hire" id="hire">
+ <div class="wrap">
+  <div><span class="mono" style="font-size:.72rem;letter-spacing:.2em">NOW HIRING</span><h3>Assistant General Manager</h3><p>Love a neighbourhood bar? Come and help run one.</p></div>
+  <a class="btn" href="mailto:info@electrikbar.co.uk?subject=Assistant%20GM%20application">Apply by email →</a>
+ </div>
+</div>
+
+<section id="book">
+ <div class="wrap book">
+  <div class="info">
+   <span class="kick rv">Tables & teams</span>
+   <h2 class="rv">Save us a <em>seat.</em></h2>
+   <p class="rv">Build your booking here and it lands in our WhatsApp, already written. Quiz teams, Sunday roasts, birthdays, a quiet Tuesday pint. Just tell us when.</p>
+   <div class="rv">
+    <div class="line"><b>WHATSAPP</b><a href="https://wa.me/447399715251">07399 715 251</a></div>
+    <div class="line"><b>CALL</b><a href="tel:+441618813315">0161 881 3315</a></div>
+    <div class="line"><b>EMAIL</b><a href="mailto:info@electrikbar.co.uk">info@electrikbar.co.uk</a></div>
+   </div>
+  </div>
+  <div class="form rv">
+   <label>What's the occasion?</label>
+   <div class="chips" id="occ"><button class="chip on">A table</button><button class="chip">Quingo team</button><button class="chip">Sunday roast</button><button class="chip">Birthday / party</button></div>
+   <div class="row"><div><label for="bd">Day</label><input type="date" id="bd"></div><div><label for="bt">Time</label><input type="time" id="bt" value="19:30"></div></div>
+   <div class="row"><div><label>How many?</label><div class="step"><button id="mn" aria-label="Fewer">−</button><output id="ppl">4</output><button id="pl2" aria-label="More">+</button></div></div><div><label for="bn">Your name</label><input id="bn" placeholder="Name"></div></div>
+   <div class="preview" id="prev"></div>
+   <div class="acts"><a class="btn wa" id="wa" target="_blank" rel="noopener">Send on WhatsApp</a><a class="btn" id="em">Email instead</a></div>
+  </div>
+ </div>
+</section>
+
+<section id="find" style="padding-top:40px">
+ <div class="wrap find">
+  <div>
+   <span class="kick rv">Find us</span>
+   <h2 class="rv">559a Wilbraham Rd, <em>M21 0AE</em></h2>
+   <table class="hours rv" id="hours"></table>
+   <p class="mono rv" style="font-size:.72rem;color:var(--muted);margin-top:.8rem">Fri & Sat: last entry 1am.</p>
+   <div class="perks rv"><span>🐕 Dogs welcome</span><span>♿ Wheelchair access</span><span>☕ Coffee & cake</span><span>📚 Book exchange</span><span>🌿 Garden</span></div>
+  </div>
+  <div class="map rv"><iframe loading="lazy" title="Map to Electrik" src="https://www.google.com/maps?q=Electrik,559a+Wilbraham+Road,Manchester+M21+0AE&output=embed"></iframe></div>
+ </div>
+</section>
+
+<footer>
+ <div class="mega">ELECTRIK</div>
+ <p>Neighbourhood boozer brought to you by The Unabombers · <a href="https://www.instagram.com/electrikbar" target="_blank" rel="noopener">@electrikbar</a></p>
+ <p class="demo">Demo concept by Codzo · photos from @electrikbar</p>
+</footer>
+
+<div class="mbar"><a href="tel:+441618813315">Call</a><a href="https://wa.me/447399715251">WhatsApp</a><a href="#book">Book</a></div>
+<div class="lb" id="lb"><button class="x" aria-label="Close">×</button><button class="p" aria-label="Previous">‹</button><img id="lbi" alt=""><button class="n" aria-label="Next">›</button></div>
+
+<script>
+const $=s=>document.querySelector(s);
+/* London time */
+function lon(){const f=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/London',weekday:'short',hour:'2-digit',minute:'2-digit',hour12:false}).formatToParts(new Date());const g=t=>f.find(p=>p.type===t).value;const days=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];return{d:days.indexOf(g('weekday')),m:(+g('hour')%24)*60+ +g('minute')}}
+// hours [open,close] in minutes; close past midnight >1440. index 0=Sun
+const H=[[840,1410],[960,1455],[960,1455],[960,1455],[960,1455],[960,1560],[840,1560]];
+const DN=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+const fm=m=>{m%=1440;let h=Math.floor(m/60),mi=m%60;const ap=h>=12?'pm':'am';h=h%12||12;return h+(mi?':'+String(mi).padStart(2,'0'):'')+ap};
+function openState(){const {d,m}=lon();const prev=(d+6)%7;
+ if(m+1440<H[prev][1])return{open:true,until:H[prev][1],day:prev};
+ if(m>=H[d][0]&&m<H[d][1])return{open:true,until:H[d][1],day:d};
+ return{open:false,opens:m<H[d][0]?H[d][0]:H[(d+1)%7][0],tom:m>=H[d][0],day:d}}
+function status(){const s=openState();$('#dot').className='dot'+(s.open?' open':'');
+ $('#stxt').textContent=s.open?'Open now · until '+fm(s.until):'Closed · opens '+(s.tom?'tomorrow ':'')+fm(s.opens)}
+
+/* HERO SWITCH */
+const hero=$('.hero'),letters=[...document.querySelectorAll('#word span')];let lit=false;
+function lightUp(){if(lit)return;lit=true;hero.classList.add('on');$('#swtxt').textContent='Lights on';
+ letters.forEach((l,i)=>setTimeout(()=>{l.classList.add('lit');if(i===2||i===6)l.classList.add('flick')},180+i*120))}
+$('#sw').onclick=()=>{if(lit){lit=false;hero.classList.remove('on');letters.forEach(l=>l.classList.remove('lit','flick'));$('#swtxt').textContent='Flick the switch'}else lightUp()};
+setTimeout(lightUp,1900);
+
+/* TICKER */
+const T=['Quingo <b>every Tuesday</b>','One Deck <b>Wednesdays</b>','DJs <b>Fri & Sat</b>','Saturday Sessions <b>from 9:30pm</b>','Sunday <b>roasts</b>','Happy hour <b>4–7:30pm</b>','Dogs <b>welcome</b>','Electrik Ale <b>Experiment</b>'];
+$('#tick').innerHTML=[...T,...T].map(t=>'<span>'+t+'</span><span>⚡</span>').join('');
+
+/* WEEK */
+const W=[
+ {s:'SUN',t:'Sunday Roast',c:'#e9a25c',w:'Doors 2pm · Happy hour all day',p:'The Electrik roast. Sit in, settle in, and enjoy happy hour all day.'},
+ {s:'MON',t:'Happy Hour',c:'#d9d2c3',w:'Doors 4pm · Happy hour 4–7:30pm',p:'Start the week slowly with happy hour from 4pm to 7:30pm.'},
+ {s:'TUE',t:'Quingo',c:'#ffe14d',w:'From 7:30pm · Reserve your table',p:'Quiz and bingo, every Tuesday night. Teams book tables on WhatsApp, so get in early.'},
+ {s:'WED',t:'One Deck',c:'#7fd1c3',w:'Weekly DJ session',p:'One Deck Sessions: local DJs spin picks from their own record collections.'},
+ {s:'THU',t:'Happy Hour',c:'#d9d2c3',w:'Doors 4pm · Happy hour 4–7:30pm',p:'Happy hour from 4pm to 7:30pm, then open late.'},
+ {s:'FRI',t:'DJs Tonight',c:'#ff7a59',w:'Doors 4pm · Open till late',p:'DJs behind the bar on Friday night. Last entry 1am.'},
+ {s:'SAT',t:'Saturday Sessions',c:'#ff5d73',w:'Doors 2pm · Sessions from 9:30pm',p:'Electrik Saturday Sessions from 9:30pm, until late. Last entry 1am.'}];
+const order=[1,2,3,4,5,6,0];const deck=$('#deck');
+function pick(i){const n=W[i];document.querySelectorAll('.sleeve').forEach(s=>s.classList.toggle('on',+s.dataset.i===i));
+ deck.classList.remove('play');void deck.offsetWidth;
+ $('#lab').style.setProperty('--lab',n.c);$('#labt').textContent=n.t;$('#labd').textContent=DN[i].toUpperCase();
+ $('#nw').textContent=DN[i]+' · '+n.w;$('#nh').textContent=n.t;$('#np').textContent=n.p;
+ setTimeout(()=>deck.classList.add('play'),250)}
+const today=lon().d;
+$('#crate').innerHTML=order.map(i=>`<button class="sleeve${i===today?' today':''}" data-i="${i}" style="--lab:${W[i].c}">${W[i].s}</button>`).join('');
+document.querySelectorAll('.sleeve').forEach(s=>s.onclick=()=>pick(+s.dataset.i));
+pick(today);
+
+/* TONIGHT + HAPPY HOUR */
+function tonight(){const {d,m}=lon();const n=W[d];$('#tnk').textContent='Tonight · '+DN[d];
+ $('#tnt').innerHTML=n.t.replace(/(\S+)$/,'<em>$1</em>');$('#tnp').textContent=n.p;
+ let p=0,txt='',big='';
+ const st=d===0?H[0][0]:960,en=d===0?H[0][1]:1170;
+ if(m>=st&&m<en){p=Math.round((en-m)/(en-st)*100);const left=en-m;txt=Math.floor(left/60)+'h '+(left%60)+'m<br>left';big='Happy hour is on'}
+ else if(m<st){txt='starts<br>'+fm(st);big='Not yet. Soon.'}
+ else{txt='back<br>tomorrow';big='Done for today'}
+ $('#meter').style.setProperty('--p',p);$('#mtxt').innerHTML=txt;$('#hht').textContent=big}
+
+/* TAPS */
+const TP=[
+ {n:'Cask',c:'#c98a2e',img:'tap-beer.jpg',h:'Five hand pulls',p:'Real ale, looked after properly. One is our own Electrik Ale Experiment, brewed with Happy Valley.',l:['Changing guests from local brewers','Recently pouring: Beatnikz Republic, Pomona Island, Thornbridge Jaipur']},
+ {n:'Keg',c:'#f0c24a',img:'tap-beer2.jpg',h:'Eleven keg lines',p:'Craft lagers, IPAs and stouts from Manchester and around the world.',l:['World beers on draught','Bottles and cans in the fridge']},
+ {n:'Cocktails',c:'#ff8c7a',foam:'#ffd9cf',img:'pink-coupe.jpg',h:'Shaken & strained',p:'Classics done right, house specials, and bottled aged cocktails for sharing.',l:['Classic cocktails','Electrik house specials','Aged bottled cocktails to share']},
+ {n:'Wine',c:'#8e2436',foam:'rgba(0,0,0,0)',img:'wine-pour.jpg',h:'By the glass',p:'Reds, whites and something sparkling, plus spirits from the back bar.',l:['Wines by the glass and bottle','Full back bar of spirits']},
+ {n:'Coffee',c:'#5a3a22',foam:'#e9d3b0',img:'booth-e.jpg',h:'By day, a café',p:'Coffee roasted specially for us, a range of teas, and homemade cakes. Newspapers and a book exchange too.',l:['Specially roasted coffee','Teas and homemade cakes','Free wifi and a book exchange']}];
+$('#rail').innerHTML=TP.map((t,i)=>`<button class="tap" data-i="${i}" style="--c:${t.c};${t.foam?'--foam:'+t.foam:''}"><div class="handle"></div><div class="spout"></div><div class="stream"></div><div class="glass"><i></i></div><span>${t.n}</span></button>`).join('');
+function pour(i){const t=TP[i];document.querySelectorAll('.tap').forEach(x=>x.classList.remove('on'));
+ setTimeout(()=>document.querySelector(`.tap[data-i="${i}"]`).classList.add('on'),30);
+ $('#pimg').src='images/'+t.img;$('#pk').textContent=t.n;$('#ph').textContent=t.h;$('#pp').textContent=t.p;$('#pl').innerHTML=t.l.map(x=>'<li>'+x+'</li>').join('')}
+document.querySelectorAll('.tap').forEach(t=>t.onclick=()=>pour(+t.dataset.i));pour(0);
+
+/* POSTERS */
+const P=[['poster-beach','Beach House · Nov',-4],['poster-diablos','El Diablos · Aug BH',3],['poster-elody','Elody all-dayer · Aug',-2],['poster-monster','Monster Mash · Halloween',4],['poster-quingo','Quingo birthday special',-3]];
+$('#posterwall').innerHTML=P.map(p=>`<figure class="poster rv" style="--r:${p[2]}deg" data-src="images/${p[0]}.jpg"><img src="images/${p[0]}.jpg" alt="${p[1]} poster" loading="lazy"><figcaption>${p[1]}</figcaption></figure>`).join('');
+
+/* SPACES */
+document.querySelectorAll('.sp').forEach(s=>{const go=()=>{document.querySelectorAll('.sp').forEach(x=>x.classList.remove('on'));s.classList.add('on')};s.onmouseenter=go;s.onclick=go});
+
+/* GALLERY */
+const G=['bar-shelves','strain','crowd-quiz','vinyl','mojito','e-window','guinness','terrace-people','shots-cocktail','cafehaus-dj','quiz-table','pink-pour','speaker','front','marg','dj-crowd','bingo','whisky-pour','crowd-room','coupe'];
+$('#gal').innerHTML=G.map((g,i)=>`<img src="images/${g}.jpg" alt="" loading="lazy" data-i="${i}">`).join('');
+let li=0,list=[];const lb=$('#lb'),lbi=$('#lbi');
+function openLb(arr,i){list=arr;li=i;lbi.src=list[li];lb.classList.add('on')}
+document.querySelectorAll('#gal img').forEach(im=>im.onclick=()=>openLb(G.map(g=>'images/'+g+'.jpg'),+im.dataset.i));
+document.querySelectorAll('.poster').forEach((p,i)=>p.onclick=()=>openLb(P.map(x=>'images/'+x[0]+'.jpg'),i));
+lb.querySelector('.x').onclick=()=>lb.classList.remove('on');
+lb.querySelector('.p').onclick=e=>{li=(li-1+list.length)%list.length;lbi.src=list[li]};
+lb.querySelector('.n').onclick=e=>{li=(li+1)%list.length;lbi.src=list[li]};
+lb.onclick=e=>{if(e.target===lb)lb.classList.remove('on')};
+document.addEventListener('keydown',e=>{if(!lb.classList.contains('on'))return;if(e.key==='Escape')lb.classList.remove('on');if(e.key==='ArrowRight')lb.querySelector('.n').click();if(e.key==='ArrowLeft')lb.querySelector('.p').click()});
+
+/* BOOKING */
+let occ='A table',ppl=4;const bd=$('#bd');
+const t0=new Date();bd.value=t0.toISOString().slice(0,10);bd.min=bd.value;
+document.querySelectorAll('#occ .chip').forEach(c=>c.onclick=()=>{document.querySelectorAll('#occ .chip').forEach(x=>x.classList.remove('on'));c.classList.add('on');occ=c.textContent;
+ if(occ==='Quingo team'){const d=new Date();d.setDate(d.getDate()+((2-d.getDay()+7)%7));bd.value=d.toISOString().slice(0,10);$('#bt').value='19:30'}
+ if(occ==='Sunday roast'){const d=new Date();d.setDate(d.getDate()+((7-d.getDay())%7));bd.value=d.toISOString().slice(0,10);$('#bt').value='14:00'}
+ build()});
+$('#mn').onclick=()=>{ppl=Math.max(1,ppl-1);build()};$('#pl2').onclick=()=>{ppl=Math.min(40,ppl+1);build()};
+['#bd','#bt','#bn'].forEach(s=>$(s).oninput=build);
+function build(){$('#ppl').textContent=ppl;const d=bd.value?new Date(bd.value+'T12:00').toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long'}):'';
+ const msg=`Hi Electrik! 👋\nI'd like to book: ${occ}\n📅 ${d} at ${$('#bt').value}\n👥 ${ppl} ${ppl===1?'person':'people'}\nName: ${$('#bn').value||'—'}`;
+ $('#prev').textContent=msg;$('#wa').href='https://wa.me/447399715251?text='+encodeURIComponent(msg);
+ $('#em').href='mailto:info@electrikbar.co.uk?subject='+encodeURIComponent('Booking: '+occ)+'&body='+encodeURIComponent(msg)}
+build();
+
+/* HOURS */
+const HT=[[1,'4pm – 12:15am'],[2,'4pm – 12:15am'],[3,'4pm – 12:15am'],[4,'4pm – 12:15am'],[5,'4pm – 2am'],[6,'2pm – 2am'],[0,'2pm – 11:30pm']];
+function hours(){const s=openState();const cur=s.open?s.day:lon().d;$('#hours').innerHTML=HT.map(h=>`<tr class="${h[0]===cur?'now':''}"><td>${DN[h[0]]}</td><td>${h[1]}</td></tr>`).join('')}
+
+function tickAll(){status();tonight();hours()}tickAll();setInterval(tickAll,30000);
+
+/* NAV + REVEAL */
+addEventListener('scroll',()=>$('#nav').classList.toggle('solid',scrollY>60),{passive:true});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
