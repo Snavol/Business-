@@ -984,5 +984,35 @@
     "demo_path": "sites/the-metropolitan-didsbury/",
     "demo_url": "https://business-red-ten.vercel.app/the-metropolitan-didsbury/",
     "status": "draft"
+  },
+  {
+    "slug": "joey-collins",
+    "business": "Joey Collins (sixofthesix)",
+    "trade": "Artist: silkscreen, sculpture & drawing",
+    "town": null,
+    "region": "Greater Manchester (likely; Salford alumnus)",
+    "country": "United Kingdom",
+    "address": null,
+    "phone": null,
+    "email": null,
+    "instagram": "@sixofthesix",
+    "rating": null,
+    "review_count": null,
+    "hours": null,
+    "maps_link": null,
+    "plus_code": null,
+    "website_status": "none",
+    "website_status_note": "No website link in bio (1,414 posts, 4,145 followers). Search found only the University of Salford Art Collection entry for 'Gathering of Strangers' (2018). Check 'Contact info' button on IG for email.",
+    "services": [
+      "Silkscreen prints",
+      "Drawings / works on paper",
+      "Sculpture (lamps)",
+      "Sketchbooks"
+    ],
+    "reviews": [],
+    "notes": "Artwork titles on demo are placeholders ('Untitled, blue & green' etc.) and medium filters are judged from photos - ask Joey for real titles/editions/prices. Includes interactive drawing hero. Left out: other artists' reels (Sheila Hicks, George Condo, Christopher Le Brun), photo of person with camera.",
+    "demo_path": "sites/joey-collins/",
+    "demo_url": "https://business-red-ten.vercel.app/joey-collins/",
+    "status": "draft"
   }
 ]
